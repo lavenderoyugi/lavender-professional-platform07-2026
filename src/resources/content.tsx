@@ -2,14 +2,15 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Lavender",
+  lastName: "oyugi",
+  name: `Lavender oyugi`,
+  role: "Business Operations | Entrepreneurship | Process Improvement | Data & Digital Solutions",
+ 
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "lavenderoyugi@gmail.com",
+  location: "Europe/Paris", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "French","Swahili"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
@@ -26,13 +27,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/lavenderoyugi",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/lavender-oyugianalyst",
     essential: true,
   },
   {
@@ -60,8 +61,14 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Career Timeline
+${person.role}`,
+  headline: (
+  <>
+    Building better businesses through organisation,
+    innovation, technology, and continuous improvement.
+  </>
+),
   featured: {
     display: true,
     title: (
@@ -76,11 +83,16 @@ const home: Home = {
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-    </>
-  ),
+  <>
+    I transform ideas into practical solutions.
+    <br />
+    My career has taken me from entrepreneurship and business
+    development in Kenya to operations, retail, and data analytics in France.
+    <br />
+    Today, I help organisations grow through efficient operations,
+    better processes, data-informed decisions, and exceptional customer service.
+  </>
+),
 };
 
 const about: About = {
