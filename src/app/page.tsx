@@ -1,41 +1,63 @@
+import HeroSection from "@/components/HeroSection";
+import JourneySection from "@/components/JourneySection";
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-8 text-center bg-white dark:bg-black">
-      <h1 className="text-5xl font-bold mb-6">
-        Lavender Oyugi
-      </h1>
+    <main className="min-h-screen bg-black text-white">
 
-      <h2 className="text-2xl font-medium text-gray-600 dark:text-gray-300 mb-8">
-        Business Operations | Entrepreneurship | Process Improvement | Data & Digital Solutions
-      </h2>
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
 
-      <p className="max-w-3xl text-lg leading-8 mb-10">
-        I transform ideas into practical solutions.
-        <br /><br />
-        My career has taken me from entrepreneurship and business development in Kenya
-        to operations, retail, and data analytics in France.
-        <br /><br />
-        Today, my mission is to help organisations grow through efficient operations,
-        better processes, data-informed decisions, and exceptional customer service.
-      </p>
+          <h1 className="text-2xl font-bold text-violet-400">
+            Lavender Oyugi
+          </h1>
 
-      <div className="flex flex-wrap justify-center gap-4">
-        <button className="rounded-lg bg-black text-white px-6 py-3 hover:bg-gray-800">
-          Download CV
-        </button>
+          <div className="hidden items-center gap-10 text-sm font-semibold uppercase tracking-wider text-gray-300 md:flex">
 
-        <button className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">
-          View Portfolio
-        </button>
+            <a
+              href="#"
+              className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
+            >
+              Home
+            </a>
 
-        <button className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">
-          My Journey
-        </button>
+            <a
+              href="#journey"
+              className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
+            >
+              My Journey
+            </a>
 
-        <button className="rounded-lg border border-gray-300 px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">
-          Contact
-        </button>
-      </div>
+            <a
+              href="#portfolio"
+              className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
+            >
+              Portfolio
+            </a>
+
+            <a
+              href="#blog"
+              className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
+            >
+              Blog
+            </a>
+
+            <a
+              href="#contact"
+              className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
+            >
+              Contact
+            </a>
+
+          </div>
+
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <HeroSection />
+      <JourneySection />
+
     </main>
   );
 }
