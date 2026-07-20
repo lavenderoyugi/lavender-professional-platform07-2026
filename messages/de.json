@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  }
+}
