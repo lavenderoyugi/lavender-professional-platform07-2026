@@ -11,16 +11,18 @@
   "dependencies": {
     "@next/mdx": "^16.2.10",
     "@once-ui-system/core": "^1.7.12",
-    "cookie": "^2.0.1",
+    "cookie": "^0.6.0",
     "gray-matter": "^4.0.3",
     "next": "16.2.10",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "transliteration": "^2.6.1"
+    "transliteration": "^2.6.1",
+    "tzdata": "^1.0.50"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/cookie": "^0.6.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
