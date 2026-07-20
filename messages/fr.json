@@ -1,9 +1,49 @@
-{
+{"highlights": {
+  "heading": "Points forts professionnels",
+  "subheading": "Un aperçu de l'expérience, des compétences et des valeurs qui définissent mon parcours professionnel.",
+
+  "leadership": {
+    "title": "Leadership en entreprise",
+    "description": "Fondatrice et dirigeante d'une entreprise immobilière au Kenya, avec une expérience en gestion d'équipes, développement de la clientèle et croissance de l'entreprise."
+  },
+
+  "analytics": {
+    "title": "Analyse de données",
+    "description": "Transformer les données en informations utiles grâce à Power BI, SQL, Excel, Python et des outils d'analyse modernes."
+  },
+
+  "digital": {
+    "title": "IA et solutions numériques",
+    "description": "Conception de sites web modernes, de plateformes numériques et de solutions technologiques qui améliorent l'efficacité et l'expérience utilisateur."
+  },
+
+  "international": {
+    "title": "Expérience internationale",
+    "description": "Une combinaison d'expérience entrepreneuriale au Kenya et de développement professionnel en France pour créer des solutions concrètes à l'échelle internationale."
+  }
+},
   "navigation": {
     "home": "Accueil",
-    "about": "À propos",
+    "journey": "Mon parcours",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "BIENVENUE DANS MON PARCOURS",
+    "firstName": "Lavender",
+    "lastName": "Oyugi",
+    "title1": "Opérations • Entrepreneuriat",
+    "title2": "Amélioration des processus • Solutions numériques et Data",
+    "intro": "Je transforme les idées en solutions concrètes.",
+    "paragraph1": "Mon parcours m'a menée de l'entrepreneuriat et du développement commercial au Kenya vers les opérations, le commerce et l'analyse de données en France.",
+    "paragraph2": "Aujourd'hui, ma mission est d'aider les organisations à améliorer leurs opérations grâce à la technologie, à la Business Intelligence et à l'apprentissage continu.",
+    "downloadCV": "Télécharger le CV",
+    "journeyButton": "Mon parcours",
+    "portfolioButton": "Portfolio",
+    "experience": "Années d'expérience",
+    "countries": "Pays",
+    "projects": "Projets",
+    "learning": "Apprentissage"
   }
 }

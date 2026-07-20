@@ -1,6 +1,12 @@
+import { useTranslations } from "next-intl";
 import HeroSection from "@/components/HeroSection";
+import ProfessionalHighlights from "@/components/ProfessionalHighlights/ProfessionalHighlights";
 import JourneySection from "@/components/JourneySection";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 export default function Home() {
+  const t = useTranslations("navigation");
+
   return (
     <main className="min-h-screen bg-black text-white">
 
@@ -8,54 +14,66 @@ export default function Home() {
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
 
-          <h1 className="text-2xl font-bold text-violet-400">
-            Lavender Oyugi
-          </h1>
+          {/* Logo */}
+          <div>
+            <h1 className="text-2xl font-bold text-violet-400">
+              Lavender Oyugi
+            </h1>
 
-          <div className="hidden items-center gap-10 text-sm font-semibold uppercase tracking-wider text-gray-300 md:flex">
+            <p className="mt-1 text-xs uppercase tracking-[0.35em] text-gray-400">
+              Business • Data • AI
+            </p>
+          </div>
 
+          {/* Navigation */}
+          <div className="hidden items-center gap-8 md:flex">
             <a
               href="#"
               className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
             >
-              Home
+              {t("home")}
             </a>
 
             <a
               href="#journey"
               className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
             >
-              My Journey
+              {t("journey")}
             </a>
 
             <a
               href="#portfolio"
               className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
             >
-              Portfolio
+              {t("portfolio")}
             </a>
 
             <a
               href="#blog"
               className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
             >
-              Blog
+              {t("blog")}
             </a>
 
             <a
               href="#contact"
               className="relative transition hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-400 after:transition-all hover:after:w-full"
             >
-              Contact
+              {t("contact")}
             </a>
+            <div className="h-6 w-px bg-white/20" />
+
+<LanguageSwitcher />
 
           </div>
 
         </div>
       </nav>
 
-      {/* Hero Section */}
       <HeroSection />
+
+      <ProfessionalHighlights />
+
       <JourneySection />
 
     </main>

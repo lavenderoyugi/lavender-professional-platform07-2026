@@ -1,6 +1,9 @@
 import Image from "next/image";
+import {useTranslations} from "next-intl";
 
 export default function HeroSection() {
+  const t = useTranslations("hero");
+
   return (
     <section className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-16 sm:px-8 sm:py-20 lg:gap-20 lg:px-8 lg:py-24 md:grid-cols-2">
 
@@ -9,46 +12,40 @@ export default function HeroSection() {
       <div>
 
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.45em] text-violet-400">
-          Welcome to my journey
+          {t("welcome")}
         </p>
 
         <h1 className="mb-8 text-5xl font-black leading-none sm:text-6xl lg:text-8xl">
 
           <span className="bg-gradient-to-r from-violet-300 via-violet-400 to-violet-600 bg-clip-text text-transparent">
-            Lavender
-          </span>
+  {t("firstName")}
+</span>
 
           <br />
 
           <span className="text-white">
-            Oyugi
-          </span>
+  {t("lastName")}
+</span>
 
         </h1>
 
-        <h2 className="mb-8 text-lg leading-relaxed text-gray-300 sm:text-xl lg:text-2xl">
-          Business Operations • Entrepreneurship
-          <br />
-          Process Improvement • Data & Digital Solutions
-        </h2>
+        <h2 className="mb-8 text-lg font-medium leading-relaxed text-gray-300 sm:text-xl lg:text-2xl">
+  {t("title1")}
+</h2>
 
         <p className="mb-12 max-w-xl text-base leading-8 text-gray-400 sm:text-lg sm:leading-9">
-          I transform ideas into practical solutions.
+  {t("intro")}
 
-          <br />
-          <br />
+  <br />
+  <br />
 
-          My career has taken me from entrepreneurship and business
-          development in Kenya to operations, retail and data analytics
-          in France.
+  {t("paragraph1")}
 
-          <br />
-          <br />
+  <br />
+  <br />
 
-          Today my mission is helping organisations improve operations
-          through technology, business intelligence and continuous
-          learning.
-        </p>
+  {t("paragraph2")}
+</p>
 
         {/* Buttons */}
 

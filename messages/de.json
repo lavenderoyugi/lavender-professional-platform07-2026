@@ -1,9 +1,50 @@
 {
   "navigation": {
     "home": "Startseite",
-    "about": "Über mich",
+    "journey": "Mein Weg",
     "portfolio": "Portfolio",
     "blog": "Blog",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "WILLKOMMEN AUF MEINEM WEG",
+    "firstName": "Lavender",
+    "lastName": "Oyugi",
+    "title1": "Entrepreneur | Business Operations | Data Analytics | AI & Digital Solutions",
+    "title2": "",
+    "intro": "Ich verwandle Ideen in praktische Lösungen.",
+    "paragraph1": "Mein beruflicher Weg führte mich vom Unternehmertum und der Geschäftsentwicklung in Kenia zu Betriebsabläufen, Einzelhandel und Datenanalyse in Frankreich.",
+    "paragraph2": "Heute ist es meine Mission, Organisationen dabei zu helfen, ihre Abläufe durch Technologie, Business Intelligence und kontinuierliches Lernen zu verbessern.",
+    "downloadCV": "Lebenslauf herunterladen",
+    "journeyButton": "Mein Weg",
+    "portfolioButton": "Portfolio",
+    "experience": "Jahre Erfahrung",
+    "countries": "Länder",
+    "projects": "Projekte",
+    "learning": "Lernen"
+  },
+  "highlights": {
+    "heading": "Berufliche Highlights",
+    "subheading": "Ein Überblick über die Erfahrungen, Fähigkeiten und Werte, die meinen beruflichen Werdegang auszeichnen.",
+
+    "leadership": {
+      "title": "Unternehmerische Führung",
+      "description": "Gründerin und Leiterin eines Immobilienunternehmens in Kenia mit Erfahrung in Teamführung, Kundenbeziehungen und Unternehmenswachstum."
+    },
+
+    "analytics": {
+      "title": "Datenanalyse",
+      "description": "Daten mit Power BI, SQL, Excel, Python und modernen Analysetools in aussagekräftige Erkenntnisse verwandeln."
+    },
+
+    "digital": {
+      "title": "KI & Digitale Lösungen",
+      "description": "Entwicklung moderner Websites, digitaler Plattformen und technologischer Lösungen zur Verbesserung von Effizienz und Benutzererfahrung."
+    },
+
+    "international": {
+      "title": "Internationale Erfahrung",
+      "description": "Verbindung von unternehmerischer Erfahrung aus Kenia mit beruflicher Entwicklung in Frankreich, um praxisnahe und internationale Lösungen zu schaffen."
+    }
   }
 }
