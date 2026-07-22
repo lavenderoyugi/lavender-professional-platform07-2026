@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 type CareerCardProps = {
   year: string;
   title: string;
@@ -23,6 +27,8 @@ export default function CareerCard({
   impact,
   reflection,
 }: CareerCardProps) {
+  const t = useTranslations("careerCard");
+
   return (
     <div className="rounded-3xl border border-violet-500/20 bg-zinc-900 p-10 shadow-lg transition-all duration-300 hover:border-violet-400 hover:shadow-violet-500/10">
 
@@ -54,7 +60,7 @@ export default function CareerCard({
       <div className="mt-10">
 
         <h4 className="mb-4 text-xl font-semibold text-violet-300">
-          Key Responsibilities
+          {t("responsibilities")}
         </h4>
 
         <ul className="space-y-3 text-gray-300">
@@ -69,7 +75,7 @@ export default function CareerCard({
       <div className="mt-10">
 
         <h4 className="mb-4 text-xl font-semibold text-violet-300">
-          Skills Developed
+          {t("skills")}
         </h4>
 
         <div className="flex flex-wrap gap-3">
@@ -89,7 +95,7 @@ export default function CareerCard({
       <div className="mt-10 rounded-2xl border border-violet-500/20 bg-black/30 p-6">
 
         <h4 className="text-xl font-semibold text-violet-300">
-          Achievement
+          {t("achievement")}
         </h4>
 
         <p className="mt-4 leading-8 text-gray-300">
@@ -102,7 +108,7 @@ export default function CareerCard({
       <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-6">
 
         <h4 className="text-xl font-semibold text-violet-300">
-          Career Impact
+          {t("impact")}
         </h4>
 
         <p className="mt-4 leading-8 text-gray-300">
@@ -120,7 +126,7 @@ export default function CareerCard({
           </div>
 
           <p className="text-xs font-bold uppercase tracking-[0.35em] text-violet-400">
-            What I Learned
+            {t("reflection")}
           </p>
 
           <blockquote className="mt-5 max-w-3xl text-2xl italic leading-10 text-white">

@@ -21,8 +21,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-1 text-xs uppercase tracking-[0.35em] text-gray-400">
-              Business • Data • AI
-            </p>
+  {t("tagline")}
+</p>
           </div>
 
           {/* Navigation */}

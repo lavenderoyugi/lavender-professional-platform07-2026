@@ -52,15 +52,15 @@ export default function HeroSection() {
         <div className="flex flex-wrap items-center gap-3 sm:gap-5">
 
           <button className="rounded-xl bg-gradient-to-r from-violet-600 to-violet-500 px-5 py-3 text-sm font-medium transition duration-300 hover:scale-105 sm:px-8 sm:py-4 sm:text-base">
-            Download CV
+            {t("downloadCV")}
           </button>
 
           <button className="rounded-xl border border-violet-500 px-5 py-3 text-sm transition duration-300 hover:bg-violet-900/20 sm:px-8 sm:py-4 sm:text-base">
-            My Journey
+            {t("journeyButton")}
           </button>
 
           <button className="rounded-xl border border-violet-500 px-5 py-3 text-sm transition duration-300 hover:bg-violet-900/20 sm:px-8 sm:py-4 sm:text-base">
-            Portfolio
+            {t("portfolioButton")}
           </button>
 
         </div>
@@ -74,7 +74,7 @@ export default function HeroSection() {
               5+
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Years Experience
+              {t("experience")}
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function HeroSection() {
               2
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Countries
+              {t("countries")}
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function HeroSection() {
               10+
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Projects
+              {t("projects")}
             </p>
           </div>
 
@@ -101,12 +101,11 @@ export default function HeroSection() {
               ∞
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Learning
+              {t("learning")}
             </p>
           </div>
 
         </div>
-
       </div>
 
       {/* Right */}

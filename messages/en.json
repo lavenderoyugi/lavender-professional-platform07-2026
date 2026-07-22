@@ -1,10 +1,24 @@
 {
+  "careerCard": {
+  "responsibilities": "Key Responsibilities",
+  "skills": "Skills Developed",
+  "achievement": "Achievement",
+  "impact": "Career Impact",
+  "reflection": "What I Learned"
+},
+  "journeySection": {
+  "label": "Professional Journey",
+  "heading": "From Curiosity to Leadership",
+  "intro": "Every chapter of my career has contributed to who I am today. Beginning with customer service and business operations in Kenya, progressing into regional business development, entrepreneurship, relocating to France on {date}, and continuing into data analytics and business operations—each experience has strengthened my ability to solve problems, lead teams, and create value through technology and business.",
+  "relocationDate": "27 September 2022"
+},
   "navigation": {
     "home": "Home",
     "journey": "My Journey",
     "portfolio": "Portfolio",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "tagline": "Business • Data • AI"
   },
   "hero": {
   "welcome": "WELCOME TO MY JOURNEY",
