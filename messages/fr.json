@@ -1,41 +1,44 @@
 {
-    "careerCard": {
-  "responsibilities": "Principales responsabilités",
-  "skills": "Compétences développées",
-  "achievement": "Réalisation",
-  "impact": "Impact sur la carrière",
-  "reflection": "Ce que j'ai appris"
-},
-   "journeySection": {
-  "label": "Parcours professionnel",
-  "heading": "De la curiosité au leadership",
-  "intro": "Chaque étape de ma carrière a contribué à qui je suis aujourd'hui. En commençant par le service client et les opérations commerciales au Kenya, en progressant vers le développement commercial régional, l'entrepreneuriat, mon déménagement en France le <date>27 septembre 2022</date>, et en poursuivant vers l'analyse de données et les opérations commerciales, chaque expérience a renforcé ma capacité à résoudre des problèmes, diriger des équipes et créer de la valeur grâce à la technologie et aux affaires.",
-  "relocationDate": "27 septembre 2022"
-}, 
-    "highlights": {
-  "heading": "Points forts professionnels",
-  "subheading": "Un aperçu de l'expérience, des compétences et des valeurs qui définissent mon parcours professionnel.",
-
-  "leadership": {
-    "title": "Leadership en entreprise",
-    "description": "Fondatrice et dirigeante d'une entreprise immobilière au Kenya, avec une expérience en gestion d'équipes, développement de la clientèle et croissance de l'entreprise."
+  "careerCard": {
+    "responsibilities": "Principales responsabilités",
+    "skills": "Compétences développées",
+    "achievement": "Réalisation",
+    "impact": "Impact sur la carrière",
+    "reflection": "Ce que j'ai appris"
   },
 
-  "analytics": {
-    "title": "Analyse de données",
-    "description": "Transformer les données en informations utiles grâce à Power BI, SQL, Excel, Python et des outils d'analyse modernes."
+  "journeySection": {
+    "label": "Parcours professionnel",
+    "heading": "De la curiosité au leadership",
+    "intro": "Chaque étape de ma carrière a contribué à qui je suis aujourd'hui. En commençant par le service client et les opérations commerciales au Kenya, en progressant vers le développement commercial régional, l'entrepreneuriat, mon déménagement en France le <date>27 septembre 2022</date>, et en poursuivant vers l'analyse de données et les opérations commerciales, chaque expérience a renforcé ma capacité à résoudre des problèmes, diriger des équipes et créer de la valeur grâce à la technologie et aux affaires.",
+    "relocationDate": "27 septembre 2022"
   },
 
-  "digital": {
-    "title": "IA et solutions numériques",
-    "description": "Conception de sites web modernes, de plateformes numériques et de solutions technologiques qui améliorent l'efficacité et l'expérience utilisateur."
+  "highlights": {
+    "heading": "Points forts professionnels",
+    "subheading": "Un aperçu de l'expérience, des compétences et des valeurs qui définissent mon parcours professionnel.",
+
+    "leadership": {
+      "title": "Leadership en entreprise",
+      "description": "Fondatrice et dirigeante d'une entreprise immobilière au Kenya, avec une expérience en gestion d'équipes, développement de la clientèle et croissance de l'entreprise."
+    },
+
+    "analytics": {
+      "title": "Analyse de données",
+      "description": "Transformer les données en informations utiles grâce à Power BI, SQL, Excel, Python et des outils d'analyse modernes."
+    },
+
+    "digital": {
+      "title": "IA et solutions numériques",
+      "description": "Conception de sites web modernes, de plateformes numériques et de solutions technologiques qui améliorent l'efficacité et l'expérience utilisateur."
+    },
+
+    "international": {
+      "title": "Expérience internationale",
+      "description": "Une combinaison d'expérience entrepreneuriale au Kenya et de développement professionnel en France pour créer des solutions concrètes à l'échelle internationale."
+    }
   },
 
-  "international": {
-    "title": "Expérience internationale",
-    "description": "Une combinaison d'expérience entrepreneuriale au Kenya et de développement professionnel en France pour créer des solutions concrètes à l'échelle internationale."
-  }
-},
   "navigation": {
     "home": "Accueil",
     "journey": "Mon parcours",
@@ -44,6 +47,7 @@
     "contact": "Contact",
     "tagline": "Business • Data • IA"
   },
+
   "hero": {
     "welcome": "BIENVENUE DANS MON PARCOURS",
     "firstName": "Lavender",
@@ -59,6 +63,35 @@
     "experience": "Années d'expérience",
     "countries": "Pays",
     "projects": "Projets",
-    "learning": "Apprentissage"
+    "learning": "Apprentissage",
+
+    "skills": {
+      "businessOperations": "Opérations",
+      "entrepreneurship": "Entrepreneuriat",
+      "dataAnalytics": "Analyse de données",
+      "processImprovement": "Amélioration des processus",
+      "powerBI": "Power BI",
+      "sql": "SQL",
+      "python": "Python",
+      "projectManagement": "Gestion de projet"
+    }
+  },
+
+  "contact": {
+    "alert": "Veuillez compléter tous les champs avant d'envoyer votre message.",
+    "label": "RESTONS EN CONTACT",
+    "heading": "Construisons quelque chose ensemble",
+    "paragraph1": "Merci d'avoir pris le temps de découvrir mon parcours. Ce portfolio est un projet vivant qui continue d'évoluer au fil de mes apprentissages, de mes réalisations et de mon développement professionnel.",
+    "paragraph2": "Que vous soyez recruteur, collaborateur, entrepreneur ou que vous souhaitiez simplement partager un avis, je serai ravie d'échanger avec vous.",
+    "whyTitle": "Pourquoi je fais ce que je fais",
+    "whyDescription": "Je crois que la technologie, les affaires et l'entrepreneuriat peuvent créer des opportunités qui changent des vies. Ma passion est d'aider les entreprises à se développer grâce à l'innovation, à l'apprentissage continu et aux solutions numériques tout en partageant mon parcours.",
+    "explore": "Découvrir mon travail",
+    "sendMessage": "Envoyer un message",
+    "contactText": "Je serais ravie d'avoir de vos nouvelles ! Que vous ayez une opportunité professionnelle, une idée de collaboration, une demande commerciale ou que vous souhaitiez simplement échanger, n'hésitez pas à m'envoyer un message.",
+    "fullName": "Nom complet",
+    "email": "Adresse e-mail",
+    "subject": "Sujet",
+    "message": "Écrivez votre message...",
+    "send": "Envoyer le message"
   }
 }

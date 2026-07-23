@@ -1,17 +1,19 @@
 {
   "careerCard": {
-  "responsibilities": "Key Responsibilities",
-  "skills": "Skills Developed",
-  "achievement": "Achievement",
-  "impact": "Career Impact",
-  "reflection": "What I Learned"
-},
+    "responsibilities": "Key Responsibilities",
+    "skills": "Skills Developed",
+    "achievement": "Achievement",
+    "impact": "Career Impact",
+    "reflection": "What I Learned"
+  },
+
   "journeySection": {
-  "label": "Professional Journey",
-  "heading": "From Curiosity to Leadership",
-  "intro": "Every chapter of my career has contributed to who I am today. Beginning with customer service and business operations in Kenya, progressing into regional business development, entrepreneurship, relocating to France on <date>27 September 2022</date>, and continuing into data analytics and business operations—each experience has strengthened my ability to solve problems, lead teams, and create value through technology and business.",
-  "relocationDate": "27 September 2022"
-},
+    "label": "Professional Journey",
+    "heading": "From Curiosity to Leadership",
+    "intro": "Every chapter of my career has contributed to who I am today. Beginning with customer service and business operations in Kenya, progressing into regional business development, entrepreneurship, relocating to France on <date>27 September 2022</date>, and continuing into data analytics and business operations—each experience has strengthened my ability to solve problems, lead teams, and create value through technology and business.",
+    "relocationDate": "27 September 2022"
+  },
+
   "navigation": {
     "home": "Home",
     "journey": "My Journey",
@@ -20,23 +22,36 @@
     "contact": "Contact",
     "tagline": "Business • Data • AI"
   },
+
   "hero": {
-  "welcome": "WELCOME TO MY JOURNEY",
-  "firstName": "Lavender",
-  "lastName": "Oyugi",
-  "title1": "Entrepreneur | Business Operations | Data Analytics | AI & Digital Solutions",
-  "title2": "",
-  "intro": "I transform ideas into practical solutions.",
-  "paragraph1": "My career has taken me from entrepreneurship and business development in Kenya to operations, retail and data analytics in France.",
-  "paragraph2": "Today my mission is helping organisations improve operations through technology, business intelligence and continuous learning.",
-  "downloadCV": "Download CV",
-  "journeyButton": "My Journey",
-  "portfolioButton": "Portfolio",
-  "experience": "Years Experience",
-  "countries": "Countries",
-  "projects": "Projects",
-  "learning": "Learning"
-},
+    "welcome": "WELCOME TO MY JOURNEY",
+    "firstName": "Lavender",
+    "lastName": "Oyugi",
+    "title1": "Entrepreneur | Business Operations | Data Analytics | AI & Digital Solutions",
+    "title2": "",
+    "intro": "I transform ideas into practical solutions.",
+    "paragraph1": "My career has taken me from entrepreneurship and business development in Kenya to operations, retail and data analytics in France.",
+    "paragraph2": "Today my mission is helping organisations improve operations through technology, business intelligence and continuous learning.",
+    "downloadCV": "Download CV",
+    "journeyButton": "My Journey",
+    "portfolioButton": "Portfolio",
+    "experience": "Years Experience",
+    "countries": "Countries",
+    "projects": "Projects",
+    "learning": "Learning",
+
+    "skills": {
+      "businessOperations": "Business Operations",
+      "entrepreneurship": "Entrepreneurship",
+      "dataAnalytics": "Data Analytics",
+      "processImprovement": "Process Improvement",
+      "powerBI": "Power BI",
+      "sql": "SQL",
+      "python": "Python",
+      "projectManagement": "Project Management"
+    }
+  },
+
   "highlights": {
     "heading": "Professional Highlights",
     "subheading": "An overview of the experiences, skills and values that define my professional journey.",
@@ -60,5 +75,23 @@
       "title": "International Experience",
       "description": "Combining entrepreneurial experience from Kenya with professional development in France to create practical and international solutions."
     }
+  },  
+
+  "contact": {
+    "alert": "Please complete all fields before sending your message.",
+    "label": "LET'S STAY CONNECTED",
+    "heading": "Let's Build Something Together",
+    "paragraph1": "Thank you for taking the time to explore my journey. This portfolio is a living project that continues to evolve with every new experience, achievement and professional milestone.",
+    "paragraph2": "Whether you are a recruiter, collaborator, entrepreneur or simply want to connect, I would love to hear from you.",
+    "whyTitle": "Why I Do What I Do",
+    "whyDescription": "I believe technology, business and entrepreneurship can create opportunities that change lives. My passion is helping organisations grow through innovation, continuous learning and digital solutions while sharing my own journey.",
+    "explore": "Explore My Work",
+    "sendMessage": "Send a Message",
+    "contactText": "I'd love to hear from you! Whether you have a job opportunity, collaboration idea, business enquiry or simply want to say hello, feel free to send me a message.",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Write your message...",
+    "send": "Send Message"
   }
 }

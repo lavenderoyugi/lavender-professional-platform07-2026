@@ -17,8 +17,11 @@ export default getRequestConfig(async ({requestLocale}) => {
     await import(`../../messages/${locale}.json`)
   ).default;
 
-  console.log("🌍 Locale:", locale);
-  console.log("📝 Welcome:", messages.hero.welcome);
+  console.log("================================");
+  console.log("Locale:", locale);
+  console.log("Keys:", Object.keys(messages));
+  console.log("Has contact:", Object.hasOwn(messages, "contact"));
+  console.log("================================");
 
   return {
     locale,

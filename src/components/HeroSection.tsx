@@ -4,6 +4,17 @@ import { useTranslations } from "next-intl";
 export default function HeroSection() {
   const t = useTranslations("hero");
 
+  const skills = [
+    t("skills.businessOperations"),
+    t("skills.entrepreneurship"),
+    t("skills.dataAnalytics"),
+    t("skills.processImprovement"),
+    t("skills.powerBI"),
+    t("skills.sql"),
+    t("skills.python"),
+    t("skills.projectManagement"),
+  ];
+
   return (
     <section className="relative overflow-hidden">
       {/* Background Glow */}
@@ -53,14 +64,14 @@ export default function HeroSection() {
               href="/cv.pdf"
               className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
             >
-              Download CV
+              {t("downloadCV")}
             </a>
 
             <a
               href="#portfolio"
               className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
             >
-              View Portfolio
+              {t("portfolioButton")}
             </a>
 
           </div>
@@ -69,16 +80,7 @@ export default function HeroSection() {
 
           <div className="mt-12 flex flex-wrap gap-3">
 
-            {[
-              "Business Operations",
-              "Entrepreneurship",
-              "Data Analytics",
-              "Process Improvement",
-              "Power BI",
-              "SQL",
-              "Python",
-              "Project Management",
-            ].map((skill) => (
+            {skills.map((skill) => (
               <span
                 key={skill}
                 className="rounded-full border border-violet-400/40 bg-violet-500/10 px-4 py-2 text-sm text-violet-200"

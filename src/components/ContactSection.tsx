@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { socialLinks } from "@/data/socialLinks";
 
 export default function ContactSection() {
+  const t = useTranslations("contact");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,7 +21,7 @@ export default function ContactSection() {
       !form.subject.trim() ||
       !form.message.trim()
     ) {
-      alert("Please complete all fields before sending your message.");
+      alert(t("alert"));
       return;
     }
 
@@ -45,23 +47,19 @@ ${form.message}`
         {/* Heading */}
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-violet-400">
-            LET&apos;S CONNECT
+            {t("label")}
           </p>
 
           <h2 className="mt-4 text-5xl font-extrabold tracking-tight md:text-6xl">
-            Let&apos;s Build Something Together
+            {t("heading")}
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
-            Thank you for taking the time to explore my journey. This portfolio
-            is a living project that continues to evolve as I learn, build, and
-            grow professionally.
+            {t("paragraph1")}
           </p>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
-            Whether you&apos;re a recruiter, collaborator, entrepreneur, or
-            simply someone who has feedback, I&apos;d genuinely love to hear
-            from you.
+            {t("paragraph2")}
           </p>
 
           <div className="mx-auto mt-10 h-1 w-24 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
@@ -89,18 +87,15 @@ ${form.message}`
             </div>
 
             <h4 className="mt-10 text-2xl font-bold">
-              Why I Do What I Do
+              {t("whyTitle")}
             </h4>
 
             <p className="mt-6 leading-8 text-zinc-400">
-              I believe technology, business, and entrepreneurship can create
-              opportunities that change lives. My passion is helping businesses
-              grow through innovation, continuous learning, and digital
-              solutions while sharing my journey with others.
+              {t("whyDescription")}
             </p>
 
             <h4 className="mt-10 text-xl font-semibold text-violet-400">
-  Explore My Work
+  {t("explore")}
 </h4>
 
 <div className="mt-6 space-y-4">
@@ -132,12 +127,10 @@ ${form.message}`
 
           {/* Right Card */}
           <div className="rounded-3xl border border-white/10 bg-zinc-900 p-10 shadow-xl">
-  <h3 className="text-3xl font-bold">Send a Message</h3>
+  <h3 className="text-3xl font-bold">{t("sendMessage")}</h3>
 
   <p className="mt-4 text-zinc-400">
-    I'd love to hear from you! Whether you have a job opportunity,
-    collaboration idea, business enquiry, or simply want to connect,
-    feel free to send me a message.
+    {t("contactText")}
   </p>
 
   <div className="mt-8 space-y-3 text-sm text-zinc-300">
@@ -149,7 +142,7 @@ ${form.message}`
   <div className="mt-10 space-y-5">
     <input
       type="text"
-      placeholder="Full Name"
+      placeholder={t("fullName")}
       value={form.name}
       onChange={(e) =>
         setForm({ ...form, name: e.target.value })
@@ -159,7 +152,7 @@ ${form.message}`
 
     <input
       type="email"
-      placeholder="Email Address"
+      placeholder={t("email")}
       value={form.email}
       onChange={(e) =>
         setForm({ ...form, email: e.target.value })
@@ -169,7 +162,7 @@ ${form.message}`
 
     <input
       type="text"
-      placeholder="Subject"
+      placeholder={t("subject")}
       value={form.subject}
       onChange={(e) =>
         setForm({ ...form, subject: e.target.value })
@@ -179,7 +172,7 @@ ${form.message}`
 
     <textarea
       rows={6}
-      placeholder="Write your message..."
+      placeholder={t("message")}
       value={form.message}
       onChange={(e) =>
         setForm({ ...form, message: e.target.value })
@@ -191,7 +184,7 @@ ${form.message}`
       onClick={sendEmail}
       className="w-full rounded-xl bg-violet-600 px-6 py-4 font-semibold transition hover:bg-violet-500"
     >
-      Send Message
+      {t("send")}
     </button>
   </div>
 </div>

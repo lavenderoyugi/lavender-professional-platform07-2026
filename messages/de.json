@@ -1,17 +1,19 @@
 {
-    "careerCard": {
-  "responsibilities": "Hauptverantwortlichkeiten",
-  "skills": "Entwickelte Fähigkeiten",
-  "achievement": "Erfolg",
-  "impact": "Karrierewirkung",
-  "reflection": "Was ich gelernt habe"
-},
-    "journeySection": {
-  "label": "Beruflicher Werdegang",
-  "heading": "Von Neugier zu Führungsstärke",
-  "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb—jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
-  "relocationDate": "27. September 2022"
-},
+  "careerCard": {
+    "responsibilities": "Hauptverantwortlichkeiten",
+    "skills": "Entwickelte Fähigkeiten",
+    "achievement": "Erfolg",
+    "impact": "Karrierewirkung",
+    "reflection": "Was ich gelernt habe"
+  },
+
+  "journeySection": {
+    "label": "Beruflicher Werdegang",
+    "heading": "Von Neugier zu Führungsstärke",
+    "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb – jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
+    "relocationDate": "27. September 2022"
+  },
+
   "navigation": {
     "home": "Startseite",
     "journey": "Mein Weg",
@@ -20,6 +22,7 @@
     "contact": "Kontakt",
     "tagline": "Business • Data • KI"
   },
+
   "hero": {
     "welcome": "WILLKOMMEN AUF MEINEM WEG",
     "firstName": "Lavender",
@@ -35,8 +38,20 @@
     "experience": "Jahre Erfahrung",
     "countries": "Länder",
     "projects": "Projekte",
-    "learning": "Lernen"
+    "learning": "Lernen",
+
+    "skills": {
+      "businessOperations": "Geschäftsbetrieb",
+      "entrepreneurship": "Unternehmertum",
+      "dataAnalytics": "Datenanalyse",
+      "processImprovement": "Prozessoptimierung",
+      "powerBI": "Power BI",
+      "sql": "SQL",
+      "python": "Python",
+      "projectManagement": "Projektmanagement"
+    }
   },
+
   "highlights": {
     "heading": "Berufliche Highlights",
     "subheading": "Ein Überblick über die Erfahrungen, Fähigkeiten und Werte, die meinen beruflichen Werdegang auszeichnen.",
@@ -61,4 +76,22 @@
       "description": "Verbindung von unternehmerischer Erfahrung aus Kenia mit beruflicher Entwicklung in Frankreich, um praxisnahe und internationale Lösungen zu schaffen."
     }
   }
+  ,
+"contact": {
+  "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
+  "label": "LASSEN SIE UNS IN KONTAKT BLEIBEN",
+  "heading": "Lassen Sie uns gemeinsam etwas aufbauen",
+  "paragraph1": "Vielen Dank, dass Sie sich die Zeit genommen haben, meinen beruflichen Weg kennenzulernen. Dieses Portfolio ist ein lebendiges Projekt, das sich mit jedem neuen Lernerfolg, jeder Erfahrung und jedem beruflichen Meilenstein weiterentwickelt.",
+  "paragraph2": "Ob Sie Recruiter, Geschäftspartner, Unternehmer oder einfach interessiert sind – ich freue mich darauf, von Ihnen zu hören.",
+  "whyTitle": "Warum ich tue, was ich tue",
+  "whyDescription": "Ich glaube, dass Technologie, Wirtschaft und Unternehmertum Möglichkeiten schaffen können, die Leben verändern. Meine Leidenschaft ist es, Unternehmen durch Innovation, kontinuierliches Lernen und digitale Lösungen wachsen zu lassen und gleichzeitig meinen eigenen Weg zu teilen.",
+  "explore": "Meine Arbeit entdecken",
+  "sendMessage": "Nachricht senden",
+  "contactText": "Ich freue mich, von Ihnen zu hören! Egal ob Sie eine berufliche Möglichkeit, eine Zusammenarbeit, eine Geschäftsanfrage oder einfach eine Nachricht senden möchten – kontaktieren Sie mich gerne.",
+  "fullName": "Vollständiger Name",
+  "email": "E-Mail-Adresse",
+  "subject": "Betreff",
+  "message": "Schreiben Sie Ihre Nachricht...",
+  "send": "Nachricht senden"
+}
 }
