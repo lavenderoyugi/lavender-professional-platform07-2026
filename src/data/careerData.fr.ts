@@ -1,6 +1,7 @@
 export const careerData = [
   {
     id: 1,
+    category: "Expérience Professionnelle",
     year: "2008 – 2010",
     title: "Assistante Service Client • Opératrice Informatique • Responsable de Succursale",
     company: "Royal Photo Studio",
@@ -47,8 +48,10 @@ export const careerData = [
       "Toute grande carrière commence par la volonté d'apprendre. Curiosité, constance et dévouement m'ont ouvert des portes que je n'imaginais pas.",
   },
 
-  {
-    id: 2,
+  
+    {
+  id: 2,
+  category: "Expérience Professionnelle",
     year: "2010 – 2012",
     title: "Responsable Régionale des Ventes et du Développement Commercial",
     company: "House of Knowledge Publishers",
@@ -94,8 +97,10 @@ export const careerData = [
     reflection:
       "Aider les entreprises et les clients à réussir m'a appris que les relations durables se construisent sur la confiance, la communication et la fiabilité.",
   },
-  {
-    id: 3,
+  
+   {
+  id: 3,
+  category: "Expérience Professionnelle",
     year: "2012 – 2016",
     title: "Fondatrice et Directrice Générale",
     company: "Lavish Boutique",
@@ -144,6 +149,7 @@ export const careerData = [
   },
   {
     id: 4,
+    category: "Expérience Professionnelle",
     year: "2019 – 2022",
     title: "Fondatrice | Responsable des Opérations Immobilières",
     company: "Tourlover Realtors (enregistrée sous Hudden Realtors)",
@@ -190,6 +196,7 @@ export const careerData = [
   },
   {
     id: 6,
+    category: "Expérience Professionnelle",
     year: "27 septembre 2022",
     title: "Un Nouveau Départ en France",
     company: "Transition de Vie",
@@ -227,6 +234,7 @@ export const careerData = [
   },
   {
     id: 7,
+    category: "Expérience Professionnelle",
     year: "Avr 2023 – Sep 2023",
     title: "Agente de Propreté",
     company: "3S Propreté",
@@ -263,6 +271,7 @@ export const careerData = [
   },
   {
     id: 8,
+    category: "Expérience Professionnelle",
     year: "Oct 2023 – Déc 2023",
     title: "Serveuse en Restauration",
     company: "Campanile",
@@ -303,6 +312,7 @@ export const careerData = [
   },
   {
     id: 9,
+    category: "Expérience Professionnelle",
     year: "Déc 2023 – Mar 2024",
     title: "Orientation et Développement Professionnel",
     company: "CFC Presqu'île",

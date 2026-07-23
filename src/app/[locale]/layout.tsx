@@ -22,6 +22,11 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+console.log("================================");
+console.log("Locale:", locale);
+console.log("Welcome message:", messages.hero.welcome);
+console.log("================================");
+
   return (
     <NextIntlClientProvider messages={messages}>
       {children}

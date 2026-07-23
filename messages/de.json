@@ -9,7 +9,7 @@
     "journeySection": {
   "label": "Beruflicher Werdegang",
   "heading": "Von Neugier zu Führungsstärke",
-  "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am {date}, bis hin zu Datenanalyse und Geschäftsbetrieb—jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
+  "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb—jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
   "relocationDate": "27. September 2022"
 },
   "navigation": {

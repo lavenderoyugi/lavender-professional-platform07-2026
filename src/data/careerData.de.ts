@@ -1,6 +1,7 @@
 export const careerData = [
   {
     id: 1,
+    category: "Berufserfahrung",
     year: "2008 – 2010",
     title: "Kundendienstmitarbeiterin • Computerbedienerin • Filialleiterin",
     company: "Royal Photo Studio",
@@ -49,6 +50,7 @@ export const careerData = [
 
   {
     id: 2,
+    category: "Berufserfahrung",
     year: "2010 – 2012",
     title: "Regionale Vertriebs- und Geschäftsentwicklungsleiterin",
     company: "House of Knowledge Publishers",
@@ -96,6 +98,7 @@ export const careerData = [
   },
   {
     id: 3,
+    category: "Berufserfahrung",
     year: "2012 – 2016",
     title: "Gründerin & Geschäftsführerin",
     company: "Lavish Boutique",
@@ -144,10 +147,12 @@ export const careerData = [
   },
   {
     id: 4,
-    year: "2019 – 2022",
-    title: "Gründerin | Leiterin Immobilienbetrieb",
-    company: "Tourlover Realtors (eingetragen als Hudden Realtors)",
-    location: "Diani, Kenia",
+    category: "Berufserfahrung",
+    year: "2016 – 2019",
+    title: "Gründerin & Geschäftsführerin",
+    company: "Lavish Boutique",
+    location: "Likoni, Lunga Lunga Road, Kenia",
+    
 
     summary:
       "Gründete und leitete ein Immobilien- und Hausverwaltungsunternehmen, das gewerbliche Immobilienverwaltung, Immobilienberatung, die Verwaltung von Ferienvermietungen und Gastgewerbe-Koordination anbot. Baute vertrauensvolle Beziehungen zu Eigentümern, Mietern und internationalen Besuchern auf und gewährleistete dabei hochwertigen Service.",
@@ -190,6 +195,7 @@ export const careerData = [
   },
   {
     id: 6,
+    category: "Berufserfahrung",
     year: "27. September 2022",
     title: "Ein Neuanfang in Frankreich",
     company: "Lebensübergang",
@@ -227,6 +233,7 @@ export const careerData = [
   },
   {
     id: 7,
+    category: "Berufserfahrung",
     year: "Apr 2023 – Sep 2023",
     title: "Reinigungskraft",
     company: "3S Propreté",
@@ -263,6 +270,7 @@ export const careerData = [
   },
   {
     id: 8,
+    category: "Berufserfahrung",
     year: "Okt 2023 – Dez 2023",
     title: "Restaurantfachkraft",
     company: "Campanile",
@@ -303,6 +311,7 @@ export const careerData = [
   },
   {
     id: 9,
+    category: "Berufserfahrung",
     year: "Dez 2023 – Mär 2024",
     title: "Berufsorientierung & Berufliche Weiterentwicklung",
     company: "CFC Presqu'île",

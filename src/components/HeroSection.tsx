@@ -1,134 +1,122 @@
 import Image from "next/image";
-import {useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <section className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-16 sm:px-8 sm:py-20 lg:gap-20 lg:px-8 lg:py-24 md:grid-cols-2">
+    <section className="relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-violet-700/20 blur-[120px]" />
+      <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-violet-500/10 blur-[100px]" />
 
-      {/* Left */}
+      <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-20 md:grid-cols-2 lg:px-10">
 
-      <div>
+        {/* LEFT SIDE */}
+        <div>
 
-        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.45em] text-violet-400">
-          {t("welcome")}
-        </p>
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.45em] text-violet-400">
+            {t("welcome")}
+          </p>
 
-        <h1 className="mb-8 text-5xl font-black leading-none sm:text-6xl lg:text-8xl">
+          <h1 className="mb-6 text-5xl font-black leading-none lg:text-7xl">
+            <span className="bg-gradient-to-r from-violet-300 via-violet-400 to-violet-600 bg-clip-text text-transparent">
+              {t("firstName")}
+            </span>
 
-          <span className="bg-gradient-to-r from-violet-300 via-violet-400 to-violet-600 bg-clip-text text-transparent">
-  {t("firstName")}
-</span>
+            <br />
 
-          <br />
+            <span className="text-white">
+              {t("lastName")}
+            </span>
+          </h1>
 
-          <span className="text-white">
-  {t("lastName")}
-</span>
+          <h2 className="mb-8 max-w-xl text-xl font-medium leading-relaxed text-gray-300">
+            {t("title1")}
+          </h2>
 
-        </h1>
+          <p className="mb-10 max-w-xl leading-8 text-gray-400">
+            {t("intro")}
+            <br />
+            <br />
+            {t("paragraph1")}
+            <br />
+            <br />
+            {t("paragraph2")}
+          </p>
 
-        <h2 className="mb-8 text-lg font-medium leading-relaxed text-gray-300 sm:text-xl lg:text-2xl">
-  {t("title1")}
-</h2>
+          {/* Buttons */}
 
-        <p className="mb-12 max-w-xl text-base leading-8 text-gray-400 sm:text-lg sm:leading-9">
-  {t("intro")}
+          <div className="flex flex-wrap gap-4">
 
-  <br />
-  <br />
+            <a
+              href="/cv.pdf"
+              className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
+            >
+              Download CV
+            </a>
 
-  {t("paragraph1")}
+            <a
+              href="#portfolio"
+              className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
+            >
+              View Portfolio
+            </a>
 
-  <br />
-  <br />
-
-  {t("paragraph2")}
-</p>
-
-        {/* Buttons */}
-
-        <div className="flex flex-wrap items-center gap-3 sm:gap-5">
-
-          <button className="rounded-xl bg-gradient-to-r from-violet-600 to-violet-500 px-5 py-3 text-sm font-medium transition duration-300 hover:scale-105 sm:px-8 sm:py-4 sm:text-base">
-            {t("downloadCV")}
-          </button>
-
-          <button className="rounded-xl border border-violet-500 px-5 py-3 text-sm transition duration-300 hover:bg-violet-900/20 sm:px-8 sm:py-4 sm:text-base">
-            {t("journeyButton")}
-          </button>
-
-          <button className="rounded-xl border border-violet-500 px-5 py-3 text-sm transition duration-300 hover:bg-violet-900/20 sm:px-8 sm:py-4 sm:text-base">
-            {t("portfolioButton")}
-          </button>
-
-        </div>
-
-        {/* Statistics */}
-
-        <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
-
-          <div>
-            <h3 className="text-2xl font-bold text-violet-400 sm:text-3xl">
-              5+
-            </h3>
-            <p className="mt-2 text-sm text-gray-400">
-              {t("experience")}
-            </p>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-bold text-violet-400 sm:text-3xl">
-              2
-            </h3>
-            <p className="mt-2 text-sm text-gray-400">
-              {t("countries")}
-            </p>
-          </div>
+          {/* Skills */}
 
-          <div>
-            <h3 className="text-2xl font-bold text-violet-400 sm:text-3xl">
-              10+
-            </h3>
-            <p className="mt-2 text-sm text-gray-400">
-              {t("projects")}
-            </p>
-          </div>
+          <div className="mt-12 flex flex-wrap gap-3">
 
-          <div>
-            <h3 className="text-2xl font-bold text-violet-400 sm:text-3xl">
-              ∞
-            </h3>
-            <p className="mt-2 text-sm text-gray-400">
-              {t("learning")}
-            </p>
+            {[
+              "Business Operations",
+              "Entrepreneurship",
+              "Data Analytics",
+              "Process Improvement",
+              "Power BI",
+              "SQL",
+              "Python",
+              "Project Management",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-violet-400/40 bg-violet-500/10 px-4 py-2 text-sm text-violet-200"
+              >
+                {skill}
+              </span>
+            ))}
+
           </div>
 
         </div>
-      </div>
 
-      {/* Right */}
+        {/* RIGHT SIDE */}
 
-      <div className="flex justify-center">
+        <div className="flex justify-center">
 
-        <div className="relative w-full max-w-[520px]">
+          <div className="relative">
 
-          <div className="absolute -inset-6 rounded-[40px] bg-violet-600/20 blur-3xl"></div>
+            <div className="absolute inset-0 rounded-[40px] bg-violet-500 blur-3xl opacity-20" />
 
-          <Image
-            src="/images/lavender-oyugi.png"
-            alt="Lavender Oyugi"
-            width={520}
-            height={680}
-            priority
-            className="relative h-auto w-full rounded-[32px] border border-violet-500/30 object-cover shadow-[0_0_90px_rgba(139,92,246,0.45)] transition duration-500 hover:scale-[1.02]"
-          />
+            <div className="relative overflow-hidden rounded-[40px] border border-violet-500/20 bg-zinc-900 shadow-2xl">
+
+              <Image
+                src="/images/lavender-oyugi.png"
+                alt="Lavender Oyugi"
+                width={520}
+                height={650}
+                priority
+                className="object-cover"
+              />
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
-
     </section>
   );
 }
