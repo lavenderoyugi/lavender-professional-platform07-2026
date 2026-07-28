@@ -45,19 +45,31 @@ export default function ContactSection() {
   setLoading(true);
 
   try {
+    alert("I reached the try block");
     await emailjs.send(
-      "service_rssf25h",
-      "template_5h3bogp",
-      {
-        name: form.name,
-        email: form.email,
-        title: form.subject,
-        subject: form.subject,
-        message: form.message,
-        time: new Date().toLocaleString(),
-      },
-      "ZepTaDWcW8NQEVy_7"
-    );
+  "service_rssf25h",
+  "template_5h3bogp",
+  {
+    name: form.name,
+    email: form.email,
+    title: form.subject,
+    subject: form.subject,
+    message: form.message,
+    time: new Date().toLocaleString(),
+  },
+  "ZepTaDWcW8NQEVy_7"
+);
+// Send event to Google Analytics
+if (typeof window !== "undefined" && typeof window.gtag === "function") {
+  console.log("Google Analytics detected");
+  window.gtag("event", "contact_form_submit", {
+    event_category: "Contact",
+    event_label: form.subject,
+    value: 1,
+  });
+} else {
+  console.log("Google Analytics NOT loaded");
+}
 
     alert(
       "✅ Thank you for contacting Lavender Oyugi!\n\nYour message has been received successfully.\n\nI will get back to you as soon as possible."
