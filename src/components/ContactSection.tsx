@@ -45,7 +45,7 @@ export default function ContactSection() {
   setLoading(true);
 
   try {
-    alert("I reached the try block");
+    alert("VERSION 2");
     await emailjs.send(
   "service_rssf25h",
   "template_5h3bogp",
@@ -60,19 +60,27 @@ export default function ContactSection() {
   "ZepTaDWcW8NQEVy_7"
 );
 // Send event to Google Analytics
-if (typeof window !== "undefined" && typeof window.gtag === "function") {
-  console.log("Google Analytics detected");
-  window.gtag("event", "contact_form_submit", {
-    event_category: "Contact",
-    event_label: form.subject,
-    value: 1,
-  });
-} else {
-  console.log("Google Analytics NOT loaded");
-}
+ alert("Email sent successfully");
+    console.log("After EmailJS");
 
+    alert("About to send GA event");
+
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      console.log("Google Analytics detected");
+      window.gtag("event", "contact_form_submit", {
+        event_category: "Contact",
+        event_label: form.subject,
+        value: 1,
+      });
+    } else {
+      console.log("Google Analytics NOT loaded");
+    }
+
+    alert("GA event sent");
+
+    // then your success alert
     alert(
-      "✅ Thank you for contacting Lavender Oyugi!\n\nYour message has been received successfully.\n\nI will get back to you as soon as possible."
+      "✅ Thank you for contacting Lavender Oyugi!\n\nYour message has been received successfully."
     );
 
     setForm({
@@ -83,14 +91,18 @@ if (typeof window !== "undefined" && typeof window.gtag === "function") {
     });
 
   } catch (error: any) {
-    console.error("EMAILJS ERROR:", error);
+  console.error("EMAILJS ERROR:", error);
 
-    alert(
-      "❌ Sorry, your message could not be sent.\n\nPlease try again in a few minutes or email me directly at:\n\nlavenderoyugi1@gmail.com"
-    );
-  } finally {
-    setLoading(false);
-  }
+  alert(JSON.stringify(error));
+
+  alert(error?.text || error?.message || "Unknown EmailJS error");
+
+  alert(
+    "❌ Sorry, your message could not be sent.\n\nPlease try again..."
+  );
+} finally {
+  setLoading(false);
+}
 };
   
   return (
