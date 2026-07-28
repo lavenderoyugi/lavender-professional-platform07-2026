@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@next/mdx": "^16.2.10",
+    "@next/third-parties": "^16.2.12",
     "@once-ui-system/core": "^1.7.12",
     "cookie": "^0.6.0",
     "gray-matter": "^4.0.3",
