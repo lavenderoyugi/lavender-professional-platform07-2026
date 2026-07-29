@@ -92,6 +92,11 @@
     "email": "Adresse e-mail",
     "subject": "Sujet",
     "message": "Écrivez votre message...",
-    "send": "Envoyer le message"
+    "send": "Envoyer le message",
+    "successTitle": "Message envoyé avec succès !",
+"successMessage": "Merci d'avoir contacté Lavender Oyugi. Votre message a bien été reçu. Je vous répondrai dans les meilleurs délais.",
+"errorTitle": "Échec de l'envoi",
+"errorMessage": "Désolé, votre message n'a pas pu être envoyé. Veuillez réessayer plus tard ou me contacter directement par e-mail.",
+"invalidEmail": "Veuillez saisir une adresse e-mail valide."
   }
 }

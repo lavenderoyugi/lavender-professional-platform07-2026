@@ -38,14 +38,13 @@ export default function ContactSection() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailRegex.test(form.email)) {
-    alert("Please enter a valid email address.");
+   alert(t("invalidEmail"));
     return;
   }
 
   setLoading(true);
 
   try {
-    alert("VERSION 2");
     await emailjs.send(
   "service_rssf25h",
   "template_5h3bogp",
@@ -60,28 +59,22 @@ export default function ContactSection() {
   "ZepTaDWcW8NQEVy_7"
 );
 // Send event to Google Analytics
- alert("Email sent successfully");
     console.log("After EmailJS");
 
-    alert("About to send GA event");
-
     if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      console.log("Google Analytics detected");
+      
       window.gtag("event", "contact_form_submit", {
         event_category: "Contact",
         event_label: form.subject,
         value: 1,
       });
     } else {
-      console.log("Google Analytics NOT loaded");
+      
     }
-
-    alert("GA event sent");
-
     // then your success alert
     alert(
-      "✅ Thank you for contacting Lavender Oyugi!\n\nYour message has been received successfully."
-    );
+  `✅ ${t("successTitle")}\n\n${t("successMessage")}`
+);
 
     setForm({
       name: "",
@@ -98,8 +91,8 @@ export default function ContactSection() {
   alert(error?.text || error?.message || "Unknown EmailJS error");
 
   alert(
-    "❌ Sorry, your message could not be sent.\n\nPlease try again..."
-  );
+  `❌ ${t("errorTitle")}\n\n${t("errorMessage")}`
+);
 } finally {
   setLoading(false);
 }
