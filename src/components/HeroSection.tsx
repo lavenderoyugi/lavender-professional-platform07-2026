@@ -71,14 +71,18 @@ export default function HeroSection() {
   className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
 >
   {t("downloadCV")}
+  </a>
+<a
+  href="#portfolio"
+  onClick={() =>
+    trackEvent("portfolio_click", {
+      language: t("portfolioButton"),
+    })
+  }
+  className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
+>
+  {t("portfolioButton")}
 </a>
-
-            <a
-              href="#portfolio"
-              className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
-            >
-              {t("portfolioButton")}
-            </a>
 
           </div>
 
