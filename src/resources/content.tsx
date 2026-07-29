@@ -266,9 +266,10 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  label: "Lavender Finds",
+  title: "Lavender Finds",
+  description:
+    "Curated vintage treasures, timeless home décor and meaningful finds discovered across France. Every object has a story waiting for a new home.",
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [

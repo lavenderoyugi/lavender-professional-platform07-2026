@@ -56,11 +56,11 @@ export default function Home() {
             </a>
 
             <a
-              href="#blog"
-              className="transition hover:text-violet-400"
-            >
-              {t("blog")}
-            </a>
+  href="/finds"
+  className="transition hover:text-violet-400"
+>
+  Lavender Finds
+</a>
 
             <a
               href="#contact"
@@ -117,12 +117,12 @@ export default function Home() {
               </a>
 
               <a
-                href="#blog"
-                className="transition hover:text-violet-400"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {t("blog")}
-              </a>
+  href="/finds"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  Lavender Finds
+</a>
 
               <a
                 href="#contact"
