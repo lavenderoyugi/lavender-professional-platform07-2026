@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { trackEvent } from "@/lib/analytics";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
@@ -61,11 +62,16 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-4">
 
             <a
-              href="/cv.pdf"
-              className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
-            >
-              {t("downloadCV")}
-            </a>
+  href="/cv.pdf"
+  onClick={() =>
+    trackEvent("download_cv", {
+      language: t("downloadCV"),
+    })
+  }
+  className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
+>
+  {t("downloadCV")}
+</a>
 
             <a
               href="#portfolio"
