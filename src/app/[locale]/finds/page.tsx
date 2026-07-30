@@ -1,34 +1,39 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import Navbar from "@/components/Navbar";
+
 export default function FindsPage() {
+  const t = useTranslations("finds");
+
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-6xl px-6 py-24">
+  <main className="min-h-screen bg-black text-white">
+
+    <Navbar />
+
+    <section className="mx-auto max-w-6xl px-6 py-24">
         <p className="mb-4 uppercase tracking-[0.35em] text-violet-400">
-          Welcome to
+          {t("welcome")}
         </p>
 
         <h1 className="mb-8 text-6xl font-bold text-violet-400">
-          Lavender Finds
+          {t("title")}
         </h1>
 
         <p className="max-w-3xl text-xl leading-9 text-gray-300">
-          Every treasure deserves a second story.
+          {t("tagline")}
         </p>
 
         <p className="mt-8 max-w-3xl text-lg leading-9 text-gray-400">
-          I travel across France searching for unique vintage décor,
-          elegant glassware, timeless collectibles and beautiful home
-          accessories.
+          {t("paragraph1")}
         </p>
 
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
-          Every item is carefully selected and photographed before being
-          offered a new home through my curated collection.
+          {t("paragraph2")}
         </p>
 
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
-          Whether you're decorating your home, searching for a unique gift,
-          or collecting beautiful vintage pieces, I hope you'll discover
-          something that inspires you.
+          {t("paragraph3")}
         </p>
       </section>
     </main>

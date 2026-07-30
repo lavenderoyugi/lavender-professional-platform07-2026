@@ -98,5 +98,14 @@
 "errorTitle": "Nachricht konnte nicht gesendet werden",
 "errorMessage": "Es tut uns leid, Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt per E-Mail.",
 "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+},
+
+"finds": {
+  "welcome": "WILLKOMMEN BEI",
+  "title": "Lavender Finds",
+  "tagline": "Jeder Schatz verdient eine zweite Geschichte.",
+  "paragraph1": "Ich reise durch Frankreich auf der Suche nach einzigartiger Vintage-Dekoration, elegantem Glas, zeitlosen Sammlerstücken und wunderschönen Wohnaccessoires.",
+  "paragraph2": "Jedes Stück wird sorgfältig ausgewählt und fotografiert, bevor es über meine kuratierte Kollektion ein neues Zuhause findet.",
+  "paragraph3": "Ob Sie Ihr Zuhause dekorieren, ein einzigartiges Geschenk suchen oder schöne Vintage-Stücke sammeln – ich hoffe, Sie entdecken etwas, das Sie inspiriert."
 }
 }

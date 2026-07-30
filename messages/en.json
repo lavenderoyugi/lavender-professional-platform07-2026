@@ -98,5 +98,14 @@
 "errorTitle": "Message Not Sent",
 "errorMessage": "Sorry, your message could not be sent. Please try again later or contact me directly by email.",
 "invalidEmail": "Please enter a valid email address."
-  }
+  },
+  
+"finds": {
+  "welcome": "WELCOME TO",
+  "title": "Lavender Finds",
+  "tagline": "Every treasure deserves a second story.",
+  "paragraph1": "I travel across France searching for unique vintage décor, elegant glassware, timeless collectibles and beautiful home accessories.",
+  "paragraph2": "Every item is carefully selected and photographed before being offered a new home through my curated collection.",
+  "paragraph3": "Whether you're decorating your home, searching for a unique gift, or collecting beautiful vintage pieces, I hope you'll discover something that inspires you."
+}
 }

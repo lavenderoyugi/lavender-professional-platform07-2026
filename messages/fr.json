@@ -98,5 +98,14 @@
 "errorTitle": "Échec de l'envoi",
 "errorMessage": "Désolé, votre message n'a pas pu être envoyé. Veuillez réessayer plus tard ou me contacter directement par e-mail.",
 "invalidEmail": "Veuillez saisir une adresse e-mail valide."
-  }
+  },
+  
+"finds": {
+  "welcome": "BIENVENUE À",
+  "title": "Lavender Finds",
+  "tagline": "Chaque trésor mérite une seconde histoire.",
+  "paragraph1": "Je parcours la France à la recherche de décorations vintage uniques, de verrerie élégante, d'objets de collection intemporels et de magnifiques accessoires pour la maison.",
+  "paragraph2": "Chaque objet est soigneusement sélectionné et photographié avant d'être proposé à un nouveau foyer à travers ma collection.",
+  "paragraph3": "Que vous décoriez votre maison, recherchiez un cadeau unique ou collectionniez de belles pièces vintage, j'espère que vous découvrirez quelque chose qui vous inspirera."
+}
 }
