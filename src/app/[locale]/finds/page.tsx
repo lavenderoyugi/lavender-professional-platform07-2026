@@ -35,6 +35,31 @@ export default function FindsPage() {
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
           {t("paragraph3")}
         </p>
+        <div className="mt-20 rounded-2xl border border-violet-500/20 bg-zinc-900/60 p-10 text-center">
+
+  <h2 className="text-3xl font-bold text-violet-400">
+    New treasures every week ✨
+  </h2>
+
+  <p className="mx-auto mt-4 max-w-2xl text-gray-300">
+    Follow Lavender Finds on Vinted, Leboncoin and social media to discover
+    carefully curated vintage décor, elegant glassware and unique home
+    accessories.
+  </p>
+
+  <div className="mt-8 flex flex-wrap justify-center gap-4">
+
+    <button className="rounded-full bg-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-400">
+      View Collection
+    </button>
+
+    <button className="rounded-full border border-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-500 hover:text-black">
+      Follow Lavender Finds
+    </button>
+
+  </div>
+
+</div>
       </section>
     </main>
   );
