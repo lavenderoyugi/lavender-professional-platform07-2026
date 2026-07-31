@@ -1,16 +1,15 @@
-type ProductCardProps = {
-  image: string;
-  title: string;
-  description: string;
-  price: string;
-};
+import { Product } from "@/lavender-finds/products";
 
+type ProductCardProps = {
+  product: Product;
+};
 export default function ProductCard({
-  image,
-  title,
-  description,
-  price,
+  product,
 }: ProductCardProps) {
+    const image = product.images[0];
+const title = product.title;
+const description = product.description;
+const price = "View Story";
   return (
     <div className="group overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 transition duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-500/20">
 

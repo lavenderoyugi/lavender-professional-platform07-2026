@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
+import ProductCard from "@/components/ProductCard";
+import { products } from "@/lavender-finds/products";
 
 export default function FindsPage() {
   const t = useTranslations("finds");
@@ -31,6 +33,25 @@ export default function FindsPage() {
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
           {t("paragraph2")}
         </p>
+        <div className="mt-20 border-l-4 border-violet-500 pl-8">
+
+  <p className="text-sm uppercase tracking-[0.4em] text-violet-400">
+    Curated European Treasures
+  </p>
+
+  <h2 className="mt-4 text-5xl font-bold leading-tight">
+    Every piece has
+    <br />
+    a story worth telling.
+  </h2>
+
+  <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
+    Lavender Finds is more than a collection of vintage objects.
+    Every piece is carefully discovered, selected and photographed
+    before finding a new home.
+  </p>
+
+</div>
 
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
           {t("paragraph3")}
@@ -58,7 +79,22 @@ export default function FindsPage() {
     </button>
 
   </div>
+  <h2 className="mt-24 mb-10 text-center text-5xl font-bold text-violet-400">
+  Featured Collection
+</h2>
 
+<div className="grid gap-10 md:grid-cols-3">
+    {products.map((product) => (
+  <ProductCard
+    key={product.id}
+    image={product.images[0]}
+    title={product.title}
+    description={product.description}
+    price="View Details"
+  />
+))}
+
+</div>
 </div>
       </section>
     </main>
