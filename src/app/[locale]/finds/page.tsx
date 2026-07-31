@@ -87,11 +87,8 @@ export default function FindsPage() {
     {products.map((product) => (
   <ProductCard
     key={product.id}
-    image={product.images[0]}
-    title={product.title}
-    description={product.description}
-    price="View Details"
-  />
+    product={product}
+/>
 ))}
 
 </div>
