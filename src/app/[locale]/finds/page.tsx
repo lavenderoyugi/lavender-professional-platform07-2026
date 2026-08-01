@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
@@ -7,6 +8,11 @@ import { products } from "@/lavender-finds/products";
 
 export default function FindsPage() {
   const t = useTranslations("finds");
+  const [filter, setFilter] = useState("all");
+  const filteredProducts = products.filter((product) => {
+  if (filter === "all") return true;
+  return product.status === filter;
+});
 
   return (
   <main className="min-h-screen bg-black text-white">
@@ -82,9 +88,45 @@ export default function FindsPage() {
   <h2 className="mt-24 mb-10 text-center text-5xl font-bold text-violet-400">
   Featured Collection
 </h2>
+<div className="mb-12 flex flex-wrap justify-center gap-4">
+
+  <button
+    onClick={() => setFilter("all")}
+    className={`rounded-full px-6 py-3 font-semibold transition ${
+      filter === "all"
+        ? "bg-violet-500 text-white"
+        : "border border-violet-500 text-violet-400 hover:bg-violet-500 hover:text-white"
+    }`}
+  >
+    All
+  </button>
+
+  <button
+    onClick={() => setFilter("available")}
+    className={`rounded-full px-6 py-3 font-semibold transition ${
+      filter === "available"
+        ? "bg-green-600 text-white"
+        : "border border-green-600 text-green-400 hover:bg-green-600 hover:text-white"
+    }`}
+  >
+    Available
+  </button>
+
+  <button
+    onClick={() => setFilter("sold")}
+    className={`rounded-full px-6 py-3 font-semibold transition ${
+      filter === "sold"
+        ? "bg-red-600 text-white"
+        : "border border-red-600 text-red-400 hover:bg-red-600 hover:text-white"
+    }`}
+  >
+    Sold
+  </button>
+
+</div>
 
 <div className="grid gap-10 md:grid-cols-3">
-    {products.map((product) => (
+    {filteredProducts.map((product) => (
   <ProductCard
     key={product.id}
     product={product}
