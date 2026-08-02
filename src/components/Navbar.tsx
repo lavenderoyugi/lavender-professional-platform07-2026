@@ -1,11 +1,13 @@
 "use client";
 
+import { Link, usePathname } from "@/i18n/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("navigation");
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -26,25 +28,60 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 md:flex">
 
-          <a href="#" className="transition hover:text-violet-400">
-            {t("home")}
-          </a>
+          <Link
+  href="/"
+  className={
+    pathname === "/"
+      ? "text-violet-400 font-semibold"
+      : "transition hover:text-violet-400"
+  }
+>
+  {t("home")}
+</Link>
 
-          <a href="#journey" className="transition hover:text-violet-400">
-            {t("journey")}
-          </a>
+<Link
+  href="/#journey"
+  className={
+    pathname === "/#journey"
+      ? "text-violet-400 font-semibold"
+      : "transition hover:text-violet-400"
+  }
+>
+  {t("journey")}
+</Link>
 
-          <a href="#portfolio" className="transition hover:text-violet-400">
-            {t("portfolio")}
-          </a>
+<Link
+  href="/#portfolio"
+  className={
+    pathname === "/#portfolio"
+      ? "text-violet-400 font-semibold"
+      : "transition hover:text-violet-400"
+  }
+>
+  {t("portfolio")}
+</Link>
 
-          <a href="/finds" className="transition hover:text-violet-400">
-            Lavender Finds
-          </a>
+<Link
+  href="/finds"
+  className={
+    pathname === "/finds"
+      ? "text-violet-400 font-semibold"
+      : "transition hover:text-violet-400"
+  }
+>
+  Lavender Finds
+</Link>
 
-          <a href="#contact" className="transition hover:text-violet-400">
-            {t("contact")}
-          </a>
+<Link
+  href="/#contact"
+  className={
+    pathname === "/#contact"
+      ? "text-violet-400 font-semibold"
+      : "transition hover:text-violet-400"
+  }
+>
+  {t("contact")}
+</Link>
 
           <div className="h-6 w-px bg-white/20" />
 
@@ -66,46 +103,45 @@ export default function Navbar() {
         <div className="border-t border-white/10 bg-zinc-950 md:hidden">
           <div className="flex flex-col gap-6 px-6 py-6">
 
-            <a
-              href="#"
-              className="transition hover:text-violet-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t("home")}
-            </a>
+            <Link
+  href="/"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  {t("home")}
+</Link>
 
-            <a
-              href="#journey"
-              className="transition hover:text-violet-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t("journey")}
-            </a>
+<Link
+  href="/#journey"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  {t("journey")}
+</Link>
 
-            <a
-              href="#portfolio"
-              className="transition hover:text-violet-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t("portfolio")}
-            </a>
+<Link
+  href="/#portfolio"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  {t("portfolio")}
+</Link>
 
-            <a
-              href="/finds"
-              className="transition hover:text-violet-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Lavender Finds
-            </a>
+<Link
+  href="/finds"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  Lavender Finds
+</Link>
 
-            <a
-              href="#contact"
-              className="transition hover:text-violet-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t("contact")}
-            </a>
-
+<Link
+  href="/#contact"
+  className="transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  {t("contact")}
+</Link>
             <div className="border-t border-white/10 pt-4">
               <LanguageSwitcher />
             </div>

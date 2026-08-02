@@ -9,9 +9,17 @@ import { products } from "@/lavender-finds/products";
 export default function FindsPage() {
   const t = useTranslations("finds");
   const [filter, setFilter] = useState("all");
+  const [search, setSearch] = useState("");
   const filteredProducts = products.filter((product) => {
-  if (filter === "all") return true;
-  return product.status === filter;
+  const matchesStatus =
+    filter === "all" || product.status === filter;
+
+  const matchesSearch =
+    product.title.toLowerCase().includes(search.toLowerCase()) ||
+    product.description.toLowerCase().includes(search.toLowerCase()) ||
+    product.category.toLowerCase().includes(search.toLowerCase());
+
+  return matchesStatus && matchesSearch;
 });
 
   return (
@@ -62,7 +70,7 @@ export default function FindsPage() {
         <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
           {t("paragraph3")}
         </p>
-        <div className="mt-20 rounded-2xl border border-violet-500/20 bg-zinc-900/60 p-10 text-center">
+       <div className="mt-20 rounded-2xl border border-violet-500/20 bg-zinc-900/60 p-10 text-center">
 
   <h2 className="text-3xl font-bold text-violet-400">
     New treasures every week ✨
@@ -75,7 +83,6 @@ export default function FindsPage() {
   </p>
 
   <div className="mt-8 flex flex-wrap justify-center gap-4">
-
     <button className="rounded-full bg-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-400">
       View Collection
     </button>
@@ -83,11 +90,14 @@ export default function FindsPage() {
     <button className="rounded-full border border-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-500 hover:text-black">
       Follow Lavender Finds
     </button>
-
   </div>
-  <h2 className="mt-24 mb-10 text-center text-5xl font-bold text-violet-400">
+
+</div>
+
+<h2 className="mt-24 mb-10 text-center text-5xl font-bold text-violet-400">
   Featured Collection
 </h2>
+
 <div className="mb-12 flex flex-wrap justify-center gap-4">
 
   <button
@@ -125,17 +135,33 @@ export default function FindsPage() {
 
 </div>
 
-<div className="grid gap-10 md:grid-cols-3">
-    {filteredProducts.map((product) => (
-  <ProductCard
-    key={product.id}
-    product={product}
-/>
-))}
+<div className="mt-8 mb-12 flex justify-center">
+  <div className="relative w-full max-w-lg">
 
+    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
+      🔍
+    </span>
+
+    <input
+      type="text"
+      placeholder="Search by title, category or description..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="w-full rounded-xl border border-white/10 bg-white/5 py-3 pl-12 pr-5 text-white placeholder:text-gray-500 focus:border-violet-500 focus:outline-none"
+    />
+
+  </div>
 </div>
+
+<div className="grid gap-10 md:grid-cols-3">
+  {filteredProducts.map((product) => (
+    <ProductCard
+      key={product.id}
+      product={product}
+    />
+  ))}
 </div>
-      </section>
-    </main>
-  );
+</section>
+</main>
+);
 }

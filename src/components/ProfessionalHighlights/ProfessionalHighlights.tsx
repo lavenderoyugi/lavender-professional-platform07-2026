@@ -65,7 +65,10 @@ export default function ProfessionalHighlights() {
   ];
 
   return (
-    <section className="w-full bg-black py-24">
+  <section
+    id="portfolio"
+    className="w-full bg-black py-24"
+  >
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mb-16 text-center">
