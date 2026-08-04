@@ -1,4 +1,53 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
+
 export default function DashboardStats() {
+  const [stats, setStats] = useState({
+    products: 0,
+    available: 0,
+    sold: 0,
+    revenue: 0,
+  });
+
+  useEffect(() => {
+    loadStats();
+  }, []);
+
+  async function loadStats() {
+    const { data, error } = await supabase
+      .from("products")
+      .select("*");
+
+    if (error) {
+      console.log(error);
+      return;
+    }
+
+    const products = data.length;
+
+    const available = data.filter(
+      (item) => item.status === "Available"
+    ).length;
+
+    const sold = data.filter(
+      (item) => item.status === "Sold"
+    ).length;
+
+    const revenue = data.reduce(
+      (sum, item) => sum + Number(item.price),
+      0
+    );
+
+    setStats({
+      products,
+      available,
+      sold,
+      revenue,
+    });
+  }
+
   return (
     <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
@@ -8,7 +57,7 @@ export default function DashboardStats() {
         </p>
 
         <h2 className="mt-3 text-4xl font-bold">
-          2
+          {stats.products}
         </h2>
       </div>
 
@@ -18,7 +67,7 @@ export default function DashboardStats() {
         </p>
 
         <h2 className="mt-3 text-4xl font-bold text-green-400">
-          1
+          {stats.available}
         </h2>
       </div>
 
@@ -28,7 +77,7 @@ export default function DashboardStats() {
         </p>
 
         <h2 className="mt-3 text-4xl font-bold text-red-400">
-          1
+          {stats.sold}
         </h2>
       </div>
 
@@ -38,7 +87,7 @@ export default function DashboardStats() {
         </p>
 
         <h2 className="mt-3 text-4xl font-bold text-yellow-400">
-          €74
+          €{stats.revenue}
         </h2>
       </div>
 

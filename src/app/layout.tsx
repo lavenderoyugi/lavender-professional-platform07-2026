@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import type { Metadata } from "next";
 import { Providers } from "@/components/Providers";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -32,6 +33,17 @@ export default function RootLayout({
      <body className="min-h-full flex flex-col">
   <Providers>
     {children}
+    <Toaster
+  position="top-right"
+  toastOptions={{
+    duration: 2500,
+    style: {
+      background: "#18181b",
+      color: "#fff",
+      border: "1px solid #7c3aed",
+    },
+  }}
+/>
   </Providers>
 
   <GoogleAnalytics gaId="G-JKF89RMDXR" />

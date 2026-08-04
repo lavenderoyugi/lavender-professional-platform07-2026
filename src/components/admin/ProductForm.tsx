@@ -1,10 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
+import toast from "react-hot-toast";
+type Product = {
+  id?: string;
+  name: string;
+  price: number | string;
+  category: string;
+  status: string;
+  description?: string;
+};
 
-export default function ProductForm() {
-    const [product, setProduct] = useState({
+export default function ProductForm({
+  selectedProduct,
+}: {
+  selectedProduct: Product | null;
+}) {
+    const [product, setProduct] = useState<Product>({
   name: "",
   price: "",
   category: "Lighting",
@@ -25,12 +38,15 @@ const saveProduct = async () => {
     ]);
 
   if (error) {
-    alert(error.message);
-    return;
-  }
+  toast.error(error.message);
+  return;
+}
 
-  alert("Product saved!");
+toast.success("Product saved successfully!");
+
+setTimeout(() => {
   window.location.reload();
+}, 2000);
 
   setProduct({
     name: "",

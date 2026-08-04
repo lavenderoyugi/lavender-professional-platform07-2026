@@ -1,9 +1,23 @@
+"use client";
+
+import { useState } from "react";
+
 import DashboardStats from "@/components/admin/DashboardStats";
 import Navbar from "@/components/Navbar";
 import ProductsList from "@/components/admin/ProductsList";
 import ProductForm from "@/components/admin/ProductForm";
 
+type Product = {
+  id: string;
+  name: string;
+  price: number;
+  category: string;
+  status: string;
+  description?: string;
+};
 export default function AdminPage() {
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Navbar />
@@ -24,9 +38,13 @@ export default function AdminPage() {
 
         <DashboardStats />
 
-       <ProductsList />
+        <ProductsList
+          onEdit={setSelectedProduct}
+        />
 
-        <ProductForm />
+        <ProductForm
+          selectedProduct={selectedProduct}
+        />
       </section>
     </main>
   );
