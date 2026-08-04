@@ -1,6 +1,6 @@
 import DashboardStats from "@/components/admin/DashboardStats";
 import Navbar from "@/components/Navbar";
-import ProductTable from "@/components/admin/ProductTable";
+import ProductsList from "@/components/admin/ProductsList";
 import ProductForm from "@/components/admin/ProductForm";
 
 export default function AdminPage() {
@@ -24,7 +24,7 @@ export default function AdminPage() {
 
         <DashboardStats />
 
-        <ProductTable />
+       <ProductsList />
 
         <ProductForm />
       </section>

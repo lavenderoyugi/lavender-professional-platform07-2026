@@ -30,6 +30,7 @@ const saveProduct = async () => {
   }
 
   alert("Product saved!");
+  window.location.reload();
 
   setProduct({
     name: "",
