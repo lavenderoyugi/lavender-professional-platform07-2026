@@ -24,7 +24,44 @@ export default function ProductForm({
   status: "Available",
   description: "",
 });
+useEffect(() => {
+  if (selectedProduct) {
+    setProduct({
+      id: selectedProduct.id,
+      name: selectedProduct.name,
+      price: selectedProduct.price,
+      category: selectedProduct.category,
+      status: selectedProduct.status,
+      description: selectedProduct.description || "",
+    });
+  }
+}, [selectedProduct]);
 const saveProduct = async () => {
+    if (product.id) {
+  const { error } = await supabase
+    .from("products")
+    .update({
+      name: product.name,
+      price: Number(product.price),
+      category: product.category,
+      status: product.status,
+      description: product.description,
+    })
+    .eq("id", product.id);
+
+  if (error) {
+    toast.error(error.message);
+    return;
+  }
+
+  toast.success("Product updated successfully!");
+
+  setTimeout(() => {
+    window.location.reload();
+  }, 2000);
+
+  return;
+}
   const { error } = await supabase
     .from("products")
     .insert([
@@ -170,11 +207,11 @@ setTimeout(() => {
         </div>
 
         <button
-          onClick={saveProduct}
-          className="rounded-xl bg-violet-600 py-4 font-semibold transition hover:bg-violet-500"
-        >
-          Save Product
-        </button>
+  onClick={saveProduct}
+  className="rounded-xl bg-violet-600 py-4 font-semibold transition hover:bg-violet-500"
+>
+  {product.id ? "Update Product" : "Save Product"}
+</button>
 
       </div>
 
