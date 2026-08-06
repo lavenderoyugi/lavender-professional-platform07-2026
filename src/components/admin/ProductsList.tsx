@@ -10,6 +10,7 @@ type Product = {
   category: string;
   status: string;
   description?: string;
+  image_url?: string;
 };
 export default function ProductsList({
   onEdit,
@@ -74,15 +75,16 @@ export default function ProductsList({
 
       <table className="w-full">
 
-        <thead>
-          <tr className="border-b border-white/10 text-left text-gray-400">
-            <th className="py-4">Product</th>
-            <th>Price</th>
-            <th>Status</th>
-            <th>Category</th>
-<th>Actions</th>
-          </tr>
-        </thead>
+       <thead>
+  <tr className="border-b border-white/10 text-left text-gray-400">
+    <th className="py-4">Image</th>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Status</th>
+    <th>Category</th>
+    <th>Actions</th>
+  </tr>
+</thead>
 
         <tbody>
 
@@ -91,9 +93,23 @@ export default function ProductsList({
               key={product.id}
               className="border-b border-white/5"
             >
-              <td className="py-6 font-semibold">
-                {product.name}
-              </td>
+              <td className="py-4">
+  {product.image_url ? (
+    <img
+      src={product.image_url}
+      alt={product.name}
+      className="h-16 w-16 rounded-lg object-cover border border-white/10"
+    />
+  ) : (
+    <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-white/10 text-xs text-gray-500">
+      No Image
+    </div>
+  )}
+</td>
+
+<td className="py-6 font-semibold">
+  {product.name}
+</td>
 
               <td>
                 €{product.price}
