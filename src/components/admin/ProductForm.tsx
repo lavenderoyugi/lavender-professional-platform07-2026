@@ -24,6 +24,7 @@ export default function ProductForm({
   status: "Available",
   description: "",
 });
+const [image, setImage] = useState<File | null>(null);
 useEffect(() => {
   if (selectedProduct) {
     setProduct({
@@ -37,16 +38,42 @@ useEffect(() => {
   }
 }, [selectedProduct]);
 const saveProduct = async () => {
+    let imageUrl = "";
+
+if (image) {
+  const cleanName = image.name.replace(/[^a-zA-Z0-9.-]/g, "_");
+  const fileName = `${Date.now()}-${cleanName}`;
+
+  const { error: uploadError } = await supabase.storage
+    .from("products")
+    .upload(fileName, image, {
+      cacheControl: "3600",
+      upsert: true,
+    });
+
+  if (uploadError) {
+    toast.error(uploadError.message);
+    return;
+  }
+
+  const { data } = supabase.storage
+    .from("products")
+    .getPublicUrl(fileName);
+
+  imageUrl = data.publicUrl;
+}
     if (product.id) {
   const { error } = await supabase
     .from("products")
-    .update({
-      name: product.name,
-      price: Number(product.price),
-      category: product.category,
-      status: product.status,
-      description: product.description,
-    })
+    
+  .update({
+  name: product.name,
+  price: Number(product.price),
+  category: product.category,
+  status: product.status,
+  description: product.description,
+  image_url: imageUrl,
+})
     .eq("id", product.id);
 
   if (error) {
@@ -65,15 +92,15 @@ const saveProduct = async () => {
   const { error } = await supabase
     .from("products")
     .insert([
-      {
-        name: product.name,
-        price: Number(product.price),
-        category: product.category,
-        status: product.status,
-        description: product.description,
-      },
-    ]);
-
+  {
+    name: product.name,
+    price: Number(product.price),
+    category: product.category,
+    status: product.status,
+    description: product.description,
+    image_url: imageUrl,
+  },
+]);
   if (error) {
   toast.error(error.message);
   return;
@@ -205,6 +232,22 @@ setTimeout(() => {
             className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 outline-none focus:border-violet-500"
           />
         </div>
+        <div>
+  <label className="mb-2 block text-sm text-gray-300">
+    Product Image
+  </label>
+
+  <input
+  type="file"
+  accept="image/*"
+  onChange={(e) => {
+    if (e.target.files?.[0]) {
+      setImage(e.target.files[0]);
+    }
+  }}
+  className="w-full rounded-xl border border-white/10 bg-black px-4 py-3"
+/>
+</div>
 
         <button
   onClick={saveProduct}
