@@ -87,7 +87,7 @@ export default function DashboardStats() {
         </p>
 
         <h2 className="mt-3 text-4xl font-bold text-yellow-400">
-          €{stats.revenue}
+        €{stats.revenue.toFixed(2)}
         </h2>
       </div>
 

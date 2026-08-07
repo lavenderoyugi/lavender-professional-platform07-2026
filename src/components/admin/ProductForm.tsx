@@ -24,7 +24,7 @@ export default function ProductForm({
   status: "Available",
   description: "",
 });
-const [image, setImage] = useState<File | null>(null);
+const [images, setImages] = useState<File[]>([]);
 useEffect(() => {
   if (selectedProduct) {
     setProduct({
@@ -40,8 +40,12 @@ useEffect(() => {
 const saveProduct = async () => {
     let imageUrl = "";
 
-if (image) {
+let imageUrls: string[] = [];
+
+for (const image of images) {
+
   const cleanName = image.name.replace(/[^a-zA-Z0-9.-]/g, "_");
+
   const fileName = `${Date.now()}-${cleanName}`;
 
   const { error: uploadError } = await supabase.storage
@@ -60,7 +64,7 @@ if (image) {
     .from("products")
     .getPublicUrl(fileName);
 
-  imageUrl = data.publicUrl;
+  imageUrls.push(data.publicUrl);
 }
     if (product.id) {
   const { error } = await supabase
@@ -72,7 +76,8 @@ if (image) {
   category: product.category,
   status: product.status,
   description: product.description,
-  image_url: imageUrl,
+ image_url: imageUrls[0] || null,
+gallery: imageUrls,
 })
     .eq("id", product.id);
 
@@ -98,7 +103,8 @@ if (image) {
     category: product.category,
     status: product.status,
     description: product.description,
-    image_url: imageUrl,
+    image_url: imageUrls[0] || null,
+gallery: imageUrls,
   },
 ]);
   if (error) {
@@ -237,12 +243,13 @@ setTimeout(() => {
     Product Image
   </label>
 
-  <input
+<input
   type="file"
   accept="image/*"
+  multiple
   onChange={(e) => {
-    if (e.target.files?.[0]) {
-      setImage(e.target.files[0]);
+    if (e.target.files) {
+      setImages(Array.from(e.target.files));
     }
   }}
   className="w-full rounded-xl border border-white/10 bg-black px-4 py-3"

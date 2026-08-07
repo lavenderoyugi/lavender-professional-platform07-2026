@@ -1,26 +1,80 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
-import { products } from "@/lavender-finds/products";
+import { supabase } from "@/lib/supabase";
 
 export default function FindsPage() {
   const t = useTranslations("finds");
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
-  const filteredProducts = products.filter((product) => {
-  const matchesStatus =
-    filter === "all" || product.status === filter;
+  const [products, setProducts] = useState<any[]>([]);
+const [loading, setLoading] = useState(true);
+useEffect(() => {
+  async function fetchProducts() {
+    const { data, error } = await supabase
+      .from("products")
+      .select("*")
+      .order("created_at", { ascending: false });
 
-  const matchesSearch =
-    product.title.toLowerCase().includes(search.toLowerCase()) ||
-    product.description.toLowerCase().includes(search.toLowerCase()) ||
-    product.category.toLowerCase().includes(search.toLowerCase());
+    if (error) {
+      console.error(error);
+    } else {
+      setProducts(data || []);
+    }
 
-  return matchesStatus && matchesSearch;
-});
+    setLoading(false);
+  }
+
+  fetchProducts();
+}, []);
+  
+    const filteredProducts = products
+  .map((product) => {
+    const status: "available" | "sold" =
+      product.status === "Sold" ? "sold" : "available";
+
+    return {
+      id: product.id,
+      slug: product.slug || product.id,
+      title: product.name,
+      description: product.description || "",
+      price: `€${product.price}`,
+      category: product.category,
+      country: "France",
+      images: [
+        product.image_url || "/images/placeholder.jpg",
+      ],
+      featured: product.featured || false,
+      condition: "Excellent condition",
+      story: "",
+      dimensions: "",
+      materials: "",
+      year: "",
+      vinted: "",
+      leboncoin: "",
+      status,
+    };
+  })
+  .filter((product) => {
+    const matchesStatus =
+      filter === "all" || product.status === filter;
+
+    const matchesSearch =
+      product.title
+        .toLowerCase()
+        .includes(search.toLowerCase()) ||
+      product.description
+        .toLowerCase()
+        .includes(search.toLowerCase()) ||
+      product.category
+        .toLowerCase()
+        .includes(search.toLowerCase());
+
+    return matchesStatus && matchesSearch;
+  });
 
   return (
   <main className="min-h-screen bg-black text-white">
