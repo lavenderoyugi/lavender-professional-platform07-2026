@@ -5,37 +5,135 @@ import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
 type Product = {
   id?: string;
+
+  // Basic
   name: string;
-  price: number | string;
+  description: string;
   category: string;
-  status: string;
-  description?: string;
+
+  // Prices
+  price: number | string;
+  purchase_price: number | string;
+  listing_price: number | string;
+  selling_price: number | string;
+
+  // Inventory
+  stock: number;
+  sku: string;
+
+  // Status
+  status: "Available" | "Sold";
+  // Images
+image_url: string;
+gallery: string[];
+
+  // Product Information
+  condition: string;
+  brand: string;
+  manufacturer: string;
+  material: string;
+  dimensions: string;
+  year: string;
+  origin_country: string;
+
+  // Extra Details
+  weight: number | string;
+  color: string;
+  style: string;
+
+  // Marketplace
+  vinted: string;
+  leboncoin: string;
+
+  // Visibility
+  featured: boolean;
+  published: boolean;
 };
 
 export default function ProductForm({
   selectedProduct,
 }: {
-  selectedProduct: Product | null;
+  selectedProduct: any;
 }) {
     const [product, setProduct] = useState<Product>({
   name: "",
-  price: "",
-  category: "Lighting",
-  status: "Available",
   description: "",
+
+  category: "Decoration",
+
+  price: "",
+  purchase_price: "",
+  listing_price: "",
+  selling_price: "",
+
+  stock: 1,
+  sku: "",
+
+  status: "Available",
+  image_url: "",
+gallery: [],
+
+  condition: "",
+  brand: "",
+  manufacturer: "",
+  material: "",
+  dimensions: "",
+  year: "",
+  origin_country: "",
+
+  weight: "",
+  color: "",
+  style: "",
+
+  vinted: "",
+  leboncoin: "",
+
+  featured: false,
+  published: true,
 });
 const [images, setImages] = useState<File[]>([]);
 useEffect(() => {
-  if (selectedProduct) {
-    setProduct({
-      id: selectedProduct.id,
-      name: selectedProduct.name,
-      price: selectedProduct.price,
-      category: selectedProduct.category,
-      status: selectedProduct.status,
-      description: selectedProduct.description || "",
-    });
-  }
+  if (!selectedProduct) return;
+
+  setProduct({
+    id: selectedProduct.id,
+
+    name: selectedProduct.name || "",
+    description: selectedProduct.description || "",
+
+    category: selectedProduct.category || "Decoration",
+
+    price: selectedProduct.price || "",
+    purchase_price: selectedProduct.purchase_price || "",
+    listing_price: selectedProduct.listing_price || "",
+    selling_price: selectedProduct.selling_price || "",
+
+    stock: selectedProduct.stock || 1,
+    sku: selectedProduct.sku || "",
+
+    status: selectedProduct.status || "Available",
+
+    image_url: selectedProduct.image_url || "",
+    gallery: selectedProduct.gallery || [],
+
+    condition: selectedProduct.condition || "",
+    brand: selectedProduct.brand || "",
+    manufacturer: selectedProduct.manufacturer || "",
+    material: selectedProduct.material || "",
+    dimensions: selectedProduct.dimensions || "",
+    year: selectedProduct.year || "",
+    origin_country: selectedProduct.origin_country || "",
+
+    weight: selectedProduct.weight || "",
+    color: selectedProduct.color || "",
+    style: selectedProduct.style || "",
+
+    vinted: selectedProduct.vinted || "",
+    leboncoin: selectedProduct.leboncoin || "",
+
+    featured: selectedProduct.featured ?? false,
+    published: selectedProduct.published ?? true,
+  });
 }, [selectedProduct]);
 const saveProduct = async () => {
     let imageUrl = "";
@@ -119,12 +217,42 @@ setTimeout(() => {
 }, 2000);
 
   setProduct({
-    name: "",
-    price: "",
-    category: "Lighting",
-    status: "Available",
-    description: "",
-  });
+  name: "",
+  description: "",
+
+  category: "Decoration",
+
+  price: "",
+  purchase_price: "",
+  listing_price: "",
+  selling_price: "",
+
+  stock: 1,
+  sku: "",
+
+  status: "Available",
+
+  image_url: "",
+  gallery: [],
+
+  brand: "",
+  material: "",
+  condition: "",
+  dimensions: "",
+  year: "",
+  origin_country: "",
+
+  weight: "",
+  color: "",
+  style: "",
+  manufacturer: "",
+
+  vinted: "",
+  leboncoin: "",
+
+  featured: false,
+  published: true,
+});
 };
   return (
     <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8">
@@ -210,7 +338,7 @@ setTimeout(() => {
             onChange={(e) =>
               setProduct({
                 ...product,
-                status: e.target.value,
+                status: e.target.value as "Available" | "Sold",
               })
             }
             className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 outline-none focus:border-violet-500"

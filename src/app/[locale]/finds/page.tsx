@@ -5,12 +5,13 @@ import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
 import { supabase } from "@/lib/supabase";
+import type { Product } from "@/types";
 
 export default function FindsPage() {
   const t = useTranslations("finds");
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
-  const [products, setProducts] = useState<any[]>([]);
+ const [products, setProducts] = useState<Product[]>([]);
 const [loading, setLoading] = useState(true);
 useEffect(() => {
   async function fetchProducts() {
@@ -39,9 +40,9 @@ useEffect(() => {
     return {
       id: product.id,
       slug: product.slug || product.id,
-      title: product.name,
+      title: product.name || "Untitled Product",
       description: product.description || "",
-      price: `€${product.price}`,
+     price: product.price,
       category: product.category,
       country: "France",
       images: [
@@ -63,14 +64,14 @@ useEffect(() => {
       filter === "all" || product.status === filter;
 
     const matchesSearch =
-      product.title
-        .toLowerCase()
+  (product.title || "")
+  .toLowerCase()
         .includes(search.toLowerCase()) ||
-      product.description
-        .toLowerCase()
+      (product.description || "")
+  .toLowerCase()
         .includes(search.toLowerCase()) ||
-      product.category
-        .toLowerCase()
+      (product.category || "")
+  .toLowerCase()
         .includes(search.toLowerCase());
 
     return matchesStatus && matchesSearch;

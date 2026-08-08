@@ -3,8 +3,10 @@ import {
   getProductBySlug,
   getRelatedProducts,
 } from "@/lavender-finds/helpers";
+import { supabase } from "@/lib/supabase";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/ProductGallery";
+
 
 type Props = {
   params: Promise<{
@@ -16,18 +18,19 @@ export default async function ProductPage({ params }: Props) {
   
 
   const { slug } = await params;
+  console.log("Slug received:", slug);
 
-const product = getProductBySlug(slug);
-const relatedProducts = getRelatedProducts(
-  product?.category || "",
-  slug
-);
- 
+const { data: product, error } = await supabase
+  .from("products")
+  .select("*")
+  .eq("id", slug)
+  .single();
 
-  if (!product) {
-    notFound();
-  }
+if (error || !product) {
+  notFound();
+}
 
+const relatedProducts: any[] = [];
   return (
   <main className="max-w-7xl mx-auto px-6 py-20">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -35,9 +38,15 @@ const relatedProducts = getRelatedProducts(
       {/* LEFT COLUMN */}
       <div>
         <ProductGallery
-          images={product.images}
-          title={product.title}
-        />
+  images={
+    product.gallery?.length
+      ? product.gallery
+      : product.image_url
+      ? [product.image_url]
+      : []
+  }
+  title={product.name}
+/>
       </div>
 
       {/* RIGHT COLUMN */}
@@ -109,7 +118,7 @@ const relatedProducts = getRelatedProducts(
           </p>
 
           <div className="flex flex-wrap gap-4 pt-8">
-            {product.status === "available" ? (
+           {String(product.status).toLowerCase() === "available" ? (
               <>
                 {product.vinted && (
                   <a
@@ -184,7 +193,7 @@ const relatedProducts = getRelatedProducts(
                   {item.price}
                 </p>
 
-                {item.status === "sold" && (
+                {String(item.status).toLowerCase() === "sold" && (
                   <span className="mt-3 inline-block rounded-full bg-red-500/20 px-3 py-1 text-sm text-red-400">
                     Sold
                   </span>
