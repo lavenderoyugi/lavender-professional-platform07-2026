@@ -1,15 +1,15 @@
 export interface Product {
-  id: string;
+  // Database
+  id?: string;
+  created_at?: string;
 
+  // URLs
   slug?: string | null;
 
-  // Names
+  // Basic Information
   name?: string;
   title?: string;
-
   description?: string;
-
-  // Category
   category?: string;
 
   // Pricing
@@ -23,34 +23,30 @@ export interface Product {
   sku?: string;
 
   // Status
-  status: "Available" | "Sold" | "available" | "sold";
-
-  featured?: boolean;
+  status: string;
+  is_featured?: boolean;
   published?: boolean;
 
   // Images
   image_url?: string;
-  images?: string[];
   gallery?: string[];
 
   // Details
   condition?: string;
   brand?: string;
+  manufacturer?: string;
   material?: string;
   dimensions?: string;
   year?: string;
   origin_country?: string;
-  country?: string;
-
   weight?: number | string;
   color?: string;
   style?: string;
-  manufacturer?: string;
 
   // Marketplace
   vinted?: string;
   leboncoin?: string;
 
-  // Story
+  // Optional
   story?: string;
 }

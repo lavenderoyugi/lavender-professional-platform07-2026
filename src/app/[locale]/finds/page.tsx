@@ -48,7 +48,7 @@ useEffect(() => {
       images: [
         product.image_url || "/images/placeholder.jpg",
       ],
-      featured: product.featured || false,
+      is_featured: product.is_featured || false,
       condition: "Excellent condition",
       story: "",
       dimensions: "",

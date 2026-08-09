@@ -6,15 +6,9 @@ import DashboardStats from "@/components/admin/DashboardStats";
 import Navbar from "@/components/Navbar";
 import ProductsList from "@/components/admin/ProductsList";
 import ProductForm from "@/components/admin/ProductForm";
+import type { Product } from "@/types/product";
 
-type Product = {
-  id: string;
-  name: string;
-  price: number;
-  category: string;
-  status: string;
-  description?: string;
-};
+
 export default function AdminPage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 

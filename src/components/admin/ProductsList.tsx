@@ -2,21 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
+import type { Product } from "@/types/product";
 
-type Product = {
-  id: string;
-  name: string;
-  price: number;
-  category: string;
-  status: string;
-  description?: string;
-  image_url?: string;
+
+type Props = {
+  onEdit: (product: Product) => void;
 };
+
 export default function ProductsList({
   onEdit,
-}: {
-  onEdit: (product: Product) => void;
-}) {
+}: Props) {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
@@ -131,7 +126,7 @@ export default function ProductsList({
   </button>
 
   <button
-    onClick={() => deleteProduct(product.id)}
+onClick={() => deleteProduct(product.id!)}
     className="rounded-lg border border-red-500 px-4 py-2 text-red-400 transition hover:bg-red-600 hover:text-white"
   >
     Delete

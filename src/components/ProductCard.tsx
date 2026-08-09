@@ -6,15 +6,16 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const image =
-    product.gallery?.[0] ||
-    product.images?.[0] ||
-    product.image_url ||
-    "/images/placeholder.jpg";
+const image =
+  product.gallery?.[0] ||
+  product.image_url ||
+  "/images/placeholder.jpg";
 
   const title = product.name || product.title || "Untitled Product";
 
-  const country = product.origin_country || product.country || "France";
+ const country =
+  product.origin_country ||
+  "France";
 
   const condition = product.condition || "Excellent condition";
 
