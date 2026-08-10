@@ -38,26 +38,34 @@ useEffect(() => {
       product.status === "Sold" ? "sold" : "available";
 
     return {
-      id: product.id,
-      slug: product.slug || product.id,
-      title: product.name || "Untitled Product",
-      description: product.description || "",
-     price: product.price,
-      category: product.category,
-      country: "France",
-      images: [
-        product.image_url || "/images/placeholder.jpg",
-      ],
-      is_featured: product.is_featured || false,
-      condition: "Excellent condition",
-      story: "",
-      dimensions: "",
-      materials: "",
-      year: "",
-      vinted: "",
-      leboncoin: "",
-      status,
-    };
+  id: product.id,
+  slug: product.slug || product.id,
+
+  name: product.name,
+  title: product.name || "Untitled Product",
+
+  description: product.description || "",
+  price: product.price,
+
+  category: product.category,
+
+  origin_country: product.origin_country,
+  gallery: product.gallery || [],
+  image_url: product.image_url,
+
+  is_featured: product.is_featured || false,
+
+  condition: product.condition || "Excellent condition",
+
+  story: "",
+  dimensions: "",
+  materials: "",
+  year: "",
+  vinted: "",
+  leboncoin: "",
+
+  status,
+};
   })
   .filter((product) => {
     const matchesStatus =
