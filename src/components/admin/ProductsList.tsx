@@ -70,14 +70,14 @@ export default function ProductsList({
 
       <table className="w-full">
 
-       <thead>
+  <thead>
   <tr className="border-b border-white/10 text-left text-gray-400">
-    <th className="py-4">Image</th>
-    <th>Product</th>
-    <th>Price</th>
-    <th>Status</th>
-    <th>Category</th>
-    <th>Actions</th>
+    <th className="px-4 py-4 w-24">Image</th>
+    <th className="px-4 py-4">Product</th>
+    <th className="px-4 py-4 w-32">Price</th>
+    <th className="px-4 py-4 w-36">Status</th>
+    <th className="px-4 py-4 w-40">Category</th>
+    <th className="px-4 py-4 w-40 text-center">Actions</th>
   </tr>
 </thead>
 
@@ -88,7 +88,7 @@ export default function ProductsList({
               key={product.id}
               className="border-b border-white/5"
             >
-              <td className="py-4">
+              <td className="px-4 py-4 align-middle">
   {product.image_url ? (
     <img
       src={product.image_url}
@@ -102,21 +102,30 @@ export default function ProductsList({
   )}
 </td>
 
-<td className="py-6 font-semibold">
+<td className="px-4 py-4 font-semibold align-middle max-w-md">
   {product.name}
 </td>
 
-              <td>
-                €{product.selling_price || product.price}
-              </td>
+              <td className="px-4 py-4 font-semibold text-yellow-400 whitespace-nowrap">
+  €{Number(product.selling_price || product.price).toFixed(2)}
+</td>
 
-              <td>
-                {product.status}
-              </td>
-
-              <td>
-                {product.category}
-              </td>
+              <td className="px-4 py-4">
+  <span
+    className={`rounded-full px-3 py-1 text-sm font-medium ${
+      product.status === "Available"
+        ? "bg-green-500/20 text-green-400"
+        : "bg-red-500/20 text-red-400"
+    }`}
+  >
+    {product.status}
+  </span>
+</td>
+              <td className="px-4 py-4">
+  <span className="rounded-full bg-violet-500/20 px-3 py-1 text-sm text-violet-300">
+    {product.category}
+  </span>
+</td>
               <td className="space-x-2">
   <button
     onClick={() => onEdit(product)}

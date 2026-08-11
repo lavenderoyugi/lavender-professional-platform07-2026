@@ -59,15 +59,146 @@ const COUNTRY_OPTIONS = [
   "Unknown",
 ];
 
-const BRAND_OPTIONS = [
-  "",
+const BRANDS = [
+  "Unknown",
   "Vallauris",
   "Digoin",
   "Sarreguemines",
   "Limoges",
   "Murano",
-  "Tonala",
+  "Tonalá",
   "Si Choisans",
+  "Gien",
+  "Villeroy & Boch",
+  "Rosenthal",
+  "Wedgwood",
+  "Royal Doulton",
+  "Royal Albert",
+  "Portmeirion",
+  "Denby",
+  "Spode",
+  "Mason's",
+  "Johnson Brothers",
+  "Churchill",
+  "Longwy",
+  "HB Quimper",
+  "Faïence de Nevers",
+  "Faïence de Rouen",
+  "Faïence de Moustiers",
+  "Meissen",
+  "KPM Berlin",
+  "Herend",
+  "Royal Copenhagen",
+  "Arabia Finland",
+  "Rörstrand",
+  "Gustavsberg",
+  "Iittala",
+  "Noritake",
+  "Satsuma",
+  "Imari",
+  "Royal Worcester",
+  "Poole Pottery",
+  "Hornsea",
+  "Beswick",
+  "Coalport",
+  "Bing & Grøndahl",
+  "Boch Frères",
+  "Petrus Regout",
+  "St Amand",
+  "Badonviller",
+  "Luneville",
+  "Creil et Montereau",
+  "Unknown Maker"
+];
+
+const COLORS = [
+  "White",
+  "Black",
+  "Grey",
+  "Silver",
+  "Gold",
+  "Beige",
+  "Brown",
+  "Cream",
+  "Ivory",
+  "Blue",
+  "Navy",
+  "Light Blue",
+  "Turquoise",
+  "Green",
+  "Olive",
+  "Yellow",
+  "Orange",
+  "Red",
+  "Pink",
+  "Purple",
+  "Lavender",
+  "Multicolour",
+  "Transparent",
+  "Clear",
+  "Bronze",
+  "Copper",
+  "Brass",
+  "Wood",
+  "Natural",
+];
+const STYLES = [
+  "Vintage",
+  "Mid-Century Modern",
+  "Art Deco",
+  "Art Nouveau",
+  "Scandinavian",
+  "Industrial",
+  "Rustic",
+  "Farmhouse",
+  "Bohemian",
+  "Minimalist",
+  "Modern",
+  "Contemporary",
+  "French Country",
+  "Shabby Chic",
+  "Japanese",
+  "Mediterranean",
+  "Colonial",
+  "Victorian",
+  "Retro",
+  "Traditional",
+];
+
+const DIMENSIONS = [
+  "5 × 5 cm",
+  "10 × 10 cm",
+  "10 × 15 cm",
+  "15 × 15 cm",
+  "15 × 20 cm",
+  "20 × 20 cm",
+  "20 × 30 cm",
+  "25 × 25 cm",
+  "25 × 35 cm",
+  "30 × 30 cm",
+  "30 × 40 cm",
+  "35 × 50 cm",
+  "40 × 60 cm",
+  "50 × 70 cm",
+  "60 × 80 cm",
+  "80 × 100 cm",
+  "Custom",
+];
+
+const YEARS = [
+  "Before 1900",
+  "1900-1919",
+  "1920-1939",
+  "1940-1949",
+  "1950s",
+  "1960s",
+  "1970s",
+  "1980s",
+  "1990s",
+  "2000s",
+  "2010s",
+  "2020s",
+  "Contemporary",
   "Unknown",
 ];
 type Props = {
@@ -620,7 +751,7 @@ Brand
   onChange={handleChange}
   className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white focus:border-violet-500 focus:outline-none"
 >
-  {BRAND_OPTIONS.map((brand) => (
+  {BRANDS.map((brand) => (
     <option
       key={brand}
       value={brand}
@@ -679,13 +810,20 @@ Material
 Color
 </label>
 
-<input
-type="text"
-name="color"
-value={product.color || ""}
-onChange={handleChange}
-className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
-/>
+<select
+  name="color"
+  value={product.color || ""}
+  onChange={handleChange}
+  className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+>
+  <option value="">Select a color</option>
+
+  {COLORS.map((color) => (
+    <option key={color} value={color}>
+      {color}
+    </option>
+  ))}
+</select>
 
 </div>
 
@@ -695,13 +833,20 @@ className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
 Style
 </label>
 
-<input
-type="text"
-name="style"
-value={product.style || ""}
-onChange={handleChange}
-className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
-/>
+<select
+  name="style"
+  value={product.style || ""}
+  onChange={handleChange}
+  className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+>
+  <option value="">Select a style</option>
+
+  {STYLES.map((style) => (
+    <option key={style} value={style}>
+      {style}
+    </option>
+  ))}
+</select>
 
 </div>
 <div>
@@ -735,13 +880,20 @@ Condition
 Dimensions
 </label>
 
-<input
-type="text"
-name="dimensions"
-value={product.dimensions || ""}
-onChange={handleChange}
-className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
-/>
+<select
+  name="dimensions"
+  value={product.dimensions || ""}
+  onChange={handleChange}
+  className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+>
+  <option value="">Select dimensions</option>
+
+  {DIMENSIONS.map((dimension) => (
+    <option key={dimension} value={dimension}>
+      {dimension}
+    </option>
+  ))}
+</select>
 
 </div>
 <div>
@@ -765,13 +917,20 @@ className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
 Year
 </label>
 
-<input
-type="text"
-name="year"
-value={product.year || ""}
-onChange={handleChange}
-className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
-/>
+<select
+  name="year"
+  value={product.year || ""}
+  onChange={handleChange}
+  className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+>
+  <option value="">Select year</option>
+
+  {YEARS.map((year) => (
+    <option key={year} value={year}>
+      {year}
+    </option>
+  ))}
+</select>
 
 </div>
 <div>
