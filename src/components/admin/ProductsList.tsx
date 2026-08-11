@@ -107,7 +107,7 @@ export default function ProductsList({
 </td>
 
               <td>
-                €{product.price}
+                €{product.selling_price || product.price}
               </td>
 
               <td>

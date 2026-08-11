@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState, useRef } from "react";
 import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
 import type { Product } from "@/types/product";
@@ -121,19 +121,28 @@ export default function ProductForm({
 
   const [images, setImages] = useState<File[]>([]);
   const [saving, setSaving] = useState(false);
+const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
-    if (selectedProduct) {
-      setProduct({
-        ...emptyProduct,
-        ...selectedProduct,
-        gallery: selectedProduct.gallery || [],
+  if (selectedProduct) {
+    setProduct({
+      ...emptyProduct,
+      ...selectedProduct,
+      gallery: selectedProduct.gallery || [],
+    });
+
+    setTimeout(() => {
+      formRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
-    } else {
-      setProduct(emptyProduct);
-      setImages([]);
-    }
-  }, [selectedProduct]);
+    }, 100);
+
+  } else {
+    setProduct(emptyProduct);
+    setImages([]);
+  }
+}, [selectedProduct]);
 
   const handleChange = (
     e: ChangeEvent<
@@ -215,7 +224,10 @@ async function saveProduct() {
 
     const productToSave = {
   name: product.name,
-  price: product.price,
+ price:
+  product.selling_price === ""
+    ? 0
+    : Number(product.selling_price),
   category: product.category,
   status: product.status,
   description: product.description,
@@ -300,7 +312,9 @@ console.log(JSON.stringify(error, null, 2));
   }
 }
   return (
-  <form className="mt-12 rounded-3xl border border-white/10 bg-zinc-900 p-8 shadow-xl">
+  <form 
+  ref={formRef}
+  className="mt-12 rounded-3xl border border-white/10 bg-zinc-900 p-8 shadow-xl">
 
     <div className="mb-10">
       <h2 className="text-3xl font-bold text-white">
