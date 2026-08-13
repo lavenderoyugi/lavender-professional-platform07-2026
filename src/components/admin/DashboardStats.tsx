@@ -6,8 +6,10 @@ export default function DashboardStats() {
 
 const [stats, setStats] = useState({
   products: 0,
+  draft: 0,
   available: 0,
   sold: 0,
+  reserved: 0,
 
   inventoryInvestment: 0,
   unsoldInventory: 0,
@@ -31,30 +33,54 @@ const [stats, setStats] = useState({
     }
 
     const products = data.length;
+    const draft = data.filter(
+  (item) => item.status === "Draft"
+).length;
 
     const available = data.filter(
       (item) => item.status === "Available"
     ).length;
 
+    const reserved = data.filter(
+  (item) => item.status === "Reserved"
+).length;
+
     const sold = data.filter(
       (item) => item.status === "Sold"
     ).length;
 
-    const inventoryInvestment = data.reduce(
-  (sum, item) => sum + Number(item.purchase_price || 0),
-  0
-);
-const unsoldInventory = data
-  .filter((item) => item.status === "Available")
+ const inventoryInvestment = data
+  .filter(
+    (item) =>
+      item.status === "Draft" ||
+      item.status === "Available" ||
+      item.status === "Reserved"
+  )
   .reduce(
     (sum, item) => sum + Number(item.purchase_price || 0),
     0
   );
-
-const potentialRevenue = data.reduce(
-  (sum, item) => sum + Number(item.listing_price || 0),
-  0
-);
+const unsoldInventory = data
+  .filter(
+    (item) =>
+      item.status === "Draft" ||
+      item.status === "Available" ||
+      item.status === "Reserved"
+  )
+  .reduce(
+    (sum, item) => sum + Number(item.purchase_price || 0),
+    0
+  );
+const potentialRevenue = data
+  .filter(
+    (item) =>
+      item.status === "Available" ||
+      item.status === "Reserved"
+  )
+  .reduce(
+    (sum, item) => sum + Number(item.listing_price || 0),
+    0
+  );
 
 const actualRevenue = data
   .filter((item) => item.status === "Sold")
@@ -75,8 +101,11 @@ const netProfit = data
 
 setStats({
   products,
+  draft,
   available,
+  reserved,
   sold,
+  
 
   inventoryInvestment,
   unsoldInventory,
@@ -99,6 +128,16 @@ setStats({
           {stats.products}
         </h2>
       </div>
+      
+      <div className="rounded-2xl border border-yellow-500/30 bg-white/5 p-6">
+        <p className="text-sm uppercase tracking-wider text-gray-400">
+          Draft
+        </p>
+
+        <h2 className="mt-3 text-4xl font-bold text-yellow-400">
+          {stats.draft}
+        </h2>
+      </div>
 
       <div className="rounded-2xl border border-green-500/30 bg-white/5 p-6">
         <p className="text-sm uppercase tracking-wider text-gray-400">
@@ -109,6 +148,16 @@ setStats({
           {stats.available}
         </h2>
       </div>
+
+      <div className="rounded-2xl border border-orange-500/30 bg-white/5 p-6">
+  <p className="text-sm uppercase tracking-wider text-gray-400">
+    Reserved
+  </p>
+
+  <h2 className="mt-3 text-4xl font-bold text-orange-400">
+    {stats.reserved}
+  </h2>
+</div>
 
       <div className="rounded-2xl border border-red-500/30 bg-white/5 p-6">
         <p className="text-sm uppercase tracking-wider text-gray-400">

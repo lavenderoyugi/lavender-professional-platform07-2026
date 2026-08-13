@@ -15,10 +15,12 @@ export default function FindsPage() {
 const [loading, setLoading] = useState(true);
 useEffect(() => {
   async function fetchProducts() {
-    const { data, error } = await supabase
-      .from("products")
-      .select("*")
-      .order("created_at", { ascending: false });
+  const { data, error } = await supabase
+  .from("products")
+  .select("*")
+  .eq("published", true)
+  .eq("status", "Available")
+  .order("created_at", { ascending: false });
 
     if (error) {
       console.error(error);

@@ -220,7 +220,7 @@ weight: 0,
   stock: 1,
   sku: "",
 
-  status: "Available",
+ status: "Draft",
 
   image_url: "",
   gallery: [],
@@ -240,7 +240,7 @@ weight: 0,
   leboncoin: "",
 
   is_featured: false,
-  published: true,
+  published: false,
 
  
 };
@@ -403,7 +403,9 @@ weight:
   sku: product.sku,
 
   is_featured: product.is_featured,
-  published: product.published,
+ published:
+  product.status === "Available" ||
+  product.status === "Reserved",
 
   vinted: product.vinted,
   leboncoin: product.leboncoin,
@@ -425,7 +427,7 @@ weight:
       if (error) throw error;
     }
 
-    alert("Product saved successfully.");
+   toast.success("Product saved successfully!");
 
   } catch (error: any) {
   console.error("SAVE PRODUCT ERROR:");
@@ -514,8 +516,11 @@ console.log(JSON.stringify(error, null, 2));
             onChange={handleChange}
             className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white focus:border-violet-500 focus:outline-none"
           >
-            <option value="Available">Available</option>
-            <option value="Sold">Sold</option>
+           <option value="Draft">Draft</option>
+<option value="Available">Available</option>
+<option value="Reserved">Reserved</option>
+<option value="Sold">Sold</option>
+<option value="Archived">Archived</option>
           </select>
         </div>
 
@@ -660,7 +665,7 @@ console.log(JSON.stringify(error, null, 2));
         SKU
       </label>
 
-      <div className="flex gap-2">
+    <div className="flex flex-col gap-2 sm:flex-row">
 
         <input
           type="text"
@@ -684,7 +689,7 @@ console.log(JSON.stringify(error, null, 2));
                   .toUpperCase(),
             }))
           }
-          className="rounded-xl bg-violet-600 px-4 text-white hover:bg-violet-500"
+        className="w-full rounded-xl bg-violet-600 px-4 py-3 text-white hover:bg-violet-500 sm:w-auto"
         >
           Generate
         </button>
