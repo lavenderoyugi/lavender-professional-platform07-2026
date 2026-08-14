@@ -32,17 +32,24 @@ export interface Product {
   gallery?: string[];
 
   // Details
-  condition?: string;
-  brand?: string;
-  manufacturer?: string;
-  material?: string;
-  dimensions?: string;
-  year?: string;
-  origin_country?: string;
-  weight?: number | string;
-  color?: string;
-  style?: string;
+condition?: string;
+brand?: string;
+manufacturer?: string;
+material?: string;
+dimensions?: string;
+year?: string;
+origin_country?: string;
+weight?: number | string;
 
+shipping_weight?: number | string;
+package_length?: number | string;
+package_width?: number | string;
+package_height?: number | string;
+fragile?: boolean;
+pickup_available?: boolean;
+
+color?: string;
+style?: string;
   // Marketplace
   vinted?: string;
   leboncoin?: string;

@@ -53,13 +53,18 @@ const relatedProducts: any[] = [];
       <div className="space-y-6">
 
         <h1 className="text-5xl font-bold">
-          {product.title}
-        </h1>
+  {product.name || product.title || "Untitled Product"}
+</h1>
 
         <p className="text-4xl font-bold text-violet-400">
-          {product.price}
+         €{product.price}
         </p>
 
+{String(product.status).toLowerCase() === "available" && (
+  <p className="text-lg font-semibold text-green-400">
+    🟢 Available
+  </p>
+)}
         <div className="space-y-2 text-lg">
 
           <p>
@@ -77,20 +82,20 @@ const relatedProducts: any[] = [];
           </p>
 
           <p>
-            <span className="font-semibold">
-              Country:
-            </span>{" "}
-            {product.country}
-          </p>
+  <span className="font-semibold">
+    Country:
+  </span>{" "}
+  {product.origin_country || "Unknown"}
+</p>
 
-          {product.materials && (
-            <p>
-              <span className="font-semibold">
-                Materials:
-              </span>{" "}
-              {product.materials}
-            </p>
-          )}
+          {product.material && (
+  <p>
+    <span className="font-semibold">
+      Material:
+    </span>{" "}
+    {product.material}
+  </p>
+)}
 
           {product.dimensions && (
             <p>

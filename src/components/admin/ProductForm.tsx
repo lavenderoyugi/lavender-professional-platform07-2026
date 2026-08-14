@@ -217,7 +217,14 @@ listing_price: 0,
 selling_price: 0,
 weight: 0,
 
-  stock: 1,
+shipping_weight: 0,
+package_length: 0,
+package_width: 0,
+package_height: 0,
+fragile: false,
+pickup_available: true,
+
+stock: 1,
   sku: "",
 
  status: "Draft",
@@ -397,9 +404,32 @@ weight:
     ? null
     : Number(product.weight),
 
-  color: product.color,
-  style: product.style,
+shipping_weight:
+  product.shipping_weight === ""
+    ? null
+    : Number(product.shipping_weight),
 
+package_length:
+  product.package_length === ""
+    ? null
+    : Number(product.package_length),
+
+package_width:
+  product.package_width === ""
+    ? null
+    : Number(product.package_width),
+
+package_height:
+  product.package_height === ""
+    ? null
+    : Number(product.package_height),
+
+fragile: product.fragile ?? false,
+
+pickup_available: product.pickup_available ?? true,
+
+color: product.color,
+style: product.style,
   sku: product.sku,
 
   is_featured: product.is_featured,
@@ -734,6 +764,157 @@ console.log(JSON.stringify(error, null, 2));
   </div>
 
 </div>
+
+{/* =========================
+    Shipping Information
+========================= */}
+
+<div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-6">
+
+  <h3 className="mb-6 text-xl font-semibold text-violet-400">
+    Shipping Information
+  </h3>
+
+  <div className="grid gap-6 md:grid-cols-2">
+
+    {/* Shipping Weight */}
+
+    <div>
+      <label className="mb-2 block text-sm text-gray-300">
+        Shipping Weight (kg)
+      </label>
+
+      <input
+        type="number"
+        step="0.01"
+        min="0"
+        name="shipping_weight"
+        value={product.shipping_weight ?? ""}
+        onChange={handleNumberChange}
+        placeholder="e.g. 1.20"
+        className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+      />
+
+      <p className="mt-2 text-xs text-gray-400">
+        Weight of the packed parcel, including packaging.
+      </p>
+    </div>
+
+    {/* Package Length */}
+
+    <div>
+      <label className="mb-2 block text-sm text-gray-300">
+        Package Length (cm)
+      </label>
+
+      <input
+        type="number"
+        step="0.1"
+        min="0"
+        name="package_length"
+        value={product.package_length ?? ""}
+        onChange={handleNumberChange}
+        placeholder="e.g. 40"
+        className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+      />
+    </div>
+
+    {/* Package Width */}
+
+    <div>
+      <label className="mb-2 block text-sm text-gray-300">
+        Package Width (cm)
+      </label>
+
+      <input
+        type="number"
+        step="0.1"
+        min="0"
+        name="package_width"
+        value={product.package_width ?? ""}
+        onChange={handleNumberChange}
+        placeholder="e.g. 20"
+        className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+      />
+    </div>
+
+    {/* Package Height */}
+
+    <div>
+      <label className="mb-2 block text-sm text-gray-300">
+        Package Height (cm)
+      </label>
+
+      <input
+        type="number"
+        step="0.1"
+        min="0"
+        name="package_height"
+        value={product.package_height ?? ""}
+        onChange={handleNumberChange}
+        placeholder="e.g. 20"
+        className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+      />
+    </div>
+
+  </div>
+
+  {/* Shipping Options */}
+
+  <div className="mt-6 grid gap-6 md:grid-cols-2">
+
+    {/* Fragile */}
+
+    <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-zinc-800 p-4">
+
+      <input
+        type="checkbox"
+        name="fragile"
+        checked={product.fragile ?? false}
+        onChange={handleCheckbox}
+        className="h-5 w-5 accent-violet-600"
+      />
+
+      <span>
+        <span className="block font-medium text-white">
+          Fragile item
+        </span>
+
+        <span className="text-xs text-gray-400">
+          Requires additional protective packaging.
+        </span>
+      </span>
+
+    </label>
+
+    {/* Local Pickup */}
+
+    <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-zinc-800 p-4">
+
+      <input
+        type="checkbox"
+        name="pickup_available"
+        checked={product.pickup_available ?? true}
+        onChange={handleCheckbox}
+        className="h-5 w-5 accent-violet-600"
+      />
+
+      <span>
+        <span className="block font-medium text-white">
+          Local pickup available
+        </span>
+
+        <span className="text-xs text-gray-400">
+          Allow customers to collect the item locally.
+        </span>
+      </span>
+
+    </label>
+
+  </div>
+
+</div>
+
 {/* Product Details */}
 
 <div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-6">
