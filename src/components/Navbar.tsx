@@ -1,15 +1,18 @@
 "use client";
 
+"use client";
+
 import { Link, usePathname } from "@/i18n/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useCart } from "@/context/CartContext";
 
 export default function Navbar() {
   const t = useTranslations("navigation");
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const { cartCount } = useCart();
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
@@ -83,7 +86,21 @@ export default function Navbar() {
   {t("contact")}
 </Link>
 
-          <div className="h-6 w-px bg-white/20" />
+                    <div className="h-6 w-px bg-white/20" />
+
+          {/* Cart */}
+          <Link
+            href="/cart"
+            className="relative transition hover:text-violet-400"
+          >
+            🛒 Cart
+
+            {cartCount > 0 && (
+              <span className="absolute -right-3 -top-3 flex h-5 min-w-5 items-center justify-center rounded-full bg-violet-600 px-1 text-xs font-bold text-white">
+                {cartCount}
+              </span>
+            )}
+          </Link>
 
           <LanguageSwitcher />
         </div>
@@ -141,6 +158,20 @@ export default function Navbar() {
   onClick={() => setMobileMenuOpen(false)}
 >
   {t("contact")}
+</Link>
+
+<Link
+  href="/cart"
+  className="flex items-center gap-2 transition hover:text-violet-400"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  🛒 Cart
+
+  {cartCount > 0 && (
+    <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-violet-600 px-1 text-xs font-bold text-white">
+      {cartCount}
+    </span>
+  )}
 </Link>
             <div className="border-t border-white/10 pt-4">
               <LanguageSwitcher />

@@ -6,6 +6,7 @@ import {
 import { supabase } from "@/lib/supabase";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/ProductGallery";
+import AddToCartButton from "@/components/AddToCartButton";
 
 
 type Props = {
@@ -122,6 +123,115 @@ const relatedProducts: any[] = [];
             {product.description}
           </p>
 
+{/* ================= SHIPPING OPTIONS ================= */}
+
+<div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-6">
+
+  <h3 className="mb-4 text-xl font-semibold text-violet-400">
+    🚚 Delivery & Pickup
+  </h3>
+
+  <p className="mb-5 text-sm text-gray-400">
+    Choose your preferred delivery method. Shipping costs will be calculated
+    according to the destination and package size.
+  </p>
+
+  <div className="grid gap-3">
+
+    {/* Mondial Relay */}
+    <label className="flex cursor-pointer items-center gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-4 transition hover:border-violet-500">
+      <input
+        type="radio"
+        name="shipping"
+        value="mondial-relay"
+        className="h-5 w-5 accent-violet-600"
+      />
+
+      <div>
+        <span className="block font-semibold text-white">
+          📦 Mondial Relay — Point Relais / Locker
+        </span>
+
+        <span className="text-sm text-gray-400">
+          Convenient pickup from a nearby collection point.
+        </span>
+      </div>
+    </label>
+
+    {/* Chronopost Shop2Shop */}
+    <label className="flex cursor-pointer items-center gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-4 transition hover:border-violet-500">
+      <input
+        type="radio"
+        name="shipping"
+        value="chronopost-shop2shop"
+        className="h-5 w-5 accent-violet-600"
+      />
+
+      <div>
+        <span className="block font-semibold text-white">
+          🚚 Chronopost Shop2Shop
+        </span>
+
+        <span className="text-sm text-gray-400">
+          Delivery to a participating pickup point.
+        </span>
+      </div>
+    </label>
+
+    {/* Chronopost Home */}
+    <label className="flex cursor-pointer items-center gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-4 transition hover:border-violet-500">
+      <input
+        type="radio"
+        name="shipping"
+        value="chronopost-home"
+        className="h-5 w-5 accent-violet-600"
+      />
+
+      <div>
+        <span className="block font-semibold text-white">
+          🏠 Chronopost Home Delivery
+        </span>
+
+        <span className="text-sm text-gray-400">
+          Have your item delivered directly to your address.
+        </span>
+      </div>
+    </label>
+
+    {/* Local Pickup */}
+    {product.pickup_available && (
+      <label className="flex cursor-pointer items-center gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-4 transition hover:border-violet-500">
+        <input
+          type="radio"
+          name="shipping"
+          value="local-pickup"
+          className="h-5 w-5 accent-violet-600"
+        />
+
+        <div>
+          <span className="block font-semibold text-white">
+            📍 Local Pickup — Saint-Nazaire
+          </span>
+
+          <span className="text-sm text-gray-400">
+            Collect your purchase directly in Saint-Nazaire.
+          </span>
+        </div>
+      </label>
+    )}
+
+  </div>
+
+  <div className="mt-5 rounded-xl border border-violet-500/20 bg-violet-500/5 p-4">
+    <p className="text-sm text-gray-300">
+      💡 <span className="font-semibold text-white">Shipping cost:</span>{" "}
+      calculated at checkout based on the delivery method, destination and
+      package dimensions.
+    </p>
+  </div>
+
+</div>
+
           <div className="flex flex-wrap gap-4 pt-8">
            {String(product.status).toLowerCase() === "available" ? (
               <>
@@ -146,6 +256,22 @@ const relatedProducts: any[] = [];
                     📦 View on Leboncoin
                   </a>
                 )}
+
+                <AddToCartButton
+    product={{
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image_url: product.image_url,
+      stock: product.stock,
+      shipping_weight: product.shipping_weight,
+      package_length: product.package_length,
+      package_width: product.package_width,
+      package_height: product.package_height,
+      fragile: product.fragile,
+    }}
+  />
+
               </>
             ) : (
               <div className="w-full rounded-xl border border-red-500 bg-red-500/10 p-5">

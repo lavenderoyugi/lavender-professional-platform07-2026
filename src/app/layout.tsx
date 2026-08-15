@@ -4,6 +4,7 @@ import { Providers } from "@/components/Providers";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,20 +32,23 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
      <body className="min-h-full flex flex-col">
+  <CartProvider>
   <Providers>
     {children}
+
     <Toaster
-  position="top-right"
-  toastOptions={{
-    duration: 2500,
-    style: {
-      background: "#18181b",
-      color: "#fff",
-      border: "1px solid #7c3aed",
-    },
-  }}
-/>
+      position="top-right"
+      toastOptions={{
+        duration: 2500,
+        style: {
+          background: "#18181b",
+          color: "#fff",
+          border: "1px solid #7c3aed",
+        },
+      }}
+    />
   </Providers>
+</CartProvider>
 
   <GoogleAnalytics gaId="G-JKF89RMDXR" />
 </body>
