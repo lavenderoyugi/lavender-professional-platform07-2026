@@ -225,6 +225,8 @@ fragile: false,
 pickup_available: true,
 
 stock: 1,
+sold_quantity: 0,
+reserved_quantity: 0,
   sku: "",
 
  status: "Draft",
@@ -390,6 +392,8 @@ async function saveProduct() {
 
 
  stock: product.stock ?? 1,
+ sold_quantity: product.sold_quantity ?? 0,
+reserved_quantity: product.reserved_quantity ?? 0,
   brand: product.brand,
   manufacturer: product.manufacturer,
   material: product.material,
@@ -687,6 +691,36 @@ console.log(JSON.stringify(error, null, 2));
 
     </div>
 
+    <div>
+  <label className="mb-2 block text-sm text-gray-300">
+    Sold Quantity
+  </label>
+
+  <input
+    type="number"
+    name="sold_quantity"
+    value={product.sold_quantity ?? 0}
+    onChange={handleNumberChange}
+    min="0"
+    className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+  />
+</div>
+
+<div>
+  <label className="mb-2 block text-sm text-gray-300">
+    Reserved Quantity
+  </label>
+
+  <input
+    type="number"
+    name="reserved_quantity"
+    value={product.reserved_quantity ?? 0}
+    onChange={handleNumberChange}
+    min="0"
+    className="w-full rounded-xl border border-white/10 bg-zinc-800 p-3 text-white"
+  />
+</div>
+
     {/* SKU */}
 
     <div>
@@ -801,6 +835,7 @@ console.log(JSON.stringify(error, null, 2));
     </div>
 
     {/* Package Length */}
+  
 
     <div>
       <label className="mb-2 block text-sm text-gray-300">

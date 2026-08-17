@@ -37,19 +37,21 @@ const [stats, setStats] = useState({
   (item) => item.status === "Draft"
 ).length;
 
-    const available = data.filter(
-      (item) => item.status === "Available"
-    ).length;
+    const available = data.reduce(
+  (sum, item) => sum + Number(item.stock ?? 0),
+  0
+);
 
-    const reserved = data.filter(
-  (item) => item.status === "Reserved"
-).length;
+    const reserved = data.reduce(
+  (sum, item) => sum + Number(item.reserved_quantity ?? 0),
+  0
+);
+const sold = data.reduce(
+  (sum, item) => sum + Number(item.sold_quantity ?? 0),
+  0
+);
 
-    const sold = data.filter(
-      (item) => item.status === "Sold"
-    ).length;
-
- const inventoryInvestment = data
+const inventoryInvestment = data
   .filter(
     (item) =>
       item.status === "Draft" ||
@@ -57,7 +59,10 @@ const [stats, setStats] = useState({
       item.status === "Reserved"
   )
   .reduce(
-    (sum, item) => sum + Number(item.purchase_price || 0),
+    (sum, item) =>
+      sum +
+      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
+        Number(item.purchase_price ?? 0),
     0
   );
 const unsoldInventory = data
@@ -68,7 +73,10 @@ const unsoldInventory = data
       item.status === "Reserved"
   )
   .reduce(
-    (sum, item) => sum + Number(item.purchase_price || 0),
+    (sum, item) =>
+      sum +
+      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
+        Number(item.purchase_price ?? 0),
     0
   );
 const potentialRevenue = data
@@ -78,7 +86,10 @@ const potentialRevenue = data
       item.status === "Reserved"
   )
   .reduce(
-    (sum, item) => sum + Number(item.listing_price || 0),
+    (sum, item) =>
+      sum +
+      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
+        Number(item.listing_price ?? 0),
     0
   );
 

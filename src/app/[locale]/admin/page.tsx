@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-
 import DashboardStats from "@/components/admin/DashboardStats";
+import SalesForm from "@/components/admin/SalesForm";
 import Navbar from "@/components/Navbar";
 import ProductsList from "@/components/admin/ProductsList";
 import ProductForm from "@/components/admin/ProductForm";
@@ -31,6 +31,7 @@ export default function AdminPage() {
         </p>
 
         <DashboardStats />
+        <SalesForm />
 
         <ProductsList
           onEdit={setSelectedProduct}

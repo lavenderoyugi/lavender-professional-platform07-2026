@@ -18,9 +18,11 @@ export interface Product {
   listing_price?: number | string | null;
   selling_price?: number | string | null;
 
-  // Inventory
-  stock?: number;
-  sku?: string;
+ // Inventory
+stock?: number;
+sold_quantity?: number;
+reserved_quantity?: number;
+sku?: string;
 
   // Status
   status: string;
