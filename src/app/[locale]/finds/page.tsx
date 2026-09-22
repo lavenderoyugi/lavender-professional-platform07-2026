@@ -87,146 +87,220 @@ useEffect(() => {
     return matchesStatus && matchesSearch;
   });
 
-  return (
-  <main className="min-h-screen bg-black text-white">
+    return (
+    <main className="min-h-screen bg-black text-white">
 
-    <Navbar />
+      <Navbar />
 
-    <section className="mx-auto max-w-6xl px-6 py-24">
-        <p className="mb-4 uppercase tracking-[0.35em] text-violet-400">
-          {t("welcome")}
-        </p>
+      {/* HERO */}
+      <section className="mx-auto max-w-7xl px-6 pb-20 pt-16 md:pt-24">
 
-        <h1 className="mb-8 text-6xl font-bold text-violet-400">
-          {t("title")}
-        </h1>
+        <div className="max-w-3xl">
 
-        <p className="max-w-3xl text-xl leading-9 text-gray-300">
-          {t("tagline")}
-        </p>
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-violet-400">
+            {t("welcome")}
+          </p>
 
-        <p className="mt-8 max-w-3xl text-lg leading-9 text-gray-400">
-          {t("paragraph1")}
-        </p>
+          <h1 className="text-5xl font-bold tracking-tight text-violet-400 md:text-7xl">
+            {t("title")}
+          </h1>
 
-        <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
-          {t("paragraph2")}
-        </p>
-        <div className="mt-20 border-l-4 border-violet-500 pl-8">
+          <p className="mt-6 max-w-2xl text-xl leading-8 text-gray-300 md:text-2xl">
+            {t("tagline")}
+          </p>
 
-  <p className="text-sm uppercase tracking-[0.4em] text-violet-400">
-    Curated European Treasures
-  </p>
+          <button
+            onClick={() =>
+              document
+                .getElementById("collection")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="mt-8 rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-400"
+          >
+            SHOP THE COLLECTION →
+          </button>
 
-  <h2 className="mt-4 text-5xl font-bold leading-tight">
-    Every piece has
-    <br />
-    a story worth telling.
-  </h2>
+        </div>
 
-  <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
-    Lavender Finds is more than a collection of vintage objects.
-    Every piece is carefully discovered, selected and photographed
-    before finding a new home.
-  </p>
+      </section>
 
-</div>
 
-        <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-400">
-          {t("paragraph3")}
-        </p>
-       <div className="mt-20 rounded-2xl border border-violet-500/20 bg-zinc-900/60 p-10 text-center">
+      {/* FEATURED PRODUCTS */}
+      <section
+        id="collection"
+        className="mx-auto max-w-7xl px-6 py-16"
+      >
 
-  <h2 className="text-3xl font-bold text-violet-400">
-    New treasures every week ✨
-  </h2>
+        <div className="mb-12 text-center">
 
-  <p className="mx-auto mt-4 max-w-2xl text-gray-300">
-    Follow Lavender Finds on Vinted, Leboncoin and social media to discover
-    carefully curated vintage décor, elegant glassware and unique home
-    accessories.
-  </p>
+          <p className="text-sm uppercase tracking-[0.35em] text-violet-400">
+            Lavender Finds
+          </p>
 
-  <div className="mt-8 flex flex-wrap justify-center gap-4">
-    <button className="rounded-full bg-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-400">
-      View Collection
-    </button>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">
+            Featured Finds
+          </h2>
 
-    <button className="rounded-full border border-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-500 hover:text-black">
-      Follow Lavender Finds
-    </button>
-  </div>
+          <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+            Discover unique pieces carefully selected for their beauty,
+            character and story.
+          </p>
 
-</div>
+        </div>
 
-<h2 className="mt-24 mb-10 text-center text-5xl font-bold text-violet-400">
-  Featured Collection
-</h2>
 
-<div className="mb-12 flex flex-wrap justify-center gap-4">
+        {/* SEARCH */}
+        <div className="mb-10 flex justify-center">
+          <div className="relative w-full max-w-lg">
 
-  <button
-    onClick={() => setFilter("all")}
-    className={`rounded-full px-6 py-3 font-semibold transition ${
-      filter === "all"
-        ? "bg-violet-500 text-white"
-        : "border border-violet-500 text-violet-400 hover:bg-violet-500 hover:text-white"
-    }`}
-  >
-    All
-  </button>
+            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
+              🔍
+            </span>
 
-  <button
-    onClick={() => setFilter("available")}
-    className={`rounded-full px-6 py-3 font-semibold transition ${
-      filter === "available"
-        ? "bg-green-600 text-white"
-        : "border border-green-600 text-green-400 hover:bg-green-600 hover:text-white"
-    }`}
-  >
-    Available
-  </button>
+            <input
+              type="text"
+              placeholder="Search by title, category or description..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full rounded-xl border border-white/10 bg-white/5 py-3 pl-12 pr-5 text-white placeholder:text-gray-500 focus:border-violet-500 focus:outline-none"
+            />
 
-  <button
-    onClick={() => setFilter("sold")}
-    className={`rounded-full px-6 py-3 font-semibold transition ${
-      filter === "sold"
-        ? "bg-red-600 text-white"
-        : "border border-red-600 text-red-400 hover:bg-red-600 hover:text-white"
-    }`}
-  >
-    Sold
-  </button>
+          </div>
+        </div>
 
-</div>
 
-<div className="mt-8 mb-12 flex justify-center">
-  <div className="relative w-full max-w-lg">
+        {/* FILTERS */}
+        <div className="mb-12 flex flex-wrap justify-center gap-4">
 
-    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
-      🔍
-    </span>
+          <button
+            onClick={() => setFilter("all")}
+            className={`rounded-full px-6 py-3 font-semibold transition ${
+              filter === "all"
+                ? "bg-violet-500 text-white"
+                : "border border-violet-500 text-violet-400 hover:bg-violet-500 hover:text-white"
+            }`}
+          >
+            All
+          </button>
 
-    <input
-      type="text"
-      placeholder="Search by title, category or description..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      className="w-full rounded-xl border border-white/10 bg-white/5 py-3 pl-12 pr-5 text-white placeholder:text-gray-500 focus:border-violet-500 focus:outline-none"
-    />
+          <button
+            onClick={() => setFilter("available")}
+            className={`rounded-full px-6 py-3 font-semibold transition ${
+              filter === "available"
+                ? "bg-green-600 text-white"
+                : "border border-green-600 text-green-400 hover:bg-green-600 hover:text-white"
+            }`}
+          >
+            Available
+          </button>
 
-  </div>
-</div>
+          <button
+            onClick={() => setFilter("sold")}
+            className={`rounded-full px-6 py-3 font-semibold transition ${
+              filter === "sold"
+                ? "bg-red-600 text-white"
+                : "border border-red-600 text-red-400 hover:bg-red-600 hover:text-white"
+            }`}
+          >
+            Sold
+          </button>
 
-<div className="grid gap-10 md:grid-cols-3">
-  {filteredProducts.map((product) => (
-    <ProductCard
-      key={product.id}
-      product={product}
-    />
-  ))}
-</div>
-</section>
-</main>
-);
+        </div>
+
+
+        {/* PRODUCTS */}
+        {loading ? (
+          <div className="py-20 text-center text-gray-400">
+            Loading treasures...
+          </div>
+        ) : filteredProducts.length === 0 ? (
+          <div className="py-20 text-center text-gray-400">
+            No treasures found.
+          </div>
+        ) : (
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {filteredProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+              />
+            ))}
+          </div>
+        )}
+
+      </section>
+
+
+      {/* ABOUT US */}
+      <section className="mx-auto max-w-5xl px-6 py-24">
+
+        <div className="border-l-4 border-violet-500 pl-6 md:pl-10">
+
+          <p className="text-sm uppercase tracking-[0.4em] text-violet-400">
+            About Lavender Finds
+          </p>
+
+          <h2 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
+            Every piece has
+            <br />
+            a story worth telling.
+          </h2>
+
+          <p className="mt-8 text-lg leading-9 text-gray-400">
+            {t("paragraph1")}
+          </p>
+
+          <p className="mt-6 text-lg leading-9 text-gray-400">
+            {t("paragraph2")}
+          </p>
+
+          <p className="mt-6 text-lg leading-9 text-gray-400">
+            {t("paragraph3")}
+          </p>
+
+        </div>
+
+      </section>
+
+
+      {/* FOLLOW / NEW TREASURES */}
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+
+        <div className="rounded-3xl border border-violet-500/20 bg-zinc-900/60 p-10 text-center md:p-14">
+
+          <h2 className="text-3xl font-bold text-violet-400 md:text-4xl">
+            New treasures every week ✨
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl leading-8 text-gray-300">
+            Follow Lavender Finds on Vinted, Leboncoin and social media to
+            discover carefully curated vintage décor, elegant glassware and
+            unique home accessories.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+
+            <button
+              onClick={() =>
+                document
+                  .getElementById("collection")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="rounded-full bg-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-400"
+            >
+              View Collection
+            </button>
+
+            <button className="rounded-full border border-violet-500 px-8 py-3 font-semibold transition hover:bg-violet-500 hover:text-black">
+              Follow Lavender Finds
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
 }
