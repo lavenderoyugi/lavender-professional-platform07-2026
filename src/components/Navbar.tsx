@@ -23,10 +23,10 @@ export default function Navbar() {
           <Image
             src="/lfinds-logo.png"
             alt="Lavender Finds"
-            width={72}
-            height={72}
+            width={90}
+            height={90}
             priority
-            className="h-16 w-16 object-contain"
+            className="h-20 w-20 object-contain"
           />
         </Link>
 
