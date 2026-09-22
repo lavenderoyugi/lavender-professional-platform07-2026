@@ -21,7 +21,7 @@ export default function Navbar() {
           aria-label="Lavender Finds"
         >
           <Image
-            src="/finds-logo.png"
+            src="/lfinds-logo.png"
             alt="Lavender Finds"
             width={72}
             height={72}
