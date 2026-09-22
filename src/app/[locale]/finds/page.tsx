@@ -93,7 +93,7 @@ useEffect(() => {
       <Navbar />
 
       {/* HERO */}
-     <section className="mx-auto max-w-7xl px-6 pb-10 pt-10 md:pt-14">
+     <section className="mx-auto max-w-7xl px-6 pb-4 pt-8 md:pt-10">
 
         <div className="max-w-3xl">
 
