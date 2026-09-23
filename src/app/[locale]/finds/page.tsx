@@ -228,6 +228,205 @@ useEffect(() => {
           </div>
         )}
 
+
+               {/* CUSTOMER LOVE */}
+        <section className="mt-24 border-t border-white/10 pt-20">
+
+          <div className="text-center">
+
+            <p className="text-sm uppercase tracking-[0.35em] text-violet-400">
+              Customer Love
+            </p>
+
+            <h2 className="mt-3 text-4xl font-bold md:text-5xl">
+              Loved by our customers
+            </h2>
+
+            <div className="mt-6 flex flex-col items-center justify-center">
+
+              <div className="text-3xl tracking-wide text-yellow-400">
+                ★★★★★
+              </div>
+
+              <div className="mt-2 text-3xl font-bold">
+                4.9 / 5
+              </div>
+
+              <p className="mt-1 text-gray-400">
+                107 evaluations on Vinted
+              </p>
+
+            </div>
+
+          </div>
+
+
+          {/* REVIEWS */}
+          <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-3">
+
+            <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-7 transition hover:border-violet-500/40">
+
+              <div className="text-lg tracking-wide text-yellow-400">
+                ★★★★★
+              </div>
+
+              <p className="mt-5 leading-7 text-gray-300">
+                “Plus que parfait : emballage très soigné et d'une grande
+                qualité pour petits articles fragiles, vendeur(se) à
+                recommander sans problème aucun.”
+              </p>
+
+              <p className="mt-6 text-sm font-semibold text-violet-400">
+                Vinted customer
+              </p>
+
+            </div>
+
+
+            <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-7 transition hover:border-violet-500/40">
+
+              <div className="text-lg tracking-wide text-yellow-400">
+                ★★★★★
+              </div>
+
+              <p className="mt-5 leading-7 text-gray-300">
+                “Parfait ! Tasses bien jolies et soigneusement emballées ! 😊”
+              </p>
+
+              <p className="mt-6 text-sm font-semibold text-violet-400">
+                Vinted customer
+              </p>
+
+            </div>
+
+
+            <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-7 transition hover:border-violet-500/40">
+
+              <div className="text-lg tracking-wide text-yellow-400">
+                ★★★★★
+              </div>
+
+              <p className="mt-5 leading-7 text-gray-300">
+                “Un super contact et une super vente ! Vraiment un de mes
+                achats les plus agréables !”
+              </p>
+
+              <p className="mt-6 text-sm font-semibold text-violet-400">
+                Vinted customer
+              </p>
+
+            </div>
+
+          </div>
+
+
+          {/* VINTED LINK */}
+          <div className="mt-10 text-center">
+
+            <a
+              href="https://www.vinted.fr/member/176550360?tab=feedback"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-full bg-violet-500 px-8 py-3 font-semibold text-white transition hover:bg-violet-400"
+            >
+              SEE ALL REVIEWS ON VINTED →
+            </a>
+
+          </div>
+
+
+          {/* SOCIAL MEDIA */}
+          <div className="mt-24 border-t border-white/10 pt-16">
+
+            <div className="text-center">
+
+              <p className="text-sm uppercase tracking-[0.35em] text-violet-400">
+                Stay Connected
+              </p>
+
+              <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                Follow Lavender Finds
+              </h2>
+
+              <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+                Discover new finds, behind-the-scenes moments and fresh
+                treasures across our social platforms.
+              </p>
+
+            </div>
+
+
+            <div className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-5">
+
+              <a
+                href="https://www.instagram.com/lavender.finds_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-zinc-900/60 px-5 py-5 text-center font-semibold transition hover:border-violet-500 hover:bg-violet-500/10"
+              >
+                Instagram
+                <span className="mt-1 block text-sm font-normal text-gray-500">
+                  @lavender.finds_
+                </span>
+              </a>
+
+
+              <a
+                href="https://www.facebook.com/LavenderFindsOfficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-zinc-900/60 px-5 py-5 text-center font-semibold transition hover:border-violet-500 hover:bg-violet-500/10"
+              >
+                Facebook
+                <span className="mt-1 block text-sm font-normal text-gray-500">
+                  Lavender Finds
+                </span>
+              </a>
+
+
+              <a
+                href="https://www.tiktok.com/@lavender.finds_2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-zinc-900/60 px-5 py-5 text-center font-semibold transition hover:border-violet-500 hover:bg-violet-500/10"
+              >
+                TikTok
+                <span className="mt-1 block text-sm font-normal text-gray-500">
+                  @lavender.finds_2026
+                </span>
+              </a>
+
+
+              <a
+                href="https://www.vinted.fr/member/176550360?tab=feedback"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-zinc-900/60 px-5 py-5 text-center font-semibold transition hover:border-violet-500 hover:bg-violet-500/10"
+              >
+                Vinted
+                <span className="mt-1 block text-sm font-normal text-gray-500">
+                  Shop Lavender Finds
+                </span>
+              </a>
+
+
+              <a
+                href="https://www.leboncoin.fr/profil/83de4671-8f29-4d11-a817-08e022658b89/offres"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-zinc-900/60 px-5 py-5 text-center font-semibold transition hover:border-violet-500 hover:bg-violet-500/10"
+              >
+                Leboncoin
+                <span className="mt-1 block text-sm font-normal text-gray-500">
+                  View our listings
+                </span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </section> 
       </section>
 
 
