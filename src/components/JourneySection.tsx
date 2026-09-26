@@ -76,7 +76,7 @@ export default function JourneySection() {
   // The career data contains the full, detailed cards. Keep those cards intact
   // and control only their presentation order here: newest to oldest.
   const chronologicalIds = [
-    14, 17, 16, 13, 15, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
+    14, 17, 16, 13, 15, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
   ];
 
   const orderedCareer = chronologicalIds
