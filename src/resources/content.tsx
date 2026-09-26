@@ -127,42 +127,43 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Au Fil des Lots",
+        timeframe: "February 2026 - Present",
+        role: "Vendeuse | Retail & Operations",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Customer service, sales support, stock handling, and day-to-day retail operations.</>,
+          <>Developing practical experience in organisation, customer relationships, and operational efficiency.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Espace Numérique – PEP Atlantique Anjou",
+        timeframe: "January 2024 - January 2026",
+        role: "Volunteer | Digital Support",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Supported users in becoming more autonomous with computers, tablets, and smartphones.</>,
+          <>Provided practical digital guidance in a community learning environment.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Intermarché",
+        timeframe: "March 2025 - September 2025",
+        role: "Cashier | Customer Service",
+        achievements: [
+          <>Provided customer service and handled checkout operations in a retail environment.</>,
+          <>Developed experience in accuracy, customer interaction, and fast-paced daily operations.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Tualava Realtors",
+        timeframe: "Earlier career | Kenya",
+        role: "Founder | Property & Real Estate Operations Manager",
+        achievements: [
+          <>Founded and managed a real estate business, overseeing day-to-day operations and business activities.</>,
+          <>Coordinated a team and managed client relationships, property activities, and business development.</>,
+          <>Built practical experience in entrepreneurship, operations, sales, and team management.</>,
         ],
         images: [],
       },
