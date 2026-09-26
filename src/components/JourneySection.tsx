@@ -106,7 +106,27 @@ export default function JourneySection() {
           </p>
         </div>
 
-        {/* Timeline Categories */}
+        {/* Quick Journey Navigator */}
+        <nav aria-label="Journey navigation" className="mb-16 flex flex-wrap justify-center gap-3">
+          {[
+            { label: "All", href: "#journey" },
+            { label: "Work Experience", href: "#journey-work" },
+            { label: "Education & Training", href: "#journey-education" },
+            { label: "Entrepreneurship", href: "#journey-entrepreneurship" },
+            { label: "Volunteer Experience", href: "#journey-volunteer" },
+            { label: "Life Milestones", href: "#journey-life" },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="rounded-full border border-zinc-700 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-200 transition hover:border-violet-400 hover:text-violet-300"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Detailed Timeline */}
         <div className="space-y-28">
           {orderedCareer.map((job) => {
             const info =
@@ -116,8 +136,21 @@ export default function JourneySection() {
                 subtitle: "",
               };
 
+            const sectionId =
+              job.category.includes("Professional Experience")
+                ? "journey-work"
+                : job.category.includes("Training")
+                  ? "journey-education"
+                  : job.category.includes("Entrepreneurial")
+                    ? "journey-entrepreneurship"
+                    : job.category.includes("Volunteer")
+                      ? "journey-volunteer"
+                      : job.category.includes("Life")
+                        ? "journey-life"
+                        : undefined;
+
             return (
-              <section key={job.id} className="relative">
+              <section key={job.id} id={sectionId} className="relative">
                 {/* Category label */}
                 <div className="mb-6">
                   <span className="text-4xl">{info.icon}</span>
