@@ -1,10 +1,19 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function POST(request: Request) {
   try {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
+
+    if (!secretKey) {
+      return NextResponse.json(
+        { error: "Stripe checkout is not configured on this deployment." },
+        { status: 503 }
+      );
+    }
+
+    const stripe = new Stripe(secretKey);
+
     const body = await request.json();
 
     const { items, deliveryMethod } = body;
