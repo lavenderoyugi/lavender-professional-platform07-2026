@@ -823,7 +823,7 @@ reflection:
 
   category: "Volunteer Experience",
 
-  year: "2024 – Present",
+  year: "January 2024 – January 2026",
 
   title: "Digital Facilitator (Volunteer)",
 
