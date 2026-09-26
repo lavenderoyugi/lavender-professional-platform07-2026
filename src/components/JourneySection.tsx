@@ -73,17 +73,15 @@ export default function JourneySection() {
   const t = useTranslations("journeySection");
   const careerData = useCareerData();
 
-  const groupedCareer = careerData.reduce((acc, item) => {
-    const key = item.category;
+  // The career data contains the full, detailed cards. Keep those cards intact
+  // and control only their presentation order here: newest to oldest.
+  const chronologicalIds = [
+    14, 17, 16, 13, 15, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
+  ];
 
-    if (!acc[key]) {
-      acc[key] = [];
-    }
-
-    acc[key].push(item);
-
-    return acc;
-  }, {} as Record<string, typeof careerData>);
+  const orderedCareer = chronologicalIds
+    .map((id) => careerData.find((item) => item.id === id))
+    .filter((item): item is (typeof careerData)[number] => Boolean(item));
 
   return (
     <section
@@ -110,37 +108,31 @@ export default function JourneySection() {
 
         {/* Timeline Categories */}
         <div className="space-y-28">
-          {Object.entries(groupedCareer).map(([category, jobs]) => {
+          {orderedCareer.map((job) => {
             const info =
-              categoryInfo[category as keyof typeof categoryInfo] ?? {
+              categoryInfo[job.category as keyof typeof categoryInfo] ?? {
                 icon: "📁",
-                title: category,
+                title: job.category,
                 subtitle: "",
               };
 
             return (
-              <section key={category} className="relative">
-                {/* Category Heading */}
-                <div className="mb-14">
-                  <span className="text-5xl">{info.icon}</span>
-
-                  <h2 className="mt-5 text-5xl font-extrabold tracking-tight">
+              <section key={job.id} className="relative">
+                {/* Category label */}
+                <div className="mb-6">
+                  <span className="text-4xl">{info.icon}</span>
+                  <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
                     {info.title}
                   </h2>
-
-                  <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-400">
-                    {info.subtitle}
-                  </p>
-
-                  <div className="mt-8 h-1 w-24 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
+                  {info.subtitle && (
+                    <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-400">
+                      {info.subtitle}
+                    </p>
+                  )}
+                  <div className="mt-5 h-1 w-20 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
                 </div>
 
-                {/* Career Cards */}
-                <div className="space-y-12">
-                  {jobs.map((job) => (
-                    <CareerCard key={job.id} {...job} />
-                  ))}
-                </div>
+                <CareerCard {...job} />
               </section>
             );
           })}
