@@ -9,8 +9,8 @@
 
   "journeySection": {
     "label": "Professional Journey",
-    "heading": "From Curiosity to Leadership",
-    "intro": "Every chapter of my career has contributed to who I am today. Beginning with customer service and business operations in Kenya, progressing into regional business development, entrepreneurship, relocating to France on <date>27 September 2022</date>, and continuing into data analytics and business operations—each experience has strengthened my ability to solve problems, lead teams, and create value through technology and business.",
+    "heading": "From Entrepreneurship to Data & Digital Solutions",
+    "intro": "My professional journey combines entrepreneurship, business operations, customer experience and data analytics. From building and managing a real estate business in Kenya to developing my career in France, each chapter has strengthened my ability to understand problems, improve processes, work with people and turn ideas into practical solutions.",
     "relocationDate": "27 September 2022"
   },
 
@@ -20,25 +20,25 @@
     "portfolio": "Portfolio",
     "blog": "Blog",
     "contact": "Contact",
-    "tagline": "Business • Data • AI"
+    "tagline": "Business • Data • Digital"
   },
 
   "hero": {
-    "welcome": "WELCOME TO MY JOURNEY",
+    "welcome": "BUSINESS • DATA • DIGITAL SOLUTIONS",
     "firstName": "Lavender",
     "lastName": "Oyugi",
-    "title1": "Entrepreneur | Business Operations | Data Analytics | AI & Digital Solutions",
+    "title1": "Business Operations | Data Analytics | Digital Solutions",
     "title2": "",
-    "intro": "I transform ideas into practical solutions.",
-    "paragraph1": "My career has taken me from entrepreneurship and business development in Kenya to operations, retail and data analytics in France.",
-    "paragraph2": "Today my mission is helping organisations improve operations through technology, business intelligence and continuous learning.",
+    "intro": "I turn business challenges, data and ideas into practical solutions.",
+    "paragraph1": "My career combines entrepreneurship and business development in Kenya with professional experience and data-focused development in France.",
+    "paragraph2": "I bring together business understanding, analytical thinking and technology to improve processes, support better decisions and create practical digital solutions.",
     "downloadCV": "Download CV",
     "journeyButton": "My Journey",
-    "portfolioButton": "Portfolio",
+    "portfolioButton": "View Portfolio",
     "experience": "Years Experience",
     "countries": "Countries",
     "projects": "Projects",
-    "learning": "Learning",
+    "learning": "Continuous Learning",
 
     "skills": {
       "businessOperations": "Business Operations",
@@ -53,59 +53,59 @@
   },
 
   "highlights": {
-    "heading": "Professional Highlights",
-    "subheading": "An overview of the experiences, skills and values that define my professional journey.",
+    "heading": "What I Bring",
+    "subheading": "A combination of business experience, analytical thinking and digital skills focused on creating practical value.",
 
     "leadership": {
-      "title": "Entrepreneurial Leadership",
-      "description": "Founder and leader of a real estate business in Kenya with experience in team leadership, client relations and business growth."
+      "title": "Business & Operations",
+      "description": "Experience in entrepreneurship, business development, customer relations, team coordination and day-to-day operations, with a focus on creating efficient and sustainable processes."
     },
 
     "analytics": {
-      "title": "Data Analytics",
-      "description": "Transforming data into actionable insights using Power BI, SQL, Excel, Python and modern analytics tools."
+      "title": "Data & Analytics",
+      "description": "Using Power BI, Excel, SQL, Python and data visualisation to explore information, identify patterns and turn data into insights that support better decisions."
     },
 
     "digital": {
-      "title": "AI & Digital Solutions",
-      "description": "Building modern websites, digital platforms and technological solutions that enhance efficiency and user experience."
+      "title": "Digital Solutions",
+      "description": "Developing modern websites, digital platforms and practical technology solutions that connect business needs with better user experiences and more efficient workflows."
     },
 
     "international": {
-      "title": "International Experience",
-      "description": "Combining entrepreneurial experience from Kenya with professional development in France to create practical and international solutions."
+      "title": "International Perspective",
+      "description": "Combining entrepreneurial and business experience from Kenya with professional development in France, bringing adaptability, cross-cultural experience and a broad perspective to new challenges."
     }
-  },  
+  },
 
   "contact": {
     "alert": "Please complete all fields before sending your message.",
-    "label": "LET'S STAY CONNECTED",
-    "heading": "Let's Build Something Together",
-    "paragraph1": "Thank you for taking the time to explore my journey. This portfolio is a living project that continues to evolve with every new experience, achievement and professional milestone.",
-    "paragraph2": "Whether you are a recruiter, collaborator, entrepreneur or simply want to connect, I would love to hear from you.",
-    "whyTitle": "Why I Do What I Do",
-    "whyDescription": "I believe technology, business and entrepreneurship can create opportunities that change lives. My passion is helping organisations grow through innovation, continuous learning and digital solutions while sharing my own journey.",
+    "label": "LET'S CONNECT",
+    "heading": "Let's Build Something Meaningful",
+    "paragraph1": "Thank you for exploring my professional journey. This portfolio brings together my experience, projects, learning and the solutions I am building as I continue developing at the intersection of business, data and technology.",
+    "paragraph2": "Whether you are a recruiter, hiring manager, business owner, potential client, collaborator or professional connection, I would be happy to hear from you.",
+    "whyTitle": "What Drives Me",
+    "whyDescription": "I enjoy understanding how businesses work, identifying opportunities for improvement and using data and technology to turn ideas into practical results. I believe continuous learning and adaptability are essential in a changing digital world.",
     "explore": "Explore My Work",
     "sendMessage": "Send a Message",
-    "contactText": "I'd love to hear from you! Whether you have a job opportunity, collaboration idea, business enquiry or simply want to say hello, feel free to send me a message.",
+    "contactText": "I'd love to hear from you. Whether you have a career opportunity, project, collaboration idea, business enquiry or simply want to connect professionally, feel free to send me a message.",
     "fullName": "Full Name",
     "email": "Email Address",
     "subject": "Subject",
     "message": "Write your message...",
     "send": "Send Message",
     "successTitle": "Message Sent Successfully!",
-"successMessage": "Thank you for contacting Lavender Oyugi. Your message has been received successfully. I will get back to you as soon as possible.",
-"errorTitle": "Message Not Sent",
-"errorMessage": "Sorry, your message could not be sent. Please try again later or contact me directly by email.",
-"invalidEmail": "Please enter a valid email address."
+    "successMessage": "Thank you for contacting Lavender Oyugi. Your message has been received successfully. I will get back to you as soon as possible.",
+    "errorTitle": "Message Not Sent",
+    "errorMessage": "Sorry, your message could not be sent. Please try again later or contact me directly by email.",
+    "invalidEmail": "Please enter a valid email address."
   },
-  
-"finds": {
-  "welcome": "WELCOME TO",
-  "title": "Lavender Finds",
-  "tagline": "Every treasure deserves a second story.",
-  "paragraph1": "I travel across France searching for unique vintage décor, elegant glassware, timeless collectibles and beautiful home accessories.",
-  "paragraph2": "Every item is carefully selected and photographed before being offered a new home through my curated collection.",
-  "paragraph3": "Whether you're decorating your home, searching for a unique gift, or collecting beautiful vintage pieces, I hope you'll discover something that inspires you."
-}
+
+  "finds": {
+    "welcome": "WELCOME TO",
+    "title": "Lavender Finds",
+    "tagline": "Every treasure deserves a second story.",
+    "paragraph1": "I travel across France searching for unique vintage décor, elegant glassware, timeless collectibles and beautiful home accessories.",
+    "paragraph2": "Every item is carefully selected and photographed before being offered a new home through my curated collection.",
+    "paragraph3": "Whether you're decorating your home, searching for a unique gift, or collecting beautiful vintage pieces, I hope you'll discover something that inspires you."
+  }
 }
