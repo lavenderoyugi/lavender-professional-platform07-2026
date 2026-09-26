@@ -548,7 +548,7 @@ reflection:
 
   category: "Career Orientation & Professional Development",
 
-  year: "2024",
+  year: "2024 – Jan 2026",
 
   title: "Digital Inclusion Discovery Placement",
 
@@ -592,11 +592,11 @@ reflection:
 
   category: "Professional Experience - France",
 
-  year: "2024",
+  year: "Feb 2024 – May 2024",
 
   title: "Checkout Operator",
 
-  company: "Carrefour",
+  company: "Carrefour City",
 
   location: "Saint-Nazaire, France",
 
@@ -632,11 +632,56 @@ reflection:
     "Every customer interaction is an opportunity to build trust and create a positive experience."
 },
 {
+  id: 18,
+
+  category: "Professional Experience - France",
+
+  year: "Jan 2025 – Feb 2025",
+
+  title: "Checkout Operator",
+
+  company: "Carrefour Market",
+
+  location: "Saint-Nazaire, France",
+
+  summary:
+    "Worked as a checkout operator at Carrefour Market, building further experience in French retail while developing speed, accuracy, customer service and confidence in a busy supermarket environment.",
+
+  responsibilities: [
+    "Processed customer purchases accurately and efficiently.",
+    "Handled cash and electronic payments.",
+    "Provided professional and friendly customer service.",
+    "Responded to customer questions and concerns.",
+    "Maintained accuracy and organisation at the checkout.",
+    "Worked effectively with colleagues during busy periods."
+  ],
+
+  skills: [
+    "Retail Operations",
+    "Customer Service",
+    "Cash Handling",
+    "Communication",
+    "Accuracy",
+    "Time Management",
+    "Teamwork",
+    "Adaptability"
+  ],
+
+  achievement:
+    "Strengthened my retail experience and confidence working with French customers in a fast-paced supermarket environment.",
+
+  impact:
+    "This role added another layer of practical retail operations experience and strengthened the adaptability, accuracy and customer-focused mindset I bring to business operations.",
+
+  reflection:
+    "Each new environment gives me another opportunity to learn, adapt and improve."
+},
+{
   id: 13,
 
   category: "Professional Experience - France",
 
-  year: "2025",
+  year: "Mar 2025 – Sep 2025",
 
   title: "Checkout Operator",
 
@@ -725,7 +770,7 @@ reflection:
 
   category: "Training & Education",
 
-  year: "2024",
+  year: "May 2024 – Oct 2024",
 
   title: "Data Analyst Bootcamp",
 
@@ -844,7 +889,10 @@ reflection:
     "Develop digital marketing content.",
     "Handle customer communication and order fulfilment.",
     "Manage branding and social media presence.",
-    "Build my own professional website."
+    "Build my own professional website.",
+    "Design and develop a digital inventory and sales management dashboard.",
+    "Centralise product data, stock levels, pricing and sales information in a structured database.",
+    "Use the dashboard to support inventory management and day-to-day business operations."
   ],
 
   skills: [
@@ -859,16 +907,27 @@ reflection:
     "Photography",
     "Social Media Marketing",
     "Website Development",
-    "Project Management"
+    "Dashboard Development",
+    "Database Management",
+    "Process Improvement",
+    "Project Management",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Supabase",
+    "PostgreSQL Database",
+    "Tailwind CSS",
+    "Git & GitHub",
+    "Vercel"
   ],
 
   achievement:
-    "Successfully launched a new entrepreneurial venture while simultaneously developing my professional portfolio website and expanding my digital skills.",
+    "Successfully launched a new entrepreneurial venture and built a working digital management system that brings inventory, product information, pricing and sales tracking into one central platform.",
 
   impact:
-    "Lavender Finds represents the combination of everything I have learned throughout my career—business management, customer service, technology, marketing and continuous learning. It demonstrates my commitment to building modern digital businesses while creating value for customers.",
+    "Lavender Finds represents the combination of my business management experience and digital skills. By turning a real operational need into a structured dashboard and database-driven workflow, I have strengthened my practical experience in process improvement, inventory management, dashboard development, database management and digital business operations.",
 
   reflection:
-    "Entrepreneurship is no longer just about opening a business. Today it's about combining technology, creativity and continuous learning to create meaningful experiences."
+    "Entrepreneurship today is also about building systems. Turning an operational challenge into a practical digital solution showed me how technology can make a small business more organised, measurable and scalable."
 },
 ];
