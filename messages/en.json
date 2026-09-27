@@ -141,13 +141,6 @@
         "impact": "The project demonstrates how I use my own business as a practical environment for identifying operational problems, designing a solution and connecting business processes with technology."
 
         },
-        "gallery": {
-          "homepage": "Professional homepage and positioning",
-          "journey": "Interactive professional journey with category filters",
-          "portfolio": "Projects and case studies showcase",
-          "caseStudy": "Detailed project case study page",
-          "mobile": "Responsive mobile experience"
-        }      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "A multilingual professional portfolio designed to present my business experience, data skills, digital projects and professional journey.",
@@ -156,7 +149,15 @@
         "solutionTitle": "A structured multilingual portfolio",
         "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl, with a structured career journey, project showcase, contact experience and multilingual navigation.",
         "impactTitle": "A living professional platform",
-        "impact": "The portfolio itself is also a development project. It gives recruiters and potential clients a concrete example of how I combine business thinking, data and digital tools."
+        "impact": "The portfolio itself is also a development project. It gives recruiters and potential clients a concrete example of how I combine business thinking, data and digital tools.",
+
+        "gallery": {
+          "homepage": "Professional homepage and positioning",
+          "journey": "Interactive professional journey with category filters",
+          "portfolio": "Projects and case studies showcase",
+          "caseStudy": "Detailed project case study page",
+          "mobile": "Responsive mobile experience"
+        }
       },
       "bicycle": {
         "title": "Bicycle Parking Data Analysis",
