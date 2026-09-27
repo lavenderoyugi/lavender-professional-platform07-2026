@@ -6,39 +6,49 @@
     "impact": "Impact sur la carrière",
     "reflection": "Ce que j'ai appris"
   },
-
   "journeySection": {
     "label": "Parcours professionnel",
     "heading": "De la curiosité au leadership",
     "intro": "Chaque étape de ma carrière a contribué à qui je suis aujourd'hui. En commençant par le service client et les opérations commerciales au Kenya, en progressant vers le développement commercial régional, l'entrepreneuriat, mon déménagement en France le <date>27 septembre 2022</date>, et en poursuivant vers l'analyse de données et les opérations commerciales, chaque expérience a renforcé ma capacité à résoudre des problèmes, diriger des équipes et créer de la valeur grâce à la technologie et aux affaires.",
-    "relocationDate": "27 septembre 2022"
+    "relocationDate": "27 septembre 2022",
+    "filterLabel": "Filtres du parcours",
+    "filterAll": "Tout",
+    "filterWork": "Expérience professionnelle",
+    "filterEducation": "Formation et études",
+    "filterEntrepreneurship": "Entrepreneuriat",
+    "filterVolunteer": "Expérience bénévole",
+    "filterLife": "Étapes de vie",
+    "workTitle": "Expérience professionnelle",
+    "workSubtitle": "Les expériences qui ont construit mon parcours professionnel, de mes débuts au Kenya à mon activité actuelle en France.",
+    "educationTitle": "Formation et études",
+    "educationSubtitle": "Mes études et formations professionnelles qui continuent de façonner mon parcours.",
+    "entrepreneurshipTitle": "Entrepreneuriat",
+    "entrepreneurshipSubtitle": "Les entreprises et projets entrepreneuriaux à travers lesquels j'ai développé, géré et amélioré des activités concrètes.",
+    "volunteerTitle": "Expérience bénévole",
+    "volunteerSubtitle": "Contribuer à la communauté à travers l'inclusion numérique et l'accompagnement.",
+    "lifeTitle": "Étapes de vie",
+    "lifeSubtitle": "Les étapes personnelles et transitions qui ont influencé mon parcours professionnel."
   },
-
   "highlights": {
     "heading": "Points forts professionnels",
     "subheading": "Un aperçu de l'expérience, des compétences et des valeurs qui définissent mon parcours professionnel.",
-
     "leadership": {
       "title": "Leadership en entreprise",
       "description": "Fondatrice et dirigeante d'une entreprise immobilière au Kenya, avec une expérience en gestion d'équipes, développement de la clientèle et croissance de l'entreprise."
     },
-
     "analytics": {
       "title": "Analyse de données",
       "description": "Transformer les données en informations utiles grâce à Power BI, SQL, Excel, Python et des outils d'analyse modernes."
     },
-
     "digital": {
       "title": "IA et solutions numériques",
       "description": "Conception de sites web modernes, de plateformes numériques et de solutions technologiques qui améliorent l'efficacité et l'expérience utilisateur."
     },
-
     "international": {
       "title": "Expérience internationale",
       "description": "Une combinaison d'expérience entrepreneuriale au Kenya et de développement professionnel en France pour créer des solutions concrètes à l'échelle internationale."
     }
   },
-
   "navigation": {
     "home": "Accueil",
     "journey": "Mon parcours",
@@ -47,7 +57,6 @@
     "contact": "Contact",
     "tagline": "Business • Data • IA"
   },
-
   "hero": {
     "welcome": "BIENVENUE DANS MON PARCOURS",
     "firstName": "Lavender",
@@ -64,7 +73,6 @@
     "countries": "Pays",
     "projects": "Projets",
     "learning": "Apprentissage",
-
     "skills": {
       "businessOperations": "Opérations",
       "entrepreneurship": "Entrepreneuriat",
@@ -76,7 +84,6 @@
       "projectManagement": "Gestion de projet"
     }
   },
-
   "contact": {
     "alert": "Veuillez compléter tous les champs avant d'envoyer votre message.",
     "label": "RESTONS EN CONTACT",
@@ -94,18 +101,17 @@
     "message": "Écrivez votre message...",
     "send": "Envoyer le message",
     "successTitle": "Message envoyé avec succès !",
-"successMessage": "Merci d'avoir contacté Lavender Oyugi. Votre message a bien été reçu. Je vous répondrai dans les meilleurs délais.",
-"errorTitle": "Échec de l'envoi",
-"errorMessage": "Désolé, votre message n'a pas pu être envoyé. Veuillez réessayer plus tard ou me contacter directement par e-mail.",
-"invalidEmail": "Veuillez saisir une adresse e-mail valide."
+    "successMessage": "Merci d'avoir contacté Lavender Oyugi. Votre message a bien été reçu. Je vous répondrai dans les meilleurs délais.",
+    "errorTitle": "Échec de l'envoi",
+    "errorMessage": "Désolé, votre message n'a pas pu être envoyé. Veuillez réessayer plus tard ou me contacter directement par e-mail.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide."
   },
-  
-"finds": {
-  "welcome": "BIENVENUE À",
-  "title": "Lavender Finds",
-  "tagline": "Chaque trésor mérite une seconde histoire.",
-  "paragraph1": "Je parcours la France à la recherche de décorations vintage uniques, de verrerie élégante, d'objets de collection intemporels et de magnifiques accessoires pour la maison.",
-  "paragraph2": "Chaque objet est soigneusement sélectionné et photographié avant d'être proposé à un nouveau foyer à travers ma collection.",
-  "paragraph3": "Que vous décoriez votre maison, recherchiez un cadeau unique ou collectionniez de belles pièces vintage, j'espère que vous découvrirez quelque chose qui vous inspirera."
-}
+  "finds": {
+    "welcome": "BIENVENUE À",
+    "title": "Lavender Finds",
+    "tagline": "Chaque trésor mérite une seconde histoire.",
+    "paragraph1": "Je parcours la France à la recherche de décorations vintage uniques, de verrerie élégante, d'objets de collection intemporels et de magnifiques accessoires pour la maison.",
+    "paragraph2": "Chaque objet est soigneusement sélectionné et photographié avant d'être proposé à un nouveau foyer à travers ma collection.",
+    "paragraph3": "Que vous décoriez votre maison, recherchiez un cadeau unique ou collectionniez de belles pièces vintage, j'espère que vous découvrirez quelque chose qui vous inspirera."
+  }
 }
