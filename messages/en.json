@@ -6,14 +6,29 @@
     "impact": "Career Impact",
     "reflection": "What I Learned"
   },
-
   "journeySection": {
     "label": "Professional Journey",
     "heading": "From Entrepreneurship to Data & Digital Solutions",
     "intro": "My professional journey combines entrepreneurship, business operations, customer experience and data analytics. From building and managing a real estate business in Kenya to developing my career in France, each chapter has strengthened my ability to understand problems, improve processes, work with people and turn ideas into practical solutions.",
-    "relocationDate": "27 September 2022"
+    "relocationDate": "27 September 2022",
+    "filterLabel": "Journey filters",
+    "filterAll": "All",
+    "filterWork": "Work Experience",
+    "filterEducation": "Education & Training",
+    "filterEntrepreneurship": "Entrepreneurship",
+    "filterVolunteer": "Volunteer Experience",
+    "filterLife": "Life Milestones",
+    "workTitle": "Professional Experience",
+    "workSubtitle": "The roles that built my professional experience, from my first position in Kenya to my current work in France.",
+    "educationTitle": "Education & Training",
+    "educationSubtitle": "Formal education and professional development that continue to shape my career.",
+    "entrepreneurshipTitle": "Entrepreneurship",
+    "entrepreneurshipSubtitle": "Businesses and entrepreneurial projects through which I have built, managed and improved real-world operations.",
+    "volunteerTitle": "Volunteer Experience",
+    "volunteerSubtitle": "Giving back through digital inclusion and community support.",
+    "lifeTitle": "Life Milestones",
+    "lifeSubtitle": "Personal milestones and transitions that shaped my professional journey."
   },
-
   "navigation": {
     "home": "Home",
     "journey": "My Journey",
@@ -22,7 +37,6 @@
     "contact": "Contact",
     "tagline": "Business • Data • Digital"
   },
-
   "hero": {
     "welcome": "BUSINESS • DATA • DIGITAL SOLUTIONS",
     "firstName": "Lavender",
@@ -39,7 +53,6 @@
     "countries": "Countries",
     "projects": "Projects",
     "learning": "Continuous Learning",
-
     "skills": {
       "businessOperations": "Business Operations",
       "entrepreneurship": "Entrepreneurship",
@@ -51,32 +64,26 @@
       "projectManagement": "Project Management"
     }
   },
-
   "highlights": {
     "heading": "What I Bring",
     "subheading": "A combination of business experience, analytical thinking and digital skills focused on creating practical value.",
-
     "leadership": {
       "title": "Business & Operations",
       "description": "Experience in entrepreneurship, business development, customer relations, team coordination and day-to-day operations, with a focus on creating efficient and sustainable processes."
     },
-
     "analytics": {
       "title": "Data & Analytics",
       "description": "Using Power BI, Excel, SQL, Python and data visualisation to explore information, identify patterns and turn data into insights that support better decisions."
     },
-
     "digital": {
       "title": "Digital Solutions",
       "description": "Developing modern websites, digital platforms and practical technology solutions that connect business needs with better user experiences and more efficient workflows."
     },
-
     "international": {
       "title": "International Perspective",
       "description": "Combining entrepreneurial and business experience from Kenya with professional development in France, bringing adaptability, cross-cultural experience and a broad perspective to new challenges."
     }
   },
-
   "contact": {
     "alert": "Please complete all fields before sending your message.",
     "label": "LET'S CONNECT",
@@ -99,7 +106,6 @@
     "errorMessage": "Sorry, your message could not be sent. Please try again later or contact me directly by email.",
     "invalidEmail": "Please enter a valid email address."
   },
-
   "finds": {
     "welcome": "WELCOME TO",
     "title": "Lavender Finds",
