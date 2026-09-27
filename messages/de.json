@@ -6,14 +6,29 @@
     "impact": "Karrierewirkung",
     "reflection": "Was ich gelernt habe"
   },
-
   "journeySection": {
     "label": "Beruflicher Werdegang",
     "heading": "Von Neugier zu Führungsstärke",
     "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb – jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
-    "relocationDate": "27. September 2022"
+    "relocationDate": "27. September 2022",
+    "filterLabel": "Filter für meinen Werdegang",
+    "filterAll": "Alle",
+    "filterWork": "Berufserfahrung",
+    "filterEducation": "Ausbildung & Weiterbildung",
+    "filterEntrepreneurship": "Unternehmertum",
+    "filterVolunteer": "Freiwillige Erfahrung",
+    "filterLife": "Lebensmeilensteine",
+    "workTitle": "Berufserfahrung",
+    "workSubtitle": "Die beruflichen Stationen, die meinen Weg geprägt haben – von meinen Anfängen in Kenia bis zu meiner heutigen Tätigkeit in Frankreich.",
+    "educationTitle": "Ausbildung & Weiterbildung",
+    "educationSubtitle": "Studium und berufliche Weiterbildung, die meinen beruflichen Weg weiter prägen.",
+    "entrepreneurshipTitle": "Unternehmertum",
+    "entrepreneurshipSubtitle": "Unternehmen und unternehmerische Projekte, in denen ich reale Geschäftsabläufe aufgebaut, geführt und verbessert habe.",
+    "volunteerTitle": "Freiwillige Erfahrung",
+    "volunteerSubtitle": "Engagement für die Gemeinschaft durch digitale Teilhabe und Unterstützung.",
+    "lifeTitle": "Lebensmeilensteine",
+    "lifeSubtitle": "Persönliche Meilensteine und Übergänge, die meinen beruflichen Weg beeinflusst haben."
   },
-
   "navigation": {
     "home": "Startseite",
     "journey": "Mein Weg",
@@ -22,7 +37,6 @@
     "contact": "Kontakt",
     "tagline": "Business • Data • KI"
   },
-
   "hero": {
     "welcome": "WILLKOMMEN AUF MEINEM WEG",
     "firstName": "Lavender",
@@ -39,7 +53,6 @@
     "countries": "Länder",
     "projects": "Projekte",
     "learning": "Lernen",
-
     "skills": {
       "businessOperations": "Geschäftsbetrieb",
       "entrepreneurship": "Unternehmertum",
@@ -51,61 +64,54 @@
       "projectManagement": "Projektmanagement"
     }
   },
-
   "highlights": {
     "heading": "Berufliche Highlights",
     "subheading": "Ein Überblick über die Erfahrungen, Fähigkeiten und Werte, die meinen beruflichen Werdegang auszeichnen.",
-
     "leadership": {
       "title": "Unternehmerische Führung",
       "description": "Gründerin und Leiterin eines Immobilienunternehmens in Kenia mit Erfahrung in Teamführung, Kundenbeziehungen und Unternehmenswachstum."
     },
-
     "analytics": {
       "title": "Datenanalyse",
       "description": "Daten mit Power BI, SQL, Excel, Python und modernen Analysetools in aussagekräftige Erkenntnisse verwandeln."
     },
-
     "digital": {
       "title": "KI & Digitale Lösungen",
       "description": "Entwicklung moderner Websites, digitaler Plattformen und technologischer Lösungen zur Verbesserung von Effizienz und Benutzererfahrung."
     },
-
     "international": {
       "title": "Internationale Erfahrung",
       "description": "Verbindung von unternehmerischer Erfahrung aus Kenia mit beruflicher Entwicklung in Frankreich, um praxisnahe und internationale Lösungen zu schaffen."
     }
+  },
+  "contact": {
+    "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
+    "label": "LASSEN SIE UNS IN KONTAKT BLEIBEN",
+    "heading": "Lassen Sie uns gemeinsam etwas aufbauen",
+    "paragraph1": "Vielen Dank, dass Sie sich die Zeit genommen haben, meinen beruflichen Weg kennenzulernen. Dieses Portfolio ist ein lebendiges Projekt, das sich mit jedem neuen Lernerfolg, jeder Erfahrung und jedem beruflichen Meilenstein weiterentwickelt.",
+    "paragraph2": "Ob Sie Recruiter, Geschäftspartner, Unternehmer oder einfach interessiert sind – ich freue mich darauf, von Ihnen zu hören.",
+    "whyTitle": "Warum ich tue, was ich tue",
+    "whyDescription": "Ich glaube, dass Technologie, Wirtschaft und Unternehmertum Möglichkeiten schaffen können, die Leben verändern. Meine Leidenschaft ist es, Unternehmen durch Innovation, kontinuierliches Lernen und digitale Lösungen wachsen zu lassen und gleichzeitig meinen eigenen Weg zu teilen.",
+    "explore": "Meine Arbeit entdecken",
+    "sendMessage": "Nachricht senden",
+    "contactText": "Ich freue mich, von Ihnen zu hören! Egal ob Sie eine berufliche Möglichkeit, eine Zusammenarbeit, eine Geschäftsanfrage oder einfach eine Nachricht senden möchten – kontaktieren Sie mich gerne.",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "subject": "Betreff",
+    "message": "Schreiben Sie Ihre Nachricht...",
+    "send": "Nachricht senden",
+    "successTitle": "Nachricht erfolgreich gesendet!",
+    "successMessage": "Vielen Dank, dass Sie Lavender Oyugi kontaktiert haben. Ihre Nachricht wurde erfolgreich empfangen. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "errorTitle": "Nachricht konnte nicht gesendet werden",
+    "errorMessage": "Es tut uns leid, Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt per E-Mail.",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+  },
+  "finds": {
+    "welcome": "WILLKOMMEN BEI",
+    "title": "Lavender Finds",
+    "tagline": "Jeder Schatz verdient eine zweite Geschichte.",
+    "paragraph1": "Ich reise durch Frankreich auf der Suche nach einzigartiger Vintage-Dekoration, elegantem Glas, zeitlosen Sammlerstücken und wunderschönen Wohnaccessoires.",
+    "paragraph2": "Jedes Stück wird sorgfältig ausgewählt und fotografiert, bevor es über meine kuratierte Kollektion ein neues Zuhause findet.",
+    "paragraph3": "Ob Sie Ihr Zuhause dekorieren, ein einzigartiges Geschenk suchen oder schöne Vintage-Stücke sammeln – ich hoffe, Sie entdecken etwas, das Sie inspiriert."
   }
-  ,
-"contact": {
-  "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
-  "label": "LASSEN SIE UNS IN KONTAKT BLEIBEN",
-  "heading": "Lassen Sie uns gemeinsam etwas aufbauen",
-  "paragraph1": "Vielen Dank, dass Sie sich die Zeit genommen haben, meinen beruflichen Weg kennenzulernen. Dieses Portfolio ist ein lebendiges Projekt, das sich mit jedem neuen Lernerfolg, jeder Erfahrung und jedem beruflichen Meilenstein weiterentwickelt.",
-  "paragraph2": "Ob Sie Recruiter, Geschäftspartner, Unternehmer oder einfach interessiert sind – ich freue mich darauf, von Ihnen zu hören.",
-  "whyTitle": "Warum ich tue, was ich tue",
-  "whyDescription": "Ich glaube, dass Technologie, Wirtschaft und Unternehmertum Möglichkeiten schaffen können, die Leben verändern. Meine Leidenschaft ist es, Unternehmen durch Innovation, kontinuierliches Lernen und digitale Lösungen wachsen zu lassen und gleichzeitig meinen eigenen Weg zu teilen.",
-  "explore": "Meine Arbeit entdecken",
-  "sendMessage": "Nachricht senden",
-  "contactText": "Ich freue mich, von Ihnen zu hören! Egal ob Sie eine berufliche Möglichkeit, eine Zusammenarbeit, eine Geschäftsanfrage oder einfach eine Nachricht senden möchten – kontaktieren Sie mich gerne.",
-  "fullName": "Vollständiger Name",
-  "email": "E-Mail-Adresse",
-  "subject": "Betreff",
-  "message": "Schreiben Sie Ihre Nachricht...",
-  "send": "Nachricht senden",
-  "successTitle": "Nachricht erfolgreich gesendet!",
-"successMessage": "Vielen Dank, dass Sie Lavender Oyugi kontaktiert haben. Ihre Nachricht wurde erfolgreich empfangen. Ich werde mich so schnell wie möglich bei Ihnen melden.",
-"errorTitle": "Nachricht konnte nicht gesendet werden",
-"errorMessage": "Es tut uns leid, Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt per E-Mail.",
-"invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
-},
-
-"finds": {
-  "welcome": "WILLKOMMEN BEI",
-  "title": "Lavender Finds",
-  "tagline": "Jeder Schatz verdient eine zweite Geschichte.",
-  "paragraph1": "Ich reise durch Frankreich auf der Suche nach einzigartiger Vintage-Dekoration, elegantem Glas, zeitlosen Sammlerstücken und wunderschönen Wohnaccessoires.",
-  "paragraph2": "Jedes Stück wird sorgfältig ausgewählt und fotografiert, bevor es über meine kuratierte Kollektion ein neues Zuhause findet.",
-  "paragraph3": "Ob Sie Ihr Zuhause dekorieren, ein einzigartiges Geschenk suchen oder schöne Vintage-Stücke sammeln – ich hoffe, Sie entdecken etwas, das Sie inspiriert."
-}
 }
