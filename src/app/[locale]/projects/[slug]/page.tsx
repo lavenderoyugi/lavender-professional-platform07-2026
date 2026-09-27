@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -25,6 +26,37 @@ const projects = {
   },
 } as const;
 
+const lavenderFindsGallery = [
+  {
+    src: "/projects/lavender-finds/01-storefront-desktop.png.png",
+    alt: "Lavender Finds desktop storefront",
+    caption: "Customer-facing storefront",
+    featured: true,
+  },
+  {
+    src: "/projects/lavender-finds/02-admin-dashboard.png.png",
+    alt: "Lavender Finds admin dashboard",
+    caption: "Business and sales dashboard",
+  },
+  {
+    src: "/projects/lavender-finds/03-inventory-management.png.png",
+    alt: "Lavender Finds inventory management",
+    caption: "Product and inventory management",
+  },
+  {
+    src: "/projects/lavender-finds/04-storefront-mobile.png.png",
+    alt: "Lavender Finds mobile storefront",
+    caption: "Responsive mobile storefront",
+    mobile: true,
+  },
+  {
+    src: "/projects/lavender-finds/05-mobile-product-management.png.png",
+    alt: "Lavender Finds mobile product management",
+    caption: "Responsive product management",
+    mobile: true,
+  },
+];
+
 export default async function ProjectCaseStudy({
   params,
 }: {
@@ -37,6 +69,7 @@ export default async function ProjectCaseStudy({
 
   const t = await getTranslations("caseStudies");
   const base = `projects.${project.key}`;
+  const isLavenderFinds = slug === "lavender-finds";
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -95,19 +128,77 @@ export default async function ProjectCaseStudy({
           </div>
         </div>
 
-        <div className="mt-16 overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950">
-          <div className="flex min-h-[260px] items-center justify-center px-8 py-16 text-center">
-            <div>
-              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-violet-500/30 bg-violet-500/10 text-3xl">
-                📷
-              </div>
-              <h2 className="text-xl font-bold">{t("screenshotsTitle")}</h2>
-              <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-zinc-500">
-                {t("screenshotsText")}
-              </p>
-            </div>
+        <section className="mt-16">
+          <div className="mb-7">
+            <h2 className="text-2xl font-bold">{t("screenshotsTitle")}</h2>
+            <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+              {isLavenderFinds
+                ? "A visual look at the customer experience, business dashboard and responsive inventory workflow."
+                : t("screenshotsText")}
+            </p>
           </div>
-        </div>
+
+          {isLavenderFinds ? (
+            <div className="space-y-8">
+              <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                <Image
+                  src={lavenderFindsGallery[0].src}
+                  alt={lavenderFindsGallery[0].alt}
+                  width={1600}
+                  height={1000}
+                  className="h-auto w-full"
+                />
+                <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                  {lavenderFindsGallery[0].caption}
+                </figcaption>
+              </figure>
+
+              <div className="grid gap-6 md:grid-cols-2">
+                {lavenderFindsGallery.slice(1, 3).map((image) => (
+                  <figure
+                    key={image.src}
+                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200}
+                      height={800}
+                      className="h-auto w-full"
+                    />
+                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+
+              <div className="grid items-start gap-6 md:grid-cols-2">
+                {lavenderFindsGallery.slice(3).map((image) => (
+                  <figure
+                    key={image.src}
+                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={744}
+                      height={1180}
+                      className="h-auto w-full"
+                    />
+                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-3xl border border-violet-500/20 bg-zinc-950 p-10 text-center text-zinc-500">
+              {t("screenshotsText")}
+            </div>
+          )}
+        </section>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           <section className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-7">
