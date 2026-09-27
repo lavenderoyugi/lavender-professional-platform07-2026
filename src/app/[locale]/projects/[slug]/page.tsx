@@ -26,6 +26,36 @@ const projects = {
   },
 } as const;
 
+const professionalPlatformGallery = [
+  {
+    src: "/projects/professional-platform/01-homepage-desktop.png",
+    alt: "Lavender Professional Platform desktop homepage",
+    captionKey: "homepage",
+    featured: true,
+  },
+  {
+    src: "/projects/professional-platform/02-journey-desktop.png",
+    alt: "Lavender Professional Platform professional journey",
+    captionKey: "journey",
+  },
+  {
+    src: "/projects/professional-platform/03-portfolio-desktop.png",
+    alt: "Lavender Professional Platform projects and case studies",
+    captionKey: "portfolio",
+  },
+  {
+    src: "/projects/professional-platform/04-case-study-desktop.png",
+    alt: "Lavender Professional Platform project case study",
+    captionKey: "caseStudy",
+  },
+  {
+    src: "/projects/professional-platform/05-homepage-mobile.png",
+    alt: "Lavender Professional Platform mobile homepage",
+    captionKey: "mobile",
+    mobile: true,
+  },
+];
+
 const lavenderFindsGallery = [
   {
     src: "/projects/lavender-finds/01-storefront-desktop-clean.png",
@@ -70,6 +100,7 @@ export default async function ProjectCaseStudy({
   const t = await getTranslations("caseStudies");
   const base = `projects.${project.key}`;
   const isLavenderFinds = slug === "lavender-finds";
+  const isProfessionalPlatform = slug === "professional-platform";
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -192,6 +223,54 @@ export default async function ProjectCaseStudy({
                   </figure>
                 ))}
               </div>
+            </div>
+          ) : isProfessionalPlatform ? (
+            <div className="space-y-8">
+              <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                <Image
+                  src={professionalPlatformGallery[0].src}
+                  alt={professionalPlatformGallery[0].alt}
+                  width={1600}
+                  height={1000}
+                  className="h-auto w-full"
+                />
+                <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                  {t(`projects.portfolio.gallery.${professionalPlatformGallery[0].captionKey}`)}
+                </figcaption>
+              </figure>
+
+              <div className="grid gap-6 md:grid-cols-2">
+                {professionalPlatformGallery.slice(1, 4).map((image) => (
+                  <figure
+                    key={image.src}
+                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200}
+                      height={800}
+                      className="h-auto w-full"
+                    />
+                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                      {t(`projects.portfolio.gallery.${image.captionKey}`)}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+
+              <figure className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm">
+                <Image
+                  src={professionalPlatformGallery[4].src}
+                  alt={professionalPlatformGallery[4].alt}
+                  width={744}
+                  height={1180}
+                  className="h-auto w-full"
+                />
+                <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                  {t(`projects.portfolio.gallery.${professionalPlatformGallery[4].captionKey}`)}
+                </figcaption>
+              </figure>
             </div>
           ) : (
             <div className="rounded-3xl border border-violet-500/20 bg-zinc-950 p-10 text-center text-zinc-500">
