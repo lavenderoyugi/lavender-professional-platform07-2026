@@ -1,170 +1,174 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import CareerCard from "./journey/CareerCard";
 import { useCareerData } from "@/data/careerData";
 
+type FilterKey =
+  | "all"
+  | "work"
+  | "education"
+  | "entrepreneurship"
+  | "volunteer"
+  | "life";
+
 const categoryInfo = {
-  "Professional Experience - Kenya": {
-    icon: "🇰🇪",
-    title: "Professional Experience",
-    subtitle:
-      "My professional career began in Kenya, where I built strong foundations in customer service, business development and leadership.",
-  },
+  work: { icon: "💼", titleKey: "workTitle", subtitleKey: "workSubtitle" },
+  education: { icon: "🎓", titleKey: "educationTitle", subtitleKey: "educationSubtitle" },
+  entrepreneurship: { icon: "🚀", titleKey: "entrepreneurshipTitle", subtitleKey: "entrepreneurshipSubtitle" },
+  volunteer: { icon: "🤝", titleKey: "volunteerTitle", subtitleKey: "volunteerSubtitle" },
+  life: { icon: "❤️", titleKey: "lifeTitle", subtitleKey: "lifeSubtitle" },
+} as const;
 
-  "Life Milestone": {
-    icon: "❤️",
-    title: "Life Milestones",
-    subtitle:
-      "Key personal moments that influenced my professional decisions and strengthened my resilience.",
-  },
+function getFilterCategory(category: string, jobId: number): Exclude<FilterKey, "all"> {
+  if ([2.5, 3.5, 6].includes(jobId)) return "life";
 
-  "Business Leadership & Entrepreneurship": {
-    icon: "🚀",
-    title: "Business Leadership & Entrepreneurship",
-    subtitle:
-      "Building businesses taught me leadership, innovation, financial management and customer-focused thinking.",
-  },
+  const value = category.toLowerCase();
 
-  "Training & Education": {
-    icon: "🎓",
-    title: "Training & Education",
-    subtitle:
-      "Continuous learning has always been one of the driving forces behind my personal and professional growth.",
-  },
+  if (value.includes("volunteer") || value.includes("bénévole") || value.includes("freiwill")) return "volunteer";
 
-  "A New Beginning in France": {
-    icon: "🇫🇷",
-    title: "A New Beginning",
-    subtitle:
-      "Relocating to France marked the start of an entirely new chapter filled with challenges, growth and new opportunities.",
-  },
+  if (
+    value.includes("entrepreneur") ||
+    value.includes("business leadership") ||
+    value.includes("entrepreneuriat")
+  ) return "entrepreneurship";
 
-  "Career Orientation & Professional Development": {
-    icon: "🌱",
-    title: "Career Orientation",
-    subtitle:
-      "Exploring the French labour market helped me discover my passion for technology and digital transformation.",
-  },
+  if (
+    value.includes("training") ||
+    value.includes("education") ||
+    value.includes("formation") ||
+    value.includes("éducation") ||
+    value.includes("ausbildung") ||
+    value.includes("weiterbildung") ||
+    value.includes("orientation") ||
+    value.includes("berufsorientierung")
+  ) return "education";
 
-  "Volunteer Experience": {
-    icon: "🤝",
-    title: "Volunteer Experience",
-    subtitle:
-      "Giving back to the community while helping others develop digital confidence.",
-  },
+  if (
+    value.includes("life") ||
+    value.includes("vie") ||
+    value.includes("leben") ||
+    value.includes("transition") ||
+    value.includes("milestone") ||
+    value.includes("meilenstein") ||
+    value.includes("neuer anfang") ||
+    value.includes("nouveau départ")
+  ) return "life";
 
-  "Professional Experience - France": {
-    icon: "💼",
-    title: "Professional Experience",
-    subtitle:
-      "Each role strengthened my adaptability while building my understanding of the French workplace.",
-  },
-
-  "Entrepreneurial Project": {
-    icon: "🌿",
-    title: "Current Entrepreneurial Project",
-    subtitle:
-      "Continuing to build new opportunities through entrepreneurship, technology and digital innovation.",
-  },
-};
+  return "work";
+}
 
 export default function JourneySection() {
   const t = useTranslations("journeySection");
   const careerData = useCareerData();
+  const [selectedCategory, setSelectedCategory] = useState<FilterKey>("all");
 
-  // The career data contains the full, detailed cards. Keep those cards intact
-  // and control only their presentation order here: newest to oldest.
+  // Master order: newest → oldest. Filtering happens after ordering.
   const chronologicalIds = [
     14, 17, 16, 13, 15, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
   ];
 
-  const orderedCareer = chronologicalIds
-    .map((id) => careerData.find((item) => item.id === id))
-    .filter((item): item is (typeof careerData)[number] => Boolean(item));
+  const orderedCareer = useMemo(
+    () =>
+      chronologicalIds
+        .map((id) => careerData.find((item) => item.id === id))
+        .filter((item): item is (typeof careerData)[number] => Boolean(item)),
+    [careerData]
+  );
+
+  const filteredCareer = useMemo(
+    () =>
+      selectedCategory === "all"
+        ? orderedCareer
+        : orderedCareer.filter(
+            (job) => getFilterCategory(job.category, job.id) === selectedCategory
+          ),
+    [orderedCareer, selectedCategory]
+  );
+
+  const filters: { key: FilterKey; label: string }[] = [
+    { key: "all", label: t("filterAll") },
+    { key: "work", label: t("filterWork") },
+    { key: "education", label: t("filterEducation") },
+    { key: "entrepreneurship", label: t("filterEntrepreneurship") },
+    { key: "volunteer", label: t("filterVolunteer") },
+    { key: "life", label: t("filterLife") },
+  ];
 
   return (
-    <section
-      id="journey"
-      className="bg-black px-6 py-24 text-white md:px-12 lg:px-24"
-    >
+    <section id="journey" className="bg-black px-6 py-24 text-white md:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        {/* Section Intro */}
-        <div className="mb-24 text-center">
+        <div className="mb-16 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-violet-400">
             {t("label")}
           </p>
-
           <h2 className="mt-4 text-5xl font-extrabold tracking-tight md:text-6xl">
             {t("heading")}
           </h2>
-
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
-            {t.rich("intro", {
-              date: (chunks) => <strong>{chunks}</strong>,
-            })}
+            {t.rich("intro", { date: (chunks) => <strong>{chunks}</strong> })}
           </p>
         </div>
 
-        {/* Quick Journey Navigator */}
-        <nav aria-label="Journey navigation" className="mb-16 flex flex-wrap justify-center gap-3">
-          {[
-            { label: "All", href: "#journey" },
-            { label: "Work Experience", href: "#journey-work" },
-            { label: "Education & Training", href: "#journey-education" },
-            { label: "Entrepreneurship", href: "#journey-entrepreneurship" },
-            { label: "Volunteer Experience", href: "#journey-volunteer" },
-            { label: "Life Milestones", href: "#journey-life" },
-          ].map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-full border border-zinc-700 bg-zinc-900/70 px-4 py-2 text-sm font-medium text-zinc-200 transition hover:border-violet-400 hover:text-violet-300"
-            >
-              {item.label}
-            </a>
-          ))}
+        <nav
+          aria-label={t("filterLabel")}
+          className="mb-16 flex flex-wrap justify-center gap-3"
+        >
+          {filters.map((item) => {
+            const active = selectedCategory === item.key;
+            return (
+              <button
+                key={item.key}
+                type="button"
+                onClick={() => setSelectedCategory(item.key)}
+                aria-pressed={active}
+                className={[
+                  "rounded-full border px-4 py-2 text-sm font-medium transition",
+                  active
+                    ? "border-violet-400 bg-violet-600/20 text-violet-200"
+                    : "border-zinc-700 bg-zinc-900/70 text-zinc-200 hover:border-violet-400 hover:text-violet-300",
+                ].join(" ")}
+              >
+                {item.label}
+              </button>
+            );
+          })}
         </nav>
 
-        {/* Detailed Timeline */}
         <div className="space-y-28">
-          {orderedCareer.map((job) => {
-            const info =
-              categoryInfo[job.category as keyof typeof categoryInfo] ?? {
-                icon: "📁",
-                title: job.category,
-                subtitle: "",
-              };
-
-            const sectionId =
-              job.category.includes("Professional Experience")
-                ? "journey-work"
-                : job.category.includes("Training")
-                  ? "journey-education"
-                  : job.category.includes("Entrepreneurial")
-                    ? "journey-entrepreneurship"
-                    : job.category.includes("Volunteer")
-                      ? "journey-volunteer"
-                      : job.category.includes("Life")
-                        ? "journey-life"
-                        : undefined;
+          {filteredCareer.map((job, index) => {
+            const filterCategory = getFilterCategory(job.category, job.id);
+            const info = categoryInfo[filterCategory];
+            const previousJob = filteredCareer[index - 1];
+            const previousCategory = previousJob
+              ? getFilterCategory(previousJob.category, previousJob.id)
+              : null;
+            const showCategoryHeading =
+              selectedCategory === "all" && filterCategory !== previousCategory;
 
             return (
-              <section key={job.id} id={sectionId} className="relative">
-                {/* Category label */}
-                <div className="mb-6">
-                  <span className="text-4xl">{info.icon}</span>
-                  <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
-                    {info.title}
-                  </h2>
-                  {info.subtitle && (
+              <section
+                key={job.id}
+                id={
+                  showCategoryHeading || index === 0
+                    ? `journey-${filterCategory}`
+                    : undefined
+                }
+                className="relative"
+              >
+                {showCategoryHeading && (
+                  <div className="mb-6">
+                    <span className="text-4xl">{info.icon}</span>
+                    <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
+                      {t(info.titleKey)}
+                    </h2>
                     <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-400">
-                      {info.subtitle}
+                      {t(info.subtitleKey)}
                     </p>
-                  )}
-                  <div className="mt-5 h-1 w-20 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
-                </div>
-
+                    <div className="mt-5 h-1 w-20 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
+                  </div>
+                )}
                 <CareerCard {...job} />
               </section>
             );
