@@ -51,7 +51,8 @@
     "developerSurvey": {
       "title": "Analyse d'une enquête sur les développeurs et les technologies",
       "description": "Un projet analytique basé sur des données d'enquête auprès des développeurs pour identifier des tendances, comparer les technologies et transformer un grand jeu de données en informations claires."
-    }
+    },
+    "viewCaseStudy": "Voir l'étude de cas"
   },
   "navigation": {
     "home": "Accueil",
@@ -117,5 +118,57 @@
     "paragraph1": "Je parcours la France à la recherche de décorations vintage uniques, de verrerie élégante, d'objets de collection intemporels et de magnifiques accessoires pour la maison.",
     "paragraph2": "Chaque objet est soigneusement sélectionné et photographié avant d'être proposé à un nouveau foyer à travers ma collection.",
     "paragraph3": "Que vous décoriez votre maison, recherchiez un cadeau unique ou collectionniez de belles pièces vintage, j'espère que vous découvrirez quelque chose qui vous inspirera."
+  },
+  "caseStudies": {
+    "backToPortfolio": "Retour aux projets",
+    "label": "ÉTUDE DE CAS",
+    "discussProject": "Parlons de ce projet",
+    "screenshotsTitle": "Visuels du projet",
+    "screenshotsText": "Les captures d'écran, tableaux de bord et visuels du projet seront ajoutés ici ensuite. La structure de l'étude de cas est prête à les accueillir.",
+    "challengeLabel": "LE BESOIN",
+    "solutionLabel": "LA SOLUTION",
+    "impactLabel": "IMPACT ET APPRENTISSAGE",
+    "projects": {
+      "lavenderFinds": {
+        "title": "Lavender Finds — Plateforme e-commerce et gestion des stocks",
+        "intro": "Un projet entrepreneurial réel dans lequel je relie opérations commerciales, e-commerce et développement logiciel.",
+        "challengeTitle": "Structurer une activité de revente en développement",
+        "challenge": "Gérer les produits, prix, stocks, ventes et annonces sur plusieurs canaux crée des tâches répétitives et rend la centralisation des informations difficile.",
+        "solutionTitle": "Un workflow de gestion basé sur les données",
+        "solution": "J'ai développé une plateforme avec Next.js, React, TypeScript, Supabase et PostgreSQL pour centraliser les produits, les stocks, les prix et les ventes, avec un espace d'administration.",
+        "impactTitle": "Transformer une activité réelle en système numérique",
+        "impact": "Ce projet montre comment j'utilise une activité concrète pour identifier un problème opérationnel, concevoir une solution et relier les processus métier à la technologie."
+      },
+      "portfolio": {
+        "title": "Lavender Professional Platform",
+        "intro": "Un portfolio professionnel multilingue conçu pour présenter mon expérience business, mes compétences data, mes projets numériques et mon parcours.",
+        "challengeTitle": "Présenter clairement un parcours pluridisciplinaire",
+        "challenge": "Mon expérience couvre l'entrepreneuriat, les opérations, l'analyse de données et le développement numérique. L'enjeu était de réunir ces dimensions sans créer une simple liste de compétences.",
+        "solutionTitle": "Un portfolio structuré et multilingue",
+        "solution": "J'ai développé la plateforme avec Next.js, TypeScript, Tailwind CSS et next-intl, avec un parcours professionnel structuré, une vitrine de projets, un espace de contact et une navigation multilingue.",
+        "impactTitle": "Une plateforme professionnelle vivante",
+        "impact": "Le portfolio est lui-même un projet de développement. Il permet aux recruteurs et futurs clients de voir concrètement comment je combine réflexion métier, données et outils numériques."
+      },
+      "bicycle": {
+        "title": "Analyse des données des parkings à vélos",
+        "intro": "Un projet d'analyse de données utilisant des données ouvertes sur les parkings à vélos en Loire-Atlantique.",
+        "challengeTitle": "Transformer des données ouvertes en informations utiles",
+        "challenge": "Le jeu de données contient de nombreux enregistrements et attributs. L'enjeu était de structurer l'information et de rendre les tendances liées aux emplacements et aux disponibilités plus faciles à comprendre.",
+        "solutionTitle": "Analyse et visualisation avec Power BI",
+        "solution": "J'ai préparé et exploré le jeu de données, puis utilisé Power BI et des techniques d'analyse avec Excel pour structurer l'information et créer des visualisations facilitant l'exploration et la comparaison.",
+        "impactTitle": "Du jeu de données à la visualisation d'aide à la décision",
+        "impact": "Ce projet montre ma capacité à travailler avec des données ouvertes, structurer l'information et communiquer des résultats avec une approche orientée métier."
+      },
+      "developerSurvey": {
+        "title": "Analyse d'une enquête sur les développeurs et les technologies",
+        "intro": "Un projet analytique basé sur des données d'enquête auprès des développeurs afin d'identifier des tendances et de communiquer des informations utiles.",
+        "challengeTitle": "Rendre une grande enquête compréhensible",
+        "challenge": "Les enquêtes auprès des développeurs contiennent de nombreuses variables, technologies et caractéristiques professionnelles. L'enjeu est d'identifier des tendances pertinentes tout en conservant le contexte des données.",
+        "solutionTitle": "Combiner analyse et visualisation",
+        "solution": "J'ai exploré le jeu de données avec des techniques d'analyse et travaillé avec Power BI, SQL et Python pour organiser, comparer et visualiser les informations.",
+        "impactTitle": "Communiquer clairement des données technologiques",
+        "impact": "Le projet montre ma capacité à passer d'un grand jeu de données à des questions structurées, une analyse et une communication visuelle claire."
+      }
+    }
   }
 }
