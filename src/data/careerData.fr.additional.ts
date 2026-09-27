@@ -1,0 +1,197 @@
+export const careerDataAdditionalFr = [
+  {
+    id: 10,
+    category: "Formation et études",
+    year: "2024",
+    title: "Stage de Découverte des Métiers du Numérique",
+    company: "ARINFO",
+    location: "Saint-Nazaire, France",
+    summary: "Dans le cadre de mon parcours d'orientation professionnelle, j'ai effectué une immersion de deux semaines chez ARINFO afin de découvrir les métiers du numérique et de mieux comprendre le secteur technologique en France.",
+    responsibilities: [
+      "Observation de professionnels du numérique dans leur environnement de travail.",
+      "Découverte du développement logiciel et des technologies web.",
+      "Découverte du design numérique et de l'expérience utilisateur.",
+      "Participation à des ateliers pratiques et à des activités collaboratives.",
+      "Exploration des opportunités professionnelles dans le numérique."
+    ],
+    skills: ["Culture numérique", "Technologies web", "Résolution de problèmes", "Collaboration", "Adaptabilité", "Apprentissage continu", "Curiosité"],
+    achievement: "Cette immersion a confirmé mon intérêt pour les technologies numériques et renforcé ma confiance dans ma transition vers le secteur technologique.",
+    impact: "Elle a constitué une première étape concrète vers mon orientation professionnelle dans la technologie et m'a encouragée à poursuivre ma formation.",
+    reflection: "Découvrir une nouvelle carrière commence parfois simplement par le courage d'explorer quelque chose de différent."
+  },
+  {
+    id: 11,
+    category: "Formation et études",
+    year: "2024 – Jan 2026",
+    title: "Immersion dans l'Inclusion Numérique",
+    company: "Espace Numérique PEP44",
+    location: "Saint-Nazaire, France",
+    summary: "Dans le cadre de mon parcours d'orientation, j'ai effectué une immersion à l'Espace Numérique PEP44 où j'ai découvert l'importance de l'inclusion numérique et l'accompagnement des publics dans leurs usages technologiques.",
+    responsibilities: [
+      "Observation des séances d'accompagnement numérique.",
+      "Découverte du rôle des conseillers et animateurs numériques.",
+      "Découverte des initiatives d'inclusion numérique.",
+      "Accompagnement de participants sur des tâches informatiques de base.",
+      "Développement de mes compétences en communication et transmission."
+    ],
+    skills: ["Compétences numériques", "Communication", "Pédagogie", "Accompagnement", "Résolution de problèmes", "Patience"],
+    achievement: "Cette immersion m'a permis de découvrir un environnement où la technologie est utilisée pour renforcer l'autonomie des personnes.",
+    impact: "Elle a ensuite inspiré mon engagement bénévole comme animatrice informatique.",
+    reflection: "La technologie a le plus d'impact lorsqu'elle aide les personnes à devenir plus autonomes et confiantes."
+  },
+  {
+    id: 12,
+    category: "Expérience Professionnelle",
+    year: "Fév 2024 – Mai 2024",
+    title: "Hôtesse de Caisse",
+    company: "Carrefour City",
+    location: "Saint-Nazaire, France",
+    summary: "J'ai travaillé comme hôtesse de caisse dans un environnement de commerce de proximité dynamique, en assurant un service client efficace tout en développant ma confiance dans le monde professionnel français.",
+    responsibilities: [
+      "Enregistrement précis des achats.",
+      "Gestion des paiements en espèces et par carte.",
+      "Accueil et service client.",
+      "Réponse professionnelle aux demandes des clients.",
+      "Maintien d'un espace de caisse organisé.",
+      "Travail efficace pendant les périodes de forte activité."
+    ],
+    skills: ["Service client", "Encaissement", "Opérations commerciales", "Communication", "Précision", "Gestion du temps", "Résolution de problèmes"],
+    achievement: "J'ai renforcé ma confiance dans les échanges directs avec la clientèle française dans un environnement de vente soutenu.",
+    impact: "Cette expérience a renforcé mon adaptabilité, ma résilience et ma compréhension des opérations du commerce de détail en France.",
+    reflection: "Chaque interaction avec un client est une occasion de créer de la confiance et une expérience positive."
+  },
+  {
+    id: 18,
+    category: "Expérience Professionnelle",
+    year: "Jan 2025 – Fév 2025",
+    title: "Hôtesse de Caisse",
+    company: "Carrefour Market",
+    location: "Saint-Nazaire, France",
+    summary: "J'ai travaillé comme hôtesse de caisse chez Carrefour Market, développant davantage mon expérience du commerce en France tout en renforçant rapidité, précision, service client et confiance dans un environnement de supermarché.",
+    responsibilities: [
+      "Enregistrement précis et efficace des achats.",
+      "Gestion des paiements en espèces et électroniques.",
+      "Accueil professionnel et chaleureux des clients.",
+      "Réponse aux questions et préoccupations des clients.",
+      "Maintien de la précision et de l'organisation en caisse.",
+      "Collaboration efficace avec l'équipe pendant les périodes de forte activité."
+    ],
+    skills: ["Opérations commerciales", "Service client", "Encaissement", "Communication", "Précision", "Gestion du temps", "Travail d'équipe", "Adaptabilité"],
+    achievement: "J'ai renforcé mon expérience du commerce de détail et ma confiance dans le contact avec la clientèle française.",
+    impact: "Cette expérience a ajouté une nouvelle dimension à ma connaissance des opérations commerciales et renforcé mon adaptabilité.",
+    reflection: "Chaque nouvel environnement est une occasion d'apprendre, de s'adapter et de progresser."
+  },
+  {
+    id: 13,
+    category: "Expérience Professionnelle",
+    year: "Mar 2025 – Sep 2025",
+    title: "Hôtesse de Caisse",
+    company: "Intermarché",
+    location: "Pornichet, France",
+    summary: "J'ai travaillé comme hôtesse de caisse dans un supermarché dynamique, en assurant un excellent service client et des transactions efficaces et précises.",
+    responsibilities: [
+      "Enregistrement efficace des achats.",
+      "Gestion des paiements en espèces et électroniques.",
+      "Accueil et service client.",
+      "Maintien de la précision en caisse.",
+      "Gestion professionnelle des demandes clients.",
+      "Collaboration avec les collègues."
+    ],
+    skills: ["Opérations commerciales", "Service client", "Gestion de caisse", "Communication", "Précision", "Travail d'équipe", "Adaptabilité"],
+    achievement: "J'ai maintenu des standards élevés de service client dans un environnement de vente soutenu.",
+    impact: "Cette expérience a renforcé ma confiance, ma communication et ma capacité à travailler efficacement sous pression.",
+    reflection: "La constance et le professionnalisme créent une impression durable."
+  },
+  {
+    id: 14,
+    category: "Expérience Professionnelle",
+    year: "2026 – Présent",
+    title: "Vendeuse",
+    company: "Au Fil des Lots",
+    location: "Trignac, France",
+    summary: "Je travaille actuellement comme vendeuse dans un environnement de commerce dynamique où je contribue au merchandising, au service client, à la gestion des stocks et aux opérations quotidiennes du magasin.",
+    responsibilities: [
+      "Accompagnement des clients et réponse à leurs demandes.",
+      "Réassort des rayons et organisation des présentoirs.",
+      "Réception et traitement des livraisons.",
+      "Maintien d'un espace de vente attractif.",
+      "Participation à la gestion des stocks.",
+      "Contribution au bon fonctionnement quotidien du magasin."
+    ],
+    skills: ["Opérations commerciales", "Service client", "Merchandising", "Gestion des stocks", "Organisation", "Travail d'équipe", "Adaptabilité", "Résolution de problèmes"],
+    achievement: "J'ai continué à développer mon expérience des opérations commerciales tout en poursuivant mon développement professionnel et mes projets personnels.",
+    impact: "Ce poste renforce ma culture opérationnelle et l'importance du travail d'équipe, de l'organisation et de la satisfaction client.",
+    reflection: "Progresser, c'est donner le meilleur de soi dans chaque rôle sans perdre de vue sa vision à long terme."
+  },
+  {
+    id: 15,
+    category: "Formation et études",
+    year: "Mai 2024 – Oct 2024",
+    title: "Bootcamp Data Analyst",
+    company: "Wild Code School",
+    location: "À distance, France",
+    summary: "Pour associer mon expérience commerciale à la technologie, j'ai suivi le bootcamp intensif Data Analyst de Wild Code School pendant cinq mois. J'y ai développé des compétences pratiques en analyse de données, Business Intelligence et programmation à travers des projets concrets.",
+    responsibilities: [
+      "Suivi d'une formation intensive de Data Analyst.",
+      "Nettoyage, analyse et visualisation de jeux de données.",
+      "Création de tableaux de bord avec Power BI et Tableau.",
+      "Utilisation de SQL et Python.",
+      "Réalisation d'analyses exploratoires.",
+      "Présentation de résultats analytiques sous forme de rapports.",
+      "Réalisation de projets collaboratifs avec des méthodes Agile.",
+      "Utilisation de Git et GitHub pour le versionnement."
+    ],
+    skills: ["Power BI", "SQL", "Python", "Tableau", "Excel", "Analyse de données", "Nettoyage des données", "Visualisation", "Business Intelligence", "Statistiques", "Git", "GitHub", "Agile", "Résolution de problèmes"],
+    achievement: "J'ai terminé avec succès un bootcamp intensif de Data Analyst en développant des projets pratiques en Business Intelligence et analyse de données.",
+    impact: "Cette formation a marqué ma transition vers la technologie en combinant mon expérience en gestion d'entreprise avec les méthodes modernes d'analyse de données.",
+    reflection: "Les données racontent des histoires que les chiffres seuls ne peuvent pas raconter."
+  },
+  {
+    id: 16,
+    category: "Expérience Bénévole",
+    year: "Janvier 2024 – Janvier 2026",
+    title: "Animatrice Informatique (Bénévole)",
+    company: "Espace Numérique PEP44",
+    location: "Saint-Nazaire, France",
+    summary: "En parallèle de mon développement professionnel, je me suis engagée comme animatrice informatique bénévole à l'Espace Numérique PEP44, où j'accompagne différents publics dans le développement de leurs compétences numériques essentielles.",
+    responsibilities: [
+      "Accompagnement des apprenants sur les ordinateurs et outils numériques.",
+      "Initiation à Microsoft Word, Excel et PowerPoint.",
+      "Aide aux démarches administratives en ligne.",
+      "Accompagnement à la création de CV professionnels.",
+      "Accompagnement numérique individuel.",
+      "Promotion de l'inclusion numérique.",
+      "Renforcement de la confiance dans l'utilisation des technologies."
+    ],
+    skills: ["Pédagogie", "Compétences numériques", "Communication", "Accompagnement", "Microsoft Office", "Résolution de problèmes", "Patience", "Empathie", "Engagement communautaire"],
+    achievement: "J'ai aidé de nombreux participants à gagner en confiance dans l'utilisation des outils numériques tout en développant mes propres compétences de communication et de transmission.",
+    impact: "Cette expérience a renforcé ma passion pour l'éducation, l'inclusion numérique et l'apprentissage tout au long de la vie.",
+    reflection: "L'un des aspects les plus enrichissants de l'apprentissage est de pouvoir aider quelqu'un d'autre à progresser."
+  },
+  {
+    id: 17,
+    category: "Entrepreneuriat",
+    year: "2026 – Présent",
+    title: "Fondatrice",
+    company: "Lavender Finds",
+    location: "France",
+    summary: "Lavender Finds est mon projet entrepreneurial actuel, qui combine sélection de produits, marketing digital et e-commerce. À travers Vinted, Leboncoin et les réseaux sociaux, je développe une activité de vente en ligne tout en construisant des outils numériques pour structurer les opérations.",
+    responsibilities: [
+      "Recherche et sélection de produits en France.",
+      "Analyse de la demande et des tendances du marché.",
+      "Création de photographies et d'annonces produits.",
+      "Gestion des plateformes de vente en ligne.",
+      "Création de contenus de marketing digital.",
+      "Gestion de la relation client et des commandes.",
+      "Développement de l'image de marque et des réseaux sociaux.",
+      "Conception et développement de mon site professionnel.",
+      "Conception et développement d'un tableau de bord de gestion des stocks et des ventes.",
+      "Centralisation des produits, stocks, prix et ventes dans une base de données structurée.",
+      "Utilisation du tableau de bord pour améliorer la gestion des stocks et les opérations quotidiennes."
+    ],
+    skills: ["Entrepreneuriat", "E-commerce", "Marketing digital", "Création de contenu", "SEO", "Développement de marque", "Service client", "Analyse commerciale", "Photographie", "Marketing des réseaux sociaux", "Développement web", "Développement de tableaux de bord", "Gestion de bases de données", "Amélioration des processus", "Gestion de projet", "Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Git & GitHub", "Vercel"],
+    achievement: "J'ai lancé un nouveau projet entrepreneurial et construit un système numérique opérationnel qui centralise les informations produits, les stocks, les prix et le suivi des ventes.",
+    impact: "Lavender Finds représente la combinaison de mon expérience en gestion d'entreprise et de mes compétences numériques. La transformation d'un besoin opérationnel réel en tableau de bord et processus structuré a renforcé mon expérience en amélioration des processus, gestion des stocks, bases de données et opérations digitales.",
+    reflection: "L'entrepreneuriat aujourd'hui consiste aussi à construire des systèmes. Transformer un problème opérationnel en solution numérique concrète montre comment la technologie peut rendre une petite entreprise plus organisée et mesurable."
+  }
+];
