@@ -1,5 +1,62 @@
 export const careerDataAdditionalFr = [
   {
+    id: 2.5,
+    category: "Étape de Vie",
+    year: "Juillet 2011",
+    title: "Devenir mère",
+    company: "Étape personnelle",
+    location: "Kenya",
+    summary: "La naissance de mon premier fils a été une étape importante de ma vie. Elle m'a motivée à construire une carrière qui puisse associer évolution personnelle, responsabilité familiale et indépendance professionnelle.",
+    responsibilities: ["Assumer une nouvelle responsabilité familiale tout en préparant mon avenir professionnel.", "Identifier l'entrepreneuriat comme une voie permettant davantage de flexibilité.", "Commencer à construire les bases de mon premier projet entrepreneurial."],
+    skills: ["Résilience", "Adaptabilité", "Organisation", "Sens des responsabilités", "Détermination"],
+    achievement: "J'ai transformé un changement majeur de vie en motivation pour construire mon propre parcours professionnel.",
+    impact: "Cette étape a contribué à développer la résilience et le sens des responsabilités qui ont marqué la suite de mon parcours.",
+    reflection: "Certaines des plus grandes responsabilités de la vie deviennent le point de départ de nouvelles ambitions."
+  },
+  {
+    id: 3.5,
+    category: "Étape de Vie",
+    year: "2016 – 2018",
+    title: "Famille, déménagement et reprise des études",
+    company: "Nouveau chapitre",
+    location: "Kenya",
+    summary: "En 2016, j'ai déménagé avec ma famille pour commencer un nouveau chapitre. En septembre 2016, j'ai accueilli mon deuxième fils. Après la fermeture de ma boutique, j'ai choisi de réorienter mon avenir par la formation et j'ai commencé mes études à Mount Kenya University en janvier 2018.",
+    responsibilities: ["Gérer un déménagement et un nouveau chapitre familial.", "Fermer une entreprise établie après le déménagement.", "Concilier responsabilités familiales et projet professionnel.", "Reprendre une formation universitaire."],
+    skills: ["Adaptabilité", "Prise de décision", "Apprentissage continu", "Résilience", "Planification"],
+    achievement: "J'ai transformé une période de transition personnelle en une nouvelle base pour mon développement professionnel.",
+    impact: "Cette période m'a confirmé que développement personnel et évolution professionnelle peuvent avancer ensemble.",
+    reflection: "Chaque fin peut créer l'espace nécessaire à un nouveau départ lorsque l'on choisit de continuer à apprendre."
+  },
+  {
+    id: 4,
+    category: "Formation et études",
+    year: "Jan 2018 – 2021",
+    title: "Bachelor of Business Management",
+    company: "Mount Kenya University",
+    location: "Mombasa, Kenya",
+    summary: "J'ai étudié le Business Management à Mount Kenya University afin de compléter mon expérience pratique de l'entreprise par des connaissances académiques en gestion, stratégie, finance, marketing, ressources humaines et leadership organisationnel.",
+    responsibilities: ["Étudier le Business Management tout en assumant mes responsabilités familiales.", "Appliquer les connaissances académiques à des situations commerciales réelles.", "Développer mes capacités d'analyse et de prise de décision stratégique.", "Renforcer mes compétences en leadership et en gestion organisationnelle.", "Réaliser des projets liés aux opérations et au management."],
+    skills: ["Business Management", "Management stratégique", "Leadership", "Marketing", "Gestion financière", "Ressources humaines", "Communication", "Résolution de problèmes", "Pensée critique", "Gestion de projet"],
+    achievement: "J'ai mené à bien mes études universitaires tout en conciliant responsabilités familiales et développement professionnel.",
+    impact: "Cette formation a renforcé ma capacité à relier mon expérience pratique de l'entreprise aux principes académiques de gestion.",
+    reflection: "La formation ne remplace pas l'expérience : elle nous aide à comprendre pourquoi l'expérience fonctionne et comment la développer."
+  },
+  {
+    id: 5,
+    category: "Entrepreneuriat",
+    year: "2019 – 2022",
+    title: "Fondatrice | Responsable des Opérations Immobilières",
+    company: "Tourlover Realtors (enregistrée sous Hudden Realtors)",
+    location: "Diani, Kenya",
+    summary: "J'ai fondé et géré une entreprise immobilière et de gestion de biens offrant la gestion de propriétés commerciales, le conseil immobilier, la gestion de locations de vacances et la coordination hôtelière.",
+    responsibilities: ["Gestion de propriétés commerciales et recouvrement des loyers.", "Maintien de relations solides avec les locataires et propriétaires.", "Accompagnement des clients dans l'achat et la vente de terrains et de biens.", "Promotion des biens sur plusieurs canaux.", "Gestion de locations de vacances et de propriétés Airbnb.", "Coordination des réservations hôtelières et de la logistique d'hébergement.", "Organisation de transferts, excursions, safaris et activités locales.", "Inspections et contrôles qualité des biens.", "Préparation de contrats.", "Coordination de la maintenance et des services opérationnels."],
+    skills: ["Gestion des opérations", "Gestion immobilière", "Gestion hôtelière", "Développement commercial", "Relation client", "Négociation", "Planification stratégique", "Coordination de projets", "Résolution de problèmes", "Leadership"],
+    achievement: "J'ai géré un ensemble commercial complet et coordonné l'hébergement de groupes de plus de 100 personnes.",
+    impact: "Cette expérience a renforcé mon expertise en gestion des opérations, service client, communication stratégique et leadership commercial.",
+    reflection: "Gérer des personnes, des biens et des attentes clients m'a montré que le professionnalisme repose sur l'organisation, l'intégrité et la confiance."
+  },
+
+  {
     id: 10,
     category: "Formation et études",
     year: "2024",
