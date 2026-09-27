@@ -21,19 +21,22 @@ const categoryInfo = {
   life: { icon: "❤️", titleKey: "lifeTitle", subtitleKey: "lifeSubtitle" },
 } as const;
 
-function getFilterCategory(category: string, jobId: number): Exclude<FilterKey, "all"> {
+function getFilterCategory(
+  category: string,
+  jobId: number
+): Exclude<FilterKey, "all"> {
+  // Classification is based on stable career record IDs first, so
+  // translations can never break the filters.
   if ([2.5, 3.5, 6].includes(jobId)) return "life";
+  if ([4, 9, 10, 11, 15].includes(jobId)) return "education";
+  if ([3, 5, 17].includes(jobId)) return "entrepreneurship";
+  if ([16].includes(jobId)) return "volunteer";
 
+  // Fallback for any future records that do not yet have an explicit ID mapping.
   const value = category.toLowerCase();
 
   if (value.includes("volunteer") || value.includes("bénévole") || value.includes("freiwill")) return "volunteer";
-
-  if (
-    value.includes("entrepreneur") ||
-    value.includes("business leadership") ||
-    value.includes("entrepreneuriat")
-  ) return "entrepreneurship";
-
+  if (value.includes("entrepreneur") || value.includes("entrepreneuriat")) return "entrepreneurship";
   if (
     value.includes("training") ||
     value.includes("education") ||
@@ -44,16 +47,13 @@ function getFilterCategory(category: string, jobId: number): Exclude<FilterKey, 
     value.includes("orientation") ||
     value.includes("berufsorientierung")
   ) return "education";
-
   if (
     value.includes("life") ||
     value.includes("vie") ||
     value.includes("leben") ||
     value.includes("transition") ||
     value.includes("milestone") ||
-    value.includes("meilenstein") ||
-    value.includes("neuer anfang") ||
-    value.includes("nouveau départ")
+    value.includes("meilenstein")
   ) return "life";
 
   return "work";
@@ -117,6 +117,7 @@ export default function JourneySection() {
         >
           {filters.map((item) => {
             const active = selectedCategory === item.key;
+
             return (
               <button
                 key={item.key}
