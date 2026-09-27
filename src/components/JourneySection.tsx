@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import CareerCard from "./journey/CareerCard";
 import { useCareerData } from "@/data/careerData";
@@ -64,6 +64,34 @@ export default function JourneySection() {
   const careerData = useCareerData();
   const [selectedCategory, setSelectedCategory] = useState<FilterKey>("all");
 
+  // Keep the selected journey section in the URL so browser Back/Forward
+  // restores the previous filter instead of losing the visitor's place.
+  useEffect(() => {
+    const syncFromUrl = () => {
+      const value = new URLSearchParams(window.location.search).get("journey");
+      const valid: FilterKey[] = ["all", "work", "education", "entrepreneurship", "volunteer", "life"];
+      setSelectedCategory(valid.includes(value as FilterKey) ? (value as FilterKey) : "all");
+    };
+
+    syncFromUrl();
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, []);
+
+  const selectCategory = (key: FilterKey) => {
+    setSelectedCategory(key);
+
+    const url = new URL(window.location.href);
+    if (key === "all") {
+      url.searchParams.delete("journey");
+    } else {
+      url.searchParams.set("journey", key);
+    }
+
+    window.history.pushState({ journey: key }, "", url);
+    window.scrollTo({ top: document.getElementById("journey")?.offsetTop ?? 0, behavior: "smooth" });
+  };
+
   // Master order: newest → oldest. Filtering happens after ordering.
   const chronologicalIds = [
     14, 17, 16, 13, 15, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
@@ -122,7 +150,7 @@ export default function JourneySection() {
               <button
                 key={item.key}
                 type="button"
-                onClick={() => setSelectedCategory(item.key)}
+                onClick={() => selectCategory(item.key)}
                 aria-pressed={active}
                 className={[
                   "rounded-full border px-4 py-2 text-sm font-medium transition",
@@ -174,6 +202,44 @@ export default function JourneySection() {
               </section>
             );
           })}
+        </div>
+
+        <div className="mt-20">
+                  <nav
+          aria-label={t("filterLabel")}
+          className="flex flex-wrap justify-center gap-3 border-t border-zinc-900 pt-10"
+        >
+          {filters.map((item) => {
+            const active = selectedCategory === item.key;
+
+            return (
+              <button
+                key={item.key}
+                type="button"
+                onClick={() => selectCategory(item.key)}
+                aria-pressed={active}
+                className={[
+                  "rounded-full border px-4 py-2 text-sm font-medium transition",
+                  active
+                    ? "border-violet-400 bg-violet-600/20 text-violet-200"
+                    : "border-zinc-700 bg-zinc-900/70 text-zinc-200 hover:border-violet-400 hover:text-violet-300",
+                ].join(" ")}
+              >
+                {item.label}
+              </button>
+            );
+          })}
+        </nav>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <button
+            type="button"
+            onClick={() => window.scrollTo({ top: document.getElementById("journey")?.offsetTop ?? 0, behavior: "smooth" })}
+            className="text-sm font-semibold text-violet-400 transition hover:text-violet-300"
+          >
+            ↑ {t("backToJourney")}
+          </button>
         </div>
       </div>
     </section>
