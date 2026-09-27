@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
 const projects = {
@@ -35,7 +35,7 @@ export default async function ProjectCaseStudy({
 
   if (!project) notFound();
 
-  const t = useTranslations("caseStudies");
+  const t = await getTranslations("caseStudies");
   const base = `projects.${project.key}`;
 
   return (
