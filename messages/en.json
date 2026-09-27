@@ -139,7 +139,15 @@
         "solution": "I developed a digital platform using Next.js, React, TypeScript, Supabase and PostgreSQL to centralise product information, inventory, pricing and sales. The project also includes an administration workflow for managing the catalogue.",
         "impactTitle": "From business activity to a practical digital system",
         "impact": "The project demonstrates how I use my own business as a practical environment for identifying operational problems, designing a solution and connecting business processes with technology."
-      },
+
+        },
+        "gallery": {
+          "homepage": "Professional homepage and positioning",
+          "journey": "Interactive professional journey with category filters",
+          "portfolio": "Projects and case studies showcase",
+          "caseStudy": "Detailed project case study page",
+          "mobile": "Responsive mobile experience"
+        }      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "A multilingual professional portfolio designed to present my business experience, data skills, digital projects and professional journey.",
