@@ -86,7 +86,8 @@
     "developerSurvey": {
       "title": "Analyse einer Entwickler- und Technologieumfrage",
       "description": "Ein Analyseprojekt auf Basis von Entwickler- und Technologiedaten, um Muster zu erkennen, Technologien zu vergleichen und einen großen Datensatz in verständliche Erkenntnisse umzuwandeln."
-    }
+    },
+    "viewCaseStudy": "Fallstudie ansehen"
   },
   "contact": {
     "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
@@ -117,5 +118,57 @@
     "paragraph1": "Ich reise durch Frankreich auf der Suche nach einzigartiger Vintage-Dekoration, elegantem Glas, zeitlosen Sammlerstücken und wunderschönen Wohnaccessoires.",
     "paragraph2": "Jedes Stück wird sorgfältig ausgewählt und fotografiert, bevor es über meine kuratierte Kollektion ein neues Zuhause findet.",
     "paragraph3": "Ob Sie Ihr Zuhause dekorieren, ein einzigartiges Geschenk suchen oder schöne Vintage-Stücke sammeln – ich hoffe, Sie entdecken etwas, das Sie inspiriert."
+  },
+  "caseStudies": {
+    "backToPortfolio": "Zurück zu den Projekten",
+    "label": "PROJEKT-FALLSTUDIE",
+    "discussProject": "Projekt besprechen",
+    "screenshotsTitle": "Projektvisualisierungen",
+    "screenshotsText": "Screenshots, Dashboards und Projektvisualisierungen werden als Nächstes hier ergänzt. Die Struktur der Fallstudie ist bereits vorbereitet.",
+    "challengeLabel": "DIE HERAUSFORDERUNG",
+    "solutionLabel": "DIE LÖSUNG",
+    "impactLabel": "WIRKUNG & LERNEN",
+    "projects": {
+      "lavenderFinds": {
+        "title": "Lavender Finds — E-Commerce- & Bestandsplattform",
+        "intro": "Ein reales unternehmerisches Projekt, das Geschäftsabläufe, E-Commerce und Softwareentwicklung verbindet.",
+        "challengeTitle": "Eine wachsende Verkaufsaktivität strukturieren",
+        "challenge": "Produkte, Preise, Bestände, Verkäufe und Angebote über mehrere Kanäle zu verwalten, erzeugt wiederkehrende Aufgaben und erschwert die Zentralisierung.",
+        "solutionTitle": "Ein datenbankgestützter Workflow",
+        "solution": "Ich entwickelte eine Plattform mit Next.js, React, TypeScript, Supabase und PostgreSQL zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen, ergänzt durch einen Administrationsbereich.",
+        "impactTitle": "Aus Geschäftsaktivität wird ein digitales System",
+        "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
+      },
+      "portfolio": {
+        "title": "Lavender Professional Platform",
+        "intro": "Ein mehrsprachiges professionelles Portfolio zur Präsentation meiner Geschäftserfahrung, Datenkompetenzen, digitalen Projekte und meines beruflichen Weges.",
+        "challengeTitle": "Einen vielseitigen beruflichen Weg klar präsentieren",
+        "challenge": "Meine Erfahrung umfasst Unternehmertum, Betriebsabläufe, Datenanalyse und digitale Entwicklung. Die Herausforderung war, diese Bereiche sinnvoll zu verbinden.",
+        "solutionTitle": "Ein strukturiertes mehrsprachiges Portfolio",
+        "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl, mit strukturiertem Werdegang, Projektübersicht, Kontaktbereich und mehrsprachiger Navigation.",
+        "impactTitle": "Eine lebendige professionelle Plattform",
+        "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde."
+      },
+      "bicycle": {
+        "title": "Datenanalyse von Fahrradparkplätzen",
+        "intro": "Ein Datenanalyseprojekt mit offenen Daten zu Fahrradparkplätzen in der Region Loire-Atlantique.",
+        "challengeTitle": "Offene Daten in verständliche Informationen verwandeln",
+        "challenge": "Der Datensatz enthält viele Einträge und Merkmale. Die Herausforderung bestand darin, die Informationen zu strukturieren und Muster bei Standorten und Verfügbarkeit verständlich darzustellen.",
+        "solutionTitle": "Analyse und Power-BI-Visualisierung",
+        "solution": "Ich bereitete den Datensatz auf und analysierte ihn. Anschließend nutzte ich Power BI und Excel-orientierte Analysetechniken, um Informationen zu strukturieren und Vergleiche zu ermöglichen.",
+        "impactTitle": "Vom Datensatz zur entscheidungsorientierten Visualisierung",
+        "impact": "Das Projekt zeigt meine Fähigkeit, mit offenen Daten zu arbeiten, Informationen zu strukturieren und Erkenntnisse verständlich zu visualisieren."
+      },
+      "developerSurvey": {
+        "title": "Analyse einer Entwickler- und Technologieumfrage",
+        "intro": "Ein Analyseprojekt mit Entwickler- und Technologiedaten, um Muster zu erkennen und Erkenntnisse verständlich zu kommunizieren.",
+        "challengeTitle": "Eine große Umfrage verständlich machen",
+        "challenge": "Entwicklerumfragen enthalten viele Variablen, Technologien und berufliche Merkmale. Die Herausforderung besteht darin, relevante Muster zu erkennen und gleichzeitig den Kontext zu erhalten.",
+        "solutionTitle": "Analyse und Visualisierung verbinden",
+        "solution": "Ich untersuchte den Datensatz mit Analysetechniken und arbeitete mit Power BI, SQL und Python, um Informationen zu strukturieren, zu vergleichen und zu visualisieren.",
+        "impactTitle": "Technologiedaten klar kommunizieren",
+        "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, Analysen und klarer visueller Kommunikation zu gelangen."
+      }
+    }
   }
 }
