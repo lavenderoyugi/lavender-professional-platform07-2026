@@ -139,7 +139,15 @@
         "solution": "Ich entwickelte eine Plattform mit Next.js, React, TypeScript, Supabase und PostgreSQL zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen, ergänzt durch einen Administrationsbereich.",
         "impactTitle": "Aus Geschäftsaktivität wird ein digitales System",
         "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
-      },
+
+        },
+        "gallery": {
+          "homepage": "Professionelle Startseite und Positionierung",
+          "journey": "Interaktiver beruflicher Werdegang mit Kategoriefiltern",
+          "portfolio": "Übersicht der Projekte und Fallstudien",
+          "caseStudy": "Detaillierte Projekt-Fallstudie",
+          "mobile": "Responsive mobile Darstellung"
+        }      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "Ein mehrsprachiges professionelles Portfolio zur Präsentation meiner Geschäftserfahrung, Datenkompetenzen, digitalen Projekte und meines beruflichen Weges.",
