@@ -65,23 +65,27 @@
     }
   },
   "highlights": {
-    "heading": "What I Bring",
-    "subheading": "A combination of business experience, analytical thinking and digital skills focused on creating practical value.",
-    "leadership": {
-      "title": "Business & Operations",
-      "description": "Experience in entrepreneurship, business development, customer relations, team coordination and day-to-day operations, with a focus on creating efficient and sustainable processes."
+    "label": "SELECTED WORK",
+    "heading": "Projects & Case Studies",
+    "subheading": "A selection of practical projects where I combine business understanding, data analysis and digital development to solve real problems.",
+    "caseStudy": "Case Study",
+    "discussProject": "Discuss this project",
+    "futureNote": "Detailed case studies, project screenshots and measurable outcomes will continue to be added.",
+    "lavenderFinds": {
+      "title": "Lavender Finds — Digital Commerce & Inventory Platform",
+      "description": "An entrepreneurial e-commerce project developed around a real operational need. I built a database-driven platform to manage products, inventory, pricing and sales, connecting business operations with a practical digital workflow."
     },
-    "analytics": {
-      "title": "Data & Analytics",
-      "description": "Using Power BI, Excel, SQL, Python and data visualisation to explore information, identify patterns and turn data into insights that support better decisions."
+    "portfolio": {
+      "title": "Lavender Professional Platform",
+      "description": "This multilingual professional portfolio, built with Next.js and TypeScript, brings together my career journey, professional positioning, projects and contact experience in one responsive platform."
     },
-    "digital": {
-      "title": "Digital Solutions",
-      "description": "Developing modern websites, digital platforms and practical technology solutions that connect business needs with better user experiences and more efficient workflows."
+    "bicycle": {
+      "title": "Bicycle Parking Data Analysis",
+      "description": "A data-analysis project using bicycle parking open data to explore availability, locations and patterns through structured analysis and interactive Power BI visualisation."
     },
-    "international": {
-      "title": "International Perspective",
-      "description": "Combining entrepreneurial and business experience from Kenya with professional development in France, bringing adaptability, cross-cultural experience and a broad perspective to new challenges."
+    "developerSurvey": {
+      "title": "Developer & Technology Survey Analysis",
+      "description": "An analytics project exploring developer and technology survey data to identify patterns, compare tools and turn a large dataset into clear business-oriented insights."
     }
   },
   "contact": {
