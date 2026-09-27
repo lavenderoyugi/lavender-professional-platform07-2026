@@ -48,7 +48,16 @@ export default async function ProjectCaseStudy({
           ← {t("backToPortfolio")}
         </Link>
 
-        <div className="mt-12 max-w-4xl">
+        <div className="mb-8">
+          <Link
+            href="/#portfolio"
+            className="inline-flex text-sm font-semibold text-violet-400 transition hover:text-violet-300"
+          >
+            ← {t("backToPortfolio")}
+          </Link>
+        </div>
+
+        <div className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-violet-400">
             {t("label")}
           </p>
