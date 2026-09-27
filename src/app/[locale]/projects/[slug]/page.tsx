@@ -41,13 +41,6 @@ export default async function ProjectCaseStudy({
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-24">
-        <Link
-          href="/#portfolio"
-          className="text-sm font-semibold text-violet-400 transition hover:text-violet-300"
-        >
-          ← {t("backToPortfolio")}
-        </Link>
-
         <div className="mb-8">
           <Link
             href="/#portfolio"
