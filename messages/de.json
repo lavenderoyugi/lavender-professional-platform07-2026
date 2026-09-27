@@ -65,23 +65,27 @@
     }
   },
   "highlights": {
-    "heading": "Berufliche Highlights",
-    "subheading": "Ein Überblick über die Erfahrungen, Fähigkeiten und Werte, die meinen beruflichen Werdegang auszeichnen.",
-    "leadership": {
-      "title": "Unternehmerische Führung",
-      "description": "Gründerin und Leiterin eines Immobilienunternehmens in Kenia mit Erfahrung in Teamführung, Kundenbeziehungen und Unternehmenswachstum."
+    "label": "AUSGEWÄHLTE PROJEKTE",
+    "heading": "Projekte & Fallstudien",
+    "subheading": "Eine Auswahl praktischer Projekte, in denen ich Geschäftsverständnis, Datenanalyse und digitale Entwicklung verbinde, um reale Probleme zu lösen.",
+    "caseStudy": "Fallstudie",
+    "discussProject": "Projekt besprechen",
+    "futureNote": "Detaillierte Fallstudien, Screenshots und messbare Ergebnisse werden schrittweise ergänzt.",
+    "lavenderFinds": {
+      "title": "Lavender Finds — E-Commerce- & Bestandsplattform",
+      "description": "Ein unternehmerisches Projekt, das aus einem realen betrieblichen Bedarf entstanden ist. Ich entwickelte eine datenbankgestützte Plattform zur Verwaltung von Produkten, Beständen, Preisen und Verkäufen."
     },
-    "analytics": {
-      "title": "Datenanalyse",
-      "description": "Daten mit Power BI, SQL, Excel, Python und modernen Analysetools in aussagekräftige Erkenntnisse verwandeln."
+    "portfolio": {
+      "title": "Lavender Professional Platform",
+      "description": "Dieses mehrsprachige professionelle Portfolio wurde mit Next.js und TypeScript entwickelt und verbindet meinen Werdegang, meine berufliche Positionierung, Projekte und Kontaktmöglichkeiten in einer responsiven Plattform."
     },
-    "digital": {
-      "title": "KI & Digitale Lösungen",
-      "description": "Entwicklung moderner Websites, digitaler Plattformen und technologischer Lösungen zur Verbesserung von Effizienz und Benutzererfahrung."
+    "bicycle": {
+      "title": "Datenanalyse von Fahrradparkplätzen",
+      "description": "Ein Analyseprojekt mit offenen Daten zu Fahrradparkplätzen, um Verfügbarkeit, Standorte und Muster durch strukturierte Analyse und interaktive Power-BI-Visualisierung zu untersuchen."
     },
-    "international": {
-      "title": "Internationale Erfahrung",
-      "description": "Verbindung von unternehmerischer Erfahrung aus Kenia mit beruflicher Entwicklung in Frankreich, um praxisnahe und internationale Lösungen zu schaffen."
+    "developerSurvey": {
+      "title": "Analyse einer Entwickler- und Technologieumfrage",
+      "description": "Ein Analyseprojekt auf Basis von Entwickler- und Technologiedaten, um Muster zu erkennen, Technologien zu vergleichen und einen großen Datensatz in verständliche Erkenntnisse umzuwandeln."
     }
   },
   "contact": {
