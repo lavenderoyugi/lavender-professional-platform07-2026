@@ -63,11 +63,7 @@ export default function ProfessionalHighlights() {
               </div>
 
               <Link
-                href="/#contact"
-                className="mt-7 inline-flex text-sm font-semibold text-violet-400 transition hover:text-violet-300"
-              >
-                {t("discussProject")} →
-              </Link>
+                href={`/projects/${project.slug}`} className="mt-7 inline-flex text-sm font-semibold text-violet-400 transition hover:text-violet-300">{t("viewCaseStudy")} →</Link>
             </article>
           ))}
         </div>
