@@ -28,7 +28,7 @@ const projects = {
 
 const lavenderFindsGallery = [
   {
-    src: "/projects/lavender-finds/01-storefront-desktop.png.png",
+    src: "/projects/lavender-finds/01-storefront-desktop-clean.png",
     alt: "Lavender Finds desktop storefront",
     caption: "Customer-facing storefront",
     featured: true,
