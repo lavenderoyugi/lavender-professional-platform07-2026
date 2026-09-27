@@ -141,13 +141,6 @@
         "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
 
         },
-        "gallery": {
-          "homepage": "Professionelle Startseite und Positionierung",
-          "journey": "Interaktiver beruflicher Werdegang mit Kategoriefiltern",
-          "portfolio": "Übersicht der Projekte und Fallstudien",
-          "caseStudy": "Detaillierte Projekt-Fallstudie",
-          "mobile": "Responsive mobile Darstellung"
-        }      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "Ein mehrsprachiges professionelles Portfolio zur Präsentation meiner Geschäftserfahrung, Datenkompetenzen, digitalen Projekte und meines beruflichen Weges.",
@@ -156,7 +149,15 @@
         "solutionTitle": "Ein strukturiertes mehrsprachiges Portfolio",
         "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl, mit strukturiertem Werdegang, Projektübersicht, Kontaktbereich und mehrsprachiger Navigation.",
         "impactTitle": "Eine lebendige professionelle Plattform",
-        "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde."
+        "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde.",
+
+        "gallery": {
+          "homepage": "Professionelle Startseite und Positionierung",
+          "journey": "Interaktiver beruflicher Werdegang mit Kategoriefiltern",
+          "portfolio": "Übersicht der Projekte und Fallstudien",
+          "caseStudy": "Detaillierte Projekt-Fallstudie",
+          "mobile": "Responsive mobile Darstellung"
+        }
       },
       "bicycle": {
         "title": "Datenanalyse von Fahrradparkplätzen",
