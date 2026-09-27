@@ -30,23 +30,27 @@
     "lifeSubtitle": "Les étapes personnelles et transitions qui ont influencé mon parcours professionnel."
   },
   "highlights": {
-    "heading": "Points forts professionnels",
-    "subheading": "Un aperçu de l'expérience, des compétences et des valeurs qui définissent mon parcours professionnel.",
-    "leadership": {
-      "title": "Leadership en entreprise",
-      "description": "Fondatrice et dirigeante d'une entreprise immobilière au Kenya, avec une expérience en gestion d'équipes, développement de la clientèle et croissance de l'entreprise."
+    "label": "PROJETS SÉLECTIONNÉS",
+    "heading": "Projets et études de cas",
+    "subheading": "Une sélection de projets concrets dans lesquels je combine compréhension métier, analyse de données et développement numérique pour répondre à des besoins réels.",
+    "caseStudy": "Étude de cas",
+    "discussProject": "Parlons de ce projet",
+    "futureNote": "Des études de cas détaillées, captures d'écran et résultats mesurables seront ajoutés progressivement.",
+    "lavenderFinds": {
+      "title": "Lavender Finds — Plateforme e-commerce et gestion des stocks",
+      "description": "Un projet entrepreneurial développé à partir d'un besoin opérationnel réel. J'ai construit une plateforme avec base de données pour gérer produits, stocks, prix et ventes, en reliant les opérations commerciales à un workflow numérique structuré."
     },
-    "analytics": {
-      "title": "Analyse de données",
-      "description": "Transformer les données en informations utiles grâce à Power BI, SQL, Excel, Python et des outils d'analyse modernes."
+    "portfolio": {
+      "title": "Lavender Professional Platform",
+      "description": "Ce portfolio professionnel multilingue, développé avec Next.js et TypeScript, rassemble mon parcours, mon positionnement professionnel, mes projets et mon expérience de contact dans une plateforme responsive."
     },
-    "digital": {
-      "title": "IA et solutions numériques",
-      "description": "Conception de sites web modernes, de plateformes numériques et de solutions technologiques qui améliorent l'efficacité et l'expérience utilisateur."
+    "bicycle": {
+      "title": "Analyse des données des parkings à vélos",
+      "description": "Un projet d'analyse utilisant des données ouvertes sur les parkings à vélos afin d'explorer les disponibilités, les emplacements et les tendances grâce à l'analyse et à la visualisation interactive dans Power BI."
     },
-    "international": {
-      "title": "Expérience internationale",
-      "description": "Une combinaison d'expérience entrepreneuriale au Kenya et de développement professionnel en France pour créer des solutions concrètes à l'échelle internationale."
+    "developerSurvey": {
+      "title": "Analyse d'une enquête sur les développeurs et les technologies",
+      "description": "Un projet analytique basé sur des données d'enquête auprès des développeurs pour identifier des tendances, comparer les technologies et transformer un grand jeu de données en informations claires."
     }
   },
   "navigation": {
