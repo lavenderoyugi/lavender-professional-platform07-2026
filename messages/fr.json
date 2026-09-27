@@ -141,13 +141,6 @@
         "impact": "Ce projet montre comment j'utilise une activité concrète pour identifier un problème opérationnel, concevoir une solution et relier les processus métier à la technologie."
 
         },
-        "gallery": {
-          "homepage": "Page d'accueil professionnelle et positionnement",
-          "journey": "Parcours professionnel interactif avec filtres par catégorie",
-          "portfolio": "Présentation des projets et études de cas",
-          "caseStudy": "Page détaillée d'une étude de cas",
-          "mobile": "Expérience mobile responsive"
-        }      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "Un portfolio professionnel multilingue conçu pour présenter mon expérience business, mes compétences data, mes projets numériques et mon parcours.",
@@ -156,7 +149,15 @@
         "solutionTitle": "Un portfolio structuré et multilingue",
         "solution": "J'ai développé la plateforme avec Next.js, TypeScript, Tailwind CSS et next-intl, avec un parcours professionnel structuré, une vitrine de projets, un espace de contact et une navigation multilingue.",
         "impactTitle": "Une plateforme professionnelle vivante",
-        "impact": "Le portfolio est lui-même un projet de développement. Il permet aux recruteurs et futurs clients de voir concrètement comment je combine réflexion métier, données et outils numériques."
+        "impact": "Le portfolio est lui-même un projet de développement. Il permet aux recruteurs et futurs clients de voir concrètement comment je combine réflexion métier, données et outils numériques.",
+
+        "gallery": {
+          "homepage": "Page d'accueil professionnelle et positionnement",
+          "journey": "Parcours professionnel interactif avec filtres par catégorie",
+          "portfolio": "Présentation des projets et études de cas",
+          "caseStudy": "Page détaillée d'une étude de cas",
+          "mobile": "Expérience mobile responsive"
+        }
       },
       "bicycle": {
         "title": "Analyse des données des parkings à vélos",
