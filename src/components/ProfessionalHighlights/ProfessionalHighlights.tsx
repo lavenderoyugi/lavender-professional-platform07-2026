@@ -4,10 +4,10 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const projects = [
-  { key: "lavenderFinds", icon: "🛍️", technologies: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Vercel"] },
-  { key: "portfolio", icon: "💻", technologies: ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"] },
-  { key: "bicycle", icon: "🚲", technologies: ["Power BI", "Excel", "Data Analysis"] },
-  { key: "developerSurvey", icon: "📊", technologies: ["Power BI", "SQL", "Python", "Data Visualisation"] },
+  { key: "lavenderFinds", slug: "lavender-finds", icon: "🛍️", technologies: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Vercel"] },
+  { key: "portfolio", slug: "professional-platform", icon: "💻", technologies: ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"] },
+  { key: "bicycle", slug: "bicycle-parking-analysis", icon: "🚲", technologies: ["Power BI", "Excel", "Data Analysis"] },
+  { key: "developerSurvey", slug: "developer-technology-survey", icon: "📊", technologies: ["Power BI", "SQL", "Python", "Data Visualisation"] },
 ];
 
 export default function ProfessionalHighlights() {
