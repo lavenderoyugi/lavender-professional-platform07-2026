@@ -1,8 +1,4 @@
 
-import {
-  getProductBySlug,
-  getRelatedProducts,
-} from "@/lavender-finds/helpers";
 import { supabase } from "@/lib/supabase";
 import { notFound } from "next/navigation";
 import ProductGallery from "@/components/ProductGallery";

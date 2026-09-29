@@ -1,9 +1,15 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { trackEvent } from "@/lib/analytics";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const locale = useLocale();
+
+  const cvHref =
+    locale === "fr" ? "/cv-fr.pdf" :
+    locale === "de" ? "/cv-de.pdf" :
+    "/cv-en.pdf";
 
   const skills = [
     t("skills.businessOperations"),
@@ -58,36 +64,36 @@ export default function HeroSection() {
           </p>
 
           {/* Buttons */}
-
           <div className="flex flex-wrap gap-4">
 
             <a
-  href="/cv.pdf"
-  onClick={() =>
-    trackEvent("download_cv", {
-      language: t("downloadCV"),
-    })
-  }
-  className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
->
-  {t("downloadCV")}
-  </a>
-<a
-  href="#portfolio"
-  onClick={() =>
-    trackEvent("portfolio_click", {
-      language: t("portfolioButton"),
-    })
-  }
-  className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
->
-  {t("portfolioButton")}
-</a>
+              href={cvHref}
+              download
+              onClick={() =>
+                trackEvent("download_cv", {
+                  language: locale,
+                })
+              }
+              className="rounded-full bg-violet-500 px-8 py-4 font-semibold text-white transition hover:bg-violet-600"
+            >
+              {t("downloadCV")}
+            </a>
+
+            <a
+              href="#portfolio"
+              onClick={() =>
+                trackEvent("portfolio_click", {
+                  language: t("portfolioButton"),
+                })
+              }
+              className="rounded-full border border-violet-400 px-8 py-4 font-semibold text-violet-300 transition hover:bg-violet-500 hover:text-white"
+            >
+              {t("portfolioButton")}
+            </a>
 
           </div>
 
           {/* Skills */}
-
           <div className="mt-12 flex flex-wrap gap-3">
 
             {skills.map((skill) => (
@@ -104,7 +110,6 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT SIDE */}
-
         <div className="flex justify-center">
 
           <div className="relative">
