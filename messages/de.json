@@ -39,12 +39,12 @@
     "tagline": "Business • Data • KI"
   },
   "hero": {
-    "welcome": "WILLKOMMEN AUF MEINEM WEG",
+    "welcome": "BUSINESS • DATA • DIGITAL",
     "firstName": "Lavender",
     "lastName": "Oyugi",
-    "title1": "Entrepreneur | Business Operations | Data Analytics | AI & Digital Solutions",
-    "title2": "",
-    "intro": "Ich verwandle Ideen in praktische Lösungen.",
+    "title1": "Business & Data Analyst",
+    "title2": "Power BI • Excel • SQL • Business Intelligence • Prozessoptimierung",
+    "intro": "Ich verwandle geschäftliche Herausforderungen, Daten und Ideen in praktische Lösungen.",
     "paragraph1": "Mein beruflicher Weg führte mich vom Unternehmertum und der Geschäftsentwicklung in Kenia zu Betriebsabläufen, Einzelhandel und Datenanalyse in Frankreich.",
     "paragraph2": "Heute ist es meine Mission, Organisationen dabei zu helfen, ihre Abläufe durch Technologie, Business Intelligence und kontinuierliches Lernen zu verbessern.",
     "downloadCV": "Lebenslauf herunterladen",
@@ -62,8 +62,12 @@
       "powerBI": "Power BI",
       "sql": "SQL",
       "python": "Python",
-      "projectManagement": "Projektmanagement"
-    }
+      "projectManagement": "Projektmanagement",
+      "excel": "Excel",
+      "businessIntelligence": "Business Intelligence"
+    },
+    "projectsButton": "Meine Projekte",
+    "contactButton": "Kontakt"
   },
   "highlights": {
     "label": "AUSGEWÄHLTE PROJEKTE",
@@ -139,8 +143,7 @@
         "solution": "Ich entwickelte eine Plattform mit Next.js, React, TypeScript, Supabase und PostgreSQL zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen, ergänzt durch einen Administrationsbereich.",
         "impactTitle": "Aus Geschäftsaktivität wird ein digitales System",
         "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
-
-        },
+      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "Ein mehrsprachiges professionelles Portfolio zur Präsentation meiner Geschäftserfahrung, Datenkompetenzen, digitalen Projekte und meines beruflichen Weges.",
@@ -150,7 +153,6 @@
         "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl, mit strukturiertem Werdegang, Projektübersicht, Kontaktbereich und mehrsprachiger Navigation.",
         "impactTitle": "Eine lebendige professionelle Plattform",
         "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde.",
-
         "gallery": {
           "homepage": "Professionelle Startseite und Positionierung",
           "journey": "Interaktiver beruflicher Werdegang mit Kategoriefiltern",
