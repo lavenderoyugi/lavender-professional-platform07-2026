@@ -39,11 +39,11 @@
     "tagline": "Business • Data • Digital"
   },
   "hero": {
-    "welcome": "BUSINESS • DATA • DIGITAL SOLUTIONS",
+    "welcome": "BUSINESS • DATA • DIGITAL",
     "firstName": "Lavender",
     "lastName": "Oyugi",
-    "title1": "Business Operations | Data Analytics | Digital Solutions",
-    "title2": "",
+    "title1": "Business & Data Analyst",
+    "title2": "Power BI • Excel • SQL • Business Intelligence • Process Improvement",
     "intro": "I turn business challenges, data and ideas into practical solutions.",
     "paragraph1": "My career combines entrepreneurship and business development in Kenya with professional experience and data-focused development in France.",
     "paragraph2": "I bring together business understanding, analytical thinking and technology to improve processes, support better decisions and create practical digital solutions.",
@@ -62,8 +62,12 @@
       "powerBI": "Power BI",
       "sql": "SQL",
       "python": "Python",
-      "projectManagement": "Project Management"
-    }
+      "projectManagement": "Project Management",
+      "excel": "Excel",
+      "businessIntelligence": "Business Intelligence"
+    },
+    "projectsButton": "View My Projects",
+    "contactButton": "Contact Me"
   },
   "highlights": {
     "label": "SELECTED WORK",
@@ -139,8 +143,7 @@
         "solution": "I developed a digital platform using Next.js, React, TypeScript, Supabase and PostgreSQL to centralise product information, inventory, pricing and sales. The project also includes an administration workflow for managing the catalogue.",
         "impactTitle": "From business activity to a practical digital system",
         "impact": "The project demonstrates how I use my own business as a practical environment for identifying operational problems, designing a solution and connecting business processes with technology."
-
-        },
+      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "A multilingual professional portfolio designed to present my business experience, data skills, digital projects and professional journey.",
@@ -150,7 +153,6 @@
         "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl, with a structured career journey, project showcase, contact experience and multilingual navigation.",
         "impactTitle": "A living professional platform",
         "impact": "The portfolio itself is also a development project. It gives recruiters and potential clients a concrete example of how I combine business thinking, data and digital tools.",
-
         "gallery": {
           "homepage": "Professional homepage and positioning",
           "journey": "Interactive professional journey with category filters",
