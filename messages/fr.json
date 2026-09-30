@@ -64,12 +64,12 @@
     "tagline": "Business • Data • IA"
   },
   "hero": {
-    "welcome": "BIENVENUE DANS MON PARCOURS",
+    "welcome": "BUSINESS • DATA • DIGITAL",
     "firstName": "Lavender",
     "lastName": "Oyugi",
-    "title1": "Opérations • Entrepreneuriat",
-    "title2": "Amélioration des processus • Solutions numériques et Data",
-    "intro": "Je transforme les idées en solutions concrètes.",
+    "title1": "Analyste Business & Data",
+    "title2": "Power BI • Excel • SQL • Business Intelligence • Amélioration des processus",
+    "intro": "Je transforme les enjeux business, les données et les idées en solutions concrètes.",
     "paragraph1": "Mon parcours m'a menée de l'entrepreneuriat et du développement commercial au Kenya vers les opérations, le commerce et l'analyse de données en France.",
     "paragraph2": "Aujourd'hui, ma mission est d'aider les organisations à améliorer leurs opérations grâce à la technologie, à la Business Intelligence et à l'apprentissage continu.",
     "downloadCV": "Télécharger le CV",
@@ -87,8 +87,12 @@
       "powerBI": "Power BI",
       "sql": "SQL",
       "python": "Python",
-      "projectManagement": "Gestion de projet"
-    }
+      "projectManagement": "Gestion de projet",
+      "excel": "Excel",
+      "businessIntelligence": "Business Intelligence"
+    },
+    "projectsButton": "Voir mes projets",
+    "contactButton": "Me contacter"
   },
   "contact": {
     "alert": "Veuillez compléter tous les champs avant d'envoyer votre message.",
@@ -139,8 +143,7 @@
         "solution": "J'ai développé une plateforme avec Next.js, React, TypeScript, Supabase et PostgreSQL pour centraliser les produits, les stocks, les prix et les ventes, avec un espace d'administration.",
         "impactTitle": "Transformer une activité réelle en système numérique",
         "impact": "Ce projet montre comment j'utilise une activité concrète pour identifier un problème opérationnel, concevoir une solution et relier les processus métier à la technologie."
-
-        },
+      },
       "portfolio": {
         "title": "Lavender Professional Platform",
         "intro": "Un portfolio professionnel multilingue conçu pour présenter mon expérience business, mes compétences data, mes projets numériques et mon parcours.",
@@ -150,7 +153,6 @@
         "solution": "J'ai développé la plateforme avec Next.js, TypeScript, Tailwind CSS et next-intl, avec un parcours professionnel structuré, une vitrine de projets, un espace de contact et une navigation multilingue.",
         "impactTitle": "Une plateforme professionnelle vivante",
         "impact": "Le portfolio est lui-même un projet de développement. Il permet aux recruteurs et futurs clients de voir concrètement comment je combine réflexion métier, données et outils numériques.",
-
         "gallery": {
           "homepage": "Page d'accueil professionnelle et positionnement",
           "journey": "Parcours professionnel interactif avec filtres par catégorie",
