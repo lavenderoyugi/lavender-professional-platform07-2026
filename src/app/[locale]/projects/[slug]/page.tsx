@@ -61,6 +61,19 @@ const professionalPlatformGallery = [
   },
 ];
 
+const juniorDataAnalystGallery = [
+  {
+    src: "/junior-data-analyst/top-skills.png",
+    alt: "Top skills in data- and analyst-related job postings",
+    captionKey: "topSkillsCaption",
+  },
+  {
+    src: "/junior-data-analyst/technical-skills.png",
+    alt: "Technical skills in data- and analyst-related job postings",
+    captionKey: "technicalSkillsCaption",
+  },
+];
+
 const developerEmploymentGallery = [
   {
     src: "/images/developer-employment/executive-overview.png",
@@ -125,6 +138,10 @@ export default async function ProjectCaseStudy({
   const isLavenderFinds = slug === "lavender-finds";
   const isProfessionalPlatform = slug === "professional-platform";
   const isDeveloperEmployment = slug === "developer-employment-and-salary-analysis";
+  const isJuniorDataAnalyst = slug === "junior-data-analyst-job-market-analysis";
+  const notebookUrl = isJuniorDataAnalyst
+    ? "https://github.com/lavenderoyugi/lavender-professional-platform07-2026/blob/recruiter-freelance-portfolio/notebooks/junior_data_analyst_job_market_analysis.ipynb"
+    : null;
   const isPersonalDigitalProject = isLavenderFinds || isProfessionalPlatform;
 
   return (
@@ -178,6 +195,17 @@ export default async function ProjectCaseStudy({
                 className="rounded-full border border-violet-500/40 bg-violet-500/10 px-5 py-2.5 text-sm font-semibold text-violet-200 transition hover:border-violet-400 hover:bg-violet-500/20"
               >
                 GitHub ↗
+              </a>
+            )}
+
+            {notebookUrl && (
+              <a
+                href={notebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-violet-500/40 bg-violet-500/10 px-5 py-2.5 text-sm font-semibold text-violet-200 transition hover:border-violet-400 hover:bg-violet-500/20"
+              >
+                {t("notebookLink")} ↗
               </a>
             )}
 
@@ -305,6 +333,39 @@ export default async function ProjectCaseStudy({
                 </figure>
               </div>
             )}
+          </section>
+        )}
+
+        {isJuniorDataAnalyst && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">
+                {t("projects.juniorDataAnalyst.visualisationsTitle")}
+              </h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                {t("projects.juniorDataAnalyst.visualisationsText")}
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {juniorDataAnalystGallery.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={1600}
+                    height={900}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.juniorDataAnalyst.${image.captionKey}`)}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </section>
         )}
 
