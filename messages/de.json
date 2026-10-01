@@ -23,12 +23,15 @@
     "educationTitle": "Ausbildung & Weiterbildung",
     "educationSubtitle": "Studium und berufliche Weiterbildung, die meinen beruflichen Weg weiter prägen.",
     "entrepreneurshipTitle": "Unternehmertum",
-    "entrepreneurshipSubtitle": "Unternehmen und unternehmerische Projekte, in denen ich reale Geschäftsabläufe aufgebaut, geführt und verbessert habe.",
+    "entrepreneurshipSubtitle": "Formale unternehmerische Erfahrungen, in denen ich reale Geschäftsaktivitäten aufgebaut und geführt habe.",
     "volunteerTitle": "Freiwillige Erfahrung",
     "volunteerSubtitle": "Engagement für die Gemeinschaft durch digitale Teilhabe und Unterstützung.",
     "lifeTitle": "Lebensmeilensteine",
     "lifeSubtitle": "Persönliche Meilensteine und Übergänge, die meinen beruflichen Weg beeinflusst haben.",
-    "backToJourney": "Zurück zum Werdegang"
+    "backToJourney": "Zurück zum Werdegang",
+    "filterPersonal": "Persönliches Projekt / Aufbauaktivität",
+    "personalTitle": "Persönliche Projekte",
+    "personalSubtitle": "Projekte zum Testen von Ideen, Entwickeln praktischer Werkzeuge und Lernen vor einer möglichen formalen Unternehmensgründung."
   },
   "navigation": {
     "home": "Startseite",
