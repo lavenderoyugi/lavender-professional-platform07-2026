@@ -19,9 +19,9 @@ const projects = {
     technologies: ["Power BI", "Excel", "Data Analysis"],
     github: "https://github.com/lavenderoyugi/-Bicycle-Parking-Infrastructure-Analysis-in-the-Loire-Atlantique-Area-",
   },
-  "developer-technology-survey": {
-    key: "developerSurvey",
-    technologies: ["Power BI", "SQL", "Python", "Data Visualisation"],
+  "developer-employment-and-salary-analysis": {
+    key: "developerEmployment",
+    technologies: ["Power BI", "Data Analysis", "Data Visualisation"],
     github: null,
   },
 } as const;
@@ -53,6 +53,24 @@ const professionalPlatformGallery = [
     alt: "Lavender Professional Platform mobile homepage",
     captionKey: "mobile",
     mobile: true,
+  },
+];
+
+const developerEmploymentGallery = [
+  {
+    src: "/images/developer-employment/executive-overview.png",
+    alt: "Developer employment and salary analysis executive overview",
+    caption: "Executive overview",
+  },
+  {
+    src: "/images/developer-employment/geography-salary.png",
+    alt: "Developer employment and salary geography and salary analysis",
+    caption: "Geography and salary analysis",
+  },
+  {
+    src: "/images/developer-employment/skills-technologies.png",
+    alt: "Developer employment skills and technologies analysis",
+    caption: "Skills and technologies",
   },
 ];
 
@@ -101,6 +119,7 @@ export default async function ProjectCaseStudy({
   const base = `projects.${project.key}`;
   const isLavenderFinds = slug === "lavender-finds";
   const isProfessionalPlatform = slug === "professional-platform";
+  const isDeveloperEmployment = slug === "developer-employment-and-salary-analysis";
   const isPersonalDigitalProject = isLavenderFinds || isProfessionalPlatform;
 
   return (
@@ -281,6 +300,36 @@ export default async function ProjectCaseStudy({
                 </figure>
               </div>
             )}
+          </section>
+        )}
+
+        {isDeveloperEmployment && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">{t("screenshotsTitle")}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                {t("projects.developerEmployment.screenshotsText")}
+              </p>
+            </div>
+            <div className="space-y-8">
+              {developerEmploymentGallery.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {image.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </section>
         )}
 
