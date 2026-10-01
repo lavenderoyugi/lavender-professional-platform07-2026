@@ -101,7 +101,11 @@
     "personalGroupTitle": "Persönliche & digitale Projekte",
     "personalGroupDescription": "Projekte aus realen Anwendungsfällen, mit denen ich digitale Fähigkeiten ausbaue, Abläufe strukturiere und praktische Lösungen mit KI-Unterstützung erkunde.",
     "aiDisclosure": "Bei persönlichen digitalen Projekten nutze ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. Erkundete Technologien unterscheide ich klar von meinen beruflichen Kernkompetenzen in Datenanalyse und Geschäftsprozessen.",
-    "personalProject": "Persönliches Projekt"
+    "personalProject": "Persönliches Projekt",
+    "juniorDataAnalyst": {
+      "title": "Analyse des Arbeitsmarkts für Junior Data Analysts",
+      "description": "Eine explorative Python-Analyse von 1.167 Stellenangeboten mit Fokus auf daten- und analystenbezogene Jobtitel, Begriffe für Junior-Positionen und geforderte Kompetenzen."
+    }
   },
   "contact": {
     "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
@@ -190,6 +194,16 @@
         "impactTitle": "Beschäftigungs- und Gehaltsdaten klar kommunizieren",
         "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, vergleichender Analyse und klarer, geschäftsorientierter visueller Kommunikation zu gelangen.",
         "screenshotsText": "Drei Power-BI-Ansichten zeigen die Übersicht, geografische und Gehaltsvergleiche sowie Kompetenzen und Technologien."
+      },
+      "juniorDataAnalyst": {
+        "title": "Analyse des Arbeitsmarkts für Junior Data Analysts",
+        "intro": "Eine explorative Python-Analyse von 1.167 Stellenangeboten mit Fokus auf daten- und analystenbezogene Jobtitel, Begriffe für Junior-Positionen und geforderte Kompetenzen.",
+        "challengeTitle": "Den Markt für analytische Stellen verstehen",
+        "challenge": "Der Datensatz enthält Jobtitel, Beschreibungen und Kompetenzlisten. Die Analyse konzentrierte sich auf daten- und analystenbezogene Stellen sowie auf Begriffe für Junior-Positionen und die dafür aufgeführten Kompetenzen.",
+        "solutionTitle": "Jobtitel und geforderte Kompetenzen mit Python untersuchen",
+        "solution": "Ich nutzte Python, Pandas und Textverarbeitung, um den Datensatz zu untersuchen, Jobtitel zu normalisieren, daten- und analystenbezogene Stellen zu identifizieren, Begriffe für Junior-Positionen zu prüfen und die aufgeführten Kompetenzen auszuwerten.",
+        "impactTitle": "Stellendaten in praktische Berufsinformationen verwandeln",
+        "impact": "Das Projekt zeigt meine Fähigkeit, mit realen Stellendaten zu arbeiten, eine fokussierte Analysefrage zu strukturieren und Erkenntnisse über Anforderungen und Kompetenzen verständlich zu kommunizieren."
       }
     },
     "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar."
