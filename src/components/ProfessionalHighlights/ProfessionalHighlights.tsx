@@ -19,7 +19,8 @@ export default function ProfessionalHighlights() {
   const renderGroup = (
     title: string,
     description: string,
-    projects: typeof dataProjects
+    projects: typeof dataProjects,
+    badge: string
   ) => (
     <div className="mb-14 last:mb-0">
       <div className="mb-7 max-w-3xl">
@@ -38,7 +39,7 @@ export default function ProfessionalHighlights() {
                 {project.icon}
               </div>
               <span className="rounded-full border border-zinc-800 px-3 py-1 text-xs uppercase tracking-wider text-zinc-500">
-                {t("caseStudy")}
+                {badge}
               </span>
             </div>
 
@@ -88,8 +89,8 @@ export default function ProfessionalHighlights() {
           </p>
         </div>
 
-        {renderGroup(t("dataGroupTitle"), t("dataGroupDescription"), dataProjects)}
-        {renderGroup(t("personalGroupTitle"), t("personalGroupDescription"), personalProjects)}
+        {renderGroup(t("dataGroupTitle"), t("dataGroupDescription"), dataProjects, t("caseStudy"))}
+        {renderGroup(t("personalGroupTitle"), t("personalGroupDescription"), personalProjects, t("personalProject"))}
 
         <div className="mt-12 rounded-2xl border border-violet-500/15 bg-violet-500/5 px-6 py-5 text-center">
           <p className="text-sm leading-6 text-zinc-400">{t("aiDisclosure")}</p>
