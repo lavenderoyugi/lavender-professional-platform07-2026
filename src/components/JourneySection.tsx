@@ -10,6 +10,7 @@ type FilterKey =
   | "work"
   | "education"
   | "entrepreneurship"
+  | "personal"
   | "volunteer"
   | "life";
 
@@ -17,6 +18,7 @@ const categoryInfo = {
   work: { icon: "💼", titleKey: "workTitle", subtitleKey: "workSubtitle" },
   education: { icon: "🎓", titleKey: "educationTitle", subtitleKey: "educationSubtitle" },
   entrepreneurship: { icon: "🚀", titleKey: "entrepreneurshipTitle", subtitleKey: "entrepreneurshipSubtitle" },
+  personal: { icon: "🧩", titleKey: "personalTitle", subtitleKey: "personalSubtitle" },
   volunteer: { icon: "🤝", titleKey: "volunteerTitle", subtitleKey: "volunteerSubtitle" },
   life: { icon: "❤️", titleKey: "lifeTitle", subtitleKey: "lifeSubtitle" },
 } as const;
@@ -29,7 +31,8 @@ function getFilterCategory(
   // translations can never break the filters.
   if ([2.5, 3.5, 6].includes(jobId)) return "life";
   if ([4, 9, 10, 11, 15].includes(jobId)) return "education";
-  if ([3, 5, 17].includes(jobId)) return "entrepreneurship";
+  if ([3, 5].includes(jobId)) return "entrepreneurship";
+  if ([17].includes(jobId)) return "personal";
   if ([16].includes(jobId)) return "volunteer";
 
   // Fallback for any future records that do not yet have an explicit ID mapping.
@@ -69,7 +72,7 @@ export default function JourneySection() {
   useEffect(() => {
     const syncFromUrl = () => {
       const value = new URLSearchParams(window.location.search).get("journey");
-      const valid: FilterKey[] = ["all", "work", "education", "entrepreneurship", "volunteer", "life"];
+      const valid: FilterKey[] = ["all", "work", "education", "entrepreneurship", "personal", "volunteer", "life"];
       setSelectedCategory(valid.includes(value as FilterKey) ? (value as FilterKey) : "all");
     };
 
@@ -121,6 +124,7 @@ export default function JourneySection() {
     { key: "work", label: t("filterWork") },
     { key: "education", label: t("filterEducation") },
     { key: "entrepreneurship", label: t("filterEntrepreneurship") },
+    { key: "personal", label: t("filterPersonal") },
     { key: "volunteer", label: t("filterVolunteer") },
     { key: "life", label: t("filterLife") },
   ];
