@@ -203,10 +203,16 @@
         "solutionTitle": "Exploring job titles and requested skills with Python",
         "solution": "I used Python with Pandas and text-processing techniques to inspect the dataset, normalize job titles, identify data- and analyst-related postings, check for junior-level terminology and explore the skills listed for those roles.",
         "impactTitle": "Turning job-posting data into practical career insight",
-        "impact": "The project demonstrates my ability to work with real-world job-posting data, structure a focused analytical question and communicate findings about role requirements and skills."
+        "impact": "The project demonstrates my ability to work with real-world job-posting data, structure a focused analytical question and communicate findings about role requirements and skills.",
+        "notebookLink": "View Notebook",
+        "visualisationsTitle": "Analysis & Key Visualisations",
+        "visualisationsText": "Two focused views highlight the skills most frequently requested in data- and analyst-related job postings and the technical skills appearing in the selected postings.",
+        "topSkillsCaption": "Top Skills in Data- and Analyst-Related Job Postings",
+        "technicalSkillsCaption": "Technical Skills in Data- and Analyst-Related Job Postings"
       }
     },
-    "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills."
+    "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills.",
+    "notebookLink": "View Notebook"
   },
   "opportunities": {
     "label": "WHAT I CAN BRING",
