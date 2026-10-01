@@ -24,6 +24,11 @@ const projects = {
     technologies: ["Power BI", "Data Analysis", "Data Visualisation"],
     github: null,
   },
+  "junior-data-analyst-job-market-analysis": {
+    key: "juniorDataAnalyst",
+    technologies: ["Python", "Data Analysis", "Job-Market Analysis"],
+    github: "https://github.com/lavenderoyugi/lavender-professional-platform07-2026/tree/recruiter-freelance-portfolio",
+  },
 } as const;
 
 const professionalPlatformGallery = [
