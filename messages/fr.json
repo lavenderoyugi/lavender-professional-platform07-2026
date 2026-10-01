@@ -52,9 +52,9 @@
       "title": "Analyse des données des parkings à vélos",
       "description": "Un projet d'analyse utilisant des données ouvertes sur les parkings à vélos afin d'explorer les disponibilités, les emplacements et les tendances grâce à l'analyse et à la visualisation interactive dans Power BI."
     },
-    "developerSurvey": {
-      "title": "Analyse d'une enquête sur les développeurs et les technologies",
-      "description": "Un projet analytique basé sur des données d'enquête auprès des développeurs pour identifier des tendances, comparer les technologies et transformer un grand jeu de données en informations claires."
+    "developerEmployment": {
+      "title": "Analyse de l’emploi et des salaires des développeurs",
+      "description": "Un projet d’analyse Power BI sur l’emploi des développeurs, les salaires, les compétences, les préférences de travail et la répartition géographique."
     },
     "viewCaseStudy": "Voir l'étude de cas",
     "dataGroupTitle": "Analyse de données",
@@ -180,15 +180,16 @@
         "impactTitle": "Du jeu de données à la visualisation d'aide à la décision",
         "impact": "Ce projet montre ma capacité à travailler avec des données ouvertes, structurer l'information et communiquer des résultats avec une approche orientée métier."
       },
-      "developerSurvey": {
+      "developerEmployment": {
         "title": "Analyse d'une enquête sur les développeurs et les technologies",
-        "intro": "Un projet analytique basé sur des données d'enquête auprès des développeurs afin d'identifier des tendances et de communiquer des informations utiles.",
-        "challengeTitle": "Rendre une grande enquête compréhensible",
-        "challenge": "Les enquêtes auprès des développeurs contiennent de nombreuses variables, technologies et caractéristiques professionnelles. L'enjeu est d'identifier des tendances pertinentes tout en conservant le contexte des données.",
-        "solutionTitle": "Combiner analyse et visualisation",
-        "solution": "J'ai exploré le jeu de données avec des techniques d'analyse et travaillé avec Power BI, SQL et Python pour organiser, comparer et visualiser les informations.",
-        "impactTitle": "Communiquer clairement des données technologiques",
-        "impact": "Le projet montre ma capacité à passer d'un grand jeu de données à des questions structurées, une analyse et une communication visuelle claire."
+        "intro": "Un projet d’analyse Power BI portant sur l’emploi des développeurs, les salaires, les compétences, les préférences de travail et la répartition géographique.",
+        "challengeTitle": "Transformer un grand jeu de données sur l’emploi en informations utiles",
+        "challenge": "Le jeu de données contient de nombreuses variables sur l’emploi, les salaires, la géographie, les compétences et les préférences de travail. L’enjeu était de structurer ces dimensions autour de questions claires et de comparaisons utiles.",
+        "solutionTitle": "Construire une analyse interactive avec Power BI",
+        "solution": "J’ai préparé et exploré le jeu de données, puis utilisé Power BI et des techniques d’analyse pour structurer les indicateurs, les comparaisons et les visualisations autour de questions concrètes.",
+        "impactTitle": "Communiquer clairement les données d’emploi et de salaires",
+        "impact": "Le projet montre ma capacité à passer d’un grand jeu de données à des questions structurées, une analyse comparative et une communication visuelle orientée métier.",
+        "screenshotsText": "Trois vues Power BI présentent la synthèse, les comparaisons géographiques et salariales, ainsi que les compétences et technologies."
       }
     },
     "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées."
