@@ -203,10 +203,16 @@
         "solutionTitle": "Explorer les intitulés et compétences avec Python",
         "solution": "J’ai utilisé Python, Pandas et des techniques de traitement de texte pour explorer le jeu de données, normaliser les intitulés, identifier les offres liées à la data et à l’analyse, rechercher les termes associés aux profils juniors et examiner les compétences indiquées.",
         "impactTitle": "Transformer les données d’offres d’emploi en informations utiles",
-        "impact": "Le projet montre ma capacité à travailler sur des données réelles d’offres d’emploi, à structurer une question d’analyse ciblée et à communiquer des informations sur les exigences des postes et les compétences demandées."
+        "impact": "Le projet montre ma capacité à travailler sur des données réelles d’offres d’emploi, à structurer une question d’analyse ciblée et à communiquer des informations sur les exigences des postes et les compétences demandées.",
+        "notebookLink": "Voir le notebook",
+        "visualisationsTitle": "Analyse & visualisations clés",
+        "visualisationsText": "Deux vues ciblées présentent les compétences les plus fréquemment demandées dans les offres liées aux données et à l'analyse, ainsi que les compétences techniques présentes dans les offres sélectionnées.",
+        "topSkillsCaption": "Compétences les plus demandées dans les offres liées aux données et à l'analyse",
+        "technicalSkillsCaption": "Compétences techniques dans les offres liées aux données et à l'analyse"
       }
     },
-    "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées."
+    "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées.",
+    "notebookLink": "Voir le notebook"
   },
   "opportunities": {
     "label": "CE QUE JE PEUX APPORTER",
