@@ -91,9 +91,9 @@
       "title": "Bicycle Parking Data Analysis",
       "description": "A data-analysis project using bicycle parking open data to explore availability, locations and patterns through structured analysis and interactive Power BI visualisation."
     },
-    "developerSurvey": {
-      "title": "Developer & Technology Survey Analysis",
-      "description": "An analytics project exploring developer and technology survey data to identify patterns, compare tools and turn a large dataset into clear business-oriented insights."
+    "developerEmployment": {
+      "title": "Developer Employment & Salary Analysis",
+      "description": "A Power BI analytics project exploring developer employment patterns, salaries, skills, work preferences and geographic distribution through business-oriented questions."
     },
     "viewCaseStudy": "View Case Study",
     "dataGroupTitle": "Data & Analytics",
@@ -180,15 +180,16 @@
         "impactTitle": "From dataset to decision-support visualisation",
         "impact": "The project demonstrates my ability to work with open data, structure information and communicate findings through business-oriented visualisation."
       },
-      "developerSurvey": {
+      "developerEmployment": {
         "title": "Developer & Technology Survey Analysis",
-        "intro": "An analytics project exploring developer and technology survey data to identify patterns and communicate insights.",
-        "challengeTitle": "Making a large survey understandable",
-        "challenge": "Developer surveys contain a wide range of variables, technologies and professional characteristics. The challenge is to identify meaningful patterns without losing the context of the data.",
-        "solutionTitle": "Combining analysis and visualisation",
-        "solution": "I explored the dataset using data-analysis techniques and worked with Power BI, SQL and Python concepts to organise, compare and visualise information.",
-        "impactTitle": "Communicating technology data clearly",
-        "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, analysis and clear visual communication."
+        "intro": "A Power BI analytics project exploring developer employment patterns, salaries, skills, work preferences and geographic distribution.",
+        "challengeTitle": "Turning a large employment dataset into useful insights",
+        "challenge": "The dataset contains many variables covering employment, salary, geography, skills and work preferences. The challenge was to structure these dimensions into clear questions and useful comparisons.",
+        "solutionTitle": "Building an interactive Power BI analysis",
+        "solution": "I prepared and explored the dataset, then used Power BI and data-analysis techniques to structure KPIs, comparisons and visual views around practical business questions.",
+        "impactTitle": "Communicating employment and salary data clearly",
+        "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, comparative analysis and clear business-oriented visual communication.",
+        "screenshotsText": "Three Power BI views cover the executive overview, geography and salary comparisons, and skills and technologies."
       }
     },
     "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills."
