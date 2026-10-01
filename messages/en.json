@@ -9,7 +9,7 @@
   "journeySection": {
     "label": "Professional Journey",
     "heading": "From Entrepreneurship to Data & Digital Solutions",
-    "intro": "My professional journey combines entrepreneurship, business operations, customer experience and data analytics. From building and managing a real estate business in Kenya to developing my career in France, each chapter has strengthened my ability to understand problems, improve processes, work with people and turn ideas into practical solutions.",
+    "intro": "To make the portfolio easier to scan, the training and experience most relevant to my current professional positioning appear first. The rest of my journey remains available for a complete view of my background.",
     "relocationDate": "27 September 2022",
     "filterLabel": "Journey filters",
     "filterAll": "All",
@@ -43,10 +43,10 @@
     "firstName": "Lavender",
     "lastName": "Oyugi",
     "title1": "Business & Data Analyst",
-    "title2": "Power BI • Excel • SQL • Business Intelligence • Process Improvement",
-    "intro": "I turn business challenges, data and ideas into practical solutions.",
-    "paragraph1": "My career combines entrepreneurship and business development in Kenya with professional experience and data-focused development in France.",
-    "paragraph2": "I bring together business understanding, analytical thinking and technology to improve processes, support better decisions and create practical digital solutions.",
+    "title2": "Operations • Data Analysis • Digital Solutions • Process Improvement",
+    "intro": "I help organisations structure their operations, make better use of their data and turn practical needs into useful solutions.",
+    "paragraph1": "My background combines entrepreneurship, business development, operations, customer experience and data analysis.",
+    "paragraph2": "I am open to professional opportunities and collaborations where I can combine business understanding, analytical thinking, organisation and digital tools.",
     "downloadCV": "Download CV",
     "journeyButton": "My Journey",
     "portfolioButton": "View Portfolio",
@@ -72,7 +72,7 @@
   "highlights": {
     "label": "SELECTED WORK",
     "heading": "Projects & Case Studies",
-    "subheading": "A selection of practical projects where I combine business understanding, data analysis and digital development to solve real problems.",
+    "subheading": "A selection of projects showing my analytical skills, business understanding and ability to turn real needs into practical digital solutions.",
     "caseStudy": "Case Study",
     "discussProject": "Discuss this project",
     "futureNote": "Detailed case studies, project screenshots and measurable outcomes will continue to be added.",
@@ -92,7 +92,12 @@
       "title": "Developer & Technology Survey Analysis",
       "description": "An analytics project exploring developer and technology survey data to identify patterns, compare tools and turn a large dataset into clear business-oriented insights."
     },
-    "viewCaseStudy": "View Case Study"
+    "viewCaseStudy": "View Case Study",
+    "dataGroupTitle": "Data & Analytics",
+    "dataGroupDescription": "Projects created to develop and demonstrate my skills in analysis, visualisation and communicating insights.",
+    "personalGroupTitle": "Personal & Digital Projects",
+    "personalGroupDescription": "Projects built around real needs to strengthen my digital skills, structure operations and explore practical solutions with AI assistance when needed.",
+    "aiDisclosure": "For personal digital projects, I use AI as a learning and development-assistance tool to complement my initial skills. I distinguish technologies I explored with AI from my core professional skills in data analysis and business operations."
   },
   "contact": {
     "alert": "Please complete all fields before sending your message.",
@@ -129,7 +134,7 @@
     "label": "PROJECT CASE STUDY",
     "discussProject": "Discuss this project",
     "screenshotsTitle": "Project visuals",
-    "screenshotsText": "Screenshots, dashboards and project visuals will be added here next. The case study structure is ready for them.",
+    "screenshotsText": "",
     "challengeLabel": "THE CHALLENGE",
     "solutionLabel": "THE SOLUTION",
     "impactLabel": "IMPACT & LEARNING",
