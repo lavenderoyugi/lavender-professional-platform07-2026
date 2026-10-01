@@ -189,5 +189,27 @@
       }
     },
     "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées."
+  },
+  "opportunities": {
+    "label": "CE QUE JE PEUX APPORTER",
+    "heading": "Des compétences utiles aux équipes et aux entreprises",
+    "intro": "Je peux intervenir dans un rôle salarié ou sur une mission ponctuelle, selon le besoin : analyse, reporting, organisation des opérations ou accompagnement numérique.",
+    "reporting": {
+      "title": "Reporting & tableaux de bord",
+      "description": "Structurer des données avec Excel ou Power BI et créer des tableaux de bord utiles au suivi d'activité."
+    },
+    "data": {
+      "title": "Analyse de données",
+      "description": "Nettoyer, explorer et visualiser des données pour faire ressortir des tendances et informations utiles."
+    },
+    "operations": {
+      "title": "Opérations & organisation",
+      "description": "Aider à structurer les stocks, processus, informations et tâches quotidiennes pour gagner en visibilité et en efficacité."
+    },
+    "digital": {
+      "title": "Solutions numériques",
+      "description": "Contribuer à des projets numériques et à la mise en place d'outils pratiques, avec l'IA comme outil d'apprentissage et d'assistance lorsque nécessaire."
+    },
+    "cta": "Discuter d'un besoin"
   }
 }
