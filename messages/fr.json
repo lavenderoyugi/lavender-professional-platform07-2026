@@ -62,7 +62,11 @@
     "personalGroupTitle": "Projets personnels & numériques",
     "personalGroupDescription": "Projets construits dans des contextes réels pour développer mes compétences numériques, structurer des opérations et expérimenter des solutions avec l'aide de l'IA lorsque nécessaire.",
     "aiDisclosure": "Pour mes projets numériques personnels, j'utilise l'IA comme outil d'apprentissage et d'assistance au développement pour compléter mes compétences initiales. Je distingue ces technologies explorées de mes compétences professionnelles principales en analyse de données et opérations.",
-    "personalProject": "Projet personnel"
+    "personalProject": "Projet personnel",
+    "juniorDataAnalyst": {
+      "title": "Analyse du marché de l’emploi pour les Data Analysts juniors",
+      "description": "Une analyse exploratoire en Python de 1 167 offres d’emploi, portant sur les intitulés liés aux métiers de la data et de l’analyse, les termes associés aux profils juniors et les compétences demandées."
+    }
   },
   "navigation": {
     "home": "Accueil",
@@ -190,6 +194,16 @@
         "impactTitle": "Communiquer clairement les données d’emploi et de salaires",
         "impact": "Le projet montre ma capacité à passer d’un grand jeu de données à des questions structurées, une analyse comparative et une communication visuelle orientée métier.",
         "screenshotsText": "Trois vues Power BI présentent la synthèse, les comparaisons géographiques et salariales, ainsi que les compétences et technologies."
+      },
+      "juniorDataAnalyst": {
+        "title": "Analyse du marché de l’emploi pour les Data Analysts juniors",
+        "intro": "Une analyse exploratoire en Python de 1 167 offres d’emploi, portant sur les intitulés liés aux métiers de la data et de l’analyse, les termes associés aux profils juniors et les compétences demandées.",
+        "challengeTitle": "Comprendre le marché des postes liés à l’analyse",
+        "challenge": "Le jeu de données contient des intitulés, des descriptions et des ensembles de compétences. L’objectif était de cibler les postes liés à la data et à l’analyse, puis d’examiner les termes associés aux profils juniors et les compétences demandées.",
+        "solutionTitle": "Explorer les intitulés et compétences avec Python",
+        "solution": "J’ai utilisé Python, Pandas et des techniques de traitement de texte pour explorer le jeu de données, normaliser les intitulés, identifier les offres liées à la data et à l’analyse, rechercher les termes associés aux profils juniors et examiner les compétences indiquées.",
+        "impactTitle": "Transformer les données d’offres d’emploi en informations utiles",
+        "impact": "Le projet montre ma capacité à travailler sur des données réelles d’offres d’emploi, à structurer une question d’analyse ciblée et à communiquer des informations sur les exigences des postes et les compétences demandées."
       }
     },
     "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées."
