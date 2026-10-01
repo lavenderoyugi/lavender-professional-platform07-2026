@@ -189,5 +189,27 @@
       }
     },
     "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar."
+  },
+  "opportunities": {
+    "label": "WAS ICH EINBRINGEN KANN",
+    "heading": "Nützliche Kompetenzen für Teams und Unternehmen",
+    "intro": "Ich kann in einer Festanstellung oder für eine klar definierte Aufgabe unterstützen – je nach Bedarf in Analyse, Reporting, operativer Unterstützung oder digitalen Lösungen.",
+    "reporting": {
+      "title": "Reporting & Dashboards",
+      "description": "Daten mit Excel oder Power BI strukturieren und praktische Dashboards für die Geschäftsüberwachung erstellen."
+    },
+    "data": {
+      "title": "Datenanalyse",
+      "description": "Daten bereinigen, untersuchen und visualisieren, um relevante Muster und Erkenntnisse sichtbar zu machen."
+    },
+    "operations": {
+      "title": "Prozesse & Organisation",
+      "description": "Bei der Strukturierung von Beständen, Prozessen, Informationen und täglichen Abläufen unterstützen."
+    },
+    "digital": {
+      "title": "Digitale Lösungen",
+      "description": "Bei praktischen digitalen Projekten mitwirken und KI bei Bedarf als Lern- und Entwicklungshilfe einsetzen."
+    },
+    "cta": "Bedarf besprechen"
   }
 }
