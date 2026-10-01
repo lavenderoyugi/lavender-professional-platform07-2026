@@ -145,7 +145,7 @@
         "challengeTitle": "Eine wachsende Verkaufsaktivität strukturieren",
         "challenge": "Produkte, Preise, Bestände, Verkäufe und Angebote über mehrere Kanäle zu verwalten, erzeugt wiederkehrende Aufgaben und erschwert die Zentralisierung.",
         "solutionTitle": "Ein datenbankgestützter Workflow",
-        "solution": "Ich entwickelte eine Plattform mit Next.js, React, TypeScript, Supabase und PostgreSQL zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen, ergänzt durch einen Administrationsbereich.",
+        "solution": "Ich entwickelte eine datenbankgestützte Managementplattform zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen. Die Webentwicklung wurde mit KI-Unterstützung umgesetzt, um meine anfänglichen technischen Kenntnisse zu ergänzen.",
         "impactTitle": "Aus Geschäftsaktivität wird ein digitales System",
         "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
       },
@@ -155,7 +155,7 @@
         "challengeTitle": "Einen vielseitigen beruflichen Weg klar präsentieren",
         "challenge": "Meine Erfahrung umfasst Unternehmertum, Betriebsabläufe, Datenanalyse und digitale Entwicklung. Die Herausforderung war, diese Bereiche sinnvoll zu verbinden.",
         "solutionTitle": "Ein strukturiertes mehrsprachiges Portfolio",
-        "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl, mit strukturiertem Werdegang, Projektübersicht, Kontaktbereich und mehrsprachiger Navigation.",
+        "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl. KI nutzte ich als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen und diese Technologien in einem persönlichen Projekt zu erkunden.",
         "impactTitle": "Eine lebendige professionelle Plattform",
         "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde.",
         "gallery": {
@@ -186,6 +186,7 @@
         "impactTitle": "Technologiedaten klar kommunizieren",
         "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, Analysen und klarer visueller Kommunikation zu gelangen."
       }
-    }
+    },
+    "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar."
   }
 }
