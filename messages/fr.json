@@ -9,7 +9,7 @@
   "journeySection": {
     "label": "Parcours professionnel",
     "heading": "De la curiosité au leadership",
-    "intro": "Chaque étape de ma carrière a contribué à qui je suis aujourd'hui. En commençant par le service client et les opérations commerciales au Kenya, en progressant vers le développement commercial régional, l'entrepreneuriat, mon déménagement en France le <date>27 septembre 2022</date>, et en poursuivant vers l'analyse de données et les opérations commerciales, chaque expérience a renforcé ma capacité à résoudre des problèmes, diriger des équipes et créer de la valeur grâce à la technologie et aux affaires.",
+    "intro": "Pour faciliter une lecture rapide, je mets d'abord en avant les formations et expériences les plus pertinentes pour mon positionnement actuel. Le reste de mon parcours reste accessible pour donner une vision complète de mon expérience.",
     "relocationDate": "27 septembre 2022",
     "filterLabel": "Filtres du parcours",
     "filterAll": "Tout",
@@ -33,7 +33,7 @@
   "highlights": {
     "label": "PROJETS SÉLECTIONNÉS",
     "heading": "Projets et études de cas",
-    "subheading": "Une sélection de projets concrets dans lesquels je combine compréhension métier, analyse de données et développement numérique pour répondre à des besoins réels.",
+    "subheading": "Une sélection de projets qui montre à la fois mes capacités d'analyse, ma compréhension des opérations et ma capacité à transformer un besoin réel en solution numérique.",
     "caseStudy": "Étude de cas",
     "discussProject": "Parlons de ce projet",
     "futureNote": "Des études de cas détaillées, captures d'écran et résultats mesurables seront ajoutés progressivement.",
@@ -53,7 +53,12 @@
       "title": "Analyse d'une enquête sur les développeurs et les technologies",
       "description": "Un projet analytique basé sur des données d'enquête auprès des développeurs pour identifier des tendances, comparer les technologies et transformer un grand jeu de données en informations claires."
     },
-    "viewCaseStudy": "Voir l'étude de cas"
+    "viewCaseStudy": "Voir l'étude de cas",
+    "dataGroupTitle": "Analyse de données",
+    "dataGroupDescription": "Projets réalisés pour développer et démontrer mes compétences en analyse, visualisation et communication des données.",
+    "personalGroupTitle": "Projets personnels & numériques",
+    "personalGroupDescription": "Projets construits dans des contextes réels pour développer mes compétences numériques, structurer des opérations et expérimenter des solutions avec l'aide de l'IA lorsque nécessaire.",
+    "aiDisclosure": "Pour mes projets numériques personnels, j'utilise l'IA comme outil d'apprentissage et d'assistance au développement pour compléter mes compétences initiales. Je distingue ces technologies explorées de mes compétences professionnelles principales en analyse de données et opérations."
   },
   "navigation": {
     "home": "Accueil",
@@ -68,10 +73,10 @@
     "firstName": "Lavender",
     "lastName": "Oyugi",
     "title1": "Analyste Business & Data",
-    "title2": "Power BI • Excel • SQL • Business Intelligence • Amélioration des processus",
-    "intro": "Je transforme les enjeux business, les données et les idées en solutions concrètes.",
-    "paragraph1": "Mon parcours m'a menée de l'entrepreneuriat et du développement commercial au Kenya vers les opérations, le commerce et l'analyse de données en France.",
-    "paragraph2": "Aujourd'hui, ma mission est d'aider les organisations à améliorer leurs opérations grâce à la technologie, à la Business Intelligence et à l'apprentissage continu.",
+    "title2": "Opérations • Analyse de données • Solutions numériques • Amélioration des processus",
+    "intro": "J'aide les organisations à mieux structurer leurs opérations, exploiter leurs données et transformer leurs besoins en solutions concrètes.",
+    "paragraph1": "Mon parcours combine entrepreneuriat, développement commercial, opérations, expérience client et analyse de données.",
+    "paragraph2": "Je recherche des opportunités professionnelles et des collaborations où je peux apporter une combinaison de compréhension métier, d'analyse, d'organisation et d'outils numériques.",
     "downloadCV": "Télécharger le CV",
     "journeyButton": "Mon parcours",
     "portfolioButton": "Portfolio",
@@ -129,7 +134,7 @@
     "label": "ÉTUDE DE CAS",
     "discussProject": "Parlons de ce projet",
     "screenshotsTitle": "Visuels du projet",
-    "screenshotsText": "Les captures d'écran, tableaux de bord et visuels du projet seront ajoutés ici ensuite. La structure de l'étude de cas est prête à les accueillir.",
+    "screenshotsText": "",
     "challengeLabel": "LE BESOIN",
     "solutionLabel": "LA SOLUTION",
     "impactLabel": "IMPACT ET APPRENTISSAGE",
