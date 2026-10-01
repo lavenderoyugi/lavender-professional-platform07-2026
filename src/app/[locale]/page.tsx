@@ -4,6 +4,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import ProfessionalHighlights from "@/components/ProfessionalHighlights/ProfessionalHighlights";
+import OpportunitySection from "@/components/OpportunitySection";
 import JourneySection from "@/components/JourneySection";
 
 import ContactSection from "@/components/ContactSection";
@@ -21,6 +22,8 @@ export default function Home() {
     <HeroSection />
 
     <ProfessionalHighlights />
+
+    <OpportunitySection />
 
     <JourneySection />
 
