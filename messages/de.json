@@ -9,7 +9,7 @@
   "journeySection": {
     "label": "Beruflicher Werdegang",
     "heading": "Von Neugier zu Führungsstärke",
-    "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb – jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
+    "intro": "Für eine schnelle Orientierung werden die für meine aktuelle berufliche Positionierung relevantesten Ausbildungen und Erfahrungen zuerst gezeigt. Der restliche Werdegang bleibt für einen vollständigen Überblick verfügbar.",
     "relocationDate": "27. September 2022",
     "filterLabel": "Filter für meinen Werdegang",
     "filterAll": "Alle",
@@ -43,10 +43,10 @@
     "firstName": "Lavender",
     "lastName": "Oyugi",
     "title1": "Business & Data Analyst",
-    "title2": "Power BI • Excel • SQL • Business Intelligence • Prozessoptimierung",
-    "intro": "Ich verwandle geschäftliche Herausforderungen, Daten und Ideen in praktische Lösungen.",
-    "paragraph1": "Mein beruflicher Weg führte mich vom Unternehmertum und der Geschäftsentwicklung in Kenia zu Betriebsabläufen, Einzelhandel und Datenanalyse in Frankreich.",
-    "paragraph2": "Heute ist es meine Mission, Organisationen dabei zu helfen, ihre Abläufe durch Technologie, Business Intelligence und kontinuierliches Lernen zu verbessern.",
+    "title2": "Geschäftsprozesse • Datenanalyse • Digitale Lösungen • Prozessoptimierung",
+    "intro": "Ich unterstütze Organisationen dabei, Abläufe zu strukturieren, Daten besser zu nutzen und praktische Anforderungen in konkrete Lösungen zu übersetzen.",
+    "paragraph1": "Mein Hintergrund verbindet Unternehmertum, Geschäftsentwicklung, operative Erfahrung, Kundenservice und Datenanalyse.",
+    "paragraph2": "Ich bin offen für berufliche Möglichkeiten und Kooperationen, bei denen ich Geschäftsverständnis, analytisches Denken, Organisation und digitale Werkzeuge verbinden kann.",
     "downloadCV": "Lebenslauf herunterladen",
     "journeyButton": "Mein Weg",
     "portfolioButton": "Portfolio",
@@ -72,7 +72,7 @@
   "highlights": {
     "label": "AUSGEWÄHLTE PROJEKTE",
     "heading": "Projekte & Fallstudien",
-    "subheading": "Eine Auswahl praktischer Projekte, in denen ich Geschäftsverständnis, Datenanalyse und digitale Entwicklung verbinde, um reale Probleme zu lösen.",
+    "subheading": "Eine Auswahl von Projekten, die meine Analysefähigkeiten, mein Geschäftsverständnis und meine Fähigkeit zeigen, reale Anforderungen in praktische digitale Lösungen zu verwandeln.",
     "caseStudy": "Fallstudie",
     "discussProject": "Projekt besprechen",
     "futureNote": "Detaillierte Fallstudien, Screenshots und messbare Ergebnisse werden schrittweise ergänzt.",
@@ -92,7 +92,12 @@
       "title": "Analyse einer Entwickler- und Technologieumfrage",
       "description": "Ein Analyseprojekt auf Basis von Entwickler- und Technologiedaten, um Muster zu erkennen, Technologien zu vergleichen und einen großen Datensatz in verständliche Erkenntnisse umzuwandeln."
     },
-    "viewCaseStudy": "Fallstudie ansehen"
+    "viewCaseStudy": "Fallstudie ansehen",
+    "dataGroupTitle": "Daten & Analytik",
+    "dataGroupDescription": "Projekte zur Entwicklung und Demonstration meiner Fähigkeiten in Analyse, Visualisierung und verständlicher Kommunikation von Erkenntnissen.",
+    "personalGroupTitle": "Persönliche & digitale Projekte",
+    "personalGroupDescription": "Projekte aus realen Anwendungsfällen, mit denen ich digitale Fähigkeiten ausbaue, Abläufe strukturiere und praktische Lösungen mit KI-Unterstützung erkunde.",
+    "aiDisclosure": "Bei persönlichen digitalen Projekten nutze ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. Erkundete Technologien unterscheide ich klar von meinen beruflichen Kernkompetenzen in Datenanalyse und Geschäftsprozessen."
   },
   "contact": {
     "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
@@ -129,7 +134,7 @@
     "label": "PROJEKT-FALLSTUDIE",
     "discussProject": "Projekt besprechen",
     "screenshotsTitle": "Projektvisualisierungen",
-    "screenshotsText": "Screenshots, Dashboards und Projektvisualisierungen werden als Nächstes hier ergänzt. Die Struktur der Fallstudie ist bereits vorbereitet.",
+    "screenshotsText": "",
     "challengeLabel": "DIE HERAUSFORDERUNG",
     "solutionLabel": "DIE LÖSUNG",
     "impactLabel": "WIRKUNG & LERNEN",
