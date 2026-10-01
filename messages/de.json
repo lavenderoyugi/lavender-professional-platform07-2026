@@ -89,7 +89,7 @@
     },
     "bicycle": {
       "title": "Datenanalyse von Fahrradparkplätzen",
-      "description": "Ein Analyseprojekt mit offenen Daten zu Fahrradparkplätzen, um Verfügbarkeit, Standorte und Muster durch strukturierte Analyse und interaktive Power-BI-Visualisierung zu untersuchen."
+      "description": "Eine Python- und Geodatenanalyse offener Daten zu Fahrradparkplätzen in der Region Loire-Atlantique mit Fokus auf Verteilung, Kapazität, Infrastrukturtypen und Datenqualität."
     },
     "developerEmployment": {
       "title": "Analyse von Entwicklerbeschäftigung und Gehältern",
@@ -175,14 +175,30 @@
         }
       },
       "bicycle": {
-        "title": "Datenanalyse von Fahrradparkplätzen",
-        "intro": "Ein Datenanalyseprojekt mit offenen Daten zu Fahrradparkplätzen in der Region Loire-Atlantique.",
-        "challengeTitle": "Offene Daten in verständliche Informationen verwandeln",
-        "challenge": "Der Datensatz enthält viele Einträge und Merkmale. Die Herausforderung bestand darin, die Informationen zu strukturieren und Muster bei Standorten und Verfügbarkeit verständlich darzustellen.",
-        "solutionTitle": "Analyse und Power-BI-Visualisierung",
-        "solution": "Ich bereitete den Datensatz auf und analysierte ihn. Anschließend nutzte ich Power BI und Excel-orientierte Analysetechniken, um Informationen zu strukturieren und Vergleiche zu ermöglichen.",
-        "impactTitle": "Vom Datensatz zur entscheidungsorientierten Visualisierung",
-        "impact": "Das Projekt zeigt meine Fähigkeit, mit offenen Daten zu arbeiten, Informationen zu strukturieren und Erkenntnisse verständlich zu visualisieren."
+        "title": "Analyse von Fahrradparkplätzen",
+        "description": "Eine Python- und Geodatenanalyse offener Daten zu Fahrradparkplätzen in der Region Loire-Atlantique mit Fokus auf Verteilung, Kapazität, Infrastrukturtypen und Datenqualität.",
+        "intro": "Eine geodatenbasierte Python-Analyse von 601 erfassten Fahrradparkplätzen in der Region Loire-Atlantique.",
+        "challengeTitle": "Offene Infrastrukturdaten in nützliche Erkenntnisse verwandeln",
+        "challenge": "Der Datensatz enthält 601 Standorte und mehrere Merkmale zu Kapazität, Standort, Befestigungstyp, Zugang, Überdachung, Überwachung und Aktualisierungen. Die Herausforderung bestand darin, diese Variablen zu strukturieren und klare Muster zu erkennen, ohne unvollständige Angaben zu überinterpretieren.",
+        "solutionTitle": "Explorative und geodatenbasierte Analyse mit Python",
+        "solution": "Ich nutzte Python mit Pandas, GeoPandas, Folium und Matplotlib, um die Daten zu untersuchen, Kapazitäten und Infrastrukturtypen zu analysieren, Gemeinden zu vergleichen und die geografische Verteilung der Fahrradparkplätze zu visualisieren.",
+        "impactTitle": "Ein strukturierter Überblick über Fahrradparkplätze",
+        "impact": "Die Analyse zeigt, wo Fahrradparkplätze konzentriert sind, welche Kapazität vorhanden ist, welche Infrastrukturtypen dominieren und wo die Datenvollständigkeit die Interpretation begrenzt.",
+        "overviewTitle": "Projektübersicht",
+        "overviewText": "Die Analyse betrachtet die aktuell im Datensatz erfasste Fahrradparkinfrastruktur.",
+        "metricLocations": "Parkstandorte",
+        "metricCapacity": "Fahrradstellplätze insgesamt",
+        "metricMunicipalities": "Erfasste Gemeinden",
+        "metricAverage": "Durchschnittliche Kapazität pro Standort",
+        "geographicTitle": "Die Infrastruktur ist geografisch konzentriert",
+        "geographicText": "Saint-Nazaire (Gemeindecode 44184) umfasst 376 der 601 erfassten Standorte und 3.001 Stellplätze und stellt damit die größte Konzentration im Datensatz dar.",
+        "capacityTitle": "Kleine Anlagen dominieren",
+        "capacityText": "Die mittlere Kapazität beträgt 6 Stellplätze, der Durchschnitt 7,6 Stellplätze pro Standort. Die Verteilung ist rechtsschief; nur wenige größere Anlagen erreichen bis zu 48 Stellplätze.",
+        "infrastructureTitle": "Die Infrastruktur basiert überwiegend auf ARCEAU",
+        "infrastructureText": "585 der 601 Standorte verwenden ARCEAU-Mobiliar, während 16 RATELIER verwenden. Damit wird der Datensatz deutlich von einem Infrastrukturtyp dominiert.",
+        "dataQualityTitle": "Die Datenvollständigkeit variiert",
+        "dataQualityText": "Kernfelder wie Kapazität und Koordinaten sind vollständig. Andere Felder sind deutlich weniger vollständig, darunter Eigentümer, Betreiber, URLs, Dienstjahr und Kapazität für Lastenräder.",
+        "methodNote": "Wichtiger methodischer Hinweis: date_maj bezeichnet das Aktualisierungsdatum eines Datensatzes und nicht unbedingt das Installationsdatum einer Anlage. Die starke Konzentration von Aktualisierungen im September 2022 sollte daher nicht als Beweis für eine große Installationsphase dargestellt werden."
       },
       "developerEmployment": {
         "title": "Analyse einer Entwickler- und Technologieumfrage",
