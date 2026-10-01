@@ -101,7 +101,11 @@
     "personalGroupTitle": "Personal & Digital Projects",
     "personalGroupDescription": "Projects built around real needs to strengthen my digital skills, structure operations and explore practical solutions with AI assistance when needed.",
     "aiDisclosure": "For personal digital projects, I use AI as a learning and development-assistance tool to complement my initial skills. I distinguish technologies I explored with AI from my core professional skills in data analysis and business operations.",
-    "personalProject": "Personal project"
+    "personalProject": "Personal project",
+    "juniorDataAnalyst": {
+      "title": "Junior Data Analyst Job Market Analysis",
+      "description": "An exploratory Python analysis of 1,167 job postings, examining analyst-related job titles, junior-level terminology and the skills requested by employers."
+    }
   },
   "contact": {
     "alert": "Please complete all fields before sending your message.",
@@ -190,6 +194,16 @@
         "impactTitle": "Communicating employment and salary data clearly",
         "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, comparative analysis and clear business-oriented visual communication.",
         "screenshotsText": "Three Power BI views cover the executive overview, geography and salary comparisons, and skills and technologies."
+      },
+      "juniorDataAnalyst": {
+        "title": "Junior Data Analyst Job Market Analysis",
+        "intro": "An exploratory Python analysis of 1,167 job postings, examining analyst-related job titles, junior-level terminology and the skills requested by employers.",
+        "challengeTitle": "Understanding the market for analyst-related roles",
+        "challenge": "The dataset contains job titles, descriptions and skill sets. The challenge was to focus the analysis on data- and analyst-related roles and examine how junior-level terminology and requested skills appear in those postings.",
+        "solutionTitle": "Exploring job titles and requested skills with Python",
+        "solution": "I used Python with Pandas and text-processing techniques to inspect the dataset, normalize job titles, identify data- and analyst-related postings, check for junior-level terminology and explore the skills listed for those roles.",
+        "impactTitle": "Turning job-posting data into practical career insight",
+        "impact": "The project demonstrates my ability to work with real-world job-posting data, structure a focused analytical question and communicate findings about role requirements and skills."
       }
     },
     "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills."
