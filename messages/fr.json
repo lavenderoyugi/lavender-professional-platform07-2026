@@ -145,7 +145,7 @@
         "challengeTitle": "Structurer une activité de revente en développement",
         "challenge": "Gérer les produits, prix, stocks, ventes et annonces sur plusieurs canaux crée des tâches répétitives et rend la centralisation des informations difficile.",
         "solutionTitle": "Un workflow de gestion basé sur les données",
-        "solution": "J'ai développé une plateforme avec Next.js, React, TypeScript, Supabase et PostgreSQL pour centraliser les produits, les stocks, les prix et les ventes, avec un espace d'administration.",
+        "solution": "J'ai construit une plateforme de gestion basée sur une base de données pour centraliser les produits, les stocks, les prix et les ventes. Le développement des fonctionnalités web a été réalisé avec l'aide de l'IA pour compléter mes compétences techniques initiales.",
         "impactTitle": "Transformer une activité réelle en système numérique",
         "impact": "Ce projet montre comment j'utilise une activité concrète pour identifier un problème opérationnel, concevoir une solution et relier les processus métier à la technologie."
       },
@@ -155,7 +155,7 @@
         "challengeTitle": "Présenter clairement un parcours pluridisciplinaire",
         "challenge": "Mon expérience couvre l'entrepreneuriat, les opérations, l'analyse de données et le développement numérique. L'enjeu était de réunir ces dimensions sans créer une simple liste de compétences.",
         "solutionTitle": "Un portfolio structuré et multilingue",
-        "solution": "J'ai développé la plateforme avec Next.js, TypeScript, Tailwind CSS et next-intl, avec un parcours professionnel structuré, une vitrine de projets, un espace de contact et une navigation multilingue.",
+        "solution": "J'ai construit la plateforme avec Next.js, TypeScript, Tailwind CSS et next-intl. J'ai utilisé l'IA comme outil d'apprentissage et d'assistance pour compléter mes compétences initiales et explorer ces technologies dans le cadre de ce projet personnel.",
         "impactTitle": "Une plateforme professionnelle vivante",
         "impact": "Le portfolio est lui-même un projet de développement. Il permet aux recruteurs et futurs clients de voir concrètement comment je combine réflexion métier, données et outils numériques.",
         "gallery": {
@@ -186,6 +186,7 @@
         "impactTitle": "Communiquer clairement des données technologiques",
         "impact": "Le projet montre ma capacité à passer d'un grand jeu de données à des questions structurées, une analyse et une communication visuelle claire."
       }
-    }
+    },
+    "aiAssisted": "Pour ce projet personnel, j'ai utilisé l'IA comme outil d'apprentissage et d'assistance au développement afin de compléter mes compétences initiales. Je ne présente pas React, Next.js ou TypeScript comme des compétences professionnelles avancées."
   }
 }
