@@ -97,7 +97,8 @@
     "dataGroupDescription": "Projects created to develop and demonstrate my skills in analysis, visualisation and communicating insights.",
     "personalGroupTitle": "Personal & Digital Projects",
     "personalGroupDescription": "Projects built around real needs to strengthen my digital skills, structure operations and explore practical solutions with AI assistance when needed.",
-    "aiDisclosure": "For personal digital projects, I use AI as a learning and development-assistance tool to complement my initial skills. I distinguish technologies I explored with AI from my core professional skills in data analysis and business operations."
+    "aiDisclosure": "For personal digital projects, I use AI as a learning and development-assistance tool to complement my initial skills. I distinguish technologies I explored with AI from my core professional skills in data analysis and business operations.",
+    "personalProject": "Personal project"
   },
   "contact": {
     "alert": "Please complete all fields before sending your message.",
