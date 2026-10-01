@@ -23,12 +23,15 @@
     "educationTitle": "Formation et études",
     "educationSubtitle": "Mes études et formations professionnelles qui continuent de façonner mon parcours.",
     "entrepreneurshipTitle": "Entrepreneuriat",
-    "entrepreneurshipSubtitle": "Les entreprises et projets entrepreneuriaux à travers lesquels j'ai développé, géré et amélioré des activités concrètes.",
+    "entrepreneurshipSubtitle": "Entreprises et expériences entrepreneuriales formelles à travers lesquelles j'ai construit et géré des activités concrètes.",
     "volunteerTitle": "Expérience bénévole",
     "volunteerSubtitle": "Contribuer à la communauté à travers l'inclusion numérique et l'accompagnement.",
     "lifeTitle": "Étapes de vie",
     "lifeSubtitle": "Les étapes personnelles et transitions qui ont influencé mon parcours professionnel.",
-    "backToJourney": "Retour au parcours"
+    "backToJourney": "Retour au parcours",
+    "filterPersonal": "Projet personnel / activité en développement",
+    "personalTitle": "Projets personnels",
+    "personalSubtitle": "Des projets développés pour tester des idées, construire des outils et apprendre avant une éventuelle formalisation de l'activité."
   },
   "highlights": {
     "label": "PROJETS SÉLECTIONNÉS",
