@@ -145,7 +145,7 @@
         "challengeTitle": "Turning a growing resale activity into a structured operation",
         "challenge": "Managing products, prices, stock, sales and listings across several channels creates repetitive work and makes information difficult to centralise.",
         "solutionTitle": "A database-driven management workflow",
-        "solution": "I developed a digital platform using Next.js, React, TypeScript, Supabase and PostgreSQL to centralise product information, inventory, pricing and sales. The project also includes an administration workflow for managing the catalogue.",
+        "solution": "I built a database-driven management platform to centralise products, inventory, pricing and sales. The web-development work was completed with AI assistance to complement my initial technical skills.",
         "impactTitle": "From business activity to a practical digital system",
         "impact": "The project demonstrates how I use my own business as a practical environment for identifying operational problems, designing a solution and connecting business processes with technology."
       },
@@ -155,7 +155,7 @@
         "challengeTitle": "Presenting a multidisciplinary career clearly",
         "challenge": "My experience spans entrepreneurship, business operations, data analysis and digital development. The challenge was to bring these areas together without making the portfolio feel like a simple list of skills.",
         "solutionTitle": "A structured multilingual portfolio",
-        "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl, with a structured career journey, project showcase, contact experience and multilingual navigation.",
+        "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl. I used AI as a learning and development-assistance tool to complement my initial skills and explore these technologies through a personal project.",
         "impactTitle": "A living professional platform",
         "impact": "The portfolio itself is also a development project. It gives recruiters and potential clients a concrete example of how I combine business thinking, data and digital tools.",
         "gallery": {
@@ -186,6 +186,7 @@
         "impactTitle": "Communicating technology data clearly",
         "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, analysis and clear visual communication."
       }
-    }
+    },
+    "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills."
   }
 }
