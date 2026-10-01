@@ -203,10 +203,16 @@
         "solutionTitle": "Jobtitel und geforderte Kompetenzen mit Python untersuchen",
         "solution": "Ich nutzte Python, Pandas und Textverarbeitung, um den Datensatz zu untersuchen, Jobtitel zu normalisieren, daten- und analystenbezogene Stellen zu identifizieren, Begriffe für Junior-Positionen zu prüfen und die aufgeführten Kompetenzen auszuwerten.",
         "impactTitle": "Stellendaten in praktische Berufsinformationen verwandeln",
-        "impact": "Das Projekt zeigt meine Fähigkeit, mit realen Stellendaten zu arbeiten, eine fokussierte Analysefrage zu strukturieren und Erkenntnisse über Anforderungen und Kompetenzen verständlich zu kommunizieren."
+        "impact": "Das Projekt zeigt meine Fähigkeit, mit realen Stellendaten zu arbeiten, eine fokussierte Analysefrage zu strukturieren und Erkenntnisse über Anforderungen und Kompetenzen verständlich zu kommunizieren.",
+        "notebookLink": "Notebook ansehen",
+        "visualisationsTitle": "Analyse & zentrale Visualisierungen",
+        "visualisationsText": "Zwei gezielte Ansichten zeigen die am häufigsten geforderten Kompetenzen in daten- und analystenbezogenen Stellenangeboten sowie die technischen Kompetenzen in den ausgewählten Stellen.",
+        "topSkillsCaption": "Am häufigsten geforderte Kompetenzen in daten- und analystenbezogenen Stellenangeboten",
+        "technicalSkillsCaption": "Technische Kompetenzen in daten- und analystenbezogenen Stellenangeboten"
       }
     },
-    "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar."
+    "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar.",
+    "notebookLink": "Notebook ansehen"
   },
   "opportunities": {
     "label": "WAS ICH EINBRINGEN KANN",
