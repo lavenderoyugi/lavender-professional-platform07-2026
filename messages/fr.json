@@ -58,7 +58,8 @@
     "dataGroupDescription": "Projets réalisés pour développer et démontrer mes compétences en analyse, visualisation et communication des données.",
     "personalGroupTitle": "Projets personnels & numériques",
     "personalGroupDescription": "Projets construits dans des contextes réels pour développer mes compétences numériques, structurer des opérations et expérimenter des solutions avec l'aide de l'IA lorsque nécessaire.",
-    "aiDisclosure": "Pour mes projets numériques personnels, j'utilise l'IA comme outil d'apprentissage et d'assistance au développement pour compléter mes compétences initiales. Je distingue ces technologies explorées de mes compétences professionnelles principales en analyse de données et opérations."
+    "aiDisclosure": "Pour mes projets numériques personnels, j'utilise l'IA comme outil d'apprentissage et d'assistance au développement pour compléter mes compétences initiales. Je distingue ces technologies explorées de mes compétences professionnelles principales en analyse de données et opérations.",
+    "personalProject": "Projet personnel"
   },
   "navigation": {
     "home": "Accueil",
