@@ -50,7 +50,7 @@
     },
     "bicycle": {
       "title": "Analyse des données des parkings à vélos",
-      "description": "Un projet d'analyse utilisant des données ouvertes sur les parkings à vélos afin d'explorer les disponibilités, les emplacements et les tendances grâce à l'analyse et à la visualisation interactive dans Power BI."
+      "description": "Une analyse Python et géospatiale de données ouvertes sur les stationnements cyclables en Loire-Atlantique, portant sur leur répartition, leur capacité, les types d'équipements et la qualité des données."
     },
     "developerEmployment": {
       "title": "Analyse de l’emploi et des salaires des développeurs",
@@ -175,14 +175,30 @@
         }
       },
       "bicycle": {
-        "title": "Analyse des données des parkings à vélos",
-        "intro": "Un projet d'analyse de données utilisant des données ouvertes sur les parkings à vélos en Loire-Atlantique.",
-        "challengeTitle": "Transformer des données ouvertes en informations utiles",
-        "challenge": "Le jeu de données contient de nombreux enregistrements et attributs. L'enjeu était de structurer l'information et de rendre les tendances liées aux emplacements et aux disponibilités plus faciles à comprendre.",
-        "solutionTitle": "Analyse et visualisation avec Power BI",
-        "solution": "J'ai préparé et exploré le jeu de données, puis utilisé Power BI et des techniques d'analyse avec Excel pour structurer l'information et créer des visualisations facilitant l'exploration et la comparaison.",
-        "impactTitle": "Du jeu de données à la visualisation d'aide à la décision",
-        "impact": "Ce projet montre ma capacité à travailler avec des données ouvertes, structurer l'information et communiquer des résultats avec une approche orientée métier."
+        "title": "Analyse des stationnements cyclables",
+        "description": "Une analyse Python et géospatiale de données ouvertes sur les stationnements cyclables en Loire-Atlantique, portant sur leur répartition, leur capacité, les types d'équipements et la qualité des données.",
+        "intro": "Une analyse géospatiale réalisée en Python de 601 emplacements de stationnement cyclable en Loire-Atlantique.",
+        "challengeTitle": "Transformer des données d'infrastructure en informations utiles",
+        "challenge": "Le jeu de données contient 601 emplacements et plusieurs variables sur la capacité, la localisation, le type d'accroche, l'accès, la couverture, la surveillance et les mises à jour. L'enjeu était de structurer ces informations et d'identifier des tendances claires sans surinterpréter les champs incomplets.",
+        "solutionTitle": "Analyse exploratoire et géospatiale avec Python",
+        "solution": "J'ai utilisé Python avec Pandas, GeoPandas, Folium et Matplotlib pour explorer les données, analyser la capacité et les types d'infrastructure, comparer les communes et visualiser la répartition géographique des stationnements cyclables.",
+        "impactTitle": "Une vision structurée des infrastructures cyclables",
+        "impact": "L'analyse permet de comprendre où les stationnements sont concentrés, quelle capacité est disponible, quels types d'équipements dominent et dans quelle mesure la qualité des données limite certaines interprétations.",
+        "overviewTitle": "Vue d'ensemble du projet",
+        "overviewText": "L'analyse porte sur les infrastructures de stationnement cyclable actuellement enregistrées dans le jeu de données.",
+        "metricLocations": "Emplacements de stationnement",
+        "metricCapacity": "Places vélo au total",
+        "metricMunicipalities": "Communes représentées",
+        "metricAverage": "Capacité moyenne par emplacement",
+        "geographicTitle": "Une infrastructure concentrée géographiquement",
+        "geographicText": "Saint-Nazaire (code commune 44184) compte 376 des 601 emplacements recensés et 3 001 places, ce qui représente la plus forte concentration du jeu de données.",
+        "capacityTitle": "Les petites installations dominent",
+        "capacityText": "La capacité médiane est de 6 places et la moyenne de 7,6 places par emplacement. La distribution est asymétrique vers les grandes capacités, avec relativement peu d'installations atteignant jusqu'à 48 places.",
+        "infrastructureTitle": "Une infrastructure principalement de type ARCEAU",
+        "infrastructureText": "585 des 601 emplacements utilisent un mobilier de type ARCEAU, contre 16 de type RATELIER. Le jeu de données est donc fortement dominé par un type d'équipement.",
+        "dataQualityTitle": "Une qualité de données variable selon les champs",
+        "dataQualityText": "Les champs essentiels comme la capacité et les coordonnées sont complets. D'autres champs sont beaucoup moins renseignés, notamment le propriétaire, le gestionnaire, les URL, l'année de mise en service et la capacité pour vélos cargo.",
+        "methodNote": "Point méthodologique important : date_maj indique la date de mise à jour d'un enregistrement, et pas nécessairement la date d'installation d'un équipement. La forte concentration de mises à jour en septembre 2022 ne doit donc pas être présentée comme la preuve d'une importante phase d'installation."
       },
       "developerEmployment": {
         "title": "Analyse d'une enquête sur les développeurs et les technologies",
