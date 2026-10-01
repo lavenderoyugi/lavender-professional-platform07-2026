@@ -89,7 +89,7 @@
     },
     "bicycle": {
       "title": "Bicycle Parking Data Analysis",
-      "description": "A data-analysis project using bicycle parking open data to explore availability, locations and patterns through structured analysis and interactive Power BI visualisation."
+      "description": "A Python and geospatial analysis of open bicycle-parking data from the Loire-Atlantique area, examining distribution, capacity, infrastructure types and data completeness."
     },
     "developerEmployment": {
       "title": "Developer Employment & Salary Analysis",
@@ -176,13 +176,29 @@
       },
       "bicycle": {
         "title": "Bicycle Parking Data Analysis",
-        "intro": "A data-analysis project using open bicycle-parking data from the Loire-Atlantique area.",
-        "challengeTitle": "Turning open data into useful information",
-        "challenge": "The raw dataset contains many records and attributes. The challenge was to organise the information and make patterns around locations and availability easier to understand.",
-        "solutionTitle": "Analysis and Power BI visualisation",
-        "solution": "I prepared and explored the dataset, then used Power BI and Excel-oriented analysis techniques to structure the information and create visual views that support exploration and comparison.",
-        "impactTitle": "From dataset to decision-support visualisation",
-        "impact": "The project demonstrates my ability to work with open data, structure information and communicate findings through business-oriented visualisation."
+        "description": "A Python and geospatial analysis of open bicycle-parking data from the Loire-Atlantique area, examining distribution, capacity, infrastructure types and data completeness.",
+        "intro": "A Python-based geospatial analysis of 601 bicycle-parking locations in the Loire-Atlantique area.",
+        "challengeTitle": "Turning open infrastructure data into useful insights",
+        "challenge": "The dataset contains 601 locations and multiple attributes covering capacity, location, rack type, access, coverage, surveillance and update information. The challenge was to structure these variables and identify clear patterns without over-interpreting incomplete fields.",
+        "solutionTitle": "Python, exploratory and geospatial analysis",
+        "solution": "I used Python with Pandas, GeoPandas, Folium and Matplotlib to clean and explore the dataset, analyse capacity and infrastructure types, compare municipalities and visualise the geographic distribution of bicycle parking.",
+        "impactTitle": "A structured view of bicycle-parking infrastructure",
+        "impact": "The analysis provides a concise view of where bicycle parking is concentrated, how much capacity is available, what infrastructure types dominate and where data completeness limits interpretation.",
+        "overviewTitle": "Project overview",
+        "overviewText": "The analysis covers the current recorded bicycle-parking infrastructure in the dataset.",
+        "metricLocations": "Parking locations",
+        "metricCapacity": "Total bicycle spaces",
+        "metricMunicipalities": "Municipalities represented",
+        "metricAverage": "Average capacity per location",
+        "geographicTitle": "Infrastructure is concentrated geographically",
+        "geographicText": "Saint-Nazaire (municipality code 44184) contains 376 of the 601 recorded locations and 3,001 spaces, making it the largest concentration in the dataset.",
+        "capacityTitle": "Small facilities dominate",
+        "capacityText": "The median facility has 6 spaces and the average is 7.6 spaces. The distribution is right-skewed, with relatively few larger facilities reaching up to 48 spaces.",
+        "infrastructureTitle": "Infrastructure is predominantly ARCEAU-based",
+        "infrastructureText": "585 of the 601 locations use ARCEAU furniture, while 16 use RATELIER. The dataset is therefore strongly dominated by one infrastructure type.",
+        "dataQualityTitle": "Data completeness varies considerably",
+        "dataQualityText": "Core fields such as capacity and coordinates are complete. Other fields are much less complete, including ownership, management, URLs, service year and cargo-bike capacity.",
+        "methodNote": "Important analytical note: date_maj records when a record was updated, not necessarily when a facility was installed. The large concentration of updates in September 2022 should therefore not be presented as proof of a major installation event."
       },
       "developerEmployment": {
         "title": "Developer & Technology Survey Analysis",
