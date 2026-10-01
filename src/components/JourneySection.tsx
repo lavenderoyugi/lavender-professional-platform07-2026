@@ -92,9 +92,10 @@ export default function JourneySection() {
     window.scrollTo({ top: document.getElementById("journey")?.offsetTop ?? 0, behavior: "smooth" });
   };
 
-  // Master order: newest → oldest. Filtering happens after ordering.
+  // Recruiter-first order: lead with the strongest evidence for the current
+  // Business / Data / Digital positioning, then show the broader career history.
   const chronologicalIds = [
-    14, 17, 16, 13, 15, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
+    15, 16, 14, 17, 13, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
   ];
 
   const orderedCareer = useMemo(
@@ -198,7 +199,7 @@ export default function JourneySection() {
                     <div className="mt-5 h-1 w-20 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
                   </div>
                 )}
-                <CareerCard {...job} />
+                <CareerCard {...job} defaultOpen={job.id === 15 || job.id === 16} />
               </section>
             );
           })}
