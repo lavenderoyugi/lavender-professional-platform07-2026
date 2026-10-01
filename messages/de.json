@@ -91,9 +91,9 @@
       "title": "Datenanalyse von Fahrradparkplätzen",
       "description": "Ein Analyseprojekt mit offenen Daten zu Fahrradparkplätzen, um Verfügbarkeit, Standorte und Muster durch strukturierte Analyse und interaktive Power-BI-Visualisierung zu untersuchen."
     },
-    "developerSurvey": {
-      "title": "Analyse einer Entwickler- und Technologieumfrage",
-      "description": "Ein Analyseprojekt auf Basis von Entwickler- und Technologiedaten, um Muster zu erkennen, Technologien zu vergleichen und einen großen Datensatz in verständliche Erkenntnisse umzuwandeln."
+    "developerEmployment": {
+      "title": "Analyse von Entwicklerbeschäftigung und Gehältern",
+      "description": "Ein Power-BI-Analyseprojekt zu Beschäftigungsmustern, Gehältern, Kompetenzen, Arbeitspräferenzen und geografischer Verteilung von Entwicklern."
     },
     "viewCaseStudy": "Fallstudie ansehen",
     "dataGroupTitle": "Daten & Analytik",
@@ -180,15 +180,16 @@
         "impactTitle": "Vom Datensatz zur entscheidungsorientierten Visualisierung",
         "impact": "Das Projekt zeigt meine Fähigkeit, mit offenen Daten zu arbeiten, Informationen zu strukturieren und Erkenntnisse verständlich zu visualisieren."
       },
-      "developerSurvey": {
+      "developerEmployment": {
         "title": "Analyse einer Entwickler- und Technologieumfrage",
-        "intro": "Ein Analyseprojekt mit Entwickler- und Technologiedaten, um Muster zu erkennen und Erkenntnisse verständlich zu kommunizieren.",
-        "challengeTitle": "Eine große Umfrage verständlich machen",
-        "challenge": "Entwicklerumfragen enthalten viele Variablen, Technologien und berufliche Merkmale. Die Herausforderung besteht darin, relevante Muster zu erkennen und gleichzeitig den Kontext zu erhalten.",
-        "solutionTitle": "Analyse und Visualisierung verbinden",
-        "solution": "Ich untersuchte den Datensatz mit Analysetechniken und arbeitete mit Power BI, SQL und Python, um Informationen zu strukturieren, zu vergleichen und zu visualisieren.",
-        "impactTitle": "Technologiedaten klar kommunizieren",
-        "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, Analysen und klarer visueller Kommunikation zu gelangen."
+        "intro": "Ein Power-BI-Analyseprojekt zu Beschäftigungsmustern, Gehältern, Kompetenzen, Arbeitspräferenzen und geografischer Verteilung von Entwicklern.",
+        "challengeTitle": "Einen großen Beschäftigungsdatensatz in nützliche Erkenntnisse verwandeln",
+        "challenge": "Der Datensatz enthält viele Variablen zu Beschäftigung, Gehältern, Geografie, Kompetenzen und Arbeitspräferenzen. Die Herausforderung bestand darin, diese Dimensionen in klare Fragen und sinnvolle Vergleiche zu strukturieren.",
+        "solutionTitle": "Eine interaktive Power-BI-Analyse erstellen",
+        "solution": "Ich bereitete den Datensatz auf und analysierte ihn. Anschließend nutzte ich Power BI und Analysetechniken, um Kennzahlen, Vergleiche und Visualisierungen an praktischen Geschäftsfragen auszurichten.",
+        "impactTitle": "Beschäftigungs- und Gehaltsdaten klar kommunizieren",
+        "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, vergleichender Analyse und klarer, geschäftsorientierter visueller Kommunikation zu gelangen.",
+        "screenshotsText": "Drei Power-BI-Ansichten zeigen die Übersicht, geografische und Gehaltsvergleiche sowie Kompetenzen und Technologien."
       }
     },
     "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar."
