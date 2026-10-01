@@ -189,5 +189,27 @@
       }
     },
     "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills."
+  },
+  "opportunities": {
+    "label": "WHAT I CAN BRING",
+    "heading": "Useful skills for teams and businesses",
+    "intro": "I can contribute in an employed role or on a focused assignment, depending on the need: analysis, reporting, operations support or practical digital solutions.",
+    "reporting": {
+      "title": "Reporting & dashboards",
+      "description": "Structure data with Excel or Power BI and create practical dashboards for activity monitoring."
+    },
+    "data": {
+      "title": "Data analysis",
+      "description": "Clean, explore and visualise data to identify useful trends, patterns and insights."
+    },
+    "operations": {
+      "title": "Operations & organisation",
+      "description": "Help structure inventory, processes, information and day-to-day workflows to improve visibility and efficiency."
+    },
+    "digital": {
+      "title": "Digital solutions",
+      "description": "Contribute to practical digital projects, using AI as a learning and development-assistance tool when needed."
+    },
+    "cta": "Discuss a need"
   }
 }
