@@ -23,12 +23,15 @@
     "educationTitle": "Education & Training",
     "educationSubtitle": "Formal education and professional development that continue to shape my career.",
     "entrepreneurshipTitle": "Entrepreneurship",
-    "entrepreneurshipSubtitle": "Businesses and entrepreneurial projects through which I have built, managed and improved real-world operations.",
+    "entrepreneurshipSubtitle": "Formal entrepreneurial experience through which I have built, managed and developed real-world businesses.",
     "volunteerTitle": "Volunteer Experience",
     "volunteerSubtitle": "Giving back through digital inclusion and community support.",
     "lifeTitle": "Life Milestones",
     "lifeSubtitle": "Personal milestones and transitions that shaped my professional journey.",
-    "backToJourney": "Back to Journey"
+    "backToJourney": "Back to Journey",
+    "filterPersonal": "Personal project / developing activity",
+    "personalTitle": "Personal Projects",
+    "personalSubtitle": "Projects built to test ideas, create practical tools and learn before potentially formalising an activity."
   },
   "navigation": {
     "home": "Home",
