@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 
 const dataProjects = [
   { key: "bicycle", slug: "bicycle-parking-analysis", icon: "🚲", technologies: ["Power BI", "Excel", "Data Analysis"] },
-  { key: "developerSurvey", slug: "developer-technology-survey", icon: "📊", technologies: ["Power BI", "SQL", "Python", "Data Visualisation"] },
+  { key: "developerEmployment", slug: "developer-employment-and-salary-analysis", icon: "📊", technologies: ["Power BI", "Data Analysis", "Data Visualisation"] },
 ];
 
 const personalProjects = [
