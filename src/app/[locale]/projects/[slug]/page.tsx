@@ -16,7 +16,7 @@ const projects = {
   },
   "bicycle-parking-analysis": {
     key: "bicycle",
-    technologies: ["Power BI", "Excel", "Data Analysis"],
+    technologies: ["Python", "Pandas", "GeoPandas", "Folium", "Matplotlib"],
     github: "https://github.com/lavenderoyugi/-Bicycle-Parking-Infrastructure-Analysis-in-the-Loire-Atlantique-Area-",
   },
   "developer-employment-and-salary-analysis": {
@@ -139,6 +139,7 @@ export default async function ProjectCaseStudy({
   const isProfessionalPlatform = slug === "professional-platform";
   const isDeveloperEmployment = slug === "developer-employment-and-salary-analysis";
   const isJuniorDataAnalyst = slug === "junior-data-analyst-job-market-analysis";
+  const isBicycleParking = slug === "bicycle-parking-analysis";
   const notebookUrl = isJuniorDataAnalyst
     ? "https://github.com/lavenderoyugi/lavender-professional-platform07-2026/blob/recruiter-freelance-portfolio/notebooks/junior_data_analyst_job_market_analysis.ipynb"
     : null;
@@ -365,6 +366,44 @@ export default async function ProjectCaseStudy({
                   </figcaption>
                 </figure>
               ))}
+            </div>
+          </section>
+        )}
+
+        {isBicycleParking && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">{t("projects.bicycle.overviewTitle")}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">{t("projects.bicycle.overviewText")}</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["601", t("projects.bicycle.metricLocations")],
+                ["4,585", t("projects.bicycle.metricCapacity")],
+                ["10", t("projects.bicycle.metricMunicipalities")],
+                ["7.6", t("projects.bicycle.metricAverage")],
+              ].map(([value, label]) => (
+                <div key={label} className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-6">
+                  <p className="text-3xl font-extrabold text-violet-300">{value}</p>
+                  <p className="mt-2 text-sm leading-6 text-zinc-400">{label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {[
+                ["geographicTitle", "geographicText"],
+                ["capacityTitle", "capacityText"],
+                ["infrastructureTitle", "infrastructureText"],
+                ["dataQualityTitle", "dataQualityText"],
+              ].map(([titleKey, textKey]) => (
+                <article key={titleKey} className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-7">
+                  <h3 className="text-xl font-bold">{t(`projects.bicycle.${titleKey}`)}</h3>
+                  <p className="mt-3 leading-7 text-zinc-400">{t(`projects.bicycle.${textKey}`)}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-8 rounded-3xl border border-violet-500/20 bg-violet-500/5 p-7">
+              <p className="text-sm leading-7 text-zinc-300">{t("projects.bicycle.methodNote")}</p>
             </div>
           </section>
         )}
