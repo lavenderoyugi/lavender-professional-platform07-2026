@@ -43,7 +43,7 @@ export const careerDataAdditionalFr = [
   },
   {
     id: 5,
-    category: "Entrepreneuriat",
+    category: "Projet personnel",
     year: "2019 – 2022",
     title: "Fondatrice | Responsable des Opérations Immobilières",
     company: "Tourlover Realtors (enregistrée sous Hudden Realtors)",
@@ -229,10 +229,10 @@ export const careerDataAdditionalFr = [
     id: 17,
     category: "Entrepreneuriat",
     year: "2026 – Présent",
-    title: "Fondatrice",
+    title: "Projet personnel",
     company: "Lavender Finds",
     location: "France",
-    summary: "Lavender Finds est mon projet entrepreneurial actuel, qui combine sélection de produits, marketing digital et e-commerce. À travers Vinted, Leboncoin et les réseaux sociaux, je développe une activité de vente en ligne tout en construisant des outils numériques pour structurer les opérations.",
+    summary: "Lavender Finds est un projet personnel que je développe pour tester une activité de vente en ligne, explorer le commerce digital et construire des outils pratiques de gestion des stocks et des ventes. À travers Vinted, Leboncoin et les réseaux sociaux, je développe une activité de vente en ligne tout en construisant des outils numériques pour structurer les opérations.",
     responsibilities: [
       "Recherche et sélection de produits en France.",
       "Analyse de la demande et des tendances du marché.",
@@ -246,9 +246,9 @@ export const careerDataAdditionalFr = [
       "Centralisation des produits, stocks, prix et ventes dans une base de données structurée.",
       "Utilisation du tableau de bord pour améliorer la gestion des stocks et les opérations quotidiennes."
     ],
-    skills: ["Entrepreneuriat", "E-commerce", "Marketing digital", "Création de contenu", "SEO", "Développement de marque", "Service client", "Analyse commerciale", "Photographie", "Marketing des réseaux sociaux", "Développement web", "Développement de tableaux de bord", "Gestion de bases de données", "Amélioration des processus", "Gestion de projet", "Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Git & GitHub", "Vercel"],
-    achievement: "J'ai lancé un nouveau projet entrepreneurial et construit un système numérique opérationnel qui centralise les informations produits, les stocks, les prix et le suivi des ventes.",
-    impact: "Lavender Finds représente la combinaison de mon expérience en gestion d'entreprise et de mes compétences numériques. La transformation d'un besoin opérationnel réel en tableau de bord et processus structuré a renforcé mon expérience en amélioration des processus, gestion des stocks, bases de données et opérations digitales.",
+    skills: ["Entrepreneuriat", "E-commerce", "Marketing digital", "Création de contenu", "SEO", "Développement de marque", "Service client", "Analyse commerciale", "Photographie", "Marketing des réseaux sociaux", "Développement web", "Développement de tableaux de bord", "Gestion de bases de données", "Amélioration des processus", "Gestion de projet", "Développement numérique assisté par IA", "Supabase", "PostgreSQL", "Tailwind CSS", "Git & GitHub", "Vercel"],
+    achievement: "J'ai développé un projet personnel et construit un système numérique opérationnel qui centralise les informations produits, les stocks, les prix et le suivi des ventes.",
+    impact: "Lavender Finds me permet de combiner mon expérience en gestion d'entreprise et mes compétences numériques dans un contexte réel. La transformation d'un besoin opérationnel réel en tableau de bord et processus structuré a renforcé mon expérience en amélioration des processus, gestion des stocks, bases de données et opérations digitales.",
     reflection: "L'entrepreneuriat aujourd'hui consiste aussi à construire des systèmes. Transformer un problème opérationnel en solution numérique concrète montre comment la technologie peut rendre une petite entreprise plus organisée et mesurable."
   }
 ];

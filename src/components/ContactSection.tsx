@@ -146,7 +146,7 @@ export default function ContactSection() {
               </h3>
 
               <p className="mt-2 text-sm uppercase tracking-[0.3em] text-violet-400">
-                Business Operations • Entrepreneurship • Data Solutions
+                Business Operations • Data & Digital Solutions
               </p>
 
             </div>

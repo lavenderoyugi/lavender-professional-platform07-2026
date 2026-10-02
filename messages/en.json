@@ -9,7 +9,7 @@
   "journeySection": {
     "label": "Professional Journey",
     "heading": "From Entrepreneurship to Data & Digital Solutions",
-    "intro": "My professional journey combines entrepreneurship, business operations, customer experience and data analytics. From building and managing a real estate business in Kenya to developing my career in France, each chapter has strengthened my ability to understand problems, improve processes, work with people and turn ideas into practical solutions.",
+    "intro": "To make the portfolio easier to scan, the training and experience most relevant to my current professional positioning appear first. The rest of my journey remains available for a complete view of my background.",
     "relocationDate": "27 September 2022",
     "filterLabel": "Journey filters",
     "filterAll": "All",
@@ -23,12 +23,15 @@
     "educationTitle": "Education & Training",
     "educationSubtitle": "Formal education and professional development that continue to shape my career.",
     "entrepreneurshipTitle": "Entrepreneurship",
-    "entrepreneurshipSubtitle": "Businesses and entrepreneurial projects through which I have built, managed and improved real-world operations.",
+    "entrepreneurshipSubtitle": "Formal entrepreneurial experience through which I have built, managed and developed real-world businesses.",
     "volunteerTitle": "Volunteer Experience",
     "volunteerSubtitle": "Giving back through digital inclusion and community support.",
     "lifeTitle": "Life Milestones",
     "lifeSubtitle": "Personal milestones and transitions that shaped my professional journey.",
-    "backToJourney": "Back to Journey"
+    "backToJourney": "Back to Journey",
+    "filterPersonal": "Personal project / developing activity",
+    "personalTitle": "Personal Projects",
+    "personalSubtitle": "Projects built to test ideas, create practical tools and learn before potentially formalising an activity."
   },
   "navigation": {
     "home": "Home",
@@ -43,10 +46,10 @@
     "firstName": "Lavender",
     "lastName": "Oyugi",
     "title1": "Business & Data Analyst",
-    "title2": "Power BI • Excel • SQL • Business Intelligence • Process Improvement",
-    "intro": "I turn business challenges, data and ideas into practical solutions.",
-    "paragraph1": "My career combines entrepreneurship and business development in Kenya with professional experience and data-focused development in France.",
-    "paragraph2": "I bring together business understanding, analytical thinking and technology to improve processes, support better decisions and create practical digital solutions.",
+    "title2": "Operations • Data Analysis • Digital Solutions • Process Improvement",
+    "intro": "I help organisations structure their operations, make better use of their data and turn practical needs into useful solutions.",
+    "paragraph1": "My background combines entrepreneurship, business development, operations, customer experience and data analysis.",
+    "paragraph2": "I am open to professional opportunities and collaborations where I can combine business understanding, analytical thinking, organisation and digital tools.",
     "downloadCV": "Download CV",
     "journeyButton": "My Journey",
     "portfolioButton": "View Portfolio",
@@ -72,7 +75,7 @@
   "highlights": {
     "label": "SELECTED WORK",
     "heading": "Projects & Case Studies",
-    "subheading": "A selection of practical projects where I combine business understanding, data analysis and digital development to solve real problems.",
+    "subheading": "A selection of projects showing my analytical skills, business understanding and ability to turn real needs into practical digital solutions.",
     "caseStudy": "Case Study",
     "discussProject": "Discuss this project",
     "futureNote": "Detailed case studies, project screenshots and measurable outcomes will continue to be added.",
@@ -86,25 +89,35 @@
     },
     "bicycle": {
       "title": "Bicycle Parking Data Analysis",
-      "description": "A data-analysis project using bicycle parking open data to explore availability, locations and patterns through structured analysis and interactive Power BI visualisation."
+      "description": "A Python and geospatial analysis of open bicycle-parking data from the Loire-Atlantique area, examining distribution, capacity, infrastructure types and data completeness."
     },
-    "developerSurvey": {
-      "title": "Developer & Technology Survey Analysis",
-      "description": "An analytics project exploring developer and technology survey data to identify patterns, compare tools and turn a large dataset into clear business-oriented insights."
+    "developerEmployment": {
+      "title": "Developer Employment & Salary Analysis",
+      "description": "A Power BI analytics project exploring developer employment patterns, salaries, skills, work preferences and geographic distribution through business-oriented questions."
     },
-    "viewCaseStudy": "View Case Study"
+    "viewCaseStudy": "View Case Study",
+    "dataGroupTitle": "Data & Analytics",
+    "dataGroupDescription": "Projects created to develop and demonstrate my skills in analysis, visualisation and communicating insights.",
+    "personalGroupTitle": "Personal & Digital Projects",
+    "personalGroupDescription": "Projects built around real needs to strengthen my digital skills, structure operations and explore practical solutions with AI assistance when needed.",
+    "aiDisclosure": "For personal digital projects, I use AI as a learning and development-assistance tool to complement my initial skills. I distinguish technologies I explored with AI from my core professional skills in data analysis and business operations.",
+    "personalProject": "Personal project",
+    "juniorDataAnalyst": {
+      "title": "Junior Data Analyst Job Market Analysis",
+      "description": "An exploratory Python analysis of 1,167 job postings, examining analyst-related job titles, junior-level terminology and the skills requested by employers."
+    }
   },
   "contact": {
     "alert": "Please complete all fields before sending your message.",
     "label": "LET'S CONNECT",
     "heading": "Let's Build Something Meaningful",
     "paragraph1": "Thank you for exploring my professional journey. This portfolio brings together my experience, projects, learning and the solutions I am building as I continue developing at the intersection of business, data and technology.",
-    "paragraph2": "Whether you are a recruiter, hiring manager, business owner, potential client, collaborator or professional connection, I would be happy to hear from you.",
+    "paragraph2": "Whether you are a recruiter, hiring manager, business looking for support, potential client or collaborator, I would be happy to discuss an opportunity, freelance assignment or project.",
     "whyTitle": "What Drives Me",
     "whyDescription": "I enjoy understanding how businesses work, identifying opportunities for improvement and using data and technology to turn ideas into practical results. I believe continuous learning and adaptability are essential in a changing digital world.",
     "explore": "Explore My Work",
     "sendMessage": "Send a Message",
-    "contactText": "I'd love to hear from you. Whether you have a career opportunity, project, collaboration idea, business enquiry or simply want to connect professionally, feel free to send me a message.",
+    "contactText": "I am open to professional opportunities, freelance assignments, reporting or analysis projects, operational support and practical digital solutions. Feel free to get in touch.",
     "fullName": "Full Name",
     "email": "Email Address",
     "subject": "Subject",
@@ -129,7 +142,7 @@
     "label": "PROJECT CASE STUDY",
     "discussProject": "Discuss this project",
     "screenshotsTitle": "Project visuals",
-    "screenshotsText": "Screenshots, dashboards and project visuals will be added here next. The case study structure is ready for them.",
+    "screenshotsText": "",
     "challengeLabel": "THE CHALLENGE",
     "solutionLabel": "THE SOLUTION",
     "impactLabel": "IMPACT & LEARNING",
@@ -140,7 +153,7 @@
         "challengeTitle": "Turning a growing resale activity into a structured operation",
         "challenge": "Managing products, prices, stock, sales and listings across several channels creates repetitive work and makes information difficult to centralise.",
         "solutionTitle": "A database-driven management workflow",
-        "solution": "I developed a digital platform using Next.js, React, TypeScript, Supabase and PostgreSQL to centralise product information, inventory, pricing and sales. The project also includes an administration workflow for managing the catalogue.",
+        "solution": "I built a database-driven management platform to centralise products, inventory, pricing and sales. The web-development work was completed with AI assistance to complement my initial technical skills.",
         "impactTitle": "From business activity to a practical digital system",
         "impact": "The project demonstrates how I use my own business as a practical environment for identifying operational problems, designing a solution and connecting business processes with technology."
       },
@@ -150,7 +163,7 @@
         "challengeTitle": "Presenting a multidisciplinary career clearly",
         "challenge": "My experience spans entrepreneurship, business operations, data analysis and digital development. The challenge was to bring these areas together without making the portfolio feel like a simple list of skills.",
         "solutionTitle": "A structured multilingual portfolio",
-        "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl, with a structured career journey, project showcase, contact experience and multilingual navigation.",
+        "solution": "I built the platform with Next.js, TypeScript, Tailwind CSS and next-intl. I used AI as a learning and development-assistance tool to complement my initial skills and explore these technologies through a personal project.",
         "impactTitle": "A living professional platform",
         "impact": "The portfolio itself is also a development project. It gives recruiters and potential clients a concrete example of how I combine business thinking, data and digital tools.",
         "gallery": {
@@ -163,24 +176,80 @@
       },
       "bicycle": {
         "title": "Bicycle Parking Data Analysis",
-        "intro": "A data-analysis project using open bicycle-parking data from the Loire-Atlantique area.",
-        "challengeTitle": "Turning open data into useful information",
-        "challenge": "The raw dataset contains many records and attributes. The challenge was to organise the information and make patterns around locations and availability easier to understand.",
-        "solutionTitle": "Analysis and Power BI visualisation",
-        "solution": "I prepared and explored the dataset, then used Power BI and Excel-oriented analysis techniques to structure the information and create visual views that support exploration and comparison.",
-        "impactTitle": "From dataset to decision-support visualisation",
-        "impact": "The project demonstrates my ability to work with open data, structure information and communicate findings through business-oriented visualisation."
+        "description": "A Python and geospatial analysis of open bicycle-parking data from the Loire-Atlantique area, examining distribution, capacity, infrastructure types and data completeness.",
+        "intro": "A Python-based geospatial analysis of 601 bicycle-parking locations in the Loire-Atlantique area.",
+        "challengeTitle": "Turning open infrastructure data into useful insights",
+        "challenge": "The dataset contains 601 locations and multiple attributes covering capacity, location, rack type, access, coverage, surveillance and update information. The challenge was to structure these variables and identify clear patterns without over-interpreting incomplete fields.",
+        "solutionTitle": "Python, exploratory and geospatial analysis",
+        "solution": "I used Python with Pandas, GeoPandas, Folium and Matplotlib to clean and explore the dataset, analyse capacity and infrastructure types, compare municipalities and visualise the geographic distribution of bicycle parking.",
+        "impactTitle": "A structured view of bicycle-parking infrastructure",
+        "impact": "The analysis provides a concise view of where bicycle parking is concentrated, how much capacity is available, what infrastructure types dominate and where data completeness limits interpretation.",
+        "overviewTitle": "Project overview",
+        "overviewText": "The analysis covers the current recorded bicycle-parking infrastructure in the dataset.",
+        "metricLocations": "Parking locations",
+        "metricCapacity": "Total bicycle spaces",
+        "metricMunicipalities": "Municipalities represented",
+        "metricAverage": "Average capacity per location",
+        "geographicTitle": "Infrastructure is concentrated geographically",
+        "geographicText": "Saint-Nazaire (municipality code 44184) contains 376 of the 601 recorded locations and 3,001 spaces, making it the largest concentration in the dataset.",
+        "capacityTitle": "Small facilities dominate",
+        "capacityText": "The median facility has 6 spaces and the average is 7.6 spaces. The distribution is right-skewed, with relatively few larger facilities reaching up to 48 spaces.",
+        "infrastructureTitle": "Infrastructure is predominantly ARCEAU-based",
+        "infrastructureText": "585 of the 601 locations use ARCEAU furniture, while 16 use RATELIER. The dataset is therefore strongly dominated by one infrastructure type.",
+        "dataQualityTitle": "Data completeness varies considerably",
+        "dataQualityText": "Core fields such as capacity and coordinates are complete. Other fields are much less complete, including ownership, management, URLs, service year and cargo-bike capacity.",
+        "methodNote": "Important analytical note: date_maj records when a record was updated, not necessarily when a facility was installed. The large concentration of updates in September 2022 should therefore not be presented as proof of a major installation event."
       },
-      "developerSurvey": {
+      "developerEmployment": {
         "title": "Developer & Technology Survey Analysis",
-        "intro": "An analytics project exploring developer and technology survey data to identify patterns and communicate insights.",
-        "challengeTitle": "Making a large survey understandable",
-        "challenge": "Developer surveys contain a wide range of variables, technologies and professional characteristics. The challenge is to identify meaningful patterns without losing the context of the data.",
-        "solutionTitle": "Combining analysis and visualisation",
-        "solution": "I explored the dataset using data-analysis techniques and worked with Power BI, SQL and Python concepts to organise, compare and visualise information.",
-        "impactTitle": "Communicating technology data clearly",
-        "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, analysis and clear visual communication."
+        "intro": "A Power BI analytics project exploring developer employment patterns, salaries, skills, work preferences and geographic distribution.",
+        "challengeTitle": "Turning a large employment dataset into useful insights",
+        "challenge": "The dataset contains many variables covering employment, salary, geography, skills and work preferences. The challenge was to structure these dimensions into clear questions and useful comparisons.",
+        "solutionTitle": "Building an interactive Power BI analysis",
+        "solution": "I prepared and explored the dataset, then used Power BI and data-analysis techniques to structure KPIs, comparisons and visual views around practical business questions.",
+        "impactTitle": "Communicating employment and salary data clearly",
+        "impact": "The project demonstrates my ability to move from a large dataset toward structured questions, comparative analysis and clear business-oriented visual communication.",
+        "screenshotsText": "Three Power BI views cover the executive overview, geography and salary comparisons, and skills and technologies."
+      },
+      "juniorDataAnalyst": {
+        "title": "Junior Data Analyst Job Market Analysis",
+        "intro": "An exploratory Python analysis of 1,167 job postings, examining analyst-related job titles, junior-level terminology and the skills requested by employers.",
+        "challengeTitle": "Understanding the market for analyst-related roles",
+        "challenge": "The dataset contains job titles, descriptions and skill sets. The challenge was to focus the analysis on data- and analyst-related roles and examine how junior-level terminology and requested skills appear in those postings.",
+        "solutionTitle": "Exploring job titles and requested skills with Python",
+        "solution": "I used Python with Pandas and text-processing techniques to inspect the dataset, normalize job titles, identify data- and analyst-related postings, check for junior-level terminology and explore the skills listed for those roles.",
+        "impactTitle": "Turning job-posting data into practical career insight",
+        "impact": "The project demonstrates my ability to work with real-world job-posting data, structure a focused analytical question and communicate findings about role requirements and skills.",
+        "notebookLink": "View Notebook",
+        "visualisationsTitle": "Analysis & Key Visualisations",
+        "visualisationsText": "Two focused views highlight the skills most frequently requested in data- and analyst-related job postings and the technical skills appearing in the selected postings.",
+        "topSkillsCaption": "Top Skills in Data- and Analyst-Related Job Postings",
+        "technicalSkillsCaption": "Technical Skills in Data- and Analyst-Related Job Postings"
       }
-    }
+    },
+    "aiAssisted": "For this personal project, I used AI as a learning and development-assistance tool to complement my initial skills. I do not present React, Next.js or TypeScript as advanced professional skills.",
+    "notebookLink": "View Notebook"
+  },
+  "opportunities": {
+    "label": "WHAT I CAN BRING",
+    "heading": "Useful skills for teams and businesses",
+    "intro": "I can contribute in an employed role or on a focused assignment, depending on the need: analysis, reporting, operations support or practical digital solutions.",
+    "reporting": {
+      "title": "Reporting & dashboards",
+      "description": "Structure data with Excel or Power BI and create practical dashboards for activity monitoring."
+    },
+    "data": {
+      "title": "Data analysis",
+      "description": "Clean, explore and visualise data to identify useful trends, patterns and insights."
+    },
+    "operations": {
+      "title": "Operations & organisation",
+      "description": "Help structure inventory, processes, information and day-to-day workflows to improve visibility and efficiency."
+    },
+    "digital": {
+      "title": "Digital solutions",
+      "description": "Contribute to practical digital projects, using AI as a learning and development-assistance tool when needed."
+    },
+    "cta": "Discuss a need"
   }
 }

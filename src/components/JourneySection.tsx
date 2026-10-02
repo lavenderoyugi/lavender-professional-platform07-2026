@@ -10,6 +10,7 @@ type FilterKey =
   | "work"
   | "education"
   | "entrepreneurship"
+  | "personal"
   | "volunteer"
   | "life";
 
@@ -17,6 +18,7 @@ const categoryInfo = {
   work: { icon: "💼", titleKey: "workTitle", subtitleKey: "workSubtitle" },
   education: { icon: "🎓", titleKey: "educationTitle", subtitleKey: "educationSubtitle" },
   entrepreneurship: { icon: "🚀", titleKey: "entrepreneurshipTitle", subtitleKey: "entrepreneurshipSubtitle" },
+  personal: { icon: "🧩", titleKey: "personalTitle", subtitleKey: "personalSubtitle" },
   volunteer: { icon: "🤝", titleKey: "volunteerTitle", subtitleKey: "volunteerSubtitle" },
   life: { icon: "❤️", titleKey: "lifeTitle", subtitleKey: "lifeSubtitle" },
 } as const;
@@ -29,7 +31,8 @@ function getFilterCategory(
   // translations can never break the filters.
   if ([2.5, 3.5, 6].includes(jobId)) return "life";
   if ([4, 9, 10, 11, 15].includes(jobId)) return "education";
-  if ([3, 5, 17].includes(jobId)) return "entrepreneurship";
+  if ([3, 5].includes(jobId)) return "entrepreneurship";
+  if ([17].includes(jobId)) return "personal";
   if ([16].includes(jobId)) return "volunteer";
 
   // Fallback for any future records that do not yet have an explicit ID mapping.
@@ -69,7 +72,7 @@ export default function JourneySection() {
   useEffect(() => {
     const syncFromUrl = () => {
       const value = new URLSearchParams(window.location.search).get("journey");
-      const valid: FilterKey[] = ["all", "work", "education", "entrepreneurship", "volunteer", "life"];
+      const valid: FilterKey[] = ["all", "work", "education", "entrepreneurship", "personal", "volunteer", "life"];
       setSelectedCategory(valid.includes(value as FilterKey) ? (value as FilterKey) : "all");
     };
 
@@ -92,9 +95,10 @@ export default function JourneySection() {
     window.scrollTo({ top: document.getElementById("journey")?.offsetTop ?? 0, behavior: "smooth" });
   };
 
-  // Master order: newest → oldest. Filtering happens after ordering.
+  // Recruiter-first order: lead with the strongest evidence for the current
+  // Business / Data / Digital positioning, then show the broader career history.
   const chronologicalIds = [
-    14, 17, 16, 13, 15, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
+    15, 16, 14, 17, 13, 18, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.5, 3, 2.5, 2, 1,
   ];
 
   const orderedCareer = useMemo(
@@ -120,6 +124,7 @@ export default function JourneySection() {
     { key: "work", label: t("filterWork") },
     { key: "education", label: t("filterEducation") },
     { key: "entrepreneurship", label: t("filterEntrepreneurship") },
+    { key: "personal", label: t("filterPersonal") },
     { key: "volunteer", label: t("filterVolunteer") },
     { key: "life", label: t("filterLife") },
   ];
@@ -198,7 +203,7 @@ export default function JourneySection() {
                     <div className="mt-5 h-1 w-20 rounded-full bg-gradient-to-r from-violet-500 to-purple-300" />
                   </div>
                 )}
-                <CareerCard {...job} />
+                <CareerCard {...job} defaultOpen={job.id === 15 || job.id === 16} />
               </section>
             );
           })}
