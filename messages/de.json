@@ -9,7 +9,7 @@
   "journeySection": {
     "label": "Beruflicher Werdegang",
     "heading": "Von Neugier zu Führungsstärke",
-    "intro": "Jedes Kapitel meiner Karriere hat dazu beigetragen, wer ich heute bin. Beginnend mit Kundenservice und Geschäftsbetrieb in Kenia, über die regionale Geschäftsentwicklung und Unternehmertum, meinen Umzug nach Frankreich am <date>27. September 2022</date>, bis hin zu Datenanalyse und Geschäftsbetrieb – jede Erfahrung hat meine Fähigkeit gestärkt, Probleme zu lösen, Teams zu führen und durch Technologie und Wirtschaft Werte zu schaffen.",
+    "intro": "Für eine schnelle Orientierung werden die für meine aktuelle berufliche Positionierung relevantesten Ausbildungen und Erfahrungen zuerst gezeigt. Der restliche Werdegang bleibt für einen vollständigen Überblick verfügbar.",
     "relocationDate": "27. September 2022",
     "filterLabel": "Filter für meinen Werdegang",
     "filterAll": "Alle",
@@ -23,12 +23,15 @@
     "educationTitle": "Ausbildung & Weiterbildung",
     "educationSubtitle": "Studium und berufliche Weiterbildung, die meinen beruflichen Weg weiter prägen.",
     "entrepreneurshipTitle": "Unternehmertum",
-    "entrepreneurshipSubtitle": "Unternehmen und unternehmerische Projekte, in denen ich reale Geschäftsabläufe aufgebaut, geführt und verbessert habe.",
+    "entrepreneurshipSubtitle": "Formale unternehmerische Erfahrungen, in denen ich reale Geschäftsaktivitäten aufgebaut und geführt habe.",
     "volunteerTitle": "Freiwillige Erfahrung",
     "volunteerSubtitle": "Engagement für die Gemeinschaft durch digitale Teilhabe und Unterstützung.",
     "lifeTitle": "Lebensmeilensteine",
     "lifeSubtitle": "Persönliche Meilensteine und Übergänge, die meinen beruflichen Weg beeinflusst haben.",
-    "backToJourney": "Zurück zum Werdegang"
+    "backToJourney": "Zurück zum Werdegang",
+    "filterPersonal": "Persönliches Projekt / Aufbauaktivität",
+    "personalTitle": "Persönliche Projekte",
+    "personalSubtitle": "Projekte zum Testen von Ideen, Entwickeln praktischer Werkzeuge und Lernen vor einer möglichen formalen Unternehmensgründung."
   },
   "navigation": {
     "home": "Startseite",
@@ -43,10 +46,10 @@
     "firstName": "Lavender",
     "lastName": "Oyugi",
     "title1": "Business & Data Analyst",
-    "title2": "Power BI • Excel • SQL • Business Intelligence • Prozessoptimierung",
-    "intro": "Ich verwandle geschäftliche Herausforderungen, Daten und Ideen in praktische Lösungen.",
-    "paragraph1": "Mein beruflicher Weg führte mich vom Unternehmertum und der Geschäftsentwicklung in Kenia zu Betriebsabläufen, Einzelhandel und Datenanalyse in Frankreich.",
-    "paragraph2": "Heute ist es meine Mission, Organisationen dabei zu helfen, ihre Abläufe durch Technologie, Business Intelligence und kontinuierliches Lernen zu verbessern.",
+    "title2": "Geschäftsprozesse • Datenanalyse • Digitale Lösungen • Prozessoptimierung",
+    "intro": "Ich unterstütze Organisationen dabei, Abläufe zu strukturieren, Daten besser zu nutzen und praktische Anforderungen in konkrete Lösungen zu übersetzen.",
+    "paragraph1": "Mein Hintergrund verbindet Unternehmertum, Geschäftsentwicklung, operative Erfahrung, Kundenservice und Datenanalyse.",
+    "paragraph2": "Ich bin offen für berufliche Möglichkeiten und Kooperationen, bei denen ich Geschäftsverständnis, analytisches Denken, Organisation und digitale Werkzeuge verbinden kann.",
     "downloadCV": "Lebenslauf herunterladen",
     "journeyButton": "Mein Weg",
     "portfolioButton": "Portfolio",
@@ -72,7 +75,7 @@
   "highlights": {
     "label": "AUSGEWÄHLTE PROJEKTE",
     "heading": "Projekte & Fallstudien",
-    "subheading": "Eine Auswahl praktischer Projekte, in denen ich Geschäftsverständnis, Datenanalyse und digitale Entwicklung verbinde, um reale Probleme zu lösen.",
+    "subheading": "Eine Auswahl von Projekten, die meine Analysefähigkeiten, mein Geschäftsverständnis und meine Fähigkeit zeigen, reale Anforderungen in praktische digitale Lösungen zu verwandeln.",
     "caseStudy": "Fallstudie",
     "discussProject": "Projekt besprechen",
     "futureNote": "Detaillierte Fallstudien, Screenshots und messbare Ergebnisse werden schrittweise ergänzt.",
@@ -86,25 +89,35 @@
     },
     "bicycle": {
       "title": "Datenanalyse von Fahrradparkplätzen",
-      "description": "Ein Analyseprojekt mit offenen Daten zu Fahrradparkplätzen, um Verfügbarkeit, Standorte und Muster durch strukturierte Analyse und interaktive Power-BI-Visualisierung zu untersuchen."
+      "description": "Eine Python- und Geodatenanalyse offener Daten zu Fahrradparkplätzen in der Region Loire-Atlantique mit Fokus auf Verteilung, Kapazität, Infrastrukturtypen und Datenqualität."
     },
-    "developerSurvey": {
-      "title": "Analyse einer Entwickler- und Technologieumfrage",
-      "description": "Ein Analyseprojekt auf Basis von Entwickler- und Technologiedaten, um Muster zu erkennen, Technologien zu vergleichen und einen großen Datensatz in verständliche Erkenntnisse umzuwandeln."
+    "developerEmployment": {
+      "title": "Analyse von Entwicklerbeschäftigung und Gehältern",
+      "description": "Ein Power-BI-Analyseprojekt zu Beschäftigungsmustern, Gehältern, Kompetenzen, Arbeitspräferenzen und geografischer Verteilung von Entwicklern."
     },
-    "viewCaseStudy": "Fallstudie ansehen"
+    "viewCaseStudy": "Fallstudie ansehen",
+    "dataGroupTitle": "Daten & Analytik",
+    "dataGroupDescription": "Projekte zur Entwicklung und Demonstration meiner Fähigkeiten in Analyse, Visualisierung und verständlicher Kommunikation von Erkenntnissen.",
+    "personalGroupTitle": "Persönliche & digitale Projekte",
+    "personalGroupDescription": "Projekte aus realen Anwendungsfällen, mit denen ich digitale Fähigkeiten ausbaue, Abläufe strukturiere und praktische Lösungen mit KI-Unterstützung erkunde.",
+    "aiDisclosure": "Bei persönlichen digitalen Projekten nutze ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. Erkundete Technologien unterscheide ich klar von meinen beruflichen Kernkompetenzen in Datenanalyse und Geschäftsprozessen.",
+    "personalProject": "Persönliches Projekt",
+    "juniorDataAnalyst": {
+      "title": "Analyse des Arbeitsmarkts für Junior Data Analysts",
+      "description": "Eine explorative Python-Analyse von 1.167 Stellenangeboten mit Fokus auf daten- und analystenbezogene Jobtitel, Begriffe für Junior-Positionen und geforderte Kompetenzen."
+    }
   },
   "contact": {
     "alert": "Bitte füllen Sie alle Felder aus, bevor Sie Ihre Nachricht senden.",
     "label": "LASSEN SIE UNS IN KONTAKT BLEIBEN",
     "heading": "Lassen Sie uns gemeinsam etwas aufbauen",
     "paragraph1": "Vielen Dank, dass Sie sich die Zeit genommen haben, meinen beruflichen Weg kennenzulernen. Dieses Portfolio ist ein lebendiges Projekt, das sich mit jedem neuen Lernerfolg, jeder Erfahrung und jedem beruflichen Meilenstein weiterentwickelt.",
-    "paragraph2": "Ob Sie Recruiter, Geschäftspartner, Unternehmer oder einfach interessiert sind – ich freue mich darauf, von Ihnen zu hören.",
+    "paragraph2": "Ob Sie Recruiter, Personalverantwortlicher, Unternehmen, potenzieller Kunde oder Kooperationspartner sind – ich freue mich über Gespräche zu beruflichen Chancen, freiberuflichen Aufgaben oder Projekten.",
     "whyTitle": "Warum ich tue, was ich tue",
     "whyDescription": "Ich glaube, dass Technologie, Wirtschaft und Unternehmertum Möglichkeiten schaffen können, die Leben verändern. Meine Leidenschaft ist es, Unternehmen durch Innovation, kontinuierliches Lernen und digitale Lösungen wachsen zu lassen und gleichzeitig meinen eigenen Weg zu teilen.",
     "explore": "Meine Arbeit entdecken",
     "sendMessage": "Nachricht senden",
-    "contactText": "Ich freue mich, von Ihnen zu hören! Egal ob Sie eine berufliche Möglichkeit, eine Zusammenarbeit, eine Geschäftsanfrage oder einfach eine Nachricht senden möchten – kontaktieren Sie mich gerne.",
+    "contactText": "Ich bin offen für berufliche Möglichkeiten, freiberufliche Aufgaben, Reporting- und Analyseprojekte, operative Unterstützung und praktische digitale Lösungen.",
     "fullName": "Vollständiger Name",
     "email": "E-Mail-Adresse",
     "subject": "Betreff",
@@ -129,7 +142,7 @@
     "label": "PROJEKT-FALLSTUDIE",
     "discussProject": "Projekt besprechen",
     "screenshotsTitle": "Projektvisualisierungen",
-    "screenshotsText": "Screenshots, Dashboards und Projektvisualisierungen werden als Nächstes hier ergänzt. Die Struktur der Fallstudie ist bereits vorbereitet.",
+    "screenshotsText": "",
     "challengeLabel": "DIE HERAUSFORDERUNG",
     "solutionLabel": "DIE LÖSUNG",
     "impactLabel": "WIRKUNG & LERNEN",
@@ -140,7 +153,7 @@
         "challengeTitle": "Eine wachsende Verkaufsaktivität strukturieren",
         "challenge": "Produkte, Preise, Bestände, Verkäufe und Angebote über mehrere Kanäle zu verwalten, erzeugt wiederkehrende Aufgaben und erschwert die Zentralisierung.",
         "solutionTitle": "Ein datenbankgestützter Workflow",
-        "solution": "Ich entwickelte eine Plattform mit Next.js, React, TypeScript, Supabase und PostgreSQL zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen, ergänzt durch einen Administrationsbereich.",
+        "solution": "Ich entwickelte eine datenbankgestützte Managementplattform zur Zentralisierung von Produkten, Beständen, Preisen und Verkäufen. Die Webentwicklung wurde mit KI-Unterstützung umgesetzt, um meine anfänglichen technischen Kenntnisse zu ergänzen.",
         "impactTitle": "Aus Geschäftsaktivität wird ein digitales System",
         "impact": "Das Projekt zeigt, wie ich reale betriebliche Probleme identifiziere, Lösungen entwickle und Geschäftsprozesse mit Technologie verbinde."
       },
@@ -150,7 +163,7 @@
         "challengeTitle": "Einen vielseitigen beruflichen Weg klar präsentieren",
         "challenge": "Meine Erfahrung umfasst Unternehmertum, Betriebsabläufe, Datenanalyse und digitale Entwicklung. Die Herausforderung war, diese Bereiche sinnvoll zu verbinden.",
         "solutionTitle": "Ein strukturiertes mehrsprachiges Portfolio",
-        "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl, mit strukturiertem Werdegang, Projektübersicht, Kontaktbereich und mehrsprachiger Navigation.",
+        "solution": "Ich entwickelte die Plattform mit Next.js, TypeScript, Tailwind CSS und next-intl. KI nutzte ich als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen und diese Technologien in einem persönlichen Projekt zu erkunden.",
         "impactTitle": "Eine lebendige professionelle Plattform",
         "impact": "Das Portfolio ist selbst ein Entwicklungsprojekt und zeigt Recruitern und potenziellen Kunden praktisch, wie ich Geschäftsdenken, Daten und digitale Werkzeuge verbinde.",
         "gallery": {
@@ -162,25 +175,88 @@
         }
       },
       "bicycle": {
-        "title": "Datenanalyse von Fahrradparkplätzen",
-        "intro": "Ein Datenanalyseprojekt mit offenen Daten zu Fahrradparkplätzen in der Region Loire-Atlantique.",
-        "challengeTitle": "Offene Daten in verständliche Informationen verwandeln",
-        "challenge": "Der Datensatz enthält viele Einträge und Merkmale. Die Herausforderung bestand darin, die Informationen zu strukturieren und Muster bei Standorten und Verfügbarkeit verständlich darzustellen.",
-        "solutionTitle": "Analyse und Power-BI-Visualisierung",
-        "solution": "Ich bereitete den Datensatz auf und analysierte ihn. Anschließend nutzte ich Power BI und Excel-orientierte Analysetechniken, um Informationen zu strukturieren und Vergleiche zu ermöglichen.",
-        "impactTitle": "Vom Datensatz zur entscheidungsorientierten Visualisierung",
-        "impact": "Das Projekt zeigt meine Fähigkeit, mit offenen Daten zu arbeiten, Informationen zu strukturieren und Erkenntnisse verständlich zu visualisieren."
+        "title": "Analyse von Fahrradparkplätzen",
+        "description": "Eine Python- und Geodatenanalyse offener Daten zu Fahrradparkplätzen in der Region Loire-Atlantique mit Fokus auf Verteilung, Kapazität, Infrastrukturtypen und Datenqualität.",
+        "intro": "Eine geodatenbasierte Python-Analyse von 601 erfassten Fahrradparkplätzen in der Region Loire-Atlantique.",
+        "challengeTitle": "Offene Infrastrukturdaten in nützliche Erkenntnisse verwandeln",
+        "challenge": "Der Datensatz enthält 601 Standorte und mehrere Merkmale zu Kapazität, Standort, Befestigungstyp, Zugang, Überdachung, Überwachung und Aktualisierungen. Die Herausforderung bestand darin, diese Variablen zu strukturieren und klare Muster zu erkennen, ohne unvollständige Angaben zu überinterpretieren.",
+        "solutionTitle": "Explorative und geodatenbasierte Analyse mit Python",
+        "solution": "Ich nutzte Python mit Pandas, GeoPandas, Folium und Matplotlib, um die Daten zu untersuchen, Kapazitäten und Infrastrukturtypen zu analysieren, Gemeinden zu vergleichen und die geografische Verteilung der Fahrradparkplätze zu visualisieren.",
+        "impactTitle": "Ein strukturierter Überblick über Fahrradparkplätze",
+        "impact": "Die Analyse zeigt, wo Fahrradparkplätze konzentriert sind, welche Kapazität vorhanden ist, welche Infrastrukturtypen dominieren und wo die Datenvollständigkeit die Interpretation begrenzt.",
+        "overviewTitle": "Projektübersicht",
+        "overviewText": "Die Analyse betrachtet die aktuell im Datensatz erfasste Fahrradparkinfrastruktur.",
+        "metricLocations": "Parkstandorte",
+        "metricCapacity": "Fahrradstellplätze insgesamt",
+        "metricMunicipalities": "Erfasste Gemeinden",
+        "metricAverage": "Durchschnittliche Kapazität pro Standort",
+        "geographicTitle": "Die Infrastruktur ist geografisch konzentriert",
+        "geographicText": "Saint-Nazaire (Gemeindecode 44184) umfasst 376 der 601 erfassten Standorte und 3.001 Stellplätze und stellt damit die größte Konzentration im Datensatz dar.",
+        "capacityTitle": "Kleine Anlagen dominieren",
+        "capacityText": "Die mittlere Kapazität beträgt 6 Stellplätze, der Durchschnitt 7,6 Stellplätze pro Standort. Die Verteilung ist rechtsschief; nur wenige größere Anlagen erreichen bis zu 48 Stellplätze.",
+        "infrastructureTitle": "CADRE ET ROUE ist der dominierende Infrastrukturtyp",
+        "infrastructureText": "CADRE ET ROUE wird an 479 der 601 erfassten Standorte verwendet, gefolgt von ROUE (67) und CADRE (55).",
+        "visualisationsTitle": "Visualisierungen der Analyse",
+        "visualisationsText": "Die wichtigsten Visualisierungen der Python-Analyse zeigen die geografische Verteilung, Kapazität, Infrastrukturtypen und Datenvollständigkeit.",
+        "geographicCaption": "Geografische Verteilung der erfassten Fahrradparkplätze",
+        "capacityDistributionCaption": "Verteilung der Kapazität der Fahrradparkplätze",
+        "municipalityCaption": "Gesamtkapazität der Fahrradparkplätze nach Gemeinde",
+        "infrastructureCaption": "Erfasste Fahrradparkplatz-Infrastrukturtypen",
+        "dataCompletenessCaption": "Vollständigkeit ausgewählter Analysefelder",
+        "dataQualityTitle": "Die Datenvollständigkeit variiert",
+        "dataQualityText": "Kernfelder wie Kapazität und Koordinaten sind vollständig. Andere Felder sind deutlich weniger vollständig, darunter Eigentümer, Betreiber, URLs, Dienstjahr und Kapazität für Lastenräder.",
+        "methodNote": "Wichtiger methodischer Hinweis: date_maj bezeichnet das Aktualisierungsdatum eines Datensatzes und nicht unbedingt das Installationsdatum einer Anlage. Die starke Konzentration von Aktualisierungen im September 2022 sollte daher nicht als Beweis für eine große Installationsphase dargestellt werden."
       },
-      "developerSurvey": {
+      "developerEmployment": {
         "title": "Analyse einer Entwickler- und Technologieumfrage",
-        "intro": "Ein Analyseprojekt mit Entwickler- und Technologiedaten, um Muster zu erkennen und Erkenntnisse verständlich zu kommunizieren.",
-        "challengeTitle": "Eine große Umfrage verständlich machen",
-        "challenge": "Entwicklerumfragen enthalten viele Variablen, Technologien und berufliche Merkmale. Die Herausforderung besteht darin, relevante Muster zu erkennen und gleichzeitig den Kontext zu erhalten.",
-        "solutionTitle": "Analyse und Visualisierung verbinden",
-        "solution": "Ich untersuchte den Datensatz mit Analysetechniken und arbeitete mit Power BI, SQL und Python, um Informationen zu strukturieren, zu vergleichen und zu visualisieren.",
-        "impactTitle": "Technologiedaten klar kommunizieren",
-        "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, Analysen und klarer visueller Kommunikation zu gelangen."
+        "intro": "Ein Power-BI-Analyseprojekt zu Beschäftigungsmustern, Gehältern, Kompetenzen, Arbeitspräferenzen und geografischer Verteilung von Entwicklern.",
+        "challengeTitle": "Einen großen Beschäftigungsdatensatz in nützliche Erkenntnisse verwandeln",
+        "challenge": "Der Datensatz enthält viele Variablen zu Beschäftigung, Gehältern, Geografie, Kompetenzen und Arbeitspräferenzen. Die Herausforderung bestand darin, diese Dimensionen in klare Fragen und sinnvolle Vergleiche zu strukturieren.",
+        "solutionTitle": "Eine interaktive Power-BI-Analyse erstellen",
+        "solution": "Ich bereitete den Datensatz auf und analysierte ihn. Anschließend nutzte ich Power BI und Analysetechniken, um Kennzahlen, Vergleiche und Visualisierungen an praktischen Geschäftsfragen auszurichten.",
+        "impactTitle": "Beschäftigungs- und Gehaltsdaten klar kommunizieren",
+        "impact": "Das Projekt zeigt meine Fähigkeit, von einem großen Datensatz zu strukturierten Fragen, vergleichender Analyse und klarer, geschäftsorientierter visueller Kommunikation zu gelangen.",
+        "screenshotsText": "Drei Power-BI-Ansichten zeigen die Übersicht, geografische und Gehaltsvergleiche sowie Kompetenzen und Technologien."
+      },
+      "juniorDataAnalyst": {
+        "title": "Analyse des Arbeitsmarkts für Junior Data Analysts",
+        "intro": "Eine explorative Python-Analyse von 1.167 Stellenangeboten mit Fokus auf daten- und analystenbezogene Jobtitel, Begriffe für Junior-Positionen und geforderte Kompetenzen.",
+        "challengeTitle": "Den Markt für analytische Stellen verstehen",
+        "challenge": "Der Datensatz enthält Jobtitel, Beschreibungen und Kompetenzlisten. Die Analyse konzentrierte sich auf daten- und analystenbezogene Stellen sowie auf Begriffe für Junior-Positionen und die dafür aufgeführten Kompetenzen.",
+        "solutionTitle": "Jobtitel und geforderte Kompetenzen mit Python untersuchen",
+        "solution": "Ich nutzte Python, Pandas und Textverarbeitung, um den Datensatz zu untersuchen, Jobtitel zu normalisieren, daten- und analystenbezogene Stellen zu identifizieren, Begriffe für Junior-Positionen zu prüfen und die aufgeführten Kompetenzen auszuwerten.",
+        "impactTitle": "Stellendaten in praktische Berufsinformationen verwandeln",
+        "impact": "Das Projekt zeigt meine Fähigkeit, mit realen Stellendaten zu arbeiten, eine fokussierte Analysefrage zu strukturieren und Erkenntnisse über Anforderungen und Kompetenzen verständlich zu kommunizieren.",
+        "notebookLink": "Notebook ansehen",
+        "visualisationsTitle": "Analyse & zentrale Visualisierungen",
+        "visualisationsText": "Zwei gezielte Ansichten zeigen die am häufigsten geforderten Kompetenzen in daten- und analystenbezogenen Stellenangeboten sowie die technischen Kompetenzen in den ausgewählten Stellen.",
+        "topSkillsCaption": "Am häufigsten geforderte Kompetenzen in daten- und analystenbezogenen Stellenangeboten",
+        "technicalSkillsCaption": "Technische Kompetenzen in daten- und analystenbezogenen Stellenangeboten"
       }
-    }
+    },
+    "aiAssisted": "Bei diesem persönlichen Projekt nutzte ich KI als Lern- und Entwicklungshilfe, um meine vorhandenen Kenntnisse zu ergänzen. React, Next.js oder TypeScript stelle ich dabei nicht als fortgeschrittene berufliche Kernkompetenzen dar.",
+    "notebookLink": "Notebook ansehen"
+  },
+  "opportunities": {
+    "label": "WAS ICH EINBRINGEN KANN",
+    "heading": "Nützliche Kompetenzen für Teams und Unternehmen",
+    "intro": "Ich kann in einer Festanstellung oder für eine klar definierte Aufgabe unterstützen – je nach Bedarf in Analyse, Reporting, operativer Unterstützung oder digitalen Lösungen.",
+    "reporting": {
+      "title": "Reporting & Dashboards",
+      "description": "Daten mit Excel oder Power BI strukturieren und praktische Dashboards für die Geschäftsüberwachung erstellen."
+    },
+    "data": {
+      "title": "Datenanalyse",
+      "description": "Daten bereinigen, untersuchen und visualisieren, um relevante Muster und Erkenntnisse sichtbar zu machen."
+    },
+    "operations": {
+      "title": "Prozesse & Organisation",
+      "description": "Bei der Strukturierung von Beständen, Prozessen, Informationen und täglichen Abläufen unterstützen."
+    },
+    "digital": {
+      "title": "Digitale Lösungen",
+      "description": "Bei praktischen digitalen Projekten mitwirken und KI bei Bedarf als Lern- und Entwicklungshilfe einsetzen."
+    },
+    "cta": "Bedarf besprechen"
   }
 }

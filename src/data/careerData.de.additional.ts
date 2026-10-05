@@ -169,15 +169,15 @@ export const careerDataAdditionalDe = [
   },
   {
     id: 17,
-    category: "Unternehmertum",
+    category: "Persönliches Projekt",
     year: "2026 – heute",
-    title: "Gründerin",
+    title: "Persönliches Projekt",
     company: "Lavender Finds",
     location: "Frankreich",
-    summary: "Lavender Finds ist mein aktuelles unternehmerisches Projekt, das Produktauswahl, digitales Marketing und E-Commerce verbindet. Ich entwickle die Online-Aktivität über Vinted, Leboncoin und soziale Medien und baue gleichzeitig digitale Werkzeuge für strukturierte Geschäftsabläufe.",
+    summary: "Lavender Finds ist ein persönliches Projekt, das ich entwickle, um eine Online-Verkaufsaktivität zu testen, digitales Marketing zu erkunden und praktische Werkzeuge für Lager- und Verkaufsmanagement aufzubauen. Ich entwickle die Online-Aktivität über Vinted, Leboncoin und soziale Medien und baue gleichzeitig digitale Werkzeuge für strukturierte Geschäftsabläufe.",
     responsibilities: ["Auswahl einzigartiger Produkte.", "Analyse von Nachfrage und Markttrends.", "Erstellung von Produktfotos und Angeboten.", "Verwaltung von Online-Verkaufsplattformen.", "Erstellung digitaler Marketinginhalte.", "Kundenkommunikation und Auftragsabwicklung.", "Entwicklung von Marke und Social-Media-Präsenz.", "Entwicklung meiner professionellen Website.", "Entwicklung eines Dashboards für Lager- und Verkaufsmanagement.", "Zentralisierung von Produkt-, Bestands-, Preis- und Verkaufsdaten in einer strukturierten Datenbank.", "Nutzung des Dashboards zur Verbesserung der Bestandsverwaltung und täglichen Abläufe."],
-    skills: ["Unternehmertum", "E-Commerce", "Digitales Marketing", "Content Creation", "SEO", "Markenentwicklung", "Kundenservice", "Business Analytics", "Fotografie", "Social Media Marketing", "Webentwicklung", "Dashboard-Entwicklung", "Datenbankmanagement", "Prozessoptimierung", "Projektmanagement", "Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Git & GitHub", "Vercel"],
-    achievement: "Ich habe ein unternehmerisches Projekt aufgebaut und ein funktionierendes digitales Managementsystem entwickelt, das Produktinformationen, Bestände, Preise und Verkäufe zentralisiert.",
+    skills: ["E-Commerce", "Digitales Marketing", "Content Creation", "SEO", "Markenentwicklung", "Kundenservice", "Business Analytics", "Fotografie", "Social Media Marketing", "Digitale Entwicklung mit KI-Unterstützung", "Dashboard-Entwicklung", "Datenbankmanagement", "Prozessoptimierung", "Projektmanagement", "Supabase", "PostgreSQL", "Git & GitHub"],
+    achievement: "Ich habe ein persönliches Projekt entwickelt und ein funktionierendes digitales Managementsystem aufgebaut, das Produktinformationen, Bestände, Preise und Verkäufe zentralisiert.",
     impact: "Lavender Finds verbindet meine Erfahrung im Geschäftsmanagement mit meinen digitalen Kompetenzen und zeigt praktisch, wie Technologie reale betriebliche Herausforderungen lösen kann.",
     reflection: "Unternehmertum bedeutet heute auch, Systeme zu bauen. Eine operative Herausforderung in eine digitale Lösung zu verwandeln, zeigt den praktischen Wert von Technologie."
   }

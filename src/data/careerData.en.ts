@@ -868,18 +868,18 @@ reflection:
 {
   id: 17,
 
-  category: "Entrepreneurial Project",
+  category: "Personal Project",
 
   year: "2026 – Present",
 
-  title: "Founder",
+  title: "Personal Project",
 
   company: "Lavender Finds",
 
   location: "France",
 
   summary:
-    "Lavender Finds is my current entrepreneurial project, combining my passion for sourcing unique products with digital marketing and e-commerce. Through online platforms such as Vinted, Leboncoin and social media, I curate carefully selected home décor, fashion and lifestyle products from Europe and Kenya while continuously learning modern digital business strategies.",
+    "Lavender Finds is a personal project I am developing to test an online resale idea, explore digital commerce and build practical tools for inventory and sales management. Through online platforms such as Vinted, Leboncoin and social media, I curate carefully selected home décor, fashion and lifestyle products from Europe and Kenya while continuously learning modern digital business strategies.",
 
   responsibilities: [
     "Source unique products across France.",
@@ -911,9 +911,7 @@ reflection:
     "Database Management",
     "Process Improvement",
     "Project Management",
-    "Next.js",
-    "React",
-    "TypeScript",
+    "AI-assisted digital development",
     "Supabase",
     "PostgreSQL Database",
     "Tailwind CSS",
@@ -922,10 +920,10 @@ reflection:
   ],
 
   achievement:
-    "Successfully launched a new entrepreneurial venture and built a working digital management system that brings inventory, product information, pricing and sales tracking into one central platform.",
+    "Built a working digital management system as part of a personal project that brings inventory, product information, pricing and sales tracking into one central platform.",
 
   impact:
-    "Lavender Finds represents the combination of my business management experience and digital skills. By turning a real operational need into a structured dashboard and database-driven workflow, I have strengthened my practical experience in process improvement, inventory management, dashboard development, database management and digital business operations.",
+    "Lavender Finds gives me a practical environment to combine my business management experience with digital skills. By turning a real operational need into a structured dashboard and database-driven workflow, I have strengthened my practical experience in process improvement, inventory management, dashboard development, database management and digital business operations.",
 
   reflection:
     "Entrepreneurship today is also about building systems. Turning an operational challenge into a practical digital solution showed me how technology can make a small business more organised, measurable and scalable."

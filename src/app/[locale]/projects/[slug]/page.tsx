@@ -16,12 +16,17 @@ const projects = {
   },
   "bicycle-parking-analysis": {
     key: "bicycle",
-    technologies: ["Power BI", "Excel", "Data Analysis"],
+    technologies: ["Python", "Pandas", "GeoPandas", "Folium", "Matplotlib"],
     github: "https://github.com/lavenderoyugi/-Bicycle-Parking-Infrastructure-Analysis-in-the-Loire-Atlantique-Area-",
   },
-  "developer-technology-survey": {
-    key: "developerSurvey",
-    technologies: ["Power BI", "SQL", "Python", "Data Visualisation"],
+  "developer-employment-and-salary-analysis": {
+    key: "developerEmployment",
+    technologies: ["Power BI", "Data Analysis", "Data Visualisation"],
+    github: null,
+  },
+  "junior-data-analyst-job-market-analysis": {
+    key: "juniorDataAnalyst",
+    technologies: ["Python", "Data Analysis", "Job-Market Analysis"],
     github: null,
   },
 } as const;
@@ -53,6 +58,65 @@ const professionalPlatformGallery = [
     alt: "Lavender Professional Platform mobile homepage",
     captionKey: "mobile",
     mobile: true,
+  },
+];
+
+const juniorDataAnalystGallery = [
+  {
+    src: "/junior-data-analyst/top-skills.png",
+    alt: "Top skills in data- and analyst-related job postings",
+    captionKey: "topSkillsCaption",
+  },
+  {
+    src: "/junior-data-analyst/technical-skills.png",
+    alt: "Technical skills in data- and analyst-related job postings",
+    captionKey: "technicalSkillsCaption",
+  },
+];
+
+const developerEmploymentGallery = [
+  {
+    src: "/images/developer-employment/executive-overview.png",
+    alt: "Developer employment and salary analysis executive overview",
+    caption: "Executive overview",
+  },
+  {
+    src: "/images/developer-employment/geography-salary.png",
+    alt: "Developer employment and salary geography and salary analysis",
+    caption: "Geography and salary analysis",
+  },
+  {
+    src: "/images/developer-employment/skills-technologies.png",
+    alt: "Developer employment skills and technologies analysis",
+    caption: "Skills and technologies",
+  },
+];
+
+const bicycleParkingGallery = [
+  {
+    src: "/projects/bicycle-parking/geographic-distribution.png",
+    alt: "Geographic distribution of recorded bicycle-parking locations in Loire-Atlantique",
+    captionKey: "geographicCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/capacity-distribution.png",
+    alt: "Distribution of bicycle-parking capacity per location",
+    captionKey: "capacityDistributionCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/capacity-by-municipality.png",
+    alt: "Total bicycle-parking capacity by municipality",
+    captionKey: "municipalityCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/infrastructure-types.png",
+    alt: "Recorded bicycle-parking infrastructure types",
+    captionKey: "infrastructureCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/data-completeness.png",
+    alt: "Completeness of selected bicycle-parking analytical fields",
+    captionKey: "dataCompletenessCaption",
   },
 ];
 
@@ -101,6 +165,13 @@ export default async function ProjectCaseStudy({
   const base = `projects.${project.key}`;
   const isLavenderFinds = slug === "lavender-finds";
   const isProfessionalPlatform = slug === "professional-platform";
+  const isDeveloperEmployment = slug === "developer-employment-and-salary-analysis";
+  const isJuniorDataAnalyst = slug === "junior-data-analyst-job-market-analysis";
+  const isBicycleParking = slug === "bicycle-parking-analysis";
+  const notebookUrl = isJuniorDataAnalyst
+    ? "https://github.com/lavenderoyugi/lavender-professional-platform07-2026/blob/recruiter-freelance-portfolio/notebooks/junior_data_analyst_job_market_analysis.ipynb"
+    : null;
+  const isPersonalDigitalProject = isLavenderFinds || isProfessionalPlatform;
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -138,6 +209,12 @@ export default async function ProjectCaseStudy({
             ))}
           </div>
 
+          {isPersonalDigitalProject && (
+            <p className="mt-5 max-w-3xl rounded-2xl border border-violet-500/20 bg-violet-500/5 px-5 py-4 text-sm leading-6 text-zinc-400">
+              {t("aiAssisted")}
+            </p>
+          )}
+
           <div className="mt-8 flex flex-wrap gap-4">
             {project.github && (
               <a
@@ -150,6 +227,17 @@ export default async function ProjectCaseStudy({
               </a>
             )}
 
+            {notebookUrl && (
+              <a
+                href={notebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-violet-500/40 bg-violet-500/10 px-5 py-2.5 text-sm font-semibold text-violet-200 transition hover:border-violet-400 hover:bg-violet-500/20"
+              >
+                {t("notebookLink")} ↗
+              </a>
+            )}
+
             <Link
               href="/#contact"
               className="rounded-full border border-zinc-700 px-5 py-2.5 text-sm font-semibold text-zinc-200 transition hover:border-violet-400 hover:text-violet-300"
@@ -159,125 +247,288 @@ export default async function ProjectCaseStudy({
           </div>
         </div>
 
-        <section className="mt-16">
-          <div className="mb-7">
-            <h2 className="text-2xl font-bold">{t("screenshotsTitle")}</h2>
-            <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
-              {isLavenderFinds
-                ? "A visual look at the customer experience, business dashboard and responsive inventory workflow."
-                : t("screenshotsText")}
-            </p>
-          </div>
+        {isPersonalDigitalProject && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">{t("screenshotsTitle")}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                {isLavenderFinds
+                  ? "A visual look at the customer experience, business dashboard and responsive inventory workflow."
+                  : t("screenshotsText")}
+              </p>
+            </div>
 
-          {isLavenderFinds ? (
+            {isLavenderFinds ? (
+              <div className="space-y-8">
+                <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                  <Image
+                    src={lavenderFindsGallery[0].src}
+                    alt={lavenderFindsGallery[0].alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {lavenderFindsGallery[0].caption}
+                  </figcaption>
+                </figure>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {lavenderFindsGallery.slice(1, 3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1200}
+                        height={800}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {image.caption}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+
+                <div className="grid items-start gap-6 md:grid-cols-2">
+                  {lavenderFindsGallery.slice(3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={744}
+                        height={1180}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {image.caption}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-8">
+                <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                  <Image
+                    src={professionalPlatformGallery[0].src}
+                    alt={professionalPlatformGallery[0].alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.portfolio.gallery.${professionalPlatformGallery[0].captionKey}`)}
+                  </figcaption>
+                </figure>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {professionalPlatformGallery.slice(1, 4).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1200}
+                        height={800}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {t(`projects.portfolio.gallery.${image.captionKey}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+
+                <figure className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm">
+                  <Image
+                    src={professionalPlatformGallery[4].src}
+                    alt={professionalPlatformGallery[4].alt}
+                    width={744}
+                    height={1180}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.portfolio.gallery.${professionalPlatformGallery[4].captionKey}`)}
+                  </figcaption>
+                </figure>
+              </div>
+            )}
+          </section>
+        )}
+
+        {isJuniorDataAnalyst && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">
+                {t("projects.juniorDataAnalyst.visualisationsTitle")}
+              </h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                {t("projects.juniorDataAnalyst.visualisationsText")}
+              </p>
+            </div>
+
             <div className="space-y-8">
-              <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
-                <Image
-                  src={lavenderFindsGallery[0].src}
-                  alt={lavenderFindsGallery[0].alt}
-                  width={1600}
-                  height={1000}
-                  className="h-auto w-full"
-                />
-                <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
-                  {lavenderFindsGallery[0].caption}
-                </figcaption>
-              </figure>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                {lavenderFindsGallery.slice(1, 3).map((image) => (
-                  <figure
-                    key={image.src}
-                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={1200}
-                      height={800}
-                      className="h-auto w-full"
-                    />
-                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
-                      {image.caption}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-
-              <div className="grid items-start gap-6 md:grid-cols-2">
-                {lavenderFindsGallery.slice(3).map((image) => (
-                  <figure
-                    key={image.src}
-                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm"
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={744}
-                      height={1180}
-                      className="h-auto w-full"
-                    />
-                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
-                      {image.caption}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+              {juniorDataAnalystGallery.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={1600}
+                    height={900}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.juniorDataAnalyst.${image.captionKey}`)}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
-          ) : isProfessionalPlatform ? (
+          </section>
+        )}
+
+        {isBicycleParking && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">{t("projects.bicycle.overviewTitle")}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">{t("projects.bicycle.overviewText")}</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["601", t("projects.bicycle.metricLocations")],
+                ["4,585", t("projects.bicycle.metricCapacity")],
+                ["10", t("projects.bicycle.metricMunicipalities")],
+                ["7.6", t("projects.bicycle.metricAverage")],
+              ].map(([value, label]) => (
+                <div key={label} className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-6">
+                  <p className="text-3xl font-extrabold text-violet-300">{value}</p>
+                  <p className="mt-2 text-sm leading-6 text-zinc-400">{label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {[
+                ["geographicTitle", "geographicText"],
+                ["capacityTitle", "capacityText"],
+                ["infrastructureTitle", "infrastructureText"],
+                ["dataQualityTitle", "dataQualityText"],
+              ].map(([titleKey, textKey]) => (
+                <article key={titleKey} className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-7">
+                  <h3 className="text-xl font-bold">{t(`projects.bicycle.${titleKey}`)}</h3>
+                  <p className="mt-3 leading-7 text-zinc-400">{t(`projects.bicycle.${textKey}`)}</p>
+                </article>
+              ))}
+            </div>
+            <section className="mt-12">
+              <div className="mb-7">
+                <h2 className="text-2xl font-bold">{t("projects.bicycle.visualisationsTitle")}</h2>
+                <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                  {t("projects.bicycle.visualisationsText")}
+                </p>
+              </div>
+
+              <div className="space-y-8">
+                <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                  <Image
+                    src={bicycleParkingGallery[0].src}
+                    alt={bicycleParkingGallery[0].alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.bicycle.${bicycleParkingGallery[0].captionKey}`)}
+                  </figcaption>
+                </figure>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {bicycleParkingGallery.slice(1, 3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1600}
+                        height={1000}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {t(`projects.bicycle.${image.captionKey}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {bicycleParkingGallery.slice(3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1600}
+                        height={1000}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {t(`projects.bicycle.${image.captionKey}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <div className="mt-8 rounded-3xl border border-violet-500/20 bg-violet-500/5 p-7">
+              <p className="text-sm leading-7 text-zinc-300">{t("projects.bicycle.methodNote")}</p>
+            </div>
+          </section>
+        )}
+
+        {isDeveloperEmployment && (
+          <section className="mt-16">
+            <div className="mb-7">
+              <h2 className="text-2xl font-bold">{t("screenshotsTitle")}</h2>
+              <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                {t("projects.developerEmployment.screenshotsText")}
+              </p>
+            </div>
             <div className="space-y-8">
-              <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
-                <Image
-                  src={professionalPlatformGallery[0].src}
-                  alt={professionalPlatformGallery[0].alt}
-                  width={1600}
-                  height={1000}
-                  className="h-auto w-full"
-                />
-                <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
-                  {t(`projects.portfolio.gallery.${professionalPlatformGallery[0].captionKey}`)}
-                </figcaption>
-              </figure>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                {professionalPlatformGallery.slice(1, 4).map((image) => (
-                  <figure
-                    key={image.src}
-                    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={1200}
-                      height={800}
-                      className="h-auto w-full"
-                    />
-                    <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
-                      {t(`projects.portfolio.gallery.${image.captionKey}`)}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-
-              <figure className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 md:mx-auto md:max-w-sm">
-                <Image
-                  src={professionalPlatformGallery[4].src}
-                  alt={professionalPlatformGallery[4].alt}
-                  width={744}
-                  height={1180}
-                  className="h-auto w-full"
-                />
-                <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
-                  {t(`projects.portfolio.gallery.${professionalPlatformGallery[4].captionKey}`)}
-                </figcaption>
-              </figure>
+              {developerEmploymentGallery.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {image.caption}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
-          ) : (
-            <div className="rounded-3xl border border-violet-500/20 bg-zinc-950 p-10 text-center text-zinc-500">
-              {t("screenshotsText")}
-            </div>
-          )}
-        </section>
+          </section>
+        )}
 
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           <section className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-7">
