@@ -92,6 +92,34 @@ const developerEmploymentGallery = [
   },
 ];
 
+const bicycleParkingGallery = [
+  {
+    src: "/projects/bicycle-parking/geographic-distribution.png",
+    alt: "Geographic distribution of recorded bicycle-parking locations in Loire-Atlantique",
+    captionKey: "geographicCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/capacity-distribution.png",
+    alt: "Distribution of bicycle-parking capacity per location",
+    captionKey: "capacityDistributionCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/capacity-by-municipality.png",
+    alt: "Total bicycle-parking capacity by municipality",
+    captionKey: "municipalityCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/infrastructure-types.png",
+    alt: "Recorded bicycle-parking infrastructure types",
+    captionKey: "infrastructureCaption",
+  },
+  {
+    src: "/projects/bicycle-parking/data-completeness.png",
+    alt: "Completeness of selected bicycle-parking analytical fields",
+    captionKey: "dataCompletenessCaption",
+  },
+];
+
 const lavenderFindsGallery = [
   {
     src: "/projects/lavender-finds/01-storefront-desktop-clean.png",
@@ -402,6 +430,70 @@ export default async function ProjectCaseStudy({
                 </article>
               ))}
             </div>
+            <section className="mt-12">
+              <div className="mb-7">
+                <h2 className="text-2xl font-bold">{t("projects.bicycle.visualisationsTitle")}</h2>
+                <p className="mt-3 max-w-3xl leading-7 text-zinc-500">
+                  {t("projects.bicycle.visualisationsText")}
+                </p>
+              </div>
+
+              <div className="space-y-8">
+                <figure className="overflow-hidden rounded-3xl border border-violet-500/20 bg-zinc-950 shadow-2xl">
+                  <Image
+                    src={bicycleParkingGallery[0].src}
+                    alt={bicycleParkingGallery[0].alt}
+                    width={1600}
+                    height={1000}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="px-6 py-4 text-sm font-medium text-zinc-300">
+                    {t(`projects.bicycle.${bicycleParkingGallery[0].captionKey}`)}
+                  </figcaption>
+                </figure>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {bicycleParkingGallery.slice(1, 3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1600}
+                        height={1000}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {t(`projects.bicycle.${image.captionKey}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {bicycleParkingGallery.slice(3).map((image) => (
+                    <figure
+                      key={image.src}
+                      className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1600}
+                        height={1000}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="px-5 py-4 text-sm font-medium text-zinc-300">
+                        {t(`projects.bicycle.${image.captionKey}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </section>
+
             <div className="mt-8 rounded-3xl border border-violet-500/20 bg-violet-500/5 p-7">
               <p className="text-sm leading-7 text-zinc-300">{t("projects.bicycle.methodNote")}</p>
             </div>
