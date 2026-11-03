@@ -1,8 +1,5 @@
 "use client";
-
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { useState as useReactState } from "react";
 import DashboardStats from "@/components/admin/DashboardStats";
 import SalesForm from "@/components/admin/SalesForm";
 import Navbar from "@/components/Navbar";
@@ -17,7 +14,6 @@ export default function AdminPage() {
   const [checking, setChecking] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const router = useRouter();
 
   useEffect(() => {
     fetch("/api/check-auth", { cache: "no-store" })
