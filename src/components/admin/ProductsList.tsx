@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 import type { Product } from "@/types/product";
 
 
@@ -19,37 +18,18 @@ export default function ProductsList({
   }, []);
 
   async function loadProducts() {
-    const { data, error } = await supabase
-      .from("products")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (error) {
-      console.log(error);
+    const response = await fetch("/api/admin/products", { cache: "no-store" });
+    if (!response.ok) {
+      console.error("Could not load admin products", await response.text());
       return;
     }
-
-    setProducts(data || []);
+    const result = await response.json();
+    setProducts(result.products || []);
   }
   async function deleteProduct(id: string) {
-  const confirmed = window.confirm(
-    "Are you sure you want to delete this product?"
-  );
-
-  if (!confirmed) return;
-
-  const { error } = await supabase
-    .from("products")
-    .delete()
-    .eq("id", id);
-
-  if (error) {
-    console.error(error);
-    return;
+    window.alert("Product deletion is temporarily disabled while admin access is being secured.");
   }
 
-  loadProducts();
-}
 
   return (
     <div className="mt-20 rounded-2xl border border-white/10 bg-white/5 p-8">
