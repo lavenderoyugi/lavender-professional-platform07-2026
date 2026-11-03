@@ -30,18 +30,21 @@ export default function SalesForm() {
   }, []);
 
   async function loadProducts() {
-    const { data, error } = await supabase
-      .from("products")
-      .select("id, name, sku, purchase_price")
-      .order("name");
-
-    if (error) {
-      console.error("Error loading products:", error);
-      return;
+    try {
+      const response = await fetch("/api/admin/products", { cache: "no-store" });
+      if (!response.ok) throw new Error("Could not load products");
+      const result = await response.json();
+      setProducts((result.products || []).map((product: any) => ({
+        id: product.id,
+        name: product.name,
+        sku: product.sku,
+        purchase_price: product.purchase_price,
+      })));
+    } catch (error) {
+      console.error("Error loading admin products:", error);
+    } finally {
+      setLoading(false);
     }
-
-    setProducts(data || []);
-    setLoading(false);
   }
 
   function handleChange(
