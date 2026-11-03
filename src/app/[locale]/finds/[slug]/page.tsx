@@ -56,7 +56,7 @@ const relatedProducts: any[] = [];
       <div className="space-y-6">
 
         <h1 className="text-5xl font-bold">
-  {product.name || product.title || "Untitled Product"}
+  {product.name || "Untitled Product"}
 </h1>
 
         <p className="text-4xl font-bold text-violet-400">
