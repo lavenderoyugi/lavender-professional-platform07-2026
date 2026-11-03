@@ -23,8 +23,10 @@ export default async function ProductPage({ params }: Props) {
 
 const { data: product, error } = await supabase
   .from("products")
-  .select("*")
+  .select("id, name, price, status, condition, category, origin_country, gallery, image_url, material, dimensions, year, description, pickup_available, vinted, leboncoin, shipping_weight, package_length, package_width, package_height, fragile, published")
   .eq("id", slug)
+  .eq("published", true)
+  .eq("status", "Available")
   .single();
 
 if (error || !product) {
@@ -263,7 +265,6 @@ const relatedProducts: any[] = [];
       name: product.name,
       price: product.price,
       image_url: product.image_url,
-      stock: product.stock,
       shipping_weight: product.shipping_weight,
       package_length: product.package_length,
       package_width: product.package_width,
