@@ -17,7 +17,7 @@ useEffect(() => {
   async function fetchProducts() {
   const { data, error } = await supabase
   .from("products")
-  .select("*")
+  .select("id, created_at, name, price, category, status, description, image_url, gallery, condition, origin_country, is_featured, slug, published")
   .eq("published", true)
   .eq("status", "Available")
   .order("created_at", { ascending: false });
