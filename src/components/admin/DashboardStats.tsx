@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 export default function DashboardStats() {
 
 const [stats, setStats] = useState({
@@ -23,109 +22,14 @@ const [stats, setStats] = useState({
   }, []);
 
   async function loadStats() {
-    const { data, error } = await supabase
-      .from("products")
-      .select("*");
-
-    if (error) {
-      console.log(error);
+    const response = await fetch("/api/admin/stats", { cache: "no-store" });
+    if (!response.ok) {
+      console.error("Could not load admin statistics", await response.text());
       return;
     }
-
-    const products = data.length;
-    const draft = data.filter(
-  (item) => item.status === "Draft"
-).length;
-
-    const available = data.reduce(
-  (sum, item) => sum + Number(item.stock ?? 0),
-  0
-);
-
-    const reserved = data.reduce(
-  (sum, item) => sum + Number(item.reserved_quantity ?? 0),
-  0
-);
-const sold = data.reduce(
-  (sum, item) => sum + Number(item.sold_quantity ?? 0),
-  0
-);
-
-const inventoryInvestment = data
-  .filter(
-    (item) =>
-      item.status === "Draft" ||
-      item.status === "Available" ||
-      item.status === "Reserved"
-  )
-  .reduce(
-    (sum, item) =>
-      sum +
-      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
-        Number(item.purchase_price ?? 0),
-    0
-  );
-const unsoldInventory = data
-  .filter(
-    (item) =>
-      item.status === "Draft" ||
-      item.status === "Available" ||
-      item.status === "Reserved"
-  )
-  .reduce(
-    (sum, item) =>
-      sum +
-      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
-        Number(item.purchase_price ?? 0),
-    0
-  );
-const potentialRevenue = data
-  .filter(
-    (item) =>
-      item.status === "Available" ||
-      item.status === "Reserved"
-  )
-  .reduce(
-    (sum, item) =>
-      sum +
-      (Number(item.stock ?? 0) - Number(item.reserved_quantity ?? 0)) *
-        Number(item.listing_price ?? 0),
-    0
-  );
-
-const actualRevenue = data
-  .filter((item) => item.status === "Sold")
-  .reduce(
-    (sum, item) => sum + Number(item.selling_price || 0),
-    0
-  );
-
-const netProfit = data
-  .filter((item) => item.status === "Sold")
-  .reduce(
-    (sum, item) =>
-      sum +
-      (Number(item.selling_price || 0) -
-        Number(item.purchase_price || 0)),
-    0
-  );
-
-setStats({
-  products,
-  draft,
-  available,
-  reserved,
-  sold,
-  
-
-  inventoryInvestment,
-  unsoldInventory,
-
-  potentialRevenue,
-  actualRevenue,
-  netProfit,
-});
-
+    const result = await response.json();
+    setStats(result.stats);
+  }
 }
   return (
     <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
